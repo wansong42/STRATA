@@ -1,0 +1,48 @@
+# FractureInstance 契约 v1 —— 跨模块数据格式定版（R183-T0）
+# 外部方案 V1.0 第四章字段照抄（R183 任务书 §1）：禁发明、禁双标。
+# 实现唯一权威 = src/fractureflow/fracture_instance.py；本 YAML 为人读规范。
+
+schema_ver: fracture_instance_v1
+
+granularity:
+  gt_contract:     每条 3D 裂缝一条记录（id 唯一）；extent.segments 为该裂缝在暴露面上的迹线段（通常 1 段）
+  obs_contract:    降质后观测粒度 = 迹线段；每段一条记录，id = "{parent_id}#obs{k}"，携带父平面
+  id_rule:         实例级 id 与段级 seg_id 均全局唯一（段级形如 "{instance_id}#s{k}" / "{parent_id}#obs{k}"）
+
+fields:
+  id:              str，全局唯一
+  plane:
+    n:             [nx, ny, nz]，单位法向（无向约定，|n|=1±1e-6），场景米制系
+    d:             标量，n·x = d 的偏移（米）
+  bingham:
+    M:             null | 3x3（R185 Bingham MLE 回填）
+    Z:             null | 3   （R185 回填）
+    status:        placeholder_r185_backfill
+  extent:
+    bbox_min/bbox_max: 3D 包围盒（米），segments 全点必须落在盒内 ±1e-6
+    segments:
+      - seg_id:    str，全局唯一
+        pts_m:     (M,3) 迹线 3D 点（位于暴露表面上，米制场景系），M>=2
+        pts_px:    (M,2) 可选，投影像素坐标 (col,row)，与 pts_m 等长
+        width_px:  可见描边宽度（像素）
+        mark:      clean | broken | eroded | occluded | merged | grazing_excluded
+        quality:   {inlier_rate, residual_m, gate}   # 段级质量标记（任务书 §1）
+  quality:         实例级 {inlier_rate, residual_m, gate_status}；gate ∈ pass|warn|fail|unrated
+  provenance:
+    source:        产生模块（如 synthetic_engine_v0 / cvat_seed / sam_pipeline）
+    method:        方法名（如 analytic_intersection / manual_annotation）
+    method_version:semver 字符串
+    created_at:    ISO8601 UTC
+    scene_id/seed/params_hash: 可溯源指纹（params_hash = 规范 JSON sha256）
+    notes:         自由注记（如 Terzaghi 截止、许可）
+  schema_ver:      恒 fracture_instance_v1
+
+invariants:
+  - plane.n 单位化（1e-6）
+  - 所有数值有限（JSON allow_nan=False 全链）
+  - seg_id / id 全局唯一
+  - pts_m 点数 >= 2；pts_px 与 pts_m 等长
+  - segment 点落在 extent 包围盒内
+  - mark / gate 取值受限（白名单）
+
+dual_use_ban: 合成真值与未来真实估计（CVAT 导出、SAM 预标注、R185 统计层）共用本格式与同一校验器，禁双标。

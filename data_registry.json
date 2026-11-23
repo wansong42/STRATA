@@ -1,0 +1,121 @@
+{
+  "schema": "fractureflow.data_registry.v1",
+  "updated_at_utc": "2026-11-23T11:31:26.513816+00:00",
+  "hygiene_rules": [
+    "单源真源原则：任何 >50 MB 的原始点云/网格/体数据只在登记路径保留 1 份，代码与运行时包仅按路径引用，严禁复制副本。",
+    "下半程新增数据集必须先登记入本表（含来源、许可、状态），再接入 workflows/。",
+    "E 盘大文件池通过 E:/fracture_data 或 NTFS junction 访问，禁止反向拷回 C 盘 results/。"
+  ],
+  "datasets": [
+    {
+      "id": "jardim_garcia_pointcloud",
+      "role": "active_midterm_primary",
+      "status": "ACTIVE",
+      "path": "results/pf01_test/acquired/UH_UH_points.ply",
+      "exists": true,
+      "files": 1,
+      "size_mb": 1553.79,
+      "license": "CC-BY-4.0 (Zenodo DOI: 10.5281/zenodo.7220755)",
+      "notes": "巴西 Jardim Garcia 采石场 60,343,162 点原始全云（唯一单源真源，严禁复制到其他目录）"
+    },
+    {
+      "id": "jardim_garcia_roi_6x6",
+      "role": "active_midterm_provenance",
+      "status": "ACTIVE",
+      "path": "results/w160_full_pointcloud_roi",
+      "exists": true,
+      "files": 148,
+      "size_mb": 221.83,
+      "license": "CC-BY-4.0 (derived from Jardim Garcia)",
+      "notes": "预注册 6m×6m 无抽稀窗口（1,279,478 点）与工作台溯源编辑底座"
+    },
+    {
+      "id": "perozzo_2024_finale_ligure",
+      "role": "active_midterm_primary",
+      "status": "ACTIVE",
+      "path": "data/external/perozzo_2024",
+      "exists": true,
+      "files": 8,
+      "size_mb": 4562.53,
+      "license": "Perozzo 2024 Public Dataset",
+      "notes": "意大利 Finale Ligure 83,208,117 点露头点云 + 1,405 专家拟合面与三维迹线"
+    },
+    {
+      "id": "beishan_22wells_schema",
+      "role": "active_schema_reference",
+      "status": "ACTIVE",
+      "path": "data/real/beishan_wells.npz",
+      "exists": true,
+      "files": 1,
+      "size_mb": 0.01,
+      "license": "Published borehole catalog (schema reference only)",
+      "notes": "中国北山 22 井 880 条结构面产状编录（仅作字段格式参照与 P10 极点投影，不进三维贯通分母）"
+    },
+    {
+      "id": "gate_repro_real_nets",
+      "role": "gate_g1_g2_required",
+      "status": "FROZEN_GATE",
+      "path": "data/real",
+      "exists": true,
+      "files": 15,
+      "size_mb": 126.56,
+      "license": "Internal curated benchmark (loaded_real_nets*.pt)",
+      "notes": "G1 repro_certify 与 G2 selfcheck 硬依赖（三锚 36.687/12.37/0.37 复现底座）"
+    },
+    {
+      "id": "gate_forge_fmi",
+      "role": "gate_g2_required",
+      "status": "FROZEN_GATE",
+      "path": "data/external/utah_forge_fmi",
+      "exists": true,
+      "files": 17,
+      "size_mb": 5.59,
+      "license": "Utah FORGE Public Data",
+      "notes": "G2 selfcheck 依赖（forge_fmi_2wells.pt）"
+    },
+    {
+      "id": "synth_dfn_base",
+      "role": "phase2_multi_mechanism",
+      "status": "STANDBY",
+      "path": "data/synth",
+      "exists": true,
+      "files": 8,
+      "size_mb": 66.1,
+      "license": "Generated synthetic DFN",
+      "notes": "合成网络基准，供下半程多机制对照（4,320 案例-格）参考"
+    },
+    {
+      "id": "external_efracture_pool",
+      "role": "external_storage_pool",
+      "status": "STANDBY",
+      "path": "E:/fracture_data",
+      "exists": true,
+      "files": 85544,
+      "size_mb": 30230.59,
+      "license": "Mixed public datasets (see E:/fracture_data)",
+      "notes": "NTFS 目录链接指向 E:\\fracture_data（含 HRF/Pontrelli/Loviisa 等外部大数据，不占 C 盘）"
+    },
+    {
+      "id": "external_gdr_truth_pool",
+      "role": "standby_external_pool",
+      "status": "STANDBY",
+      "path": "data/external/w30_13_truth_20261029",
+      "exists": true,
+      "files": 36,
+      "size_mb": 2135.28,
+      "license": "GDR Public Geothermal Data",
+      "notes": "2026-10-29 下载的 GDR 公开资料（2.14 GB，下半程如不用可按需迁至 E:\\fracture_data）"
+    },
+    {
+      "id": "phase2_micro_ct_placeholder",
+      "role": "phase2_planned",
+      "status": "PLANNED",
+      "path": "data/phase2_micro_ct",
+      "exists": false,
+      "files": 0,
+      "size_mb": 0.0,
+      "license": "TBD (internal lab or open micro-CT benchmark)",
+      "notes": "下半程 P0 预留槽位：微 CT 或透明岩体受控体内真值数据集"
+    }
+  ]
+}

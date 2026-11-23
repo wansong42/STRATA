@@ -1,0 +1,40 @@
+{
+  "schema": "obs_equiv.pilot_config.v4",
+  "generator": "PLANAR_DISK_MECHANISM_FAMILY_CROSS_PRODUCT_V1",
+  "role": "MISSPEC_ARM_CONFIRM",
+  "pair_count": 8,
+  "bridge_probability": 0.65,
+  "spacing": 4.0,
+  "site_id": "SYNTHETIC_MISSPEC",
+  "split_group": "MISSPEC_ALL",
+  "constant_baseline_prior": 0.5,
+  "allowed_claim": "SYNTHETIC_DECLARED_DOMAIN_ONLY",
+  "mechanisms": [
+    "HIDDEN_BRIDGE",
+    "DECOY_BRIDGE",
+    "OCCLUDED_CONTINUATION"
+  ],
+  "families": [
+    {
+      "name": "PLANAR_DISK_COMPACT_V1",
+      "scale": 0.8
+    },
+    {
+      "name": "PLANAR_DISK_STANDARD_V1",
+      "scale": 1.0
+    },
+    {
+      "name": "PLANAR_DISK_WIDE_V1",
+      "scale": 1.2
+    }
+  ],
+  "query_distance_scaled_prior": {
+    "d0": 2.0,
+    "tau": 1.0
+  },
+  "observation_transform": {
+    "arm_id": "OCCLUSION_FRACTION",
+    "rung": "F075",
+    "seed": 20261024
+  }
+}

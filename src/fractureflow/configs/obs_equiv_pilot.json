@@ -1,0 +1,12 @@
+{
+  "schema": "obs_equiv.pilot_config.v2",
+  "generator": "PLANAR_DISK_MULTI_MECHANISM_V2",
+  "pair_count": 2,
+  "bridge_probability": 0.65,
+  "spacing": 4.0,
+  "site_id": "SYNTHETIC_PILOT",
+  "split_group": "PILOT_ALL",
+  "constant_baseline_prior": 0.5,
+  "allowed_claim": "SYNTHETIC_DECLARED_DOMAIN_ONLY",
+  "mechanisms": ["HIDDEN_BRIDGE", "DECOY_BRIDGE", "OCCLUDED_CONTINUATION"]
+}

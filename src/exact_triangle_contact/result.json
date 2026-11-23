@@ -1,0 +1,1167 @@
+{
+  "at_utc": "2026-11-18T11:30:43.258450+00:00",
+  "scope": "Generated rational primitive pairs in protocol.json, complete shared parameter intervals only; no real input consumed and no whole-network or physical guarantee",
+  "enumeration": "All registered pairs and named corrupt presence/endpoint/staleness variants, one independent verifier-only parent, actual SAT producer child",
+  "protocol_sha256": "4e4399ab1c1eec18a81c369e0f28edacd21902064caae0243d9876581add672e",
+  "code_sha256": {
+    "compile_pair.py": "59c833853fbd313e905f925201a0dd705b56352da23f8ca1c314710d6ff2316f",
+    "confirm.py": "b410158f24850628cf21fa28f150e938c7f460c4647d272f58aecd3887620bc0",
+    "pair_format.py": "8f7035bdc5b32e41b51404a480923a89a1bd292b9bc91453a0b1c9682c5f150c",
+    "verify_pair.py": "fd067eb4377dd77f4f3bc408d8bbf2f9142e540658747752b4b6f92004283949"
+  },
+  "case_count": 8,
+  "tamper_controls": 21,
+  "checks_passed": true,
+  "rows": [
+    {
+      "model": {
+        "schema": "rigid-pair/v1",
+        "snapshot_id": "oblique_nonorthogonal_point_event",
+        "mode_id": "declared",
+        "t_closed": [
+          -1,
+          1
+        ],
+        "pieces": [
+          {
+            "id": "left",
+            "vertices": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0
+              ],
+              [
+                0,
+                2,
+                0
+              ]
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "right",
+            "vertices": [
+              [
+                2,
+                0,
+                0
+              ],
+              [
+                3,
+                0,
+                1
+              ],
+              [
+                3,
+                1,
+                1
+              ]
+            ],
+            "velocity": [
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      "result": {
+        "status": "VERIFIED_CLOSED_CONTACT_WINDOW",
+        "window": {
+          "schema": "rigid-pair-window/v1",
+          "input_hash": "b0c2fa9a1e06b12bbbaaf2f687a71b266f87d28a4a4db8052f51200f310ce8a8",
+          "t_closed": [
+            "0",
+            "0"
+          ]
+        },
+        "independent_reference": {
+          "t_closed": [
+            "0",
+            "0"
+          ],
+          "endpoint_witnesses": [
+            {
+              "t": "0",
+              "left_weights": [
+                "0",
+                "1",
+                "0"
+              ],
+              "right_weights": [
+                "1",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "t": "0",
+              "left_weights": [
+                "0",
+                "1",
+                "0"
+              ],
+              "right_weights": [
+                "1",
+                "0",
+                "0"
+              ]
+            }
+          ]
+        }
+      },
+      "expected": [
+        "0",
+        "0"
+      ],
+      "fresh_check": {
+        "ok": true,
+        "reference": {
+          "t_closed": [
+            "0",
+            "0"
+          ],
+          "endpoint_witnesses": [
+            {
+              "t": "0",
+              "left_weights": [
+                "0",
+                "1",
+                "0"
+              ],
+              "right_weights": [
+                "1",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "t": "0",
+              "left_weights": [
+                "0",
+                "1",
+                "0"
+              ],
+              "right_weights": [
+                "1",
+                "0",
+                "0"
+              ]
+            }
+          ]
+        }
+      },
+      "ok": true
+    },
+    {
+      "model": {
+        "schema": "rigid-pair/v1",
+        "snapshot_id": "skew_nonparallel_permanent_segment",
+        "mode_id": "declared",
+        "t_closed": [
+          -1,
+          1
+        ],
+        "pieces": [
+          {
+            "id": "left",
+            "vertices": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0
+              ],
+              [
+                0,
+                2,
+                0
+              ]
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "right",
+            "vertices": [
+              [
+                0,
+                0,
+                -1
+              ],
+              [
+                2,
+                0,
+                1
+              ],
+              [
+                0,
+                2,
+                -1
+              ]
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      "result": {
+        "status": "VERIFIED_CLOSED_CONTACT_WINDOW",
+        "window": {
+          "schema": "rigid-pair-window/v1",
+          "input_hash": "d0cc6860f15b6be27844adca2917e16796dffe20268cf0a66137026317e628ee",
+          "t_closed": [
+            "-1",
+            "1"
+          ]
+        },
+        "independent_reference": {
+          "t_closed": [
+            "-1",
+            "1"
+          ],
+          "endpoint_witnesses": [
+            {
+              "t": "-1",
+              "left_weights": [
+                "1/2",
+                "1/2",
+                "0"
+              ],
+              "right_weights": [
+                "1/2",
+                "1/2",
+                "0"
+              ]
+            },
+            {
+              "t": "1",
+              "left_weights": [
+                "1/2",
+                "1/2",
+                "0"
+              ],
+              "right_weights": [
+                "1/2",
+                "1/2",
+                "0"
+              ]
+            }
+          ]
+        }
+      },
+      "expected": [
+        "-1",
+        "1"
+      ],
+      "fresh_check": {
+        "ok": true,
+        "reference": {
+          "t_closed": [
+            "-1",
+            "1"
+          ],
+          "endpoint_witnesses": [
+            {
+              "t": "-1",
+              "left_weights": [
+                "1/2",
+                "1/2",
+                "0"
+              ],
+              "right_weights": [
+                "1/2",
+                "1/2",
+                "0"
+              ]
+            },
+            {
+              "t": "1",
+              "left_weights": [
+                "1/2",
+                "1/2",
+                "0"
+              ],
+              "right_weights": [
+                "1/2",
+                "1/2",
+                "0"
+              ]
+            }
+          ]
+        }
+      },
+      "ok": true
+    },
+    {
+      "model": {
+        "schema": "rigid-pair/v1",
+        "snapshot_id": "coplanar_slide",
+        "mode_id": "declared",
+        "t_closed": [
+          0,
+          6
+        ],
+        "pieces": [
+          {
+            "id": "left",
+            "vertices": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0
+              ],
+              [
+                0,
+                2,
+                0
+              ]
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "right",
+            "vertices": [
+              [
+                3,
+                0,
+                0
+              ],
+              [
+                5,
+                0,
+                0
+              ],
+              [
+                3,
+                2,
+                0
+              ]
+            ],
+            "velocity": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      "result": {
+        "status": "VERIFIED_CLOSED_CONTACT_WINDOW",
+        "window": {
+          "schema": "rigid-pair-window/v1",
+          "input_hash": "e81413dde9bdedd2abc4ee3d376df8e8b4d42ff12f61eccfda7200974afdebbe",
+          "t_closed": [
+            "1",
+            "5"
+          ]
+        },
+        "independent_reference": {
+          "t_closed": [
+            "1",
+            "5"
+          ],
+          "endpoint_witnesses": [
+            {
+              "t": "1",
+              "left_weights": [
+                "0",
+                "1",
+                "0"
+              ],
+              "right_weights": [
+                "1",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "t": "5",
+              "left_weights": [
+                "1",
+                "0",
+                "0"
+              ],
+              "right_weights": [
+                "0",
+                "1",
+                "0"
+              ]
+            }
+          ]
+        }
+      },
+      "expected": [
+        "1",
+        "5"
+      ],
+      "fresh_check": {
+        "ok": true,
+        "reference": {
+          "t_closed": [
+            "1",
+            "5"
+          ],
+          "endpoint_witnesses": [
+            {
+              "t": "1",
+              "left_weights": [
+                "0",
+                "1",
+                "0"
+              ],
+              "right_weights": [
+                "1",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "t": "5",
+              "left_weights": [
+                "1",
+                "0",
+                "0"
+              ],
+              "right_weights": [
+                "0",
+                "1",
+                "0"
+              ]
+            }
+          ]
+        }
+      },
+      "ok": true
+    },
+    {
+      "model": {
+        "schema": "rigid-pair/v1",
+        "snapshot_id": "coplanar_overlap_boxes_but_disjoint_triangles",
+        "mode_id": "declared",
+        "t_closed": [
+          -1,
+          1
+        ],
+        "pieces": [
+          {
+            "id": "left",
+            "vertices": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0
+              ],
+              [
+                0,
+                2,
+                0
+              ]
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "right",
+            "vertices": [
+              [
+                2,
+                2,
+                0
+              ],
+              [
+                2,
+                "1/2",
+                0
+              ],
+              [
+                "1/2",
+                2,
+                0
+              ]
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      "result": {
+        "status": "VERIFIED_CLOSED_CONTACT_WINDOW",
+        "window": {
+          "schema": "rigid-pair-window/v1",
+          "input_hash": "747b4b8d734e0417a3aa05ee57d240d1e7951843add8ca2fe5f2c9b6f8436d6c",
+          "t_closed": null
+        },
+        "independent_reference": null
+      },
+      "expected": null,
+      "fresh_check": {
+        "ok": true,
+        "reference": null
+      },
+      "ok": true
+    },
+    {
+      "model": {
+        "schema": "rigid-pair/v1",
+        "snapshot_id": "parallel_small_gap",
+        "mode_id": "declared",
+        "t_closed": [
+          -1,
+          1
+        ],
+        "pieces": [
+          {
+            "id": "left",
+            "vertices": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0
+              ],
+              [
+                0,
+                2,
+                0
+              ]
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "right",
+            "vertices": [
+              [
+                0,
+                0,
+                "1/100000000000000000000"
+              ],
+              [
+                2,
+                0,
+                "1/100000000000000000000"
+              ],
+              [
+                0,
+                2,
+                "1/100000000000000000000"
+              ]
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      "result": {
+        "status": "VERIFIED_CLOSED_CONTACT_WINDOW",
+        "window": {
+          "schema": "rigid-pair-window/v1",
+          "input_hash": "e066ee27f37880ecb455758b907f691e21fccf31ace7a5d182c2c1d86c1f0114",
+          "t_closed": null
+        },
+        "independent_reference": null
+      },
+      "expected": null,
+      "fresh_check": {
+        "ok": true,
+        "reference": null
+      },
+      "ok": true
+    },
+    {
+      "model": {
+        "schema": "rigid-pair/v1",
+        "snapshot_id": "endpoint_enters_sliding_triangle",
+        "mode_id": "declared",
+        "t_closed": [
+          0,
+          4
+        ],
+        "pieces": [
+          {
+            "id": "left",
+            "vertices": [
+              [
+                0,
+                0,
+                0
+              ]
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "right",
+            "vertices": [
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                3,
+                0,
+                0
+              ],
+              [
+                1,
+                2,
+                0
+              ]
+            ],
+            "velocity": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      "result": {
+        "status": "VERIFIED_CLOSED_CONTACT_WINDOW",
+        "window": {
+          "schema": "rigid-pair-window/v1",
+          "input_hash": "a32e4235d942623f00a5efda5a509216bc09a30dfbd4720fdc0153db46e62eaf",
+          "t_closed": [
+            "1",
+            "3"
+          ]
+        },
+        "independent_reference": {
+          "t_closed": [
+            "1",
+            "3"
+          ],
+          "endpoint_witnesses": [
+            {
+              "t": "1",
+              "left_weights": [
+                "1"
+              ],
+              "right_weights": [
+                "1",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "t": "3",
+              "left_weights": [
+                "1"
+              ],
+              "right_weights": [
+                "0",
+                "1",
+                "0"
+              ]
+            }
+          ]
+        }
+      },
+      "expected": [
+        "1",
+        "3"
+      ],
+      "fresh_check": {
+        "ok": true,
+        "reference": {
+          "t_closed": [
+            "1",
+            "3"
+          ],
+          "endpoint_witnesses": [
+            {
+              "t": "1",
+              "left_weights": [
+                "1"
+              ],
+              "right_weights": [
+                "1",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "t": "3",
+              "left_weights": [
+                "1"
+              ],
+              "right_weights": [
+                "0",
+                "1",
+                "0"
+              ]
+            }
+          ]
+        }
+      },
+      "ok": true
+    },
+    {
+      "model": {
+        "schema": "rigid-pair/v1",
+        "snapshot_id": "winding_swap_and_translation",
+        "mode_id": "declared",
+        "t_closed": [
+          -1,
+          1
+        ],
+        "pieces": [
+          {
+            "id": "right",
+            "vertices": [
+              [
+                10,
+                0,
+                -3
+              ],
+              [
+                10,
+                0,
+                -4
+              ],
+              [
+                9,
+                1,
+                -4
+              ]
+            ],
+            "velocity": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "id": "left",
+            "vertices": [
+              [
+                9,
+                3,
+                -2
+              ],
+              [
+                9,
+                1,
+                -4
+              ],
+              [
+                9,
+                3,
+                -4
+              ]
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      "result": {
+        "status": "VERIFIED_CLOSED_CONTACT_WINDOW",
+        "window": {
+          "schema": "rigid-pair-window/v1",
+          "input_hash": "1fa1e650fb901776f471c63b3f8ce7c59d77b5dc4782d887c67f3fd11c31d026",
+          "t_closed": [
+            "0",
+            "0"
+          ]
+        },
+        "independent_reference": {
+          "t_closed": [
+            "0",
+            "0"
+          ],
+          "endpoint_witnesses": [
+            {
+              "t": "0",
+              "left_weights": [
+                "0",
+                "0",
+                "1"
+              ],
+              "right_weights": [
+                "0",
+                "1",
+                "0"
+              ]
+            },
+            {
+              "t": "0",
+              "left_weights": [
+                "0",
+                "0",
+                "1"
+              ],
+              "right_weights": [
+                "0",
+                "1",
+                "0"
+              ]
+            }
+          ]
+        }
+      },
+      "expected": [
+        "0",
+        "0"
+      ],
+      "fresh_check": {
+        "ok": true,
+        "reference": {
+          "t_closed": [
+            "0",
+            "0"
+          ],
+          "endpoint_witnesses": [
+            {
+              "t": "0",
+              "left_weights": [
+                "0",
+                "0",
+                "1"
+              ],
+              "right_weights": [
+                "0",
+                "1",
+                "0"
+              ]
+            },
+            {
+              "t": "0",
+              "left_weights": [
+                "0",
+                "0",
+                "1"
+              ],
+              "right_weights": [
+                "0",
+                "1",
+                "0"
+              ]
+            }
+          ]
+        }
+      },
+      "ok": true
+    },
+    {
+      "model": {
+        "schema": "rigid-pair/v1",
+        "snapshot_id": "degenerate_rejection",
+        "mode_id": "declared",
+        "t_closed": [
+          -1,
+          1
+        ],
+        "pieces": [
+          {
+            "id": "left",
+            "vertices": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0
+              ],
+              [
+                0,
+                2,
+                0
+              ]
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "right",
+            "vertices": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1
+              ],
+              [
+                2,
+                2,
+                2
+              ]
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      "result": {
+        "status": "INVALID_INPUT",
+        "reason": "degenerate triangle"
+      },
+      "expected": "INVALID",
+      "fresh_check": {
+        "ok": false,
+        "reason": "affine rank is below two"
+      },
+      "ok": true
+    }
+  ],
+  "controls": [
+    {
+      "case": "oblique_nonorthogonal_point_event",
+      "mutation": "inverted_presence",
+      "actual": {
+        "ok": false,
+        "reason": "missing interval"
+      }
+    },
+    {
+      "case": "oblique_nonorthogonal_point_event",
+      "mutation": "stale_mode",
+      "actual": {
+        "ok": false,
+        "reason": "stale model"
+      }
+    },
+    {
+      "case": "oblique_nonorthogonal_point_event",
+      "mutation": "wrong_extrema",
+      "actual": {
+        "ok": false,
+        "reason": "wrong extremum"
+      }
+    },
+    {
+      "case": "skew_nonparallel_permanent_segment",
+      "mutation": "inverted_presence",
+      "actual": {
+        "ok": false,
+        "reason": "missing interval"
+      }
+    },
+    {
+      "case": "skew_nonparallel_permanent_segment",
+      "mutation": "stale_mode",
+      "actual": {
+        "ok": false,
+        "reason": "stale model"
+      }
+    },
+    {
+      "case": "skew_nonparallel_permanent_segment",
+      "mutation": "wrong_extrema",
+      "actual": {
+        "ok": false,
+        "reason": "wrong extremum"
+      }
+    },
+    {
+      "case": "coplanar_slide",
+      "mutation": "inverted_presence",
+      "actual": {
+        "ok": false,
+        "reason": "missing interval"
+      }
+    },
+    {
+      "case": "coplanar_slide",
+      "mutation": "stale_mode",
+      "actual": {
+        "ok": false,
+        "reason": "stale model"
+      }
+    },
+    {
+      "case": "coplanar_slide",
+      "mutation": "wrong_extrema",
+      "actual": {
+        "ok": false,
+        "reason": "wrong extremum"
+      }
+    },
+    {
+      "case": "coplanar_overlap_boxes_but_disjoint_triangles",
+      "mutation": "inverted_presence",
+      "actual": {
+        "ok": false,
+        "reason": "false nonempty contact"
+      }
+    },
+    {
+      "case": "coplanar_overlap_boxes_but_disjoint_triangles",
+      "mutation": "stale_mode",
+      "actual": {
+        "ok": false,
+        "reason": "stale model"
+      }
+    },
+    {
+      "case": "coplanar_overlap_boxes_but_disjoint_triangles",
+      "mutation": "wrong_extrema",
+      "actual": {
+        "ok": false,
+        "reason": "false nonempty contact"
+      }
+    },
+    {
+      "case": "parallel_small_gap",
+      "mutation": "inverted_presence",
+      "actual": {
+        "ok": false,
+        "reason": "false nonempty contact"
+      }
+    },
+    {
+      "case": "parallel_small_gap",
+      "mutation": "stale_mode",
+      "actual": {
+        "ok": false,
+        "reason": "stale model"
+      }
+    },
+    {
+      "case": "parallel_small_gap",
+      "mutation": "wrong_extrema",
+      "actual": {
+        "ok": false,
+        "reason": "false nonempty contact"
+      }
+    },
+    {
+      "case": "endpoint_enters_sliding_triangle",
+      "mutation": "inverted_presence",
+      "actual": {
+        "ok": false,
+        "reason": "missing interval"
+      }
+    },
+    {
+      "case": "endpoint_enters_sliding_triangle",
+      "mutation": "stale_mode",
+      "actual": {
+        "ok": false,
+        "reason": "stale model"
+      }
+    },
+    {
+      "case": "endpoint_enters_sliding_triangle",
+      "mutation": "wrong_extrema",
+      "actual": {
+        "ok": false,
+        "reason": "wrong extremum"
+      }
+    },
+    {
+      "case": "winding_swap_and_translation",
+      "mutation": "inverted_presence",
+      "actual": {
+        "ok": false,
+        "reason": "missing interval"
+      }
+    },
+    {
+      "case": "winding_swap_and_translation",
+      "mutation": "stale_mode",
+      "actual": {
+        "ok": false,
+        "reason": "stale model"
+      }
+    },
+    {
+      "case": "winding_swap_and_translation",
+      "mutation": "wrong_extrema",
+      "actual": {
+        "ok": false,
+        "reason": "wrong extremum"
+      }
+    }
+  ],
+  "verifier_imported_proposer": false,
+  "producer_command": [
+    "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\Users\\晚菘\\Documents\\Default Project\\results\\w180_technical_route_20261117\\execution_next\\triangle_contact\\confirm.py",
+    "--producer"
+  ],
+  "producer_exit_code": 0,
+  "exit_code": 0,
+  "status": "SCOPED_PAIR_COMPILER_DEVELOPMENT_MATCH",
+  "mathematics": "The separating axes of two 3D triangles are their face normals and cross products of edge directions; in the coplanar face add in-plane edge normals. Point membership uses face and edge normals. With pure translations every fixed projection shifts affinely. The independent polytope uses two simplices of barycentric weights, equality of their translated world positions, and a closed bounded t interval. The polytope is bounded: nonempty implies a vertex, and extrema occur at vertices even in a lower-dimensional affine hull. Enumerate all full-rank active subsets by exact elimination; no vertices means empty. A positive window includes feasible endpoint weights. Shared code: schema/exact number parsing/hash only.",
+  "limitations": [
+    "fixed shape/orientation and pure translation; not the general affine halfspace family",
+    "no inference of candidate completeness or certified triangulation of observations",
+    "not wired to rectangular network solver; no network L/U from this module",
+    "independent implementation but internal known-answer development cases, not held-out confirmation or originality evidence"
+  ]
+}

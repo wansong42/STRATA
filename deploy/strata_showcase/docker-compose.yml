@@ -1,0 +1,32 @@
+# =========================================================================
+# STRATA 3D Public Showcase · Docker Compose（适配 49.233.186.35 现役 Caddy）
+# 严禁占用 80/443 端口：本容器仅绑定宿主机 127.0.0.1:8856，由现役 Caddy
+# 通过 handle_path /strata/* 反向代理对外提供 HTTPS 服务。
+# =========================================================================
+services:
+  strata-showcase:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: strata-showcase-server
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp:size=16M,mode=1777
+    ports:
+      # 仅监听宿主机回环 127.0.0.1:8856，绝对不与宿主机 Caddy 80/443 冲突
+      - "127.0.0.1:8856:8856"
+    environment:
+      - STRATA_SHOWCASE_QUIET=0
+      # 可选真 LLM 流式 AI 讲解（从宿主机环境变量透传，严禁硬编码密钥）
+      - STRATA_LLM_BASE_URL=${STRATA_LLM_BASE_URL:-https://api.deepseek.com/v1}
+      - STRATA_LLM_API_KEY=${STRATA_LLM_API_KEY:-}
+      - STRATA_LLM_MODEL=${STRATA_LLM_MODEL:-deepseek-chat}
+      - STRATA_LLM_TIMEOUT=${STRATA_LLM_TIMEOUT:-25}
+    deploy:
+      resources:
+        limits:
+          cpus: "0.50"
+          memory: 160M
+        reservations:
+          memory: 40M

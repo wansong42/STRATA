@@ -1,0 +1,298 @@
+# -*- coding: utf-8 -*-
+"""R183-T2c 正交渲染器：像素级实例 ID + RGB + 深度/法向 + 域随机化四件。
+
+光物理故事（诚实声明：程序化近似，非辐射度）：
+  - 迹线可见性 = 孔径 + 晕影宽度（ RANDOMIZATION_PARAM，非科学锚）；
+  - 槽线暗化（core/rim 双半径）+ 光向偏移阴影 + 铁染色调（风化晕）；
+  - 反照率 = 多八度值噪声；块状色调 = Worley 胞块亮度差 + 边界暗化；
+  - Lambert 光照（解析法向）；雾度 = 低频幕罩；传感器高斯噪声；植被遮挡 =
+    椭圆 + 值噪声边缘（visibility=0，GT 不受影响，降质器漏检与遮挡耦合）。
+全随机性出自单一 rng（固定调用序）→ 同 seed 字节级可复现。
+
+R189 修正（F1）：aperture/halation 单位为 mm，渲染宽度换算须先 /1000.0 转为 m
+再除以 m_per_px（R183 曾 mm/m 混用致 w 恒被钳到上限 7 px，可见掩膜带宽 ≈9.4 px
+≈27.5 cm，物理荒谬）。亚像元迹线由 clip 下限钳到 1 px。
+"""
+from __future__ import annotations
+
+import numpy as np
+from PIL import Image
+
+from fractureflow.fracture_instance import params_hash
+
+# R189 显式常量位：迹线渲染宽度上限（px）。未来调宽档只动这里。
+TRACE_WIDTH_MAX_PX = 7
+
+
+def _value_noise(U, V, rng, octaves=5, base_cells=6.0, gain=0.55):
+    acc = np.zeros_like(U, dtype=np.float64)
+    wsum = 0.0
+    span_u = float(U.max() - U.min() + 1e-9)
+    span_v = float(V.max() - V.min() + 1e-9)
+    for o in range(octaves):
+        cells = max(1.0, base_cells * (2.0**o))
+        w = gain**o
+        wsum += w
+        g = rng.normal(0.0, 1.0, size=(int(cells) + 3, int(cells) + 3))
+        fu = (U - U.min()) / span_u * cells
+        fv = (V - V.min()) / span_v * cells
+        iu = np.clip(fu.astype(np.int64), 0, g.shape[0] - 2)
+        iv = np.clip(fv.astype(np.int64), 0, g.shape[1] - 2)
+        au, av = fu - iu, fv - iv
+        au = np.clip(au, 0.0, 1.0)
+        av = np.clip(av, 0.0, 1.0)
+        acc += w * (
+            (1 - au) * (1 - av) * g[iu, iv]
+            + au * (1 - av) * g[iu + 1, iv]
+            + (1 - au) * av * g[iu, iv + 1]
+            + au * av * g[iu + 1, iv + 1]
+        )
+    acc /= wsum
+    lo, hi = acc.min(), acc.max()
+    return (acc - lo) / (hi - lo + 1e-12)
+
+
+def _worley(U, V, cells=14.0, seed=0):
+    """F2−F1 Worley：返回 (border_darkness ∈[0,1], cell_id 图)。"""
+    span_u = float(U.max() - U.min() + 1e-9)
+    span_v = float(V.max() - V.min() + 1e-9)
+    rng = np.random.default_rng(seed)
+    cu = cv = int(cells)
+    pts = rng.random((cu + 2, cv + 2, 2))  # 每胞一点（含边界圈冗余）
+    fu = (U - U.min()) / span_u * cu + 1.0
+    fv = (V - V.min()) / span_v * cv + 1.0
+    base_i = np.clip(fu.astype(np.int64), 0, cu)
+    base_j = np.clip(fv.astype(np.int64), 0, cv)
+    f1 = np.full(U.shape, 1e18)
+    f2 = np.full(U.shape, 1e18)
+    cid = np.zeros(U.shape, dtype=np.int64)
+    for di in (-1, 0, 1):
+        for dj in (-1, 0, 1):
+            ii = np.clip(base_i + di, 0, cu)
+            jj = np.clip(base_j + dj, 0, cv)
+            px = pts[ii, jj, 0] + ii
+            py = pts[ii, jj, 1] + jj
+            dist = (fu - px) ** 2 + (fv - py) ** 2
+            better = dist < f1
+            f2 = np.where(better, f1, np.minimum(f2, dist))
+            f1 = np.where(better, dist, f1)
+            cid = np.where(better, ii * 1009 + jj, cid)
+    border = np.clip(np.sqrt(f2) - np.sqrt(f1), 0.0, 0.35) / 0.35
+    return border, cid
+
+
+def _polyline_pixels(pl_px: np.ndarray, step: float = 0.5):
+    """折线 -> 像素集（亚像素步进采样）。返回 (M,2) int (col,row)。"""
+    pts = []
+    for a, b in zip(pl_px[:-1], pl_px[1:]):
+        d = np.linalg.norm(b - a)
+        n = max(1, int(np.ceil(d / step)))
+        t = np.linspace(0.0, 1.0, n + 1, endpoint=True)[:, None]
+        pts.append(a[None, :] * (1 - t) + b[None, :] * t)
+    if not pts:
+        return np.zeros((0, 2), dtype=np.int64)
+    P = np.vstack(pts)
+    P = np.unique(np.round(P).astype(np.int64), axis=0)
+    return P
+
+
+class SceneRender:
+    """渲染结果容器 + 落盘。"""
+
+    def __init__(self, res: int):
+        self.res = res
+        self.rgb = None            # (res,res,3) float [0,1]
+        self.instance_centerline = None  # (res,res) uint32
+        self.instance_visible = None     # (res,res) uint32
+        self.depth = None          # (res,res) 米
+        self.normals = None        # (res,res,3)
+        self.visibility = None     # (res,res) uint8 255/0
+        self.meta = {}
+
+    def save(self, out_dir):
+        import json
+        from pathlib import Path
+
+        out = Path(out_dir)
+        out.mkdir(parents=True, exist_ok=True)
+        rgb8 = (np.clip(self.rgb, 0, 1) * 255 + 0.5).astype(np.uint8)
+        Image.fromarray(rgb8).save(out / "rgb.png")
+        Image.fromarray(self.instance_centerline.astype(np.uint16)).save(out / "instance_centerline.png")
+        Image.fromarray(self.instance_visible.astype(np.uint16)).save(out / "instance_visible.png")
+        d = self.depth - self.depth.min()
+        dmax = d.max() + 1e-12
+        Image.fromarray((d / dmax * 65535).astype(np.uint16)).save(out / "depth.png")
+        n8 = ((self.normals * 0.5 + 0.5) * 255 + 0.5).astype(np.uint8)
+        Image.fromarray(n8).save(out / "normals.png")
+        Image.fromarray(self.visibility).save(out / "visibility.png")
+        with open(out / "meta.json", "w", encoding="utf-8") as f:
+            json.dump(self.meta, f, ensure_ascii=False, indent=2, allow_nan=False)
+
+
+def render_scene(cfg, surface, traces, rng, rand: dict) -> SceneRender:
+    """traces 来自 intersector（非掠射）；rand 域随机化参数。"""
+    res = cfg.res_px
+    O, eu, ev, no = cfg.frame_vectors()
+    m_per_px = cfg.width_m / res
+    H = cfg.height_m
+
+    ii = np.arange(res)
+    cols = (ii + 0.5) * m_per_px
+    rows_m = H - (ii + 0.5) * m_per_px
+    U, V = np.meshgrid(cols, rows_m, indexing="xy")
+
+    R, r_u, r_v = surface.eval_at(U, V)
+    depth = surface.amplitude * R
+
+    # 法向：∂S/∂u × ∂S/∂v（正交标架下解析式），保证朝外
+    du = eu[None, None, :] + no[None, None, :] * (surface.amplitude * r_u)[:, :, None]
+    dv = ev[None, None, :] + no[None, None, :] * (surface.amplitude * r_v)[:, :, None]
+    N = np.cross(du, dv)
+    N /= np.linalg.norm(N, axis=2, keepdims=True) + 1e-12
+    flip = (N @ no) < 0
+    N[flip] *= -1.0
+
+    # ---------------- 光照（域随机 1：光照方向/强度）
+    az = np.radians(rand["light_az_deg"])
+    el = np.radians(rand["light_el_deg"])
+    L = np.array([np.cos(el) * np.sin(az), np.cos(el) * np.cos(az), np.sin(el)])
+    # L 表达到 (eu,ev,no) 世界系：eval 场景 eu=X, ev=Z, no=-Y —— 直接世界系使用
+    lam = np.clip(N @ L, 0.0, 1.0)
+    ambient = float(rand["ambient"])
+    strength = float(rand["light_strength"])
+
+    # ---------------- 反照率：值噪声 + Worley 胞块
+    tex = _value_noise(U, V, rng, octaves=5, base_cells=8.0)
+    border, cid = _worley(U, V, cells=max(4.0, cfg.width_m / 1.2), seed=int(rng.integers(0, 2**31 - 1)))
+    cid_norm = (cid % 977).astype(np.float64) / 977.0
+    tint_s = float(rand.get("block_tint_strength", 0.5))
+    tint = 1.0 + tint_s * (0.5 * np.sin(6.2831 * cid_norm) + 0.5 * (cid_norm - 0.5))
+    base_col = np.array([0.68, 0.64, 0.60])[None, None, :]
+    albedo = base_col * (0.72 + 0.42 * tex)[:, :, None] * tint[:, :, None]
+
+    # ---------------- 实例图 + 槽线光物理
+    inst_c = np.zeros((res, res), dtype=np.uint32)
+    inst_v = np.zeros((res, res), dtype=np.uint32)
+    groove_core = np.zeros((res, res), dtype=bool)
+    groove_rim = np.zeros((res, res), dtype=bool)
+    iron_mask = np.zeros((res, res), dtype=bool)
+    aperture_lo, aperture_hi = rand["aperture_mm"]
+    hal_lo, hal_hi = rand["halation_mm"]
+    n_tr = 0
+    trace_widths = {}
+    for tr in traces:
+        if tr.grazing:
+            continue
+        tid = tr.fracture_idx + 1
+        ap = float(rng.uniform(aperture_lo, aperture_hi))
+        hal = float(rng.uniform(hal_lo, hal_hi))
+        # R189-F1：ap/hal 单位 mm，须 /1000 转米后再除 m_per_px（修正 R183 mm/m 混用）
+        w = int(np.clip(round((ap + hal) / 1000.0 / m_per_px), 1, TRACE_WIDTH_MAX_PX))
+        trace_widths[int(tr.fracture_idx)] = w
+        for pl_uv in tr.polylines_uv:
+            col = pl_uv[:, 0] / m_per_px
+            row = (H - pl_uv[:, 1]) / m_per_px
+            pl_px = np.stack([col, row], axis=1)
+            if len(pl_px) < 2:
+                continue
+            n_tr += 1
+            pc = _polyline_pixels(pl_px, step=0.5)
+            okc = (pc[:, 0] >= 0) & (pc[:, 0] < res) & (pc[:, 1] >= 0) & (pc[:, 1] < res)
+            inst_c[pc[okc, 1], pc[okc, 0]] = tid
+            core_r = max(0.6, w / 2.0)
+            rim_r = core_r + 1.2
+            # core/rim 圆盘戳记
+            steps = _polyline_pixels(pl_px, step=1.0)
+            for (cx, cy) in steps:
+                if not (0 <= cx < res and 0 <= cy < res):
+                    continue
+                x0, x1 = int(max(0, cx - rim_r - 1)), int(min(res, cx + rim_r + 2))
+                y0, y1 = int(max(0, cy - rim_r - 1)), int(min(res, cy + rim_r + 2))
+                yy, xx = np.mgrid[y0:y1, x0:x1]
+                dd2 = (xx - cx) ** 2 + (yy - cy) ** 2
+                core_hit = dd2 <= core_r**2
+                rim_hit = dd2 <= rim_r**2
+                groove_core[y0:y1, x0:x1] |= core_hit
+                groove_rim[y0:y1, x0:x1] |= rim_hit
+                inst_v[y0:y1, x0:x1] = np.where(rim_hit, tid, inst_v[y0:y1, x0:x1])
+            if rng.random() < 0.65:  # 风化铁染（随机化）
+                iron_mask |= groove_rim
+
+    # 光向偏移阴影（槽线背光侧）
+    L_img = np.array([L @ eu, -(L @ ev)])  # 世界->像素（row 向下）
+    nrm_L = np.linalg.norm(L_img) + 1e-12
+    off = -(L_img / nrm_L) * 2.0
+    dx, dy = int(round(off[0])), int(round(off[1]))
+    shadow = np.zeros_like(groove_core)
+    ys0, ys1 = max(0, -dy), res - max(0, dy)
+    xs0, xs1 = max(0, -dx), res - max(0, dx)
+    shadow[ys0:ys1, xs0:xs1] = groove_core[ys0 + dy : ys1 + dy, xs0 + dx : xs1 + dx]
+    shadow &= ~groove_rim
+
+    # ---------------- 合成 RGB
+    shade = (ambient + (1.0 - ambient) * strength * lam)[:, :, None]
+    img = albedo * shade
+    img *= (1.0 - 0.55 * groove_core)[:, :, None]
+    img *= (1.0 - 0.25 * (groove_rim & ~groove_core))[:, :, None]
+    img *= (1.0 - 0.18 * shadow)[:, :, None]
+    iron_mul = np.where(iron_mask[:, :, None], np.array([1.10, 0.95, 0.80])[None, None, :], 1.0)
+    img *= iron_mul
+
+    # 域随机 3：雾度
+    haze = float(rand["haze"])
+    veil = 0.35 + 0.35 * _value_noise(U, V, rng, octaves=2, base_cells=2.0)
+    img = img * (1.0 - haze) + (veil * 0.55)[:, :, None] * haze
+
+    # 域随机 2：传感器噪声
+    sigma = float(rand["noise_sigma"]) / 255.0
+    img = img + rng.normal(0.0, sigma, size=img.shape)
+    img = np.clip(img, 0.0, 1.0)
+
+    # 域随机 4：植被遮挡
+    visibility = np.full((res, res), 255, dtype=np.uint8)
+    n_blobs = int(rand["vegetation_blobs"])
+    for _ in range(n_blobs):
+        ccx = rng.uniform(0, res)
+        ccy = rng.uniform(0, res)
+        a = rng.uniform(res * 0.04, res * 0.16)
+        b = a * rng.uniform(0.4, 1.0)
+        th = rng.uniform(0, np.pi)
+        ca, sa = np.cos(th), np.sin(th)
+        yy, xx = np.mgrid[0:res, 0:res]
+        X = (xx - ccx) * ca + (yy - ccy) * sa
+        Yv = -(xx - ccx) * sa + (yy - ccy) * ca
+        e = (X / a) ** 2 + (Yv / b) ** 2
+        edge_noise = _value_noise(X + ccy, Yv + ccx, rng, octaves=3, base_cells=5.0)
+        veg = (e <= 1.0) & (edge_noise > 0.35)
+        gv = np.array([0.28, 0.40, 0.16]) * (0.7 + 0.6 * edge_noise)[:, :, None]
+        gv2 = np.array([0.42, 0.36, 0.20]) * (0.7 + 0.6 * edge_noise)[:, :, None]
+        mixc = np.where((edge_noise > 0.6)[:, :, None], gv2, gv)
+        img = np.where(veg[:, :, None], mixc, img)
+        visibility[veg] = 0
+
+    out = SceneRender(res)
+    out.rgb = img
+    out.instance_centerline = inst_c
+    out.instance_visible = inst_v
+    out.depth = depth
+    out.normals = N
+    out.visibility = visibility
+    out.meta = {
+        "scene_id": cfg.scene_id,
+        "domain": cfg.domain,
+        "seed": cfg.seed,
+        "res_px": res,
+        "m_per_px": m_per_px,
+        "width_m": cfg.width_m,
+        "height_m": cfg.height_m,
+        "origin": list(map(float, cfg.origin)),
+        "u_axis": list(map(float, eu)),
+        "v_axis": list(map(float, ev)),
+        "n_out": list(map(float, no)),
+        "amplitude_m": surface.amplitude,
+        "n_rendered_traces": n_tr,
+        "trace_widths": trace_widths,
+        "rand": rand,
+        "rand_params_hash": params_hash(rand),
+    }
+    return out

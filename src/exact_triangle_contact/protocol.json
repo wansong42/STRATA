@@ -1,0 +1,9 @@
+{
+  "family": "Two closed nondegenerate rational triangles in world R3, each with fixed orientation/shape and constant rational translation velocity times a shared t in one bounded closed rational interval. Optional fixed endpoint is a point primitive. Pair intervals only; not an inferred union, not a full network, not a source converter.",
+  "alternative": "For this rigid-translation subfamily, use exact separating-axis projection rather than floating LP as a proposal generator. This does not subsume the general affine half-space route. Independent reference is bounded barycentric linear feasibility with all vertices enumerated exactly; no shared contact logic.",
+  "primary": "Every declared analytic pair window (empty, point, or interval including endpoints) equals both expected rational answer and independent vertex projection; false claimed endpoints, empty window and stale model must be rejected. No speed or novelty claim.",
+  "cases": ["oblique_nonorthogonal_point_event", "skew_nonparallel_permanent_segment", "coplanar_slide", "coplanar_overlap_boxes_but_disjoint_triangles", "parallel_small_gap", "endpoint_enters_sliding_triangle", "winding_swap_and_translation", "degenerate_rejection"],
+  "exclusions": ["normal rotation", "deformation", "generated triangulations, unknown holes or identities", "multivariate perturbations", "support calibration and physical validation", "no real adaptation until product-source gate"],
+  "baseline": "Independent exact Cramer/Gauss vertex enumeration from barycentric equality and nonnegative weights, not a sampling grid. AABB only as a knowingly insufficient diagnostic.",
+  "trigger": "First-round T3 analytic cut only after kernel_r3/kernel_qualification.json grants offline qualification; new geometry is not automatically integrated with its solver or checker."
+}

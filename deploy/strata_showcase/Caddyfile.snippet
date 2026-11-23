@@ -1,0 +1,75 @@
+# =========================================================================
+# STRATA 3D Public Showcase · Caddy 现役站点块追加片段 (目标服务器 49.233.186.35)
+# -------------------------------------------------------------------------
+# 注意：严禁覆盖服务器原有 /etc/caddy/Caddyfile 中已有的其它业务站点配置！
+# 严禁另起进程占用 80/443 端口！
+# 只需将下面【方案一（静态+真 LLM SSE 混合推荐）】、【方案二（纯静态零进程）】
+# 或【方案三（全量反代 127.0.0.1:8856）】之一粘贴进您现有的 HTTPS 站点块
+# `{ ... }` 内部，再执行：
+#   sudo caddy validate --config /etc/caddy/Caddyfile && sudo systemctl reload caddy
+# =========================================================================
+
+# ---------- 方案一（推荐 · 静态极速直出 + 真 LLM 流式 AI 讲解 SSE） ----------
+# 前提：
+#   1) dist/ 已上传至 /srv/strata_showcase/
+#   2) server.py 已通过 systemd 监听在 127.0.0.1:8856（环境变量 /etc/strata_showcase.env 配置 API Key）
+# 说明：
+#   - `/strata/api/*` 必须关闭压缩与输出缓冲（flush_interval -1），确保 SSE 流式打字机逐字实时输出！
+#
+#   redir /strata /strata/ 308
+#   handle_path /strata/api/* {
+#       rewrite * /api{uri}
+#       reverse_proxy 127.0.0.1:8856 {
+#           flush_interval -1
+#           header_up X-Real-IP {remote_host}
+#           transport http {
+#               read_timeout 60s
+#           }
+#       }
+#   }
+#   handle_path /strata/* {
+#       root * /srv/strata_showcase
+#       encode zstd gzip
+#       header X-Content-Type-Options "nosniff"
+#       header X-Frame-Options "SAMEORIGIN"
+#       header Referrer-Policy "strict-origin-when-cross-origin"
+#       header X-Strata-Mode "READONLY_STATIC_SHOWCASE"
+#       @immutable path /vendor/*
+#       header @immutable Cache-Control "public, max-age=2592000, immutable"
+#       @data path /data/*
+#       header @data Cache-Control "public, max-age=3600"
+#       file_server
+#   }
+
+# ---------- 方案二（最省心 · 零额外 Python 进程 · 离线增强知识库模式） ----------
+# 前提：仅将 dist/ 上传至 /srv/strata_showcase/；未接后端时 AI 讲解页签自动无缝运行离线增强知识库
+#
+#   redir /strata /strata/ 308
+#   handle_path /strata/* {
+#       root * /srv/strata_showcase
+#       encode zstd gzip
+#       header X-Content-Type-Options "nosniff"
+#       header X-Frame-Options "SAMEORIGIN"
+#       header Referrer-Policy "strict-origin-when-cross-origin"
+#       header X-Strata-Mode "READONLY_STATIC_SHOWCASE"
+#       @immutable path /vendor/*
+#       header @immutable Cache-Control "public, max-age=2592000, immutable"
+#       @data path /data/*
+#       header @data Cache-Control "public, max-age=3600"
+#       file_server
+#   }
+
+# ---------- 方案三（全量由 127.0.0.1:8856 托管：静态 + 校验 API + 真 LLM SSE） ----------
+# 前提：server.py 已通过 systemd 或 Docker 仅监听在 127.0.0.1:8856
+# 注意：不要在该反代块内强加外层 encode，并开启 flush_interval -1 保障 SSE 不缓冲！
+#
+#   redir /strata /strata/ 308
+#   handle_path /strata/* {
+#       reverse_proxy 127.0.0.1:8856 {
+#           flush_interval -1
+#           header_up X-Real-IP {remote_host}
+#           transport http {
+#               read_timeout 60s
+#           }
+#       }
+#   }

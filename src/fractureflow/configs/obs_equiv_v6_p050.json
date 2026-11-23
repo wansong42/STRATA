@@ -1,0 +1,45 @@
+{
+  "schema": "obs_equiv.pilot_config.v6",
+  "config_schema": "obs_equiv.config.v6.v1",
+  "generator": "PLANAR_DISK_MECHANISM_FAMILY_VARIANT_CROSS_PRODUCT_V1",
+  "role": "V6_PREREG_BUILD",
+  "prior_arm_id": "P050",
+  "prior_arm_role": "SECONDARY_NEUTRAL_PRIOR",
+  "present_weight": 0.5,
+  "absent_weight": 0.5,
+  "repeat_count": 2,
+  "offset_block_size": 8,
+  "spacing": 4.0,
+  "site_id": "SYNTHETIC_V6",
+  "split_group": "V6_ALL",
+  "constant_baseline_prior": 0.5,
+  "allowed_claim": "SYNTHETIC_DECLARED_DOMAIN_ONLY",
+  "mechanisms": [
+    "HIDDEN_BRIDGE",
+    "DECOY_BRIDGE",
+    "OCCLUDED_CONTINUATION",
+    "CHAIN_VS_DIRECT",
+    "CROSSING_VS_PASSING",
+    "VISIBLE_ONLY"
+  ],
+  "families": [
+    {
+      "name": "PLANAR_DISK_COMPACT_V1",
+      "scale": 0.8
+    },
+    {
+      "name": "PLANAR_DISK_STANDARD_V1",
+      "scale": 1.0
+    },
+    {
+      "name": "PLANAR_DISK_WIDE_V1",
+      "scale": 1.2
+    }
+  ],
+  "query_distance_scaled_prior": {
+    "d0": 2.0,
+    "tau": 1.0
+  },
+  "prereg_sha256": "647672b34d17aec3e9cbe2d717fc783f8cddd3d541d17d3fc467581c7844dd4d",
+  "geometry_spec_sha256": "fcc23dc91d0f6179080c95a98948296fed896fd23a6102c5f991810f7fbc6a83"
+}

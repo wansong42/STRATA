@@ -1,0 +1,156 @@
+{
+  "ok": true,
+  "verified_at_utc": "2026-11-23T07:59:03.715379+00:00",
+  "total_elapsed_seconds": 28.9,
+  "data_reconciliation": {
+    "ok": true,
+    "reconciled_clusters": 22,
+    "status_counts": {
+      "BUDGET_EXCEEDED": 1,
+      "AMBIGUOUS_WITH_VERIFIED_WITNESSES": 6,
+      "CERTIFIED_DISCONNECTED": 14,
+      "CERTIFIED_CONNECTED": 1
+    },
+    "m3_counts": {
+      "AGREE": 22,
+      "DISAGREE": 0,
+      "MALFORMED": 0,
+      "UNDECIDABLE": 0
+    },
+    "collapse_branches_verified": 149,
+    "null_fields_verified": [
+      "field_error_rate",
+      "human_time",
+      "hydraulic"
+    ],
+    "manifest_exported_files": 28
+  },
+  "security_and_frozen_zones": {
+    "ok": true,
+    "m0_m6_spec_files_verified": 28,
+    "m0_m6_evidence_files_verified": 216,
+    "frozen_m5_files_verified": 7,
+    "static_external_cdn_urls": 0,
+    "relative_subpath_compliant": true,
+    "caddy_80_443_conflict_free": true,
+    "caddy_sse_flush_configured": true,
+    "budget_ceiling_4096_synced": true,
+    "api_key_frontend_leak_free": true
+  },
+  "readonly_api_check": {
+    "ok": true,
+    "subpath_prefix_tested": "/strata/",
+    "health_latency_ms": 2.01,
+    "api_cases_latency_ms": 1.28,
+    "static_cases_latency_ms": 22.49,
+    "rejected_write_endpoints": 7
+  },
+  "copilot_backend_check": {
+    "ok": true,
+    "no_key_fallback_ok": true,
+    "message_length_guard_ok": true,
+    "rate_limit_429_ok": true,
+    "upstream_error_fallback_ok": true,
+    "mock_sse_streaming_ok": true,
+    "mock_sse_events": 6,
+    "action_extracted": "split_gap",
+    "anti_spoof_verified": true
+  },
+  "headless_browser_e2e": {
+    "base": "http://127.0.0.1:8856/strata/",
+    "started_at_utc": "2026-11-23T07:58:51.917Z",
+    "externalRequests": [],
+    "failedRequests": [],
+    "consoleErrors": [],
+    "pageErrors": [],
+    "screenshots": [
+      {
+        "name": "01_desktop_minimal_gallery_jardim_c02.png",
+        "path": "C:\\Users\\晚菘\\Documents\\Default Project\\deploy\\strata_showcase\\qa_screenshots\\01_desktop_minimal_gallery_jardim_c02.png",
+        "bytes": 496353
+      },
+      {
+        "name": "02_desktop_ai_rail_llm_split_zero_overlap.png",
+        "path": "C:\\Users\\晚菘\\Documents\\Default Project\\deploy\\strata_showcase\\qa_screenshots\\02_desktop_ai_rail_llm_split_zero_overlap.png",
+        "bytes": 400610
+      },
+      {
+        "name": "03_desktop_tour_step1_jardim_c04_holed.png",
+        "path": "C:\\Users\\晚菘\\Documents\\Default Project\\deploy\\strata_showcase\\qa_screenshots\\03_desktop_tour_step1_jardim_c04_holed.png",
+        "bytes": 531258
+      },
+      {
+        "name": "04_desktop_jardim_c04_1step_connected.png",
+        "path": "C:\\Users\\晚菘\\Documents\\Default Project\\deploy\\strata_showcase\\qa_screenshots\\04_desktop_jardim_c04_1step_connected.png",
+        "bytes": 476167
+      },
+      {
+        "name": "05_desktop_jardim_c02_2step_disconnected.png",
+        "path": "C:\\Users\\晚菘\\Documents\\Default Project\\deploy\\strata_showcase\\qa_screenshots\\05_desktop_jardim_c02_2step_disconnected.png",
+        "bytes": 456340
+      },
+      {
+        "name": "06_desktop_tour_step3_perozzo_c02.png",
+        "path": "C:\\Users\\晚菘\\Documents\\Default Project\\deploy\\strata_showcase\\qa_screenshots\\06_desktop_tour_step3_perozzo_c02.png",
+        "bytes": 560980
+      },
+      {
+        "name": "07_desktop_dark_core_theme.png",
+        "path": "C:\\Users\\晚菘\\Documents\\Default Project\\deploy\\strata_showcase\\qa_screenshots\\07_desktop_dark_core_theme.png",
+        "bytes": 535757
+      },
+      {
+        "name": "08_desktop_provenance_sha256_drawer.png",
+        "path": "C:\\Users\\晚菘\\Documents\\Default Project\\deploy\\strata_showcase\\qa_screenshots\\08_desktop_provenance_sha256_drawer.png",
+        "bytes": 361279
+      },
+      {
+        "name": "09_mobile_390x844_balanced_sheet.png",
+        "path": "C:\\Users\\晚菘\\Documents\\Default Project\\deploy\\strata_showcase\\qa_screenshots\\09_mobile_390x844_balanced_sheet.png",
+        "bytes": 154771
+      },
+      {
+        "name": "10_mobile_390x844_split_immersive.png",
+        "path": "C:\\Users\\晚菘\\Documents\\Default Project\\deploy\\strata_showcase\\qa_screenshots\\10_mobile_390x844_split_immersive.png",
+        "bytes": 183285
+      },
+      {
+        "name": "11_mobile_390x844_ai_drawer.png",
+        "path": "C:\\Users\\晚菘\\Documents\\Default Project\\deploy\\strata_showcase\\qa_screenshots\\11_mobile_390x844_ai_drawer.png",
+        "bytes": 160257
+      },
+      {
+        "name": "12_mobile_390x844_clusters_expanded.png",
+        "path": "C:\\Users\\晚菘\\Documents\\Default Project\\deploy\\strata_showcase\\qa_screenshots\\12_mobile_390x844_clusters_expanded.png",
+        "bytes": 105301
+      }
+    ],
+    "desktop": {
+      "subpathUrl": "http://127.0.0.1:8856/strata/",
+      "firstScreenDomMs": 936,
+      "clusterCount": 22,
+      "engineTag": "WebGL 3D · Z-Buffer",
+      "jardim_c02_rho": "0.0873",
+      "jardim_c04_1step_status": "CERTIFIED_CONNECTED",
+      "jardim_c02_2step_status": "CERTIFIED_DISCONNECTED",
+      "aiCopilotVerified": true,
+      "aiDesktopZeroOverlapPx": 0,
+      "darkModeVerified": true,
+      "provenanceDrawerVerified": true
+    },
+    "mobile": {
+      "innerWidth": 390,
+      "scrollWidth": 390,
+      "navVisible": true,
+      "sheetHandleVisible": true,
+      "mobileTabCount": 4,
+      "sheetAfterSplit": "collapsed",
+      "compact360": {
+        "innerWidth": 360,
+        "scrollWidth": 360
+      }
+    },
+    "ok": true,
+    "finished_at_utc": "2026-11-23T07:59:02.903Z"
+  }
+}
