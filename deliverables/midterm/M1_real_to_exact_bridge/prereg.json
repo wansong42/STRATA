@@ -1,0 +1,167 @@
+{
+  "schema": "m1-preregistration/v1",
+  "task_id": "M1",
+  "title": "Pre-registered Pure-Geometry Selection and Conditioned Uncertainty Protocol for Jardim Garcia and Perozzo 2024 Real Outcrop Multi-Fracture Clusters",
+  "authority": {
+    "master_ruling": "results/midterm_sprint_20261120/00_总控单与架构师裁定_20261120.md",
+    "amendments": ["B1_REAL_OUTCROP_CONDITIONED_FINITE_CLUSTER_ADMISSION", "B2_CONSUMER_REAL_DERIVED_SCOPE_EXTENSION"],
+    "task_sheet": "results/midterm_sprint_20261120/M1_真实露头多裂隙簇破壁桥.md"
+  },
+  "blinding_policy": {
+    "connectivity_evaluated_before_freeze": false,
+    "clusters_selected_before_freeze": false,
+    "selection_depends_only_on_pure_geometry": true,
+    "no_cherry_picking_by_connectivity_outcome": true
+  },
+  "global_budgets": {
+    "target_schema": "TC-network/real-conditioned/v1",
+    "target_scope": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+    "max_modes_per_cluster": 16,
+    "max_triangles_per_mode": 64,
+    "max_rational_bit_length": 8192,
+    "max_rational_text_length": 4096,
+    "tier2_rational_grid_step_m": "1/10000",
+    "tier2_per_axis_bound_m": "1/20000",
+    "default_solver_budget": {
+      "cells": 4096,
+      "pairs": 65536
+    }
+  },
+  "site_A_jardim_garcia": {
+    "site_id": "jardim_garcia_uh",
+    "coordinate_frame": "jardim_garcia_quarry_uh_source_coordinates_v1",
+    "allowed_world_bbox_m": {
+      "min": [680.0, 545.0, 620.0],
+      "max": [721.0, 561.0, 636.0]
+    },
+    "target_cluster_count": 6,
+    "cluster_size_k": 6,
+    "fragment_eligibility": {
+      "min_primary_region_area_m2": 0.15
+    },
+    "frame_resolution_rule": "If candidate_generator contains support_refit, reconstruct exact local frame from original points.ply support indices (origin = mean of unique points rounded to 1e-12, basis = canonical_basis(plane_local.normal)) to avoid stale surface_geometry frame_local; otherwise use artifacts.workbench_scene.candidates[fragment_id].",
+    "spatial_adjacency_rule": {
+      "metric": "3D AABB Euclidean gap between primary finite regions",
+      "max_aabb_gap_m": 0.5
+    },
+    "non_orthogonality_rule": {
+      "abs_normal_dot_open_interval": [0.05, 0.95],
+      "min_non_orthogonal_pairs": 2
+    },
+    "seed_selection_rule": "First seed = eligible single-hole fragment with largest real hole area (guaranteeing real-hole preservation coverage without connectivity peeking); remaining 5 seeds = deterministic farthest-point sampling maximizing minimum 3D centroid distance to already chosen seeds, tie-break by fragment_id.",
+    "cluster_growth_rule": "Seed + (K-1) nearest neighbors in the AABB<=0.50m spatial graph ordered by (aabb_gap_m, centroid_dist_m, fragment_id).",
+    "polygon_triangulation_rule": {
+      "boundary_model": "REAL_ALPHA_POLYGON_CONSTRAINED_TRIANGULATION",
+      "no_convex_hull_fill": true,
+      "no_hole_target_max_vertices": 8,
+      "no_hole_fallback_max_vertices_if_budget_tight": 6,
+      "hole_exterior_target_max_vertices": 10,
+      "hole_interior_target_max_vertices": 6,
+      "hole_min_area_m2": 0.01,
+      "hole_triangulation_method": "exact_rational_two_diagonal_split_then_ear_clip",
+      "record_hole_interior_probes": true
+    }
+  },
+  "site_B_perozzo_2024": {
+    "site_id": "perozzo_finale_ligure",
+    "coordinate_frame": "perozzo_2024_finale_ligure_las_utm_v1",
+    "allowed_world_bbox_m": {
+      "min": [446790.0, 4890360.0, 45.0],
+      "max": [447070.0, 4890730.0, 210.0]
+    },
+    "target_cluster_count": 16,
+    "plane_eligibility": {
+      "max_mean_abs_error_m": 0.05,
+      "min_radius_m": 0.5,
+      "max_radius_m": 8.0,
+      "min_normal_norm": 0.99
+    },
+    "spatial_adjacency_rule": {
+      "metric": "center distance <= R_i + R_j + 0.50 m",
+      "clearance_m": 0.5
+    },
+    "candidate_seed_rule": {
+      "min_spatial_degree": 5,
+      "min_non_orthogonal_pairs_in_top6": 3,
+      "abs_normal_dot_open_interval": [0.05, 0.95]
+    },
+    "seed_stratification_rule": {
+      "method": "2x2 spatial quadrants split by median (Ycenter, Zcenter) of eligible seeds; 4 seeds per quadrant = 16 clusters",
+      "quadrant_order": ["low_Y_low_Z", "low_Y_high_Z", "high_Y_low_Z", "high_Y_high_Z"],
+      "cluster_sizes_per_quadrant": [6, 7, 8, 9],
+      "first_seed_in_quadrant": "candidate closest to quadrant median spatial degree, tie-break by xlsx row",
+      "subsequent_seeds_in_quadrant": "deterministic farthest-point in 3D center space subject to max Jaccard fracture overlap <= 0.15 with previously chosen clusters (fallback <= 0.30 only if exhausted)"
+    },
+    "cluster_growth_rule": "Seed + (K-1) nearest neighbors ordered by (center_dist - (R_i + R_j), center_dist, xlsx_row).",
+    "conditioned_polygon_model": {
+      "boundary_model": "CONDITIONED_HEX_OCT_DISK_FROM_EXPERT_PLANE",
+      "polygon_sides": 8,
+      "triangles_per_fracture": 6,
+      "octagon_diagonal_factor": "7071/10000",
+      "in_plane_axis_alignment": "projected principal axis of geometrically bound DXF trace (fallback canonical_basis)",
+      "assumed_edges_tag": "ASSUMED_NOT_OBSERVED"
+    },
+    "dxf_binding_audit": {
+      "method": "nearest DXF polyline centroid in 3D (purely geometric, never row index)",
+      "record_mutual_nearest": true,
+      "record_exact_rational_trace_to_plane_residuals": true
+    }
+  },
+  "endpoint_selection_rule": {
+    "pair_selection": "Select anchor fracture pair (f_A, f_B) maximizing 3D centroid distance among pairs with positive nominal pairwise separation (Jardim: 3D AABB gap > 0; Perozzo: center_dist > R_i + R_j), fallback to overall maximum centroid distance pair if every pair overlaps. Purely pairwise geometry, blind to multi-hop connectivity.",
+    "point_placement_jardim": "Exact rational centroid (v0+v1+v2)/3 of the largest-area triangulated triangle of f_A (and f_B), strictly inside observed rock face and never in a hole.",
+    "point_placement_perozzo": "Exact rational quantized plane center c_q of f_A (and f_B), lying on the central octagon diagonal (v0, v4) and invariant under radial scaling.",
+    "anchor_fractures_kinematics": "Anchor fractures f_A and f_B have fixed velocity v = [0, 0, 0] and are excluded from tilt perturbation so fixed observation endpoints A and B remain attached across all (mode, t)."
+  },
+  "uncertainty_and_modes_rule": {
+    "continuous_parameter": {
+      "t_closed": ["-1/1", "1/1"],
+      "reference": {
+        "mode": "m0",
+        "t": "0/1",
+        "sigma": "1/2"
+      },
+      "design_coefficient_k": "2/1",
+      "residual_scale_jardim": "mean(|residuals|) + std(|residuals|) from real project.json point-to-plane residuals",
+      "residual_scale_perozzo": "MeanAbsError + StDevAbsError from published Manual-Discontinuities-Geometrical-Info.xlsx",
+      "interior_velocity_sign_rule": "Sort interior fractures (excluding f_A, f_B) by scalar projection along unit(B - A), tie-break by fracture_id; even index -> +1, odd index -> -1; v_i = snap_1e4(sign_i * k * sigma_i * n_i)."
+    },
+    "critical_interior_selection": {
+      "score": "dist_to_AB_segment(center_i) / (char_radius_i + 0.1) ascending, tie-break by (-sigma_i, fracture_id)",
+      "f1_role": "rank 1 corridor-central interior fracture",
+      "f2_role": "rank 2 corridor-central interior fracture"
+    },
+    "pythagorean_exact_tilt": {
+      "cos_theta": "420/421",
+      "sin_theta": "29/421",
+      "angle_deg": 3.94994098,
+      "axis": "local in-plane u-axis through f2 centroid"
+    },
+    "strata_assignment_by_ordinal_index": {
+      "STANDARD_EXT_TILT": {
+        "jardim_indices": [1, 3, 5],
+        "perozzo_indices": [1, 2, 4, 5, 7, 8, 10, 11, 13, 14],
+        "modes": [
+          {"id": "m0", "edit_cost": "0/1", "f1_scale": "1/1", "f2_tilt": 0, "segments": [["-1/1", "1/1"]]},
+          {"id": "m1", "edit_cost": "1/2", "f1_scale": "23/20", "f2_tilt": 0, "segments": [["-1/1", "1/1"]]},
+          {"id": "m2", "edit_cost": "1/2", "f1_scale": "1/1", "f2_tilt": 1, "segments": [["-1/1", "1/1"]]},
+          {"id": "m3", "edit_cost": "1/2", "f1_scale": "1/1", "f2_tilt": -1, "segments": [["-1/1", "1/1"]]},
+          {"id": "m4", "edit_cost": "1/1", "f1_scale": "23/20", "f2_tilt": 1, "segments": [["-1/1", "1/1"]]},
+          {"id": "m5", "edit_cost": "1/1", "f1_scale": "23/20", "f2_tilt": -1, "segments": [["-1/1", "1/1"]]}
+        ]
+      },
+      "MUTUAL_EXCL_ATTRIB_MULTISEG": {
+        "jardim_indices": [2, 4, 6],
+        "perozzo_indices": [3, 6, 9, 12, 15, 16],
+        "modes": [
+          {"id": "m0", "edit_cost": "0/1", "f1_scale": "1/1", "f2_scale": "1/1", "f2_tilt": 0, "attrib": "ATTRIB_NONE", "segments": [["-1/1", "-3/5"], ["-2/5", "1/1"]]},
+          {"id": "m1", "edit_cost": "1/2", "f1_scale": "6/5", "f2_scale": "23/25", "f2_tilt": 0, "attrib": "ATTRIB_TO_F1", "segments": [["-1/1", "-1/10"]]},
+          {"id": "m2", "edit_cost": "1/2", "f1_scale": "23/25", "f2_scale": "6/5", "f2_tilt": 0, "attrib": "ATTRIB_TO_F2", "segments": [["1/10", "1/1"]]},
+          {"id": "m3", "edit_cost": "1/2", "f1_scale": "1/1", "f2_scale": "1/1", "f2_tilt": 1, "attrib": "ATTRIB_NONE", "segments": [["-1/1", "-3/5"], ["-2/5", "1/1"]]},
+          {"id": "m4", "edit_cost": "1/2", "f1_scale": "1/1", "f2_scale": "1/1", "f2_tilt": -1, "attrib": "ATTRIB_NONE", "segments": [["-1/1", "-3/5"], ["-2/5", "1/1"]]},
+          {"id": "m5", "edit_cost": "1/1", "f1_scale": "6/5", "f2_scale": "23/25", "f2_tilt": 1, "attrib": "ATTRIB_TO_F1", "segments": [["-1/1", "-1/10"]]}
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+ "counts": {
+  "AGREE": 1,
+  "DISAGREE": 0,
+  "MALFORMED": 0,
+  "UNDECIDABLE": 0
+ },
+ "m1_register_sha256": "6e9ab83dc2e87d1e3e3347ef64b2b072ced8168b5e9f98f5df3c62022cb0de75",
+ "m2_summary_sha256": "c54445c6a7e5c163a3545cc977fe34589a97801c5d9f14cbe8946e96170b1675",
+ "refused": [],
+ "run_id": "run_20261120_exact_v1",
+ "schema": "m3-verdict-batch/v1",
+ "task_id": "M3",
+ "verdicts": {
+  "perozzo_c08": {
+   "checks": {
+    "canon_sha256": "552f1021e9233c566bead2f3d45e41522ac39d0fa02370d3a38a8f95648c12fd",
+    "cells_declared": 72,
+    "cells_recomputed": 72,
+    "collapse_tree_checked": 0,
+    "windows_declared": 9234,
+    "windows_recomputed": 934
+   },
+   "first_disagreement": null,
+   "status_m2": "CERTIFIED_DISCONNECTED",
+   "verdict": "AGREE"
+  }
+ }
+}

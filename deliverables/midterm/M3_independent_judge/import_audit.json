@@ -1,0 +1,25 @@
+{
+ "ast_import_violations": 0,
+ "forbidden_import_prefixes": [
+  "M1_real_to_exact_bridge",
+  "M2_active_identifiability",
+  "TC_network",
+  "TB_feasible",
+  "fractureflow"
+ ],
+ "ledger_violations": 0,
+ "read_ledger_records": 110,
+ "scanned_py_files": [
+  "audit_imports.py",
+  "judge_real.py",
+  "negative_controls.py",
+  "self_test.py",
+  "verify_depth2.py",
+  "verify_expected.py",
+  "verify_ranking.py"
+ ],
+ "schema": "m3-import-audit/v1",
+ "verdict": "PASS",
+ "violations": 0,
+ "violations_detail": []
+}

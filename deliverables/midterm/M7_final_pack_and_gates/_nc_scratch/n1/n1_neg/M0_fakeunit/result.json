@@ -1,0 +1,19 @@
+{
+  "schema": "dispatch-result/v1",
+  "task_id": "M0",
+  "status": "PASS",
+  "evidence": [
+    {
+      "file": "artifact.bin",
+      "bytes": 15,
+      "sha256": "dfeb086d37935e1d01a9251e6df5af51cf9c4b1a2d0914adbc800ba614499140"
+    }
+  ],
+  "enumeration": {
+    "negative_controls": 1,
+    "negative_correctly_rejected": 1
+  },
+  "field_error_rate": null,
+  "human_time": null,
+  "hydraulic": null
+}

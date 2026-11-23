@@ -1,0 +1,1 @@
+{"all_checks_passed": true, "positive": "22/22", "negative_with_teeth": "12/12", "frozen_dirs_zero_mod": true}

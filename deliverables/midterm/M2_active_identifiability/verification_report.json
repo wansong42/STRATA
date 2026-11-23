@@ -1,0 +1,438 @@
+{
+  "all_passed": true,
+  "at_utc": "2026-11-21T03:34:54.803976+00:00",
+  "elapsed_seconds": 178.391,
+  "m1_final_sha_alignment": {
+    "aligned_clusters": 22,
+    "m1_cluster_register_sha256": "2778ba4a096f431235273222bcd5b74b27f9419d33cc34606790bc758bba6bcf",
+    "m1_real_network_format_sha256": "c9a8386501873fc552b19707249ce49393733ec50c7269bdd38fdfad89ca47d4",
+    "m1_result_sha256": "02c854722a8333b0dd6c7b4b6af43378d5c01d34b0209184153533b6e9f1f5a2",
+    "m1_status": "PASS",
+    "mismatches": [],
+    "ok": true
+  },
+  "negative_controls_rejected": 10,
+  "negative_controls_total": 10,
+  "per_cluster_checks": [
+    {
+      "active_check": {
+        "ok": true,
+        "status": "VERIFIED_REFUSED_ACTIVE_SKIP"
+      },
+      "active_status": "NOT_APPLICABLE_REFUSED",
+      "cert_check": {
+        "ok": true,
+        "reason": "cell work budget exhausted during partition in mode m4 (accumulated 3358 + mode_cells 835 > 4096)",
+        "status": "VERIFIED_REFUSAL_ENVELOPE"
+      },
+      "cluster_id": "jardim_c01",
+      "ok": true,
+      "sha_aligned_with_m1_register": true,
+      "status": "BUDGET_EXCEEDED"
+    },
+    {
+      "active_check": {
+        "branches_verified": 30,
+        "ok": true,
+        "ranked_fractures_count": 6,
+        "status": "VERIFIED_ACTIVE_CHECK"
+      },
+      "active_status": "ACTIVE_RECOMMENDATIONS_READY",
+      "cert_check": {
+        "cells_verified": 751,
+        "ok": true,
+        "status": "VERIFIED_LOCAL_CERTIFICATION",
+        "windows_verified": 4212
+      },
+      "cluster_id": "jardim_c02",
+      "ok": true,
+      "sha_aligned_with_m1_register": true,
+      "status": "AMBIGUOUS_WITH_VERIFIED_WITNESSES"
+    },
+    {
+      "active_check": {
+        "branches_verified": 12,
+        "ok": true,
+        "ranked_fractures_count": 6,
+        "status": "VERIFIED_ACTIVE_CHECK"
+      },
+      "active_status": "ACTIVE_RECOMMENDATIONS_READY",
+      "cert_check": {
+        "cells_verified": 1306,
+        "ok": true,
+        "status": "VERIFIED_LOCAL_CERTIFICATION",
+        "windows_verified": 4212
+      },
+      "cluster_id": "jardim_c03",
+      "ok": true,
+      "sha_aligned_with_m1_register": true,
+      "status": "AMBIGUOUS_WITH_VERIFIED_WITNESSES"
+    },
+    {
+      "active_check": {
+        "branches_verified": 20,
+        "ok": true,
+        "ranked_fractures_count": 6,
+        "status": "VERIFIED_ACTIVE_CHECK"
+      },
+      "active_status": "ACTIVE_RECOMMENDATIONS_READY",
+      "cert_check": {
+        "cells_verified": 1755,
+        "ok": true,
+        "status": "VERIFIED_LOCAL_CERTIFICATION",
+        "windows_verified": 6762
+      },
+      "cluster_id": "jardim_c04",
+      "ok": true,
+      "sha_aligned_with_m1_register": true,
+      "status": "AMBIGUOUS_WITH_VERIFIED_WITNESSES"
+    },
+    {
+      "active_check": {
+        "branches_verified": 30,
+        "ok": true,
+        "ranked_fractures_count": 6,
+        "status": "VERIFIED_ACTIVE_CHECK"
+      },
+      "active_status": "ACTIVE_RECOMMENDATIONS_READY",
+      "cert_check": {
+        "cells_verified": 898,
+        "ok": true,
+        "status": "VERIFIED_LOCAL_CERTIFICATION",
+        "windows_verified": 4212
+      },
+      "cluster_id": "jardim_c05",
+      "ok": true,
+      "sha_aligned_with_m1_register": true,
+      "status": "AMBIGUOUS_WITH_VERIFIED_WITNESSES"
+    },
+    {
+      "active_check": {
+        "branches_verified": 32,
+        "ok": true,
+        "ranked_fractures_count": 6,
+        "status": "VERIFIED_ACTIVE_CHECK"
+      },
+      "active_status": "ACTIVE_RECOMMENDATIONS_READY",
+      "cert_check": {
+        "cells_verified": 957,
+        "ok": true,
+        "status": "VERIFIED_LOCAL_CERTIFICATION",
+        "windows_verified": 6762
+      },
+      "cluster_id": "jardim_c06",
+      "ok": true,
+      "sha_aligned_with_m1_register": true,
+      "status": "AMBIGUOUS_WITH_VERIFIED_WITNESSES"
+    },
+    {
+      "active_check": {
+        "ok": true,
+        "status": "VERIFIED_ALREADY_CERTIFIED"
+      },
+      "active_status": "ALREADY_CERTIFIED",
+      "cert_check": {
+        "cells_verified": 692,
+        "ok": true,
+        "status": "VERIFIED_LOCAL_CERTIFICATION",
+        "windows_verified": 4212
+      },
+      "cluster_id": "perozzo_c01",
+      "ok": true,
+      "sha_aligned_with_m1_register": true,
+      "status": "CERTIFIED_DISCONNECTED"
+    },
+    {
+      "active_check": {
+        "branches_verified": 25,
+        "ok": true,
+        "ranked_fractures_count": 7,
+        "status": "VERIFIED_ACTIVE_CHECK"
+      },
+      "active_status": "ACTIVE_RECOMMENDATIONS_READY",
+      "cert_check": {
+        "cells_verified": 378,
+        "ok": true,
+        "status": "VERIFIED_LOCAL_CERTIFICATION",
+        "windows_verified": 5670
+      },
+      "cluster_id": "perozzo_c02",
+      "ok": true,
+      "sha_aligned_with_m1_register": true,
+      "status": "AMBIGUOUS_WITH_VERIFIED_WITNESSES"
+    },
+    {
+      "active_check": {
+        "ok": true,
+        "status": "VERIFIED_ALREADY_CERTIFIED"
+      },
+      "active_status": "ALREADY_CERTIFIED",
+      "cert_check": {
+        "cells_verified": 341,
+        "ok": true,
+        "status": "VERIFIED_LOCAL_CERTIFICATION",
+        "windows_verified": 7344
+      },
+      "cluster_id": "perozzo_c03",
+      "ok": true,
+      "sha_aligned_with_m1_register": true,
+      "status": "CERTIFIED_DISCONNECTED"
+    },
+    {
+      "active_check": {
+        "ok": true,
+        "status": "VERIFIED_ALREADY_CERTIFIED"
+      },
+      "active_status": "ALREADY_CERTIFIED",
+      "cert_check": {
+        "cells_verified": 1002,
+        "ok": true,
+        "status": "VERIFIED_LOCAL_CERTIFICATION",
+        "windows_verified": 9234
+      },
+      "cluster_id": "perozzo_c04",
+      "ok": true,
+      "sha_aligned_with_m1_register": true,
+      "status": "CERTIFIED_CONNECTED"
+    },
+    {
+      "active_check": {
+        "ok": true,
+        "status": "VERIFIED_ALREADY_CERTIFIED"
+      },
+      "active_status": "ALREADY_CERTIFIED",
+      "cert_check": {
+        "cells_verified": 68,
+        "ok": true,
+        "status": "VERIFIED_LOCAL_CERTIFICATION",
+        "windows_verified": 4212
+      },
+      "cluster_id": "perozzo_c05",
+      "ok": true,
+      "sha_aligned_with_m1_register": true,
+      "status": "CERTIFIED_DISCONNECTED"
+    },
+    {
+      "active_check": {
+        "ok": true,
+        "status": "VERIFIED_ALREADY_CERTIFIED"
+      },
+      "active_status": "ALREADY_CERTIFIED",
+      "cert_check": {
+        "cells_verified": 39,
+        "ok": true,
+        "status": "VERIFIED_LOCAL_CERTIFICATION",
+        "windows_verified": 5670
+      },
+      "cluster_id": "perozzo_c06",
+      "ok": true,
+      "sha_aligned_with_m1_register": true,
+      "status": "CERTIFIED_DISCONNECTED"
+    },
+    {
+      "active_check": {
+        "ok": true,
+        "status": "VERIFIED_ALREADY_CERTIFIED"
+      },
+      "active_status": "ALREADY_CERTIFIED",
+      "cert_check": {
+        "cells_verified": 296,
+        "ok": true,
+        "status": "VERIFIED_LOCAL_CERTIFICATION",
+        "windows_verified": 7344
+      },
+      "cluster_id": "perozzo_c07",
+      "ok": true,
+      "sha_aligned_with_m1_register": true,
+      "status": "CERTIFIED_DISCONNECTED"
+    },
+    {
+      "active_check": {
+        "ok": true,
+        "status": "VERIFIED_ALREADY_CERTIFIED"
+      },
+      "active_status": "ALREADY_CERTIFIED",
+      "cert_check": {
+        "cells_verified": 72,
+        "ok": true,
+        "status": "VERIFIED_LOCAL_CERTIFICATION",
+        "windows_verified": 9234
+      },
+      "cluster_id": "perozzo_c08",
+      "ok": true,
+      "sha_aligned_with_m1_register": true,
+      "status": "CERTIFIED_DISCONNECTED"
+    },
+    {
+      "active_check": {
+        "ok": true,
+        "status": "VERIFIED_ALREADY_CERTIFIED"
+      },
+      "active_status": "ALREADY_CERTIFIED",
+      "cert_check": {
+        "cells_verified": 47,
+        "ok": true,
+        "status": "VERIFIED_LOCAL_CERTIFICATION",
+        "windows_verified": 4212
+      },
+      "cluster_id": "perozzo_c09",
+      "ok": true,
+      "sha_aligned_with_m1_register": true,
+      "status": "CERTIFIED_DISCONNECTED"
+    },
+    {
+      "active_check": {
+        "ok": true,
+        "status": "VERIFIED_ALREADY_CERTIFIED"
+      },
+      "active_status": "ALREADY_CERTIFIED",
+      "cert_check": {
+        "cells_verified": 110,
+        "ok": true,
+        "status": "VERIFIED_LOCAL_CERTIFICATION",
+        "windows_verified": 5670
+      },
+      "cluster_id": "perozzo_c10",
+      "ok": true,
+      "sha_aligned_with_m1_register": true,
+      "status": "CERTIFIED_DISCONNECTED"
+    },
+    {
+      "active_check": {
+        "ok": true,
+        "status": "VERIFIED_ALREADY_CERTIFIED"
+      },
+      "active_status": "ALREADY_CERTIFIED",
+      "cert_check": {
+        "cells_verified": 290,
+        "ok": true,
+        "status": "VERIFIED_LOCAL_CERTIFICATION",
+        "windows_verified": 7344
+      },
+      "cluster_id": "perozzo_c11",
+      "ok": true,
+      "sha_aligned_with_m1_register": true,
+      "status": "CERTIFIED_DISCONNECTED"
+    },
+    {
+      "active_check": {
+        "ok": true,
+        "status": "VERIFIED_ALREADY_CERTIFIED"
+      },
+      "active_status": "ALREADY_CERTIFIED",
+      "cert_check": {
+        "cells_verified": 235,
+        "ok": true,
+        "status": "VERIFIED_LOCAL_CERTIFICATION",
+        "windows_verified": 9234
+      },
+      "cluster_id": "perozzo_c12",
+      "ok": true,
+      "sha_aligned_with_m1_register": true,
+      "status": "CERTIFIED_DISCONNECTED"
+    },
+    {
+      "active_check": {
+        "ok": true,
+        "status": "VERIFIED_ALREADY_CERTIFIED"
+      },
+      "active_status": "ALREADY_CERTIFIED",
+      "cert_check": {
+        "cells_verified": 78,
+        "ok": true,
+        "status": "VERIFIED_LOCAL_CERTIFICATION",
+        "windows_verified": 4212
+      },
+      "cluster_id": "perozzo_c13",
+      "ok": true,
+      "sha_aligned_with_m1_register": true,
+      "status": "CERTIFIED_DISCONNECTED"
+    },
+    {
+      "active_check": {
+        "ok": true,
+        "status": "VERIFIED_ALREADY_CERTIFIED"
+      },
+      "active_status": "ALREADY_CERTIFIED",
+      "cert_check": {
+        "cells_verified": 680,
+        "ok": true,
+        "status": "VERIFIED_LOCAL_CERTIFICATION",
+        "windows_verified": 5670
+      },
+      "cluster_id": "perozzo_c14",
+      "ok": true,
+      "sha_aligned_with_m1_register": true,
+      "status": "CERTIFIED_DISCONNECTED"
+    },
+    {
+      "active_check": {
+        "ok": true,
+        "status": "VERIFIED_ALREADY_CERTIFIED"
+      },
+      "active_status": "ALREADY_CERTIFIED",
+      "cert_check": {
+        "cells_verified": 167,
+        "ok": true,
+        "status": "VERIFIED_LOCAL_CERTIFICATION",
+        "windows_verified": 7344
+      },
+      "cluster_id": "perozzo_c15",
+      "ok": true,
+      "sha_aligned_with_m1_register": true,
+      "status": "CERTIFIED_DISCONNECTED"
+    },
+    {
+      "active_check": {
+        "ok": true,
+        "status": "VERIFIED_ALREADY_CERTIFIED"
+      },
+      "active_status": "ALREADY_CERTIFIED",
+      "cert_check": {
+        "cells_verified": 389,
+        "ok": true,
+        "status": "VERIFIED_LOCAL_CERTIFICATION",
+        "windows_verified": 9234
+      },
+      "cluster_id": "perozzo_c16",
+      "ok": true,
+      "sha_aligned_with_m1_register": true,
+      "status": "CERTIFIED_DISCONNECTED"
+    }
+  ],
+  "positive_clusters_passed": 22,
+  "positive_clusters_total": 22,
+  "pycache_audit": {
+    "ok": true,
+    "pycache_dirs_found": []
+  },
+  "raw_tc_equivalence_audit": {
+    "checked_clusters": [
+      {
+        "cells_count": 68,
+        "cells_equal": true,
+        "cluster_id": "perozzo_c05",
+        "ok": true,
+        "raw_tc_seconds": 5.892,
+        "rho_equal": true,
+        "tc_status_equal": true,
+        "windows_count": 4212,
+        "windows_equal": true
+      },
+      {
+        "cells_count": 378,
+        "cells_equal": true,
+        "cluster_id": "perozzo_c02",
+        "ok": true,
+        "raw_tc_seconds": 9.139,
+        "rho_equal": true,
+        "tc_status_equal": true,
+        "windows_count": 5670,
+        "windows_equal": true
+      }
+    ],
+    "ok": true
+  },
+  "run_id": "run_20261120_exact_v1",
+  "schema": "m2-verification-report/v1"
+}

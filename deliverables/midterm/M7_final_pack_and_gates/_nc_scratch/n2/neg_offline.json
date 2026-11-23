@@ -1,0 +1,546 @@
+{
+  "schema": "m7-offline-asset-audit/v1",
+  "at_utc": "2026-11-21T13:53:21.703212+00:00",
+  "scope": "STRATA 前端静态资产（demos/workbench）+ M6 离线 HTML 演示包；外部 URL 字面量分级 + 本地引用可解析性",
+  "caliber": {
+    "app_owned_external": "除 vendor/ 外，任何 http(s):// 或 //host/ 出现即记违规（W3C 命名空间除外）",
+    "vendor_literal": "vendor/plotly.min.js 内地图/文档 URL 为库字符串常量，本应用不调用；运行期以 Chrome 请求日志为准",
+    "local_refs": "HTML src/href 与 CSS url() 的相对路径必须在盘"
+  },
+  "strata": {
+    "label": "strata_workbench",
+    "root": "C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M7_final_pack_and_gates\\_nc_scratch\\n2\\workbench_copy",
+    "files": 7,
+    "app_files": 6,
+    "vendor_files": 1,
+    "app_external_hits": 1,
+    "app_external_details": [
+      {
+        "file": "index.html",
+        "url": "https://cdn.jsdelivr.net/npm/evil@1.0.0/dist/evil.js",
+        "kind": "external",
+        "line": 57
+      }
+    ],
+    "vendor_literal_hits": 84,
+    "namespace_hits": 74,
+    "local_refs_checked": 5,
+    "missing_local_refs": []
+  },
+  "strata_rows": [
+    {
+      "file": "app.js",
+      "bytes": 141906,
+      "vendor": false,
+      "external_hits": [],
+      "vendor_string_hits": [],
+      "namespace_hits": 0,
+      "local_refs": 0,
+      "missing_local_refs": []
+    },
+    {
+      "file": "core_api.js",
+      "bytes": 51952,
+      "vendor": false,
+      "external_hits": [],
+      "vendor_string_hits": [],
+      "namespace_hits": 0,
+      "local_refs": 0,
+      "missing_local_refs": []
+    },
+    {
+      "file": "index.html",
+      "bytes": 3492,
+      "vendor": false,
+      "external_hits": [
+        {
+          "url": "https://cdn.jsdelivr.net/npm/evil@1.0.0/dist/evil.js",
+          "kind": "external",
+          "line": 57
+        }
+      ],
+      "vendor_string_hits": [],
+      "namespace_hits": 1,
+      "local_refs": 5,
+      "missing_local_refs": []
+    },
+    {
+      "file": "plate.js",
+      "bytes": 53952,
+      "vendor": false,
+      "external_hits": [],
+      "vendor_string_hits": [],
+      "namespace_hits": 0,
+      "local_refs": 0,
+      "missing_local_refs": []
+    },
+    {
+      "file": "styles.css",
+      "bytes": 67223,
+      "vendor": false,
+      "external_hits": [],
+      "vendor_string_hits": [],
+      "namespace_hits": 2,
+      "local_refs": 0,
+      "missing_local_refs": []
+    },
+    {
+      "file": "ui_common.js",
+      "bytes": 21655,
+      "vendor": false,
+      "external_hits": [],
+      "vendor_string_hits": [],
+      "namespace_hits": 0,
+      "local_refs": 0,
+      "missing_local_refs": []
+    },
+    {
+      "file": "vendor/plotly.min.js",
+      "bytes": 4558696,
+      "vendor": true,
+      "external_hits": [],
+      "vendor_string_hits": [
+        {
+          "url": "https://plotly.com/",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://github.com/d3/d3-format/tree/v1.4.5#d3-format",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://github.com/d3/d3-time-format/tree/v2.2.3#locale_format",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://get.webgl.org",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://get.webgl.org",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://plotly.com/javascript/animations/",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://plotly.com/javascript/animations/",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://cdn.plot.ly/",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://www.openstreetmap.org/copyright",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://fonts.openmaptiles.org/{fontstack}/{range}.pbf",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://fonts.openmaptiles.org/{fontstack}/{range}.pbf",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://basemaps.cartocdn.com/gl/positron-nolabels-gl-style/style.json",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://basemaps.cartocdn.com/gl/dark-matter-nolabels-gl-style/style.json",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://basemaps.cartocdn.com/gl/voyager-nolabels-gl-style/style.json",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://unpkg.com/maki@2.1.0/icons/",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://fonts.openmaptiles.org/Open",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://fonts.openmaptiles.org/Open",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://tiles.basemaps.cartocdn.com/fonts/Open",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://fonts.openmaptiles.org/Open",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://fonts.openmaptiles.org/Open",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://fonts.openmaptiles.org/Klokantech",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://www.openstreetmap.org/copyright",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://carto.com/",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://stamen.com",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://creativecommons.org/licenses/by/3.0",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://openstreetmap.org",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://www.openstreetmap.org/copyright",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://a.tile.openstreetmap.org/{z}/{x}/{y}.png",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://b.tile.openstreetmap.org/{z}/{x}/{y}.png",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://fonts.openmaptiles.org/{fontstack}/{range}.pbf",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://fonts.openmaptiles.org/{fontstack}/{range}.pbf",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://cartodb-basemaps-c.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://fonts.openmaptiles.org/{fontstack}/{range}.pbf",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://cartodb-basemaps-c.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://fonts.openmaptiles.org/{fontstack}/{range}.pbf",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://tiles.stadiamaps.com/tiles/stamen_terrain/{z}/{x}/{y}.png?api_key=",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://fonts.openmaptiles.org/{fontstack}/{range}.pbf",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://tiles.stadiamaps.com/tiles/stamen_toner/{z}/{x}/{y}.png?api_key=",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://fonts.openmaptiles.org/{fontstack}/{range}.pbf",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://stamen.com",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://creativecommons.org/licenses/by/3.0",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://openstreetmap.org",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://tiles.stadiamaps.com/tiles/stamen_watercolor/{z}/{x}/{y}.jpg?api_key=",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://fonts.openmaptiles.org/{fontstack}/{range}.pbf",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://www.mapbox.com/help/define-access-token/",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://plotly.com/javascript/maplibre-migration/",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://plotly.com/javascript/maplibre-migration/",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://plotly.com/javascript/maplibre-migration/",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://plotly.com/javascript/maplibre-migration/",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://github.com/mikolalysenko/glsl-read-float/blob/master/index.glsl",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://api.mapbox.com",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://api.mapbox.cn",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://events.mapbox.cn/events/v2",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://api.mapbox.com",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://events.mapbox.com/events/v2",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://apps.mapbox.com/feedback",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://www.mapbox.com/api-documentation/#access-tokens-and-token-scopes",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://www.mapbox.com/api-documentation/#access-tokens-and-token-scopes",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://github.com/mapbox/mapbox-gl-js/issues/2907",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://www.mapbox.com/",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://www.mapbox.com/mapbox-gl-js/api/.",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "http://get.webgl.org",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://github.com/mapbox/mapbox-gl-js/issues/2907",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://maplibre.org/",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://maplibre.org/",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "http://www.esri.com",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://tilemaps.icgc.cat/mapfactory/wmts/orto_8_12/CAT3857/{z}/{x}/{y}.png",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://geoserveis.icgc.cat/icc_mapesmultibase/noutm/wmts/orto/GRID3857/{z}/{x}/{y}.jpeg",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://geoserveis.icgc.cat/contextmaps/basemap.json",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://geoserveis.icgc.cat/contextmaps/sprites/sprite@1",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://geoserveis.icgc.cat/contextmaps/glyphs/{fontstack}/{range}.pbf",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "http://www.esri.com",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://tilemaps.icgc.cat/mapfactory/wmts/orto_8_12/CAT3857/{z}/{x}/{y}.png",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://geoserveis.icgc.cat/icc_mapesmultibase/noutm/wmts/orto/GRID3857/{z}/{x}/{y}.jpeg",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://geoserveis.icgc.cat/contextmaps/basemap.json",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://geoserveis.icgc.cat/contextmaps/sprites/sprite@1",
+          "kind": "vendor_string",
+          "line": 8
+        },
+        {
+          "url": "https://geoserveis.icgc.cat/contextmaps/glyphs/{fontstack}/{range}.pbf",
+          "kind": "vendor_string",
+          "line": 8
+        }
+      ],
+      "namespace_hits": 71,
+      "local_refs": 0,
+      "missing_local_refs": []
+    }
+  ],
+  "m6_deck": {
+    "label": "m6_offline_deck",
+    "file": "midterm_deck.html",
+    "bytes": 139452,
+    "vendor": false,
+    "external_hits": [],
+    "vendor_string_hits": [],
+    "namespace_hits": 0,
+    "local_refs": 31,
+    "missing_local_refs": [],
+    "app_external_hits": 0
+  },
+  "verdict": "FAILED",
+  "not_claimed": [
+    "字符串层面的外部 URL 计数不等于实际联网行为；运行期外部请求数由 cold_start_smoke.json#badge_probe 举证",
+    "未对 plotly.min.js 做逐行语义审计，只判定本应用未引用其地图/地理代码路径"
+  ]
+}

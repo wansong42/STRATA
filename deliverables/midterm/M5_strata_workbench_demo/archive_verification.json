@@ -1,0 +1,63 @@
+{
+  "schema": "m5-pre-edit-archive/v1",
+  "task_id": "M5",
+  "at_utc": "2026-11-20T15:39:53.997276+00:00",
+  "all_matched": true,
+  "count": 6,
+  "files": [
+    {
+      "source_rel": "src/fractureflow/surface_product/workbench_server.py",
+      "archive_rel": "_pre_edit_archive/src/fractureflow/surface_product/workbench_server.py",
+      "bytes": 13980,
+      "source_sha256": "73347f584434c28ed3e52d54ef1b13e79d7c467c00888778382040431024901c",
+      "archive_sha256": "73347f584434c28ed3e52d54ef1b13e79d7c467c00888778382040431024901c",
+      "sha256_equal": true,
+      "bytes_equal": true
+    },
+    {
+      "source_rel": "demos/workbench/index.html",
+      "archive_rel": "_pre_edit_archive/demos/workbench/index.html",
+      "bytes": 3253,
+      "source_sha256": "cf65526b75a266c3fbebcd52c96550b075384121cbe955a2531f5dda49d88cf8",
+      "archive_sha256": "cf65526b75a266c3fbebcd52c96550b075384121cbe955a2531f5dda49d88cf8",
+      "sha256_equal": true,
+      "bytes_equal": true
+    },
+    {
+      "source_rel": "demos/workbench/app.js",
+      "archive_rel": "_pre_edit_archive/demos/workbench/app.js",
+      "bytes": 103173,
+      "source_sha256": "ae064628543e3401e526155512c14094a7e695180c2faa6edce3db8dbf47a78a",
+      "archive_sha256": "ae064628543e3401e526155512c14094a7e695180c2faa6edce3db8dbf47a78a",
+      "sha256_equal": true,
+      "bytes_equal": true
+    },
+    {
+      "source_rel": "demos/workbench/plate.js",
+      "archive_rel": "_pre_edit_archive/demos/workbench/plate.js",
+      "bytes": 38128,
+      "source_sha256": "f77504b32269104acf10a0b1b2f48a55bc35aed8a50adc2246a8f005941a2095",
+      "archive_sha256": "f77504b32269104acf10a0b1b2f48a55bc35aed8a50adc2246a8f005941a2095",
+      "sha256_equal": true,
+      "bytes_equal": true
+    },
+    {
+      "source_rel": "demos/workbench/core_api.js",
+      "archive_rel": "_pre_edit_archive/demos/workbench/core_api.js",
+      "bytes": 41918,
+      "source_sha256": "82859872684f582599272832cc1950c722458474d997e0e80458029a7d629bbb",
+      "archive_sha256": "82859872684f582599272832cc1950c722458474d997e0e80458029a7d629bbb",
+      "sha256_equal": true,
+      "bytes_equal": true
+    },
+    {
+      "source_rel": "demos/workbench/styles.css",
+      "archive_rel": "_pre_edit_archive/demos/workbench/styles.css",
+      "bytes": 53767,
+      "source_sha256": "ec7a6ccaa880496577ca453b2a2597a02b9c48b6d223fcfb36055ac2e05c3d5c",
+      "archive_sha256": "ec7a6ccaa880496577ca453b2a2597a02b9c48b6d223fcfb36055ac2e05c3d5c",
+      "sha256_equal": true,
+      "bytes_equal": true
+    }
+  ]
+}

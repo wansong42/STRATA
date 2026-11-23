@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "externalRequests": [],
+  "abortedExternal": [],
+  "consoleErrors": [],
+  "pageErrors": [],
+  "cases": [
+    {
+      "cluster_id": "jardim_c04",
+      "badge_text": "M3 独立判卷：AGREE",
+      "badge_class": "id-m3-badge agree",
+      "badge_bg": "rgb(209, 250, 229)",
+      "badge_color": "rgb(6, 95, 70)",
+      "status_text": "AMBIGUOUS_WITH_VERIFIED_WITNESSES · 存在双见证歧义",
+      "status_attr": "AMBIGUOUS_WITH_VERIFIED_WITNESSES",
+      "screenshot": "C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M7_final_pack_and_gates\\screenshots\\m3_badge_jardim_c04.png",
+      "bytes": 266671
+    },
+    {
+      "cluster_id": "jardim_c02",
+      "badge_text": "M3 独立判卷：AGREE",
+      "badge_class": "id-m3-badge agree",
+      "badge_bg": "rgb(209, 250, 229)",
+      "badge_color": "rgb(6, 95, 70)",
+      "status_text": "AMBIGUOUS_WITH_VERIFIED_WITNESSES · 存在双见证歧义",
+      "status_attr": "AMBIGUOUS_WITH_VERIFIED_WITNESSES",
+      "screenshot": "C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M7_final_pack_and_gates\\screenshots\\m3_badge_jardim_c02.png",
+      "bytes": 261045
+    },
+    {
+      "cluster_id": "perozzo_c02",
+      "badge_text": "M3 独立判卷：AGREE",
+      "badge_class": "id-m3-badge agree",
+      "badge_bg": "rgb(209, 250, 229)",
+      "badge_color": "rgb(6, 95, 70)",
+      "status_text": "AMBIGUOUS_WITH_VERIFIED_WITNESSES · 存在双见证歧义",
+      "status_attr": "AMBIGUOUS_WITH_VERIFIED_WITNESSES",
+      "screenshot": "C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M7_final_pack_and_gates\\screenshots\\m3_badge_perozzo_c02.png",
+      "bytes": 268829
+    },
+    {
+      "cluster_id": "perozzo_c01",
+      "badge_text": "M3 独立判卷：AGREE",
+      "badge_class": "id-m3-badge agree",
+      "badge_bg": "rgb(209, 250, 229)",
+      "badge_color": "rgb(6, 95, 70)",
+      "status_text": "CERTIFIED_DISCONNECTED · 精确认证断割",
+      "status_attr": "CERTIFIED_DISCONNECTED",
+      "screenshot": "C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M7_final_pack_and_gates\\screenshots\\m3_badge_perozzo_c01.png",
+      "bytes": 242232
+    }
+  ]
+}

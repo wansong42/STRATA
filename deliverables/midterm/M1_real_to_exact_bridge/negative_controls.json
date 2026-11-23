@@ -1,0 +1,218 @@
+{
+  "all_passed_with_teeth": true,
+  "at_utc": "2026-11-21T03:17:35.343765+00:00",
+  "controls": [
+    {
+      "actual_exit_code": 2,
+      "command": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M1_real_to_exact_bridge\\real_network_format.py --validate C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M1_real_to_exact_bridge\\_nc_scratch\\nc_m1_n1a_tampered_xlsx_sha.json --repo-root C:\\Users\\晚菘\\Documents\\Default Project --verify-source-sha",
+      "expected_nonzero_exit": true,
+      "expected_reason_tokens": [
+        "SOURCE_SHA256_MISMATCH"
+      ],
+      "first_counterexample": {
+        "error_class": "Invalid",
+        "ok": false,
+        "reason": "SOURCE_SHA256_MISMATCH: data/external/perozzo_2024/Manual-Discontinuities-Geometrical-Info.xlsx expected=08e2aef659690032a89af33ba3a32c3fb8766f45764478feac53c3f950d97fd8 actual=d8e2aef659690032a89af33ba3a32c3fb8766f45764478feac53c3f950d97fd8"
+      },
+      "id": "M1-N1a",
+      "mutated_file": "results/midterm_sprint_20261120/M1_real_to_exact_bridge/_nc_scratch/nc_m1_n1a_tampered_xlsx_sha.json",
+      "rejected_with_teeth": true,
+      "scenario": "Tamper 1 hex character of Perozzo xlsx SHA256 -> must fail with SOURCE_SHA256_MISMATCH"
+    },
+    {
+      "actual_exit_code": 2,
+      "command": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M1_real_to_exact_bridge\\real_network_format.py --validate C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M1_real_to_exact_bridge\\_nc_scratch\\nc_m1_n1b_tampered_project_file.json --repo-root C:\\Users\\晚菘\\Documents\\Default Project --verify-source-sha",
+      "expected_nonzero_exit": true,
+      "expected_reason_tokens": [
+        "SOURCE_BYTES_MISMATCH",
+        "SOURCE_SHA256_MISMATCH"
+      ],
+      "first_counterexample": {
+        "error_class": "Invalid",
+        "ok": false,
+        "reason": "SOURCE_BYTES_MISMATCH: results/midterm_sprint_20261120/M1_real_to_exact_bridge/_nc_scratch/tampered_project.json expected=13378338 actual=19"
+      },
+      "id": "M1-N1b",
+      "mutated_file": "results/midterm_sprint_20261120/M1_real_to_exact_bridge/_nc_scratch/nc_m1_n1b_tampered_project_file.json",
+      "rejected_with_teeth": true,
+      "scenario": "Point Jardim cluster to tampered project.json while retaining original SHA/bytes -> hard reject"
+    },
+    {
+      "actual_exit_code": 3,
+      "command": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M1_real_to_exact_bridge\\real_network_format.py --validate C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M1_real_to_exact_bridge\\_nc_scratch\\nc_m1_n2_synthetic_scope_spoof.json --repo-root C:\\Users\\晚菘\\Documents\\Default Project",
+      "expected_nonzero_exit": true,
+      "expected_reason_tokens": [
+        "REAL_SCOPE_VIOLATION"
+      ],
+      "first_counterexample": {
+        "error_class": "Outside",
+        "ok": false,
+        "reason": "REAL_SCOPE_VIOLATION: SYNTHETIC_DECLARED_TRIANGLE_UNION is strictly forbidden for real-derived conditioned models (permanent track separation)"
+      },
+      "id": "M1-N2",
+      "mutated_file": "results/midterm_sprint_20261120/M1_real_to_exact_bridge/_nc_scratch/nc_m1_n2_synthetic_scope_spoof.json",
+      "rejected_with_teeth": true,
+      "scenario": "Change real cluster scope to SYNTHETIC_DECLARED_TRIANGLE_UNION -> hard reject (track separation)"
+    },
+    {
+      "actual_exit_code": 2,
+      "command": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M1_real_to_exact_bridge\\real_network_format.py --validate C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M1_real_to_exact_bridge\\_nc_scratch\\nc_m1_n3a_empty_assumptions.json --repo-root C:\\Users\\晚菘\\Documents\\Default Project",
+      "expected_nonzero_exit": true,
+      "expected_reason_tokens": [
+        "ASSUMED_NOT_OBSERVED"
+      ],
+      "first_counterexample": {
+        "error_class": "Invalid",
+        "ok": false,
+        "reason": "assumption_register.assumed_edges_tag must be exact string 'ASSUMED_NOT_OBSERVED'"
+      },
+      "id": "M1-N3a",
+      "mutated_file": "results/midterm_sprint_20261120/M1_real_to_exact_bridge/_nc_scratch/nc_m1_n3a_empty_assumptions.json",
+      "rejected_with_teeth": true,
+      "scenario": "Empty assumption_register.assumed_edges_tag and not_claimed -> hard reject"
+    },
+    {
+      "actual_exit_code": 2,
+      "command": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M1_real_to_exact_bridge\\real_network_format.py --validate C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M1_real_to_exact_bridge\\_nc_scratch\\nc_m1_n3b_missing_disclaimers.json --repo-root C:\\Users\\晚菘\\Documents\\Default Project",
+      "expected_nonzero_exit": true,
+      "expected_reason_tokens": [
+        "not_claimed"
+      ],
+      "first_counterexample": {
+        "error_class": "Invalid",
+        "ok": false,
+        "reason": "assumption_register.not_claimed must explicitly disclaim unconditional subsurface/in-rock ground truth"
+      },
+      "id": "M1-N3b",
+      "mutated_file": "results/midterm_sprint_20261120/M1_real_to_exact_bridge/_nc_scratch/nc_m1_n3b_missing_disclaimers.json",
+      "rejected_with_teeth": true,
+      "scenario": "Remove mandatory subsurface/hydraulic disclaimers from not_claimed -> hard reject"
+    },
+    {
+      "actual_exit_code": 3,
+      "command": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M1_real_to_exact_bridge\\real_network_format.py --validate C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M1_real_to_exact_bridge\\_nc_scratch\\nc_m1_n4a_cross_site_coords.json --repo-root C:\\Users\\晚菘\\Documents\\Default Project",
+      "expected_nonzero_exit": true,
+      "expected_reason_tokens": [
+        "CROSS_SITE_COORDINATE_OUT_OF_SITE_BBOX"
+      ],
+      "first_counterexample": {
+        "error_class": "Outside",
+        "ok": false,
+        "reason": "CROSS_SITE_COORDINATE_OUT_OF_SITE_BBOX: m0.t_00_00.v0 X=700.0000 outside site 'perozzo_finale_ligure' range [446790.0, 447070.0]"
+      },
+      "id": "M1-N4a",
+      "mutated_file": "results/midterm_sprint_20261120/M1_real_to_exact_bridge/_nc_scratch/nc_m1_n4a_cross_site_coords.json",
+      "rejected_with_teeth": true,
+      "scenario": "Inject Jardim world coordinates [700,553,628] into Perozzo cluster -> cross-site bbox hard reject"
+    },
+    {
+      "actual_exit_code": 3,
+      "command": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M1_real_to_exact_bridge\\real_network_format.py --validate C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M1_real_to_exact_bridge\\_nc_scratch\\nc_m1_n4b_cross_site_frame.json --repo-root C:\\Users\\晚菘\\Documents\\Default Project",
+      "expected_nonzero_exit": true,
+      "expected_reason_tokens": [
+        "CROSS_SITE_FRAME_MISMATCH"
+      ],
+      "first_counterexample": {
+        "error_class": "Outside",
+        "ok": false,
+        "reason": "CROSS_SITE_FRAME_MISMATCH: site_id='perozzo_finale_ligure' requires frame 'perozzo_2024_finale_ligure_las_utm_v1', got 'jardim_garcia_quarry_uh_source_coordinates_v1'"
+      },
+      "id": "M1-N4b",
+      "mutated_file": "results/midterm_sprint_20261120/M1_real_to_exact_bridge/_nc_scratch/nc_m1_n4b_cross_site_frame.json",
+      "rejected_with_teeth": true,
+      "scenario": "Swap Jardim coordinate_frame into Perozzo cluster -> cross-site frame hard reject"
+    },
+    {
+      "actual_exit_code": 2,
+      "command": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M1_real_to_exact_bridge\\real_network_format.py --validate C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M1_real_to_exact_bridge\\_nc_scratch\\nc_m1_n5a_convex_hull_hole_fill.json --repo-root C:\\Users\\晚菘\\Documents\\Default Project",
+      "expected_nonzero_exit": true,
+      "expected_reason_tokens": [
+        "HOLE_FILLED_AREA_GUARD",
+        "HOLE_AREA_MISMATCH",
+        "HOLE_FILLED_PROBE_COVERED"
+      ],
+      "first_counterexample": {
+        "error_class": "Invalid",
+        "ok": false,
+        "reason": "HOLE_AREA_MISMATCH: frag_c8f4b1139db379e22a182d023125163a actual m0 triangle area=4.49485 differs from declared triangulated_net_area_m2=3.71252"
+      },
+      "id": "M1-N5a",
+      "mutated_file": "results/midterm_sprint_20261120/M1_real_to_exact_bridge/_nc_scratch/nc_m1_n5a_convex_hull_hole_fill.json",
+      "rejected_with_teeth": true,
+      "scenario": "Replace Jardim real-hole fragment frag_c8f4b1139db379e22a182d023125163a with convex hull filling its hole -> topology/area guard hard reject"
+    },
+    {
+      "actual_exit_code": 2,
+      "command": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M1_real_to_exact_bridge\\real_network_format.py --validate C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M1_real_to_exact_bridge\\_nc_scratch\\nc_m1_n5b_subtle_hole_probe_cover.json --repo-root C:\\Users\\晚菘\\Documents\\Default Project",
+      "expected_nonzero_exit": true,
+      "expected_reason_tokens": [
+        "HOLE_FILLED_PROBE_COVERED"
+      ],
+      "first_counterexample": {
+        "error_class": "Invalid",
+        "ok": false,
+        "reason": "HOLE_FILLED_PROBE_COVERED: frag_c8f4b1139db379e22a182d023125163a triangle[16] covers real hole interior probe[0] (convex-hull or hole-fill detected)"
+      },
+      "id": "M1-N5b",
+      "mutated_file": "results/midterm_sprint_20261120/M1_real_to_exact_bridge/_nc_scratch/nc_m1_n5b_subtle_hole_probe_cover.json",
+      "rejected_with_teeth": true,
+      "scenario": "Subtle hole-patch adversary covering interior probe of frag_c8f4b1139db379e22a182d023125163a even with spoofed area -> exact probe guard hard reject"
+    },
+    {
+      "actual_exit_code": 4,
+      "command": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M1_real_to_exact_bridge\\real_network_format.py --validate C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M1_real_to_exact_bridge\\_nc_scratch\\nc_m1_n6a_triangle_budget_overflow.json --repo-root C:\\Users\\晚菘\\Documents\\Default Project",
+      "expected_nonzero_exit": true,
+      "expected_reason_tokens": [
+        "triangle budget exceeded"
+      ],
+      "first_counterexample": {
+        "error_class": "Exhausted",
+        "ok": false,
+        "reason": "triangle budget exceeded in mode m0: 65 > 64"
+      },
+      "id": "M1-N6a",
+      "mutated_file": "results/midterm_sprint_20261120/M1_real_to_exact_bridge/_nc_scratch/nc_m1_n6a_triangle_budget_overflow.json",
+      "rejected_with_teeth": true,
+      "scenario": "Inject 65 triangles (>64 budget) in mode m0 -> Exhausted hard reject (no silent truncation)"
+    },
+    {
+      "actual_exit_code": 4,
+      "command": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M1_real_to_exact_bridge\\real_network_format.py --validate C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M1_real_to_exact_bridge\\_nc_scratch\\nc_m1_n6b_mode_budget_overflow.json --repo-root C:\\Users\\晚菘\\Documents\\Default Project",
+      "expected_nonzero_exit": true,
+      "expected_reason_tokens": [
+        "mode budget exceeded"
+      ],
+      "first_counterexample": {
+        "error_class": "Exhausted",
+        "ok": false,
+        "reason": "mode budget exceeded: 17 > 16"
+      },
+      "id": "M1-N6b",
+      "mutated_file": "results/midterm_sprint_20261120/M1_real_to_exact_bridge/_nc_scratch/nc_m1_n6b_mode_budget_overflow.json",
+      "rejected_with_teeth": true,
+      "scenario": "Inject 17 modes (>16 budget) -> Exhausted hard reject (no silent truncation)"
+    },
+    {
+      "actual_exit_code": 4,
+      "command": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M1_real_to_exact_bridge\\real_network_format.py --validate C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M1_real_to_exact_bridge\\_nc_scratch\\nc_m1_n7_bit_budget_overflow.json --repo-root C:\\Users\\晚菘\\Documents\\Default Project",
+      "expected_nonzero_exit": true,
+      "expected_reason_tokens": [
+        "rational bit budget exceeded"
+      ],
+      "first_counterexample": {
+        "error_class": "Exhausted",
+        "ok": false,
+        "reason": "rational bit budget exceeded (>8192)"
+      },
+      "id": "M1-N7",
+      "mutated_file": "results/midterm_sprint_20261120/M1_real_to_exact_bridge/_nc_scratch/nc_m1_n7_bit_budget_overflow.json",
+      "rejected_with_teeth": true,
+      "scenario": "Inject 8196-bit rational coordinate (>8192 bit budget, text <=4096) -> Exhausted bit-budget hard reject"
+    }
+  ],
+  "distinct_control_classes": 7,
+  "rejected_with_teeth": 12,
+  "schema": "m1-negative-controls/v1",
+  "task_id": "M1",
+  "total_controls": 12
+}

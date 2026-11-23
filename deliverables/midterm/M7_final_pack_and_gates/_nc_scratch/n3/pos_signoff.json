@@ -1,0 +1,54 @@
+{
+  "schema": "m7-signoff/v1",
+  "at_utc": "2026-11-21T13:53:21.971404+00:00",
+  "verdict": "SIGNED_PASS",
+  "checks": [
+    {
+      "check": "M3 counts.AGREE==22",
+      "ok": true,
+      "detail": {
+        "AGREE": 22,
+        "DISAGREE": 0,
+        "MALFORMED": 0,
+        "UNDECIDABLE": 0
+      }
+    },
+    {
+      "check": "M3 counts.DISAGREE==0",
+      "ok": true,
+      "detail": 0
+    },
+    {
+      "check": "M3 逐簇 AGREE==22",
+      "ok": true,
+      "detail": {
+        "agree": 22,
+        "total": 22
+      }
+    },
+    {
+      "check": "M3 逐簇 DISAGREE==0",
+      "ok": true,
+      "detail": 0
+    },
+    {
+      "check": "M3 MALFORMED/UNDECIDABLE==0",
+      "ok": true,
+      "detail": {
+        "AGREE": 22,
+        "DISAGREE": 0,
+        "MALFORMED": 0,
+        "UNDECIDABLE": 0
+      }
+    },
+    {
+      "check": "M3 拒收仅 jardim_c01",
+      "ok": true,
+      "detail": [
+        "jardim_c01"
+      ]
+    }
+  ],
+  "failed": [],
+  "alert": null
+}

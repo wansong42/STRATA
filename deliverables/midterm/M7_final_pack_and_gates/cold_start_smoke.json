@@ -1,0 +1,324 @@
+{
+  "schema": "m7-cold-start-smoke/v1",
+  "at_utc": "2026-11-21T14:03:46.698082+00:00",
+  "host": "127.0.0.1",
+  "port": 8866,
+  "no_console_window": true,
+  "creationflags": 134217728,
+  "launcher_selfcheck": {
+    "launcher_src": "C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M5_strata_workbench_demo\\launch_strata_demo.py",
+    "copy": "C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M7_final_pack_and_gates\\launch_strata_demo_copy.py",
+    "byte_identical": true,
+    "sha256": "73553950cc31fd1590e215490cffc1d524d43993d783843499101971f819e290",
+    "exit_code": 0,
+    "seconds": 10.02,
+    "port_after": 8867,
+    "port_closed_after": true,
+    "log": "runtime/launcher_selfcheck.log"
+  },
+  "server": {
+    "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/pythonw.exe -B -m fractureflow.surface_product.workbench_server --host 127.0.0.1 --port 8866 --workspace C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M7_final_pack_and_gates\\runtime\\workbench_home_8866",
+    "pid": 46016,
+    "ready": {
+      "ok": true,
+      "ms": 4853.1,
+      "summary": {
+        "total_cases": 22,
+        "sha_verified_count": 22,
+        "m3_present": null,
+        "m3_verdict_count": null,
+        "m3_verdict_sha256": "b122233573c3f56f4471e761abab3a523d36d6594ac58c600630257e357d85bf"
+      }
+    },
+    "spawn_to_ready_s": 4.87,
+    "stdout": "runtime/server_8866.stdout.log",
+    "stderr": "runtime/server_8866.stderr.log"
+  },
+  "cases_endpoint": {
+    "http_status": 200,
+    "ok": true,
+    "cold_ms": 4159.5,
+    "warm_ms": 4150.2,
+    "warm_http_status": 200,
+    "warm_ok": true,
+    "latency_under_2s": false,
+    "total_cases": 22,
+    "sha_verified_count": 22,
+    "site_counts": {
+      "jardim_garcia_uh": 6,
+      "perozzo_finale_ligure": 16
+    },
+    "status_counts": {
+      "AMBIGUOUS_WITH_VERIFIED_WITNESSES": 6,
+      "BUDGET_EXCEEDED": 1,
+      "CERTIFIED_CONNECTED": 1,
+      "CERTIFIED_DISCONNECTED": 14
+    },
+    "m3_verdict_sha256": "b122233573c3f56f4471e761abab3a523d36d6594ac58c600630257e357d85bf",
+    "m3_sha_matches_disk": true,
+    "latency_note": "首击与热击均执行 22 簇全量 SHA256 复核；>2s 部分在 report.md §6 单列，不冒充 <2s"
+  },
+  "case_gets": [
+    {
+      "cluster_id": "jardim_c04",
+      "site_id": "jardim_garcia_uh",
+      "http_status": 200,
+      "ok": true,
+      "ms": 830.8,
+      "cold_ms": 1735.5,
+      "cold_http_status": 200,
+      "cold_ok": true,
+      "status": "AMBIGUOUS_WITH_VERIFIED_WITNESSES",
+      "m3_judge_verdict": "AGREE",
+      "m3_verdict_sha256": "b122233573c3f56f4471e761abab3a523d36d6594ac58c600630257e357d85bf",
+      "m3_sha_matches_disk": true,
+      "provenance_mode": "PRECOMPUTED_VERIFIED_TREE",
+      "cell_count": 1755,
+      "fractures": 6,
+      "has_collapse_tree_summary": true
+    },
+    {
+      "cluster_id": "jardim_c02",
+      "site_id": "jardim_garcia_uh",
+      "http_status": 200,
+      "ok": true,
+      "ms": 383.1,
+      "cold_ms": 1346.1,
+      "cold_http_status": 200,
+      "cold_ok": true,
+      "status": "AMBIGUOUS_WITH_VERIFIED_WITNESSES",
+      "m3_judge_verdict": "AGREE",
+      "m3_verdict_sha256": "b122233573c3f56f4471e761abab3a523d36d6594ac58c600630257e357d85bf",
+      "m3_sha_matches_disk": true,
+      "provenance_mode": "PRECOMPUTED_VERIFIED_TREE",
+      "cell_count": 751,
+      "fractures": 6,
+      "has_collapse_tree_summary": true
+    },
+    {
+      "cluster_id": "perozzo_c02",
+      "site_id": "perozzo_finale_ligure",
+      "http_status": 200,
+      "ok": true,
+      "ms": 365.1,
+      "cold_ms": 1477.4,
+      "cold_http_status": 200,
+      "cold_ok": true,
+      "status": "AMBIGUOUS_WITH_VERIFIED_WITNESSES",
+      "m3_judge_verdict": "AGREE",
+      "m3_verdict_sha256": "b122233573c3f56f4471e761abab3a523d36d6594ac58c600630257e357d85bf",
+      "m3_sha_matches_disk": true,
+      "provenance_mode": "PRECOMPUTED_VERIFIED_TREE",
+      "cell_count": 378,
+      "fractures": 7,
+      "has_collapse_tree_summary": true
+    },
+    {
+      "cluster_id": "perozzo_c01",
+      "site_id": "perozzo_finale_ligure",
+      "http_status": 200,
+      "ok": true,
+      "ms": 288.7,
+      "cold_ms": 499.6,
+      "cold_http_status": 200,
+      "cold_ok": true,
+      "status": "CERTIFIED_DISCONNECTED",
+      "m3_judge_verdict": "AGREE",
+      "m3_verdict_sha256": "b122233573c3f56f4471e761abab3a523d36d6594ac58c600630257e357d85bf",
+      "m3_sha_matches_disk": true,
+      "provenance_mode": "PRECOMPUTED_VERIFIED_TREE",
+      "cell_count": 692,
+      "fractures": 6,
+      "has_collapse_tree_summary": false
+    }
+  ],
+  "apply_checks": [
+    {
+      "cluster_id": "jardim_c04",
+      "fracture_id": "frag_42fe2b00c4c29df3738fe3dae68010c4",
+      "branch_id": "band_left",
+      "ranked_count": 6,
+      "http_status": 200,
+      "ok": true,
+      "ms": 667.4,
+      "previous_status": "AMBIGUOUS_WITH_VERIFIED_WITNESSES",
+      "resulting_status": "CERTIFIED_CONNECTED",
+      "step_count": 1,
+      "collapsed_to_certified": true,
+      "check_receipt_sha256": "979c5f6e3ca256f6acd9554f3e4f430d4af5394ce3c491101e2b627fbd3d193a",
+      "next_step_present": false,
+      "error_code": null
+    },
+    {
+      "cluster_id": "jardim_c02",
+      "fracture_id": "frag_786debfdca7bb1f52f2ff3766d61ca0c",
+      "branch_id": "mode_TILT_0DEG",
+      "ranked_count": 6,
+      "http_status": 200,
+      "ok": true,
+      "ms": 359.2,
+      "previous_status": "AMBIGUOUS_WITH_VERIFIED_WITNESSES",
+      "resulting_status": "AMBIGUOUS_WITH_VERIFIED_WITNESSES",
+      "step_count": 1,
+      "collapsed_to_certified": false,
+      "check_receipt_sha256": "b80cb46ea76d2fd2f686876385e745545551c9480b0b15ebc5ee7c9972bdff66",
+      "next_step_present": true,
+      "error_code": null,
+      "step2": {
+        "step2_fracture_id": "frag_306f0d79a2c51ef819597b812f515062",
+        "step2_branch_id": "band_right",
+        "http_status": 200,
+        "ok": true,
+        "ms": 246.0,
+        "previous_status": "AMBIGUOUS_WITH_VERIFIED_WITNESSES",
+        "resulting_status": "CERTIFIED_DISCONNECTED",
+        "collapsed_to_certified": true,
+        "check_receipt_sha256": "d11cc5678204c1f2fd2699e07a842f0228a04b4600cdcb88506a015add98aefb"
+      }
+    },
+    {
+      "cluster_id": "perozzo_c02",
+      "fracture_id": "perozzo_row_0462",
+      "branch_id": "mode_TILT_0DEG",
+      "ranked_count": 6,
+      "http_status": 200,
+      "ok": true,
+      "ms": 204.9,
+      "previous_status": "AMBIGUOUS_WITH_VERIFIED_WITNESSES",
+      "resulting_status": "AMBIGUOUS_WITH_VERIFIED_WITNESSES",
+      "step_count": 1,
+      "collapsed_to_certified": false,
+      "check_receipt_sha256": "2d87abe6ddf4704e14059e2f79775d66370a12c3f649818a9f7cc2e97c00419b",
+      "next_step_present": true,
+      "error_code": null,
+      "step2": {
+        "step2_fracture_id": "perozzo_row_0450",
+        "step2_branch_id": "band_left",
+        "http_status": 200,
+        "ok": true,
+        "ms": 352.8,
+        "previous_status": "AMBIGUOUS_WITH_VERIFIED_WITNESSES",
+        "resulting_status": "CERTIFIED_DISCONNECTED",
+        "collapsed_to_certified": true,
+        "check_receipt_sha256": "d4d031faef841ed905d3da77371af7c2b42c6c5cddeff7be95a369b60e19e8ae"
+      }
+    }
+  ],
+  "certified_probe": {
+    "cluster_id": "perozzo_c01",
+    "http_status": 400,
+    "ok": false,
+    "ms": 341.3,
+    "expected_reject": true,
+    "body_code": {
+      "code": "INVALID_CHECK_TARGET",
+      "details": {
+        "cluster_id": "perozzo_c01",
+        "fracture_id": "perozzo_row_0508",
+        "status": "CERTIFIED_DISCONNECTED"
+      },
+      "message": "fracture 'perozzo_row_0508' has no declared active-check branches in cluster 'perozzo_c01' (status=CERTIFIED_DISCONNECTED)",
+      "type": "IdentifiabilityError"
+    }
+  },
+  "badge_probe": {
+    "node_exit": 0,
+    "seconds": 24.44,
+    "ok": true,
+    "externalRequests": [],
+    "abortedExternal": [],
+    "consoleErrors": [],
+    "pageErrors": [],
+    "cases": [
+      {
+        "cluster_id": "jardim_c04",
+        "badge_text": "M3 独立判卷：AGREE",
+        "badge_class": "id-m3-badge agree",
+        "badge_bg": "rgb(209, 250, 229)",
+        "badge_color": "rgb(6, 95, 70)",
+        "status_text": "AMBIGUOUS_WITH_VERIFIED_WITNESSES · 存在双见证歧义",
+        "status_attr": "AMBIGUOUS_WITH_VERIFIED_WITNESSES",
+        "screenshot": "C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M7_final_pack_and_gates\\screenshots\\m3_badge_jardim_c04.png",
+        "bytes": 266671
+      },
+      {
+        "cluster_id": "jardim_c02",
+        "badge_text": "M3 独立判卷：AGREE",
+        "badge_class": "id-m3-badge agree",
+        "badge_bg": "rgb(209, 250, 229)",
+        "badge_color": "rgb(6, 95, 70)",
+        "status_text": "AMBIGUOUS_WITH_VERIFIED_WITNESSES · 存在双见证歧义",
+        "status_attr": "AMBIGUOUS_WITH_VERIFIED_WITNESSES",
+        "screenshot": "C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M7_final_pack_and_gates\\screenshots\\m3_badge_jardim_c02.png",
+        "bytes": 261045
+      },
+      {
+        "cluster_id": "perozzo_c02",
+        "badge_text": "M3 独立判卷：AGREE",
+        "badge_class": "id-m3-badge agree",
+        "badge_bg": "rgb(209, 250, 229)",
+        "badge_color": "rgb(6, 95, 70)",
+        "status_text": "AMBIGUOUS_WITH_VERIFIED_WITNESSES · 存在双见证歧义",
+        "status_attr": "AMBIGUOUS_WITH_VERIFIED_WITNESSES",
+        "screenshot": "C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M7_final_pack_and_gates\\screenshots\\m3_badge_perozzo_c02.png",
+        "bytes": 268829
+      },
+      {
+        "cluster_id": "perozzo_c01",
+        "badge_text": "M3 独立判卷：AGREE",
+        "badge_class": "id-m3-badge agree",
+        "badge_bg": "rgb(209, 250, 229)",
+        "badge_color": "rgb(6, 95, 70)",
+        "status_text": "CERTIFIED_DISCONNECTED · 精确认证断割",
+        "status_attr": "CERTIFIED_DISCONNECTED",
+        "screenshot": "C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M7_final_pack_and_gates\\screenshots\\m3_badge_perozzo_c01.png",
+        "bytes": 242232
+      }
+    ],
+    "error": null,
+    "log": "runtime/browser_badge_probe.stdout.log"
+  },
+  "shutdown": {
+    "terminate_seconds": 2.06,
+    "forced_kill": false,
+    "returncode": 1,
+    "port_closed": true,
+    "residual_pid": null
+  },
+  "verdict": "PASS",
+  "health": {
+    "http_status": 200,
+    "ok": true,
+    "ms": 25.3,
+    "m1_present": true,
+    "m2_present": true,
+    "m3_present": true,
+    "m3_verdict_count": 22,
+    "m3_verdict_sha256": "b122233573c3f56f4471e761abab3a523d36d6594ac58c600630257e357d85bf",
+    "m3_sha_matches_disk": true,
+    "m2_run_id": "run_20261120_exact_v1"
+  },
+  "enumeration": {
+    "cases_loaded": 4,
+    "jardim_cases": 2,
+    "perozzo_cases": 2,
+    "apply_check_ok": 3,
+    "apply_check_total": 3,
+    "step2_collapses_ok": 2,
+    "badges_green_agree": 4,
+    "badges_total": 4,
+    "external_requests_runtime": 0,
+    "cases_cold_ms": 4159.5,
+    "cases_warm_ms": 4150.2,
+    "cases_latency_under_2s": false
+  },
+  "pass_reasons": {
+    "launcher_ok": true,
+    "health_m3_ok": true,
+    "http_ok": true,
+    "badge_ok": true,
+    "shutdown_ok": true,
+    "two_sites": true,
+    "cases_endpoint_latency_under_2s": false
+  }
+}

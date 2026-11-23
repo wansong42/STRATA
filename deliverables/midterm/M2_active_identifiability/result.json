@@ -1,0 +1,421 @@
+{
+  "at_utc": "2026-11-21T04:01:24.164156+00:00",
+  "commands": [
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 results/midterm_sprint_20261120/M2_active_identifiability/solve_real_clusters.py --register results/midterm_sprint_20261120/M1_real_to_exact_bridge/cluster_register.json --run-dir results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1",
+      "enumerated": 22,
+      "executed": true,
+      "exit_code": 0,
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe"
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 results/midterm_sprint_20261120/M2_active_identifiability/active_identifiability.py --register results/midterm_sprint_20261120/M1_real_to_exact_bridge/cluster_register.json --run-dir results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1",
+      "enumerated": 22,
+      "executed": true,
+      "exit_code": 0,
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe"
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 results/midterm_sprint_20261120/M2_active_identifiability/simulate_active_loop.py --register results/midterm_sprint_20261120/M1_real_to_exact_bridge/cluster_register.json --run-dir results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1 --out results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/simulation_detail.json",
+      "enumerated": 6,
+      "executed": true,
+      "exit_code": 0,
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe"
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 results/midterm_sprint_20261120/M2_active_identifiability/verify_m2.py --register results/midterm_sprint_20261120/M1_real_to_exact_bridge/cluster_register.json --run-dir results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1 --sim-json results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/simulation_detail.json",
+      "enumerated": 34,
+      "executed": true,
+      "exit_code": 0,
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe"
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 scripts/repro_certify.py --out results/midterm_sprint_20261120/M2_active_identifiability/gates/g1.json",
+      "enumerated": 9,
+      "executed": true,
+      "exit_code": 0,
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe"
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 -m fractureflow.selfcheck --quick --out results/midterm_sprint_20261120/M2_active_identifiability/gates/g2.json",
+      "enumerated": 40,
+      "executed": true,
+      "exit_code": 0,
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe"
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 scripts/r263_gain_mislabel_scan.py --scope delivery --fail-on-hit --out results/midterm_sprint_20261120/M2_active_identifiability/gates/g3.json",
+      "enumerated": 9,
+      "executed": true,
+      "exit_code": 0,
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe"
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 scripts/r303_draft_check.py --draft results/midterm_sprint_20261120/M2_active_identifiability/report.md --doc-class governance --json-only --out results/midterm_sprint_20261120/M2_active_identifiability/gates/g4",
+      "enumerated": 6,
+      "executed": true,
+      "exit_code": 0,
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe"
+    }
+  ],
+  "enumeration": {
+    "ambiguous_with_verified_witnesses": 6,
+    "budget_exceeded_refused": 1,
+    "certified_connected": 1,
+    "certified_disconnected": 14,
+    "completed_exact_certification": 21,
+    "jardim_clusters": 6,
+    "m1_sha_aligned_clusters": 22,
+    "negative_control_classes": 7,
+    "negative_controls": 10,
+    "negative_correctly_rejected": 10,
+    "perozzo_clusters": 16,
+    "positive_cases": 22,
+    "positive_passed": 22,
+    "raw_tc_equivalence_clusters": 2
+  },
+  "evidence": [
+    {
+      "bytes": 77569,
+      "file": "solve_real_clusters.py",
+      "sha256": "4ad3dafe9265fa3f9b1b6257047e54c97232daf5e55af18e1f8c2f4976e2832d"
+    },
+    {
+      "bytes": 62619,
+      "file": "active_identifiability.py",
+      "sha256": "34f104bcde4df5a457c876763e5f3db4b1d5f2982f6d1dbdcb629e2ad8657989"
+    },
+    {
+      "bytes": 28353,
+      "file": "simulate_active_loop.py",
+      "sha256": "fb48dfbc07636e24b69c7d6e3193bcc590cc1a9c37c489a17d236e3fae5407ad"
+    },
+    {
+      "bytes": 43126,
+      "file": "verify_m2.py",
+      "sha256": "3c01b5770f9c4703af84b0a0e1e20ff552788597ea68a068193747dc084aa9f6"
+    },
+    {
+      "bytes": 5924,
+      "file": "own_defects.json",
+      "sha256": "9f2c5ea4f27d0820d18332fea902b8980139c88d2629e2d18b565fa73b5d4cc4"
+    },
+    {
+      "bytes": 11428,
+      "file": "negative_controls.json",
+      "sha256": "bc8379ca73de749d311e22e83199c54e96359603ae28893a860137e863b70d0b"
+    },
+    {
+      "bytes": 12177,
+      "file": "verification_report.json",
+      "sha256": "1a5b7c103986fbd337fdcb92184e45a39fdf94b386098cadd8e9a46f6936d6b6"
+    },
+    {
+      "bytes": 18012,
+      "file": "report.md",
+      "sha256": "1249fb1fa332995edc3a2f681a62fb2900c34326c880f375a31fa3f909affcfc"
+    },
+    {
+      "bytes": 5028,
+      "file": "run_receipt.json",
+      "sha256": "d7a3a500b1b846bd4bed6f014fba53a947588851e4467327efd26a303e4fff5f"
+    },
+    {
+      "bytes": 1904,
+      "file": "gates/g1.json",
+      "sha256": "27a49c744a34accbda7f0cc93d7ebf41c313d3b17d0cf705d7895f24bf34ee74"
+    },
+    {
+      "bytes": 10720,
+      "file": "gates/g2.json",
+      "sha256": "5ad1eefbabc501ef36e2707492dd55e3bba461732d2e49f21748af7d0ed81c75"
+    },
+    {
+      "bytes": 20648,
+      "file": "gates/g3.json",
+      "sha256": "87031a4e37872392207c4d38f653ed51434bb91387343237f1cab2f0f520f562"
+    },
+    {
+      "bytes": 2860,
+      "file": "gates/g4/draft_check.json",
+      "sha256": "1e4551e520472d4e4d643cf2e907d438b2ff70059ba5f1288732fb84b12ec504"
+    },
+    {
+      "bytes": 247524,
+      "file": "runs/run_20261120_exact_v1/summary.json",
+      "sha256": "3a2cf6bf392251f1d5c61830adf466cb2b3aeca6ef48a54beaac84e9c5f33546"
+    },
+    {
+      "bytes": 212060,
+      "file": "runs/run_20261120_exact_v1/simulation_detail.json",
+      "sha256": "98f7d5465e72807674fc2b73d09cc3dad479aa43f3df2f1968ba8f37de578020"
+    },
+    {
+      "bytes": 1115,
+      "file": "runs/run_20261120_exact_v1/cases/jardim_c01/active_check.json",
+      "sha256": "06d48a71c96faed213c62160c17434513c1db2159cb394a9d1116b20d5e6d86a"
+    },
+    {
+      "bytes": 2152,
+      "file": "runs/run_20261120_exact_v1/cases/jardim_c01/certification.json",
+      "sha256": "6043b699c7e5b6b8de1a5cf0d5279ac0bb9ad6ca8e2f072588bfcc58fd605883"
+    },
+    {
+      "bytes": 1384622,
+      "file": "runs/run_20261120_exact_v1/cases/jardim_c02/active_check.json",
+      "sha256": "c087e4b19c440a0850999d75fc708a9bf68ad24f634a614b58b7a2cca07da2ac"
+    },
+    {
+      "bytes": 6614710,
+      "file": "runs/run_20261120_exact_v1/cases/jardim_c02/certification.json",
+      "sha256": "4cbdb2f0d050c861760309be85249a2f552bae2b882fb058622e7fc4ef7937ec"
+    },
+    {
+      "bytes": 466774,
+      "file": "runs/run_20261120_exact_v1/cases/jardim_c03/active_check.json",
+      "sha256": "ed264ee29cae131ba5a4f37c2d7bafa001db55be14c16c16711e86edde6f3e1e"
+    },
+    {
+      "bytes": 10192681,
+      "file": "runs/run_20261120_exact_v1/cases/jardim_c03/certification.json",
+      "sha256": "f0e480986b1c81de6cf6ba58574091a736193445a99800a0bfbd0ae21c2b7d24"
+    },
+    {
+      "bytes": 1110300,
+      "file": "runs/run_20261120_exact_v1/cases/jardim_c04/active_check.json",
+      "sha256": "d629a7abaae3aaf6bbc104abd8dc0a8e1f538b4326e5f3f99d14819f182cb587"
+    },
+    {
+      "bytes": 21123247,
+      "file": "runs/run_20261120_exact_v1/cases/jardim_c04/certification.json",
+      "sha256": "d4e6bb9a442c7be5a0f8f858d2c98552c166d1fd6a99438f26e9e577e2395836"
+    },
+    {
+      "bytes": 1532142,
+      "file": "runs/run_20261120_exact_v1/cases/jardim_c05/active_check.json",
+      "sha256": "bcc50267828a0e505dc397fefa354dce3f0305d0fa956323caefa8949c1b12e7"
+    },
+    {
+      "bytes": 7180517,
+      "file": "runs/run_20261120_exact_v1/cases/jardim_c05/certification.json",
+      "sha256": "1b98887072c3262657037c2b9e0d91ecb21c8a6aadef297936872add9d2787dc"
+    },
+    {
+      "bytes": 2083522,
+      "file": "runs/run_20261120_exact_v1/cases/jardim_c06/active_check.json",
+      "sha256": "6a9141bdfddbdd6ebe10eed33e73c7bf383e3259205f26fadf0adf8d4fab1e7d"
+    },
+    {
+      "bytes": 11183996,
+      "file": "runs/run_20261120_exact_v1/cases/jardim_c06/certification.json",
+      "sha256": "28d9e82b949151679ad73194b5a10faf8d08cf31f0086826ee1db3ad8d963158"
+    },
+    {
+      "bytes": 1379,
+      "file": "runs/run_20261120_exact_v1/cases/perozzo_c01/active_check.json",
+      "sha256": "0e10a5de8c93a610d950fe1f65a8e8bd216afcd1da6f7a0158913cc8d4b36d38"
+    },
+    {
+      "bytes": 6992938,
+      "file": "runs/run_20261120_exact_v1/cases/perozzo_c01/certification.json",
+      "sha256": "373face40dd032861afa1ee7d1b6d52ab53578b102def1c1e2dc611a0d07486e"
+    },
+    {
+      "bytes": 1443196,
+      "file": "runs/run_20261120_exact_v1/cases/perozzo_c02/active_check.json",
+      "sha256": "c9411d6fb41ca66e40146bdec27f10d6f5494c89054f226d780d8470721e43b9"
+    },
+    {
+      "bytes": 4440156,
+      "file": "runs/run_20261120_exact_v1/cases/perozzo_c02/certification.json",
+      "sha256": "10c1b6d8b8bde7dba0896aaf5f1e9f11c02a7f2657fe282086f7b92be0557d2e"
+    },
+    {
+      "bytes": 1389,
+      "file": "runs/run_20261120_exact_v1/cases/perozzo_c03/active_check.json",
+      "sha256": "5fe15d0a217bcb62d518105888ff3b56d811b3d7dc1c569b43eafbaf2d979f00"
+    },
+    {
+      "bytes": 4900611,
+      "file": "runs/run_20261120_exact_v1/cases/perozzo_c03/certification.json",
+      "sha256": "29a426b2463d869e9e46e9dc622d9c8f12131872e5f12d8628351c036484b5aa"
+    },
+    {
+      "bytes": 1370,
+      "file": "runs/run_20261120_exact_v1/cases/perozzo_c04/active_check.json",
+      "sha256": "627e957eb7afcaa0d22906e9930a4ecdd46832e7c556efa135c5bba1c4485443"
+    },
+    {
+      "bytes": 15335473,
+      "file": "runs/run_20261120_exact_v1/cases/perozzo_c04/certification.json",
+      "sha256": "49dcd90bc16b1523276195428592430a573008976072a73b772fcf8a07218880"
+    },
+    {
+      "bytes": 1379,
+      "file": "runs/run_20261120_exact_v1/cases/perozzo_c05/active_check.json",
+      "sha256": "223b0183b8de3d629514d558a5dd0c305324c40588c1d1b94213d705e1ebd5a1"
+    },
+    {
+      "bytes": 1027144,
+      "file": "runs/run_20261120_exact_v1/cases/perozzo_c05/certification.json",
+      "sha256": "fea0e37814d11c340d78f5434589515f2ed227d42f725b4b63ac6ffd68ed9862"
+    },
+    {
+      "bytes": 1389,
+      "file": "runs/run_20261120_exact_v1/cases/perozzo_c06/active_check.json",
+      "sha256": "859ccf518e6a3c1a7c9ff54f1db590952b48657cc3d842cad94b5863157c49cf"
+    },
+    {
+      "bytes": 1013002,
+      "file": "runs/run_20261120_exact_v1/cases/perozzo_c06/certification.json",
+      "sha256": "aae488b6dc1591c396c05f9796b6084e69c08facccd33792ceda3a5c25d3cc20"
+    },
+    {
+      "bytes": 1379,
+      "file": "runs/run_20261120_exact_v1/cases/perozzo_c07/active_check.json",
+      "sha256": "ce3585cfd865fbfecceaf75d1725a287866836fffcf3e8e9b18eddde43a7aa7a"
+    },
+    {
+      "bytes": 4242507,
+      "file": "runs/run_20261120_exact_v1/cases/perozzo_c07/certification.json",
+      "sha256": "d9368feaad4e511cbd827bc25889c1a2744c46b4d00094d8823ab1b749bcc3f0"
+    },
+    {
+      "bytes": 1379,
+      "file": "runs/run_20261120_exact_v1/cases/perozzo_c08/active_check.json",
+      "sha256": "cfa2e72b11ad0e7ca2a9709fd448b432d84f944b6935481278ef98cca82245b9"
+    },
+    {
+      "bytes": 1897683,
+      "file": "runs/run_20261120_exact_v1/cases/perozzo_c08/certification.json",
+      "sha256": "8b91018ff46e93805b6b44f1ec071b47516d11c1c322faa8a61465ae38ee0450"
+    },
+    {
+      "bytes": 1389,
+      "file": "runs/run_20261120_exact_v1/cases/perozzo_c09/active_check.json",
+      "sha256": "9752a810ef059396d88f4b849695b8f1c9c6dd278bdebbeed596814e84357bb7"
+    },
+    {
+      "bytes": 899210,
+      "file": "runs/run_20261120_exact_v1/cases/perozzo_c09/certification.json",
+      "sha256": "47d2029d5fe988b41fedfce8baf66b02c9be9276cecc325532d7a9c7194ea73e"
+    },
+    {
+      "bytes": 1379,
+      "file": "runs/run_20261120_exact_v1/cases/perozzo_c10/active_check.json",
+      "sha256": "a4ecd7470d78642c3a329d21911605e70a5ca916527f1dfd8be2c087bf5de5b1"
+    },
+    {
+      "bytes": 1697252,
+      "file": "runs/run_20261120_exact_v1/cases/perozzo_c10/certification.json",
+      "sha256": "03d0c4c29e38b18d6ccc046f09f42d5a2985b91c507dc8c5d2945a2dedec7286"
+    },
+    {
+      "bytes": 1379,
+      "file": "runs/run_20261120_exact_v1/cases/perozzo_c11/active_check.json",
+      "sha256": "56a97ac9123ff27bb7e43028edc2e13a8d2a42ff5f66975365848965a0d36d83"
+    },
+    {
+      "bytes": 4355375,
+      "file": "runs/run_20261120_exact_v1/cases/perozzo_c11/certification.json",
+      "sha256": "f7e8077a810d972c86a9498949be7bab37cb060a04883ccbd7e64def51f5748c"
+    },
+    {
+      "bytes": 1389,
+      "file": "runs/run_20261120_exact_v1/cases/perozzo_c12/active_check.json",
+      "sha256": "0adb82c05b7d338a59bdf02bb72a98fdf1b3d4b6c53abb5b11f6c894a8cc395f"
+    },
+    {
+      "bytes": 4354828,
+      "file": "runs/run_20261120_exact_v1/cases/perozzo_c12/certification.json",
+      "sha256": "6c1002c4ce50c64e571e859736dfd887e8c548c9202e4b94b906e0f7b4113b9c"
+    },
+    {
+      "bytes": 1379,
+      "file": "runs/run_20261120_exact_v1/cases/perozzo_c13/active_check.json",
+      "sha256": "5d68f802f8eb0a851615db8bd2a163ecbf557eaeb5519c29391b8cfaee570e8a"
+    },
+    {
+      "bytes": 1101933,
+      "file": "runs/run_20261120_exact_v1/cases/perozzo_c13/certification.json",
+      "sha256": "7d0942ca7877741bcb3ef0058be5c9f7ef287490d0d70e3f5496f3d28c2ce9c8"
+    },
+    {
+      "bytes": 1379,
+      "file": "runs/run_20261120_exact_v1/cases/perozzo_c14/active_check.json",
+      "sha256": "085b5c57e4d011d37cdd58b44c3db74aa233fc7a7b12947bcaf358d482039fcc"
+    },
+    {
+      "bytes": 8094015,
+      "file": "runs/run_20261120_exact_v1/cases/perozzo_c14/certification.json",
+      "sha256": "cb6e9917871582838c1157bcb23a446c93db0b3d03d94d6b73c9aca1e02e4a17"
+    },
+    {
+      "bytes": 1389,
+      "file": "runs/run_20261120_exact_v1/cases/perozzo_c15/active_check.json",
+      "sha256": "d1841bbd46f7c041daba5648f852ede8eb5383bc37ad8cc29116b31901b0286f"
+    },
+    {
+      "bytes": 2668919,
+      "file": "runs/run_20261120_exact_v1/cases/perozzo_c15/certification.json",
+      "sha256": "6c483bc63a40adbbf1532057e80cacae0e057cddedf94f36d4a92fea45ac68a2"
+    },
+    {
+      "bytes": 1389,
+      "file": "runs/run_20261120_exact_v1/cases/perozzo_c16/active_check.json",
+      "sha256": "c3b986ae0245ab8a20f4c0c20dd7e2d6d47f564f8348091a124409614afed448"
+    },
+    {
+      "bytes": 5596495,
+      "file": "runs/run_20261120_exact_v1/cases/perozzo_c16/certification.json",
+      "sha256": "cfd378c536d9c5d531188154ff1b15de34ada1e76d6a08716eee9b66dbadc8bf"
+    }
+  ],
+  "field_error_rate": null,
+  "gates": {
+    "g1_repro_certify": {
+      "enumerated": 9,
+      "exit_code": 0,
+      "file": "gates/g1.json"
+    },
+    "g2_selfcheck_quick": {
+      "enumerated": 40,
+      "exit_code": 0,
+      "file": "gates/g2.json"
+    },
+    "g3_r263_delivery": {
+      "enumerated": 9,
+      "exit_code": 0,
+      "file": "gates/g3.json"
+    },
+    "g4_r303_draft_check": {
+      "enumerated": 6,
+      "exit_code": 0,
+      "file": "gates/g4/draft_check.json",
+      "verdict": "CLEAN"
+    }
+  },
+  "human_time": null,
+  "hydraulic": null,
+  "m1_alignment": {
+    "aligned_clusters": 22,
+    "m1_cluster_register_sha256": "2778ba4a096f431235273222bcd5b74b27f9419d33cc34606790bc758bba6bcf",
+    "m1_real_network_format_sha256": "c9a8386501873fc552b19707249ce49393733ec50c7269bdd38fdfad89ca47d4",
+    "m1_result_sha256": "02c854722a8333b0dd6c7b4b6af43378d5c01d34b0209184153533b6e9f1f5a2",
+    "m1_status": "PASS",
+    "mismatches": [],
+    "ok": true
+  },
+  "not_claimed": [
+    "非地下体内无条件贯通真值 (not unconditional subsurface/in-rock ground truth)",
+    "非水力连通与非渗透率结论 (not hydraulic connectivity or permeability)",
+    "非野外人工复核真实耗时结论 (human_time = null)",
+    "未替代 M3 异模型零共享代码独立盲判",
+    "真实露头条件域 REAL_DERIVED_CONDITIONED_FINITE_UNION 与合成域 SYNTHETIC_DECLARED_TRIANGLE_UNION 永久分轨，jardim_c01 预算拒收单列不混入贯通分母"
+  ],
+  "run_id": "run_20261120_exact_v1",
+  "schema": "dispatch-result/v1",
+  "scope": "Exact rational whole-network connectivity certification, zero-leakage active next-best-check ranking (RESOLVE_MODE_FEATURE + REFINE_PARAMETER_BAND) with depth-2 collapse_tree, and leak-free 4-strategy counterfactual collapse simulation across all 22 M1 real-derived conditioned outcrop clusters (Jardim Garcia 6 + Perozzo 2024 16: 21 complete + 1 honest BUDGET_EXCEEDED refusal envelope); aligned with finalized M1 PASS SHAs; excludes independent cross-model judging (M3), subsurface ground truth, human time, and hydraulic connectivity.",
+  "status": "PASS",
+  "task_id": "M2"
+}

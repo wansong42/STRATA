@@ -1,0 +1,16 @@
+{
+ "perozzo_c12": {
+  "checks": {
+   "canon_sha256": "71b46a0753adcf09d8288930e1652758537ca2d81c58c549ad9c97cf694a9288",
+   "cells_declared": 235,
+   "cells_recomputed": 235,
+   "collapse_tree_checked": 0,
+   "windows_declared": 9234,
+   "windows_recomputed": 1232
+  },
+  "cluster_id": "perozzo_c12",
+  "first_disagreement": null,
+  "status_m2": "CERTIFIED_DISCONNECTED",
+  "verdict": "AGREE"
+ }
+}

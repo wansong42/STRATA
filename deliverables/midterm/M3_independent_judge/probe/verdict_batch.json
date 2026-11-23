@@ -1,0 +1,25 @@
+{
+ "counts": {
+  "AGREE": 0,
+  "DISAGREE": 0,
+  "MALFORMED": 1,
+  "UNDECIDABLE": 0
+ },
+ "m1_register_sha256": "6e9ab83dc2e87d1e3e3347ef64b2b072ced8168b5e9f98f5df3c62022cb0de75",
+ "m2_summary_sha256": "c54445c6a7e5c163a3545cc977fe34589a97801c5d9f14cbe8946e96170b1675",
+ "refused": [],
+ "run_id": "run_20261120_exact_v1",
+ "schema": "m3-verdict-batch/v1",
+ "task_id": "M3",
+ "verdicts": {
+  "jardim_c02": {
+   "checks": null,
+   "first_disagreement": {
+    "detail": "TypeError('list indices must be integers or slices, not tuple')",
+    "reason": "JUDGE_EXCEPTION"
+   },
+   "status_m2": null,
+   "verdict": "MALFORMED"
+  }
+ }
+}

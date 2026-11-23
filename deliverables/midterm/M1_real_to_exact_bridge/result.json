@@ -1,0 +1,286 @@
+{
+  "at_utc": "2026-11-21T03:17:41.076870+00:00",
+  "commands": [
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 results/midterm_sprint_20261120/M1_real_to_exact_bridge/build_real_clusters.py",
+      "enumerated": 22,
+      "executed": true,
+      "exit_code": 0,
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe"
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 results/midterm_sprint_20261120/M1_real_to_exact_bridge/verify_m1.py",
+      "enumerated": 34,
+      "executed": true,
+      "exit_code": 0,
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe"
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 scripts/repro_certify.py --out results/midterm_sprint_20261120/M1_real_to_exact_bridge/gates/g1.json",
+      "enumerated": 9,
+      "executed": true,
+      "exit_code": 0,
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe"
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 -m fractureflow.selfcheck --quick --out results/midterm_sprint_20261120/M1_real_to_exact_bridge/gates/g2.json",
+      "enumerated": 40,
+      "executed": true,
+      "exit_code": 0,
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe"
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 scripts/r263_gain_mislabel_scan.py --scope delivery --fail-on-hit --out results/midterm_sprint_20261120/M1_real_to_exact_bridge/gates/g3.json",
+      "enumerated": 9,
+      "executed": true,
+      "exit_code": 0,
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe"
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 scripts/r303_draft_check.py --draft results/midterm_sprint_20261120/M1_real_to_exact_bridge/report.md --doc-class governance --json-only --out results/midterm_sprint_20261120/M1_real_to_exact_bridge/gates/g4",
+      "enumerated": 6,
+      "executed": true,
+      "exit_code": 0,
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe"
+    }
+  ],
+  "enumeration": {
+    "frozen_historical_drifts": 0,
+    "frozen_historical_files_checked": 115,
+    "jardim_clusters": 6,
+    "negative_control_classes": 7,
+    "negative_controls": 12,
+    "negative_correctly_rejected": 12,
+    "perozzo_clusters": 16,
+    "positive_cases": 22,
+    "positive_passed": 22
+  },
+  "evidence": [
+    {
+      "bytes": 9470,
+      "file": "prereg.json",
+      "sha256": "f12186af21f896038ad249c54c4a8f1e54b8aac8cda0c6c5aa4b42d52e10593d"
+    },
+    {
+      "bytes": 33311,
+      "file": "prereg_freeze_receipt.json",
+      "sha256": "ce6f48cd0690c5c7426154b34b510969386621ff4565d8f7843beb43aa68eb62"
+    },
+    {
+      "bytes": 33226,
+      "file": "real_network_format.py",
+      "sha256": "c9a8386501873fc552b19707249ce49393733ec50c7269bdd38fdfad89ca47d4"
+    },
+    {
+      "bytes": 82042,
+      "file": "build_real_clusters.py",
+      "sha256": "4576efc98de4cc59d0adbc4c5f5a7e1382cd7413b69d8da31b67c3962aa18f3c"
+    },
+    {
+      "bytes": 24794,
+      "file": "verify_m1.py",
+      "sha256": "fe3dcc2f15af283a8121637485ceecd93d371a7ac88d6d89ff18426199a31ada"
+    },
+    {
+      "bytes": 35380,
+      "file": "cluster_register.json",
+      "sha256": "2778ba4a096f431235273222bcd5b74b27f9419d33cc34606790bc758bba6bcf"
+    },
+    {
+      "bytes": 7853,
+      "file": "verification_summary.json",
+      "sha256": "ff7a29d6e45a32c659bff0836f77f5c3a6c5ee3ee30a600692047c182dc6d973"
+    },
+    {
+      "bytes": 14158,
+      "file": "negative_controls.json",
+      "sha256": "32dfb75586be62bb16d23c4dc6ed03539adc7d45da847b6db428a15cf87e7879"
+    },
+    {
+      "bytes": 1463,
+      "file": "frozen_dirs_audit.json",
+      "sha256": "2ec1a8c7f9c6c098e052689ecae659039eb305d50f040f548eb71acee6a55136"
+    },
+    {
+      "bytes": 6437,
+      "file": "own_defects.json",
+      "sha256": "fb6f52629d0620aa54f307275753c8b301d6014a403bcde475ec0a3c3f5d7eed"
+    },
+    {
+      "bytes": 16246,
+      "file": "report.md",
+      "sha256": "6d7074508195976f8e0aba86e8d3bb33a80d45c0dca2bf44a1989fbbfef0e277"
+    },
+    {
+      "bytes": 3317,
+      "file": "run_receipt.json",
+      "sha256": "712efefc2669d0399edc60b23f00f9e78e890adfa0735efcb1a3ccd88eb44178"
+    },
+    {
+      "bytes": 1904,
+      "file": "gates/g1.json",
+      "sha256": "609e9eb6dfbc3459b8cf39e583ece1d7fbda2e647928ffd4efe9a9b550d5fc3a"
+    },
+    {
+      "bytes": 10720,
+      "file": "gates/g2.json",
+      "sha256": "ba6de785f766b518c85c4ae934dd118203c6e9994bd69ad6052ce227c8d6c931"
+    },
+    {
+      "bytes": 20558,
+      "file": "gates/g3.json",
+      "sha256": "0c52262e769a3786c9abad03edad4a05d40874f12673928fa60a007b4f5afd5f"
+    },
+    {
+      "bytes": 2858,
+      "file": "gates/g4/draft_check.json",
+      "sha256": "f352f809ac5ce248ec30753b37dd94498492af82addb123a15ea4631249548b6"
+    },
+    {
+      "bytes": 259868,
+      "file": "clusters/jardim_c01/model.json",
+      "sha256": "a7a72d79922318f0ff7808aa43ca1a2d6860d1a1fc1322449992216863b08bc2"
+    },
+    {
+      "bytes": 172523,
+      "file": "clusters/jardim_c02/model.json",
+      "sha256": "030f151cc67cd6c64c01b555a2537e09c3a20640885f2068bbe5f8e5e3b1ddc5"
+    },
+    {
+      "bytes": 171812,
+      "file": "clusters/jardim_c03/model.json",
+      "sha256": "4a65b2447dc120c224d8dbdfea450a98c81de6e40266fa680d0d62398f143a45"
+    },
+    {
+      "bytes": 215860,
+      "file": "clusters/jardim_c04/model.json",
+      "sha256": "911ff3ecc3341e923bc915831b911f1f92f0ac1e8c5f417b1d3b2b2469d8e714"
+    },
+    {
+      "bytes": 171236,
+      "file": "clusters/jardim_c05/model.json",
+      "sha256": "c0ca7065ad4df7e71af1b064493e303fd9f0c55b2c8b61353433cc462b044578"
+    },
+    {
+      "bytes": 217294,
+      "file": "clusters/jardim_c06/model.json",
+      "sha256": "df7c7c0c53b032a488a1759ce2861637c006a1c4fc4afe265bc655f410137c53"
+    },
+    {
+      "bytes": 169573,
+      "file": "clusters/perozzo_c01/model.json",
+      "sha256": "208c769e57362b34742121723af722a005e0c521aa94519cf83ea3d7334af251"
+    },
+    {
+      "bytes": 195831,
+      "file": "clusters/perozzo_c02/model.json",
+      "sha256": "787565d4f8b0beec7d749b45744ceaf3b3c9c28ba0c569ffe899eb21ebdc4554"
+    },
+    {
+      "bytes": 224020,
+      "file": "clusters/perozzo_c03/model.json",
+      "sha256": "557f1551bd3ea6f922360dd83f8b557b2b60bbf54e6b96ac7e4c17c6c6408ec7"
+    },
+    {
+      "bytes": 249438,
+      "file": "clusters/perozzo_c04/model.json",
+      "sha256": "8ebe6b8d673dae51918ab1de77ae086a3d5a596bc2514bf74768b4a15d411d99"
+    },
+    {
+      "bytes": 169494,
+      "file": "clusters/perozzo_c05/model.json",
+      "sha256": "81daca04a66799b6f6d080308a0e3b1bddbbb04b07852832e288bf5c30dddc47"
+    },
+    {
+      "bytes": 199437,
+      "file": "clusters/perozzo_c06/model.json",
+      "sha256": "53fb793a9a11ba1f28270bf322d806852e96b865a5c9be79dc822d35c6078128"
+    },
+    {
+      "bytes": 223824,
+      "file": "clusters/perozzo_c07/model.json",
+      "sha256": "ebb5960cc6d62c5649aa8da85bb0b902d6254d77d07289a0109895b22c79fa3f"
+    },
+    {
+      "bytes": 249888,
+      "file": "clusters/perozzo_c08/model.json",
+      "sha256": "dd7a32f89430f8e8d4ff221332ecca201ccace03a37be02887b4b65c9fd46b72"
+    },
+    {
+      "bytes": 169046,
+      "file": "clusters/perozzo_c09/model.json",
+      "sha256": "3af5c0f584f53ea5f0f58463958649e5a88e45d99cb55190138ae78e64de4426"
+    },
+    {
+      "bytes": 195619,
+      "file": "clusters/perozzo_c10/model.json",
+      "sha256": "b31b70a33c204ea631f1f6cb2e779f10ba6909326a11d2b5fd5fe1b936ef12c0"
+    },
+    {
+      "bytes": 224236,
+      "file": "clusters/perozzo_c11/model.json",
+      "sha256": "9c23f61ac56e7f5641be51a844bd5409e91b7b96c6f99d02dcb436cd47136372"
+    },
+    {
+      "bytes": 249932,
+      "file": "clusters/perozzo_c12/model.json",
+      "sha256": "9a1043e8822482afbfaf740bf37842ac18067fb64e6dc81ec2e27ba29a61d29c"
+    },
+    {
+      "bytes": 169585,
+      "file": "clusters/perozzo_c13/model.json",
+      "sha256": "f543cfa8f299737b5e3850f131abefc7f60fff209bf175ab65b9c604368fa0e4"
+    },
+    {
+      "bytes": 194655,
+      "file": "clusters/perozzo_c14/model.json",
+      "sha256": "173350047292b92dbb69fd1349658fb0503199bf1d18a5b1e4b28a643b8a0378"
+    },
+    {
+      "bytes": 224709,
+      "file": "clusters/perozzo_c15/model.json",
+      "sha256": "318434bb55100ab877c3982f9888c22a04653b12a92b57319cbeaf8f4959c2b3"
+    },
+    {
+      "bytes": 252061,
+      "file": "clusters/perozzo_c16/model.json",
+      "sha256": "4cc36de2fb5219cec451b38f0fd8991ed8845337a13dd35e8faaba8bd0c4be8d"
+    }
+  ],
+  "field_error_rate": null,
+  "gates": {
+    "g1_repro_certify": {
+      "enumerated": 9,
+      "exit_code": 0,
+      "file": "gates/g1.json"
+    },
+    "g2_selfcheck_quick": {
+      "enumerated": 40,
+      "exit_code": 0,
+      "file": "gates/g2.json"
+    },
+    "g3_r263_delivery": {
+      "enumerated": 9,
+      "exit_code": 0,
+      "file": "gates/g3.json"
+    },
+    "g4_r303_draft_check": {
+      "enumerated": 6,
+      "exit_code": 0,
+      "file": "gates/g4/draft_check.json",
+      "verdict": "CLEAN"
+    }
+  },
+  "human_time": null,
+  "hydraulic": null,
+  "not_claimed": [
+    "非地下体内无条件贯通真值 (not unconditional subsurface/in-rock connectivity ground truth)",
+    "非水力连通与非渗透率结论 (not hydraulic connectivity or permeability)",
+    "未在 M1 执行 22 簇整网连通认证与主动下一步复核排序（属 M2 范畴）",
+    "真实露头条件有限多边形模型与合成域 SYNTHETIC_DECLARED_TRIANGLE_UNION 永久分轨，禁混栏"
+  ],
+  "schema": "dispatch-result/v1",
+  "scope": "Real-derived conditioned finite fracture-cluster admission validator (TC-network/real-conditioned/v1) and pre-registered 22-cluster build across Jardim Garcia (6) and Perozzo 2024 (16) with 7-class/12-case toothed negative controls and zero modification to frozen directories; excludes whole-network connectivity solving (M2) and subsurface/hydraulic claims.",
+  "status": "PASS",
+  "task_id": "M1"
+}

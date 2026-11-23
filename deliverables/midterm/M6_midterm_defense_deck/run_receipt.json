@@ -1,0 +1,94 @@
+{
+  "at_utc": "2026-11-21T11:59:51.472420+00:00",
+  "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+  "cwd": "C:\\Users\\晚菘\\Documents\\Default Project",
+  "env_overrides": {
+    "KMP_DUPLICATE_LIB_OK": "TRUE",
+    "PYTHONPATH": "C:\\Users\\晚菘\\Documents\\Default Project\\src (仅 g2)"
+  },
+  "commands": [
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 \"C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M6_midterm_defense_deck\\verify_m6.py\" --run-negative-controls",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 613,
+      "stdout_file": "logs/verify_m6.txt",
+      "stderr_file": null,
+      "tag": "verify_m6_full"
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 \"C:\\Users\\晚菘\\Documents\\Default Project\\scripts\\repro_certify.py\" --out \"C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M6_midterm_defense_deck\\gates\\g1.json\"",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 9,
+      "stdout_file": "logs/g1.txt",
+      "stderr_file": "gates/g1.json",
+      "tag": "g1_repro_certify"
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 \"C:\\Users\\晚菘\\Documents\\Default Project\\scripts\\r263_gain_mislabel_scan.py\" --scope delivery --fail-on-hit --out \"C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M6_midterm_defense_deck\\gates\\g3.json\"",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 9,
+      "stdout_file": "logs/g3.txt",
+      "stderr_file": "gates/g3.json",
+      "tag": "g3_r263_delivery"
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 \"C:\\Users\\晚菘\\Documents\\Default Project\\scripts\\r303_draft_check.py\" --draft \"C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M6_midterm_defense_deck\\PPT大纲_大创中期_15页.md\" --doc-class paper --json-only --out \"C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M6_midterm_defense_deck\\gates\\g4_ppt_outline\"",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 1,
+      "stdout_file": "logs/g4_ppt.txt",
+      "stderr_file": "gates/g4_ppt_outline/draft_check.json",
+      "tag": "g4_ppt"
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 \"C:\\Users\\晚菘\\Documents\\Default Project\\scripts\\r303_draft_check.py\" --draft \"C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M6_midterm_defense_deck\\口头讲稿_8分钟实战版.md\" --doc-class paper --json-only --out \"C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M6_midterm_defense_deck\\gates\\g4_spoken_script\"",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 1,
+      "stdout_file": "logs/g4_script.txt",
+      "stderr_file": "gates/g4_spoken_script/draft_check.json",
+      "tag": "g4_script"
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 \"C:\\Users\\晚菘\\Documents\\Default Project\\scripts\\r303_draft_check.py\" --draft \"C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M6_midterm_defense_deck\\评委最尖锐20问_标准应答卡.md\" --doc-class paper --json-only --out \"C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M6_midterm_defense_deck\\gates\\g4_qa_20\"",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 1,
+      "stdout_file": "logs/g4_qa.txt",
+      "stderr_file": "gates/g4_qa_20/draft_check.json",
+      "tag": "g4_qa"
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 \"C:\\Users\\晚菘\\Documents\\Default Project\\scripts\\r303_draft_check.py\" --draft \"C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M6_midterm_defense_deck\\report.md\" --doc-class governance --json-only --out \"C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M6_midterm_defense_deck\\gates\\g4\"",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 1,
+      "stdout_file": "logs/g4_report.txt",
+      "stderr_file": "gates/g4/draft_check.json",
+      "tag": "g4_report"
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 -m fractureflow.selfcheck --quick --out \"C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M6_midterm_defense_deck\\gates\\g2.json\"",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 40,
+      "stdout_file": "logs/g2.txt",
+      "stderr_file": "gates/g2.json",
+      "tag": "g2_selfcheck_quick"
+    }
+  ],
+  "no_console_window": true,
+  "creationflags": 134217728,
+  "g4_core_draft_note": "gates/g4_ppt_outline|g4_spoken_script|g4_qa_20 由 verify_m6.py --run-negative-controls 内的 run_r303_on_core_drafts 实跑；M6-N3 亦独立复跑并记录于 negative_controls.json"
+}

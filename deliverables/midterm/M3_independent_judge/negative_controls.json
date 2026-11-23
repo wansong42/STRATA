@@ -1,0 +1,69 @@
+{
+ "cases": [
+  {
+   "cluster_id": "jardim_c02",
+   "correctly_rejected": true,
+   "description": "AMBIGUOUS 篡改为 CERTIFIED_CONNECTED",
+   "nc_id": "M3-N1",
+   "passed": true,
+   "reason": "ALL_CONNECTED_MISMATCH",
+   "reason_match": true,
+   "verdict": "DISAGREE"
+  },
+  {
+   "cluster_id": "jardim_c02",
+   "correctly_rejected": true,
+   "description": "connected_witness 跨 t 拼假路径",
+   "nc_id": "M3-N2",
+   "passed": true,
+   "reason": "CONNECTED_WITNESS_INVALID",
+   "reason_match": true,
+   "verdict": "DISAGREE"
+  },
+  {
+   "cluster_id": "jardim_c02",
+   "correctly_rejected": true,
+   "description": "删除一个相切 POINT 节点",
+   "nc_id": "M3-N3",
+   "passed": true,
+   "reason": "CELL_MISMATCH",
+   "reason_match": true,
+   "verdict": "DISAGREE"
+  },
+  {
+   "cluster_id": "jardim_c02",
+   "correctly_rejected": true,
+   "description": "不坍缩分支伪造成 CERTIFIED",
+   "nc_id": "M3-N4",
+   "passed": true,
+   "reason": "COLLAPSE_BRANCH_STATUS_MISMATCH",
+   "reason_match": true,
+   "verdict": "DISAGREE"
+  },
+  {
+   "cluster_id": "jardim_c02",
+   "correctly_rejected": true,
+   "description": "顶点篡改 + 表层哈希同步但注册根未改",
+   "nc_id": "M3-N5",
+   "passed": true,
+   "reason": "SOURCE_SHA_MISMATCH_REGISTER",
+   "reason_match": true,
+   "verdict": "DISAGREE"
+  },
+  {
+   "cluster_id": "jardim_c02",
+   "correctly_rejected": true,
+   "description": "scope 改为合成域冒充真实簇",
+   "nc_id": "M3-N6",
+   "passed": true,
+   "reason": "SCOPE_NOT_REAL_DERIVED",
+   "reason_match": true,
+   "verdict": "DISAGREE"
+  }
+ ],
+ "correctly_rejected": 6,
+ "passed": 6,
+ "schema": "m3-negative-controls/v1",
+ "total": 6,
+ "verdict": "PASS"
+}

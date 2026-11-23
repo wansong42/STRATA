@@ -1,0 +1,12 @@
+{
+ "jardim_c01": {
+  "checks": {
+   "canon_sha256": "190bc0efbc0df3f481d99c9705022e1c7e053537ed6410ae42d5045e2dd60480",
+   "refused": true
+  },
+  "cluster_id": "jardim_c01",
+  "first_disagreement": null,
+  "status_m2": "BUDGET_EXCEEDED",
+  "verdict": "AGREE"
+ }
+}

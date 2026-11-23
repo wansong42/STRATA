@@ -1,0 +1,31 @@
+{
+ "counts": {
+  "AGREE": 1,
+  "DISAGREE": 0,
+  "MALFORMED": 0,
+  "UNDECIDABLE": 0
+ },
+ "m1_register_sha256": "6e9ab83dc2e87d1e3e3347ef64b2b072ced8168b5e9f98f5df3c62022cb0de75",
+ "m2_summary_sha256": "c54445c6a7e5c163a3545cc977fe34589a97801c5d9f14cbe8946e96170b1675",
+ "refused": [],
+ "run_id": "run_20261120_exact_v1",
+ "schema": "m3-verdict-batch/v1",
+ "task_id": "M3",
+ "verdicts": {
+  "jardim_c06": {
+   "checks": {
+    "canon_sha256": "8dae157e73e2282771a958f18456d963f0ea7842f0e948647201c3c248f3c89e",
+    "cells_declared": 957,
+    "cells_recomputed": 957,
+    "collapse_tree_checked": 13,
+    "nominal_connected": false,
+    "rho_recomputed": "13402215363513865792/153510319155720467101",
+    "windows_declared": 6762,
+    "windows_recomputed": 1296
+   },
+   "first_disagreement": null,
+   "status_m2": "AMBIGUOUS_WITH_VERIFIED_WITNESSES",
+   "verdict": "AGREE"
+  }
+ }
+}

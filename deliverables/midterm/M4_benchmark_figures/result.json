@@ -1,0 +1,199 @@
+{
+  "schema": "dispatch-result/v1",
+  "task_id": "M4",
+  "at_utc": "2026-11-21T04:44:35+00:00",
+  "status": "PASS",
+  "scope": "Real-outcrop 22-cluster 3-way baseline quantitative comparison (Nominal DFN vs Naive Union vs Ours M2 run_20261120_exact_v1 under REAL_DERIVED_CONDITIONED_FINITE_UNION), strictly separated from Perozzo 2024 DSE vs Manual facet statistics (202,371 vs 1,405) and non-oracle historical data ladder anchors, plus 5 publication figures (300 DPI PNG + SVG), 4 classes / 5 negative controls, and 4 active gates.",
+  "enumeration": {
+    "positive_cases": 22,
+    "positive_passed": 22,
+    "completed_exact_certification": 21,
+    "budget_exceeded_refused": 1,
+    "negative_controls": 5,
+    "negative_correctly_rejected": 5,
+    "negative_control_classes": 4,
+    "perozzo_manual_facets": 1405,
+    "perozzo_auto_dse_facets": 202371,
+    "figures_rendered": 5,
+    "figure_files": 10,
+    "active_gates_passed": 4
+  },
+  "commands": [
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 results/midterm_sprint_20261120/M4_benchmark_figures/run_baselines.py --m2-run results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1 --skip-dse",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 22
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 results/midterm_sprint_20261120/M4_benchmark_figures/plot_figures.py --figures 1 2 3 4 5",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 10
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 results/midterm_sprint_20261120/M4_benchmark_figures/plot_figures.py --figures 3",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 2
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 results/midterm_sprint_20261120/M4_benchmark_figures/verify_m4.py",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 5
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 scripts/r263_gain_mislabel_scan.py --scope delivery --fail-on-hit --out results/midterm_sprint_20261120/M4_benchmark_figures/gates/g3.json",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 9
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 scripts/r303_draft_check.py --draft results/midterm_sprint_20261120/M4_benchmark_figures/report.md --doc-class governance --json-only --out results/midterm_sprint_20261120/M4_benchmark_figures/gates/g4",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 1
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 scripts/repro_certify.py --out results/midterm_sprint_20261120/M4_benchmark_figures/gates/g1.json",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 9
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 -m fractureflow.selfcheck --quick --out results/midterm_sprint_20261120/M4_benchmark_figures/gates/g2.json",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 40
+    }
+  ],
+  "evidence": [
+    {
+      "file": "run_baselines.py",
+      "sha256": "72a46d9d928ffba1cf9f7db986fa606097df40fbc70f9dbe5b7dd26501510705"
+    },
+    {
+      "file": "plot_figures.py",
+      "sha256": "186dfaec87741d5924dc8c9eff2083adafde13fdb59baec5c918aec0b0a4cc1e"
+    },
+    {
+      "file": "verify_m4.py",
+      "sha256": "99c493dde01c46618701dbe178be2e6f011c04bbefdfcfcc2a5ed459278f69fb"
+    },
+    {
+      "file": "benchmark_summary.json",
+      "sha256": "2783744eacf3f43054aa196b88cac0ff9952f7fc66101d2bc494fb35fe90370f"
+    },
+    {
+      "file": "per_cluster_table.csv",
+      "sha256": "b076e1ac4d87d0435c43a4466143172a38c3370c23d2a4640d6565ac742cb6c1"
+    },
+    {
+      "file": "perozzo_dse_vs_manual_summary.json",
+      "sha256": "eb7884c0afe11637c6abb51c8ddb520d5270453b1609cf4c946938d0fec89942"
+    },
+    {
+      "file": "data_ladder_anchors.json",
+      "sha256": "2b507fbbfd975c7c8b1e6e98c6df412b6ae7a103de3c3a42e693b22456a3b7a1"
+    },
+    {
+      "file": "baseline_scaffold_m1_only.json",
+      "sha256": "3dd4047223b14c8b3d952e63567b1968fbeaa8479d0cc2ca4d0c36c4045fc2cf"
+    },
+    {
+      "file": "per_cluster_table_scaffold.csv",
+      "sha256": "68452bf43688ce78586a00b3a23a0224f52d89a0a92a5659411a91994e9d1072"
+    },
+    {
+      "file": "negative_controls.json",
+      "sha256": "a5a4019449ea40077f495b35933c11cb6e26bd0f096ccbb13b14e4a25b4ba745"
+    },
+    {
+      "file": "figures/fig1_data_ladder_and_architecture.png",
+      "sha256": "568d6bf43dac98bea50db69afb2bf66135fd9f27f4945e09f236d62907e51f63"
+    },
+    {
+      "file": "figures/fig1_data_ladder_and_architecture.svg",
+      "sha256": "092971a255060aa9a192b5b065c93f1067da32d0a3c97c41a53dfd5a77884da1"
+    },
+    {
+      "file": "figures/fig2_real_outcrop_clusters_overview.png",
+      "sha256": "16650e79c9e40fc9755a35d0deaa06ba1d66e8c403414e0ba37c5667c0b62920"
+    },
+    {
+      "file": "figures/fig2_real_outcrop_clusters_overview.svg",
+      "sha256": "026c59914d73326ba2386bd41896164ebc6e7c0cef7c493ae520c395cbad27b0"
+    },
+    {
+      "file": "figures/fig3_baseline_failure_modes.png",
+      "sha256": "bdc29d1a65db72a0142d399d2c7794a78a3b3bff022d401fe0ad752b82fa694d"
+    },
+    {
+      "file": "figures/fig3_baseline_failure_modes.svg",
+      "sha256": "76e79a709125d3be2c8212a8e7fa11686a39eda94a53718e8cad057662e0390a"
+    },
+    {
+      "file": "figures/fig4_stability_rho_and_witness_anatomy.png",
+      "sha256": "ebb79ee1cc993632623b80b88e6f7ebca44f07adb412d37682da70fbc47442f7"
+    },
+    {
+      "file": "figures/fig4_stability_rho_and_witness_anatomy.svg",
+      "sha256": "0e6f9c2382ea6ca647bf55d32cda5d248e8a15d8eef29eb599601cf1c914df1d"
+    },
+    {
+      "file": "figures/fig5_active_next_check_collapse.png",
+      "sha256": "4c36e7c86efd1db354e7985c383a0df9beedbcb0866b969eaff86031832d03be"
+    },
+    {
+      "file": "figures/fig5_active_next_check_collapse.svg",
+      "sha256": "22651319677ba8673191d5287163931b10d1229d8a8ca7bd56361d9bd9cd710b"
+    },
+    {
+      "file": "gates/g1.json",
+      "sha256": "69ea52581e5a6ed578b9017dd40a3361b507b2633293c7f85df82a1a7851e010"
+    },
+    {
+      "file": "gates/g2.json",
+      "sha256": "7586bb18419f0e1b1e50ab31b875415f1ec80b8d0ef8e28d4d49372421c9d190"
+    },
+    {
+      "file": "gates/g3.json",
+      "sha256": "e4d0402a4fef37066d9565ea92d8b2ef33ce004e26daffb7af82e05e1ab1108a"
+    },
+    {
+      "file": "gates/g4/draft_check.json",
+      "sha256": "64c0b341a98f28ec968f0debf1259e23b246a0d80ddda0998ccfa8f009894f69"
+    },
+    {
+      "file": "report.md",
+      "sha256": "357d998f4dd0441d65d1bfffce43beef48082c69bcd3e250bc475d06fb05cd1f"
+    },
+    {
+      "file": "own_defects.json",
+      "sha256": "ff8c026faea57cecc0c8d034f03f78993e632444a6766ac43b65e32615479455"
+    },
+    {
+      "file": "run_receipt.json",
+      "sha256": "37bec5066c33ce508c0130501b6b511da0b50334a5187b71f0e3814fe7d617e2"
+    }
+  ],
+  "not_claimed": [
+    "非地下体内无条件贯通真值 (not unconditional subsurface connectivity ground truth)",
+    "非水力连通与非渗透率结论 (not hydraulic connectivity or permeability)",
+    "未实测人工现场耗时与现场实测误差率 (human_time = null, field_error_rate = null)",
+    "jardim_c01 因 M2 算力预算超限呈 BUDGET_EXCEEDED 诚实拒答态，不对该簇给出贯通或断割断言",
+    "历史非 oracle 数据阶梯锚点与 Perozzo 2024 DSE 过分割对照严禁混入真实 22 簇基准口径"
+  ],
+  "field_error_rate": null,
+  "human_time": null,
+  "hydraulic": null
+}

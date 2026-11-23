@@ -1,0 +1,70 @@
+{
+  "schema": "dispatch-run-receipt/v1",
+  "task_id": "M5",
+  "at_utc": "2026-11-21T04:37:29.170300+00:00",
+  "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+  "cwd": "C:\\Users\\晚菘\\Documents\\Default Project",
+  "env_overrides": {
+    "KMP_DUPLICATE_LIB_OK": "TRUE",
+    "PYTHONPATH": "src"
+  },
+  "commands": [
+    {
+      "name": "M5-SMOKE-FULL",
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 results/midterm_sprint_20261120/M5_strata_workbench_demo/smoke_verify_m5.py --full-pytest",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "stdout_file": "results/midterm_sprint_20261120/M5_strata_workbench_demo/runtime/pytest_surface_product.stdout.txt",
+      "stderr_file": "results/midterm_sprint_20261120/M5_strata_workbench_demo/runtime/pytest_surface_product.stderr.txt",
+      "artifact_file": "results/midterm_sprint_20261120/M5_strata_workbench_demo/negative_controls.json",
+      "enumerated": 300
+    },
+    {
+      "name": "G1-repro_certify",
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 scripts/repro_certify.py --out results/midterm_sprint_20261120/M5_strata_workbench_demo/gates/g1.json",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "stdout_file": "results/midterm_sprint_20261120/M5_strata_workbench_demo/runtime/g1.stdout.txt",
+      "stderr_file": "results/midterm_sprint_20261120/M5_strata_workbench_demo/runtime/g1.stderr.txt",
+      "artifact_file": "results/midterm_sprint_20261120/M5_strata_workbench_demo/gates/g1.json",
+      "enumerated": 9
+    },
+    {
+      "name": "G3-r263_gain_mislabel_scan",
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 scripts/r263_gain_mislabel_scan.py --scope delivery --fail-on-hit --out results/midterm_sprint_20261120/M5_strata_workbench_demo/gates/g3.json",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "stdout_file": "results/midterm_sprint_20261120/M5_strata_workbench_demo/runtime/g3.stdout.txt",
+      "stderr_file": "results/midterm_sprint_20261120/M5_strata_workbench_demo/runtime/g3.stderr.txt",
+      "artifact_file": "results/midterm_sprint_20261120/M5_strata_workbench_demo/gates/g3.json",
+      "enumerated": 9
+    },
+    {
+      "name": "G4-r303_draft_check",
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 scripts/r303_draft_check.py --draft results/midterm_sprint_20261120/M5_strata_workbench_demo/report.md --doc-class governance --json-only --out results/midterm_sprint_20261120/M5_strata_workbench_demo/gates/g4",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "stdout_file": "results/midterm_sprint_20261120/M5_strata_workbench_demo/runtime/g4.stdout.txt",
+      "stderr_file": "results/midterm_sprint_20261120/M5_strata_workbench_demo/runtime/g4.stderr.txt",
+      "artifact_file": "results/midterm_sprint_20261120/M5_strata_workbench_demo/gates/g4/draft_check.json",
+      "enumerated": 1
+    },
+    {
+      "name": "G2-selfcheck-quick",
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 -m fractureflow.selfcheck --quick --out results/midterm_sprint_20261120/M5_strata_workbench_demo/gates/g2.json",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "stdout_file": "results/midterm_sprint_20261120/M5_strata_workbench_demo/runtime/g2.stdout.txt",
+      "stderr_file": "results/midterm_sprint_20261120/M5_strata_workbench_demo/runtime/g2.stderr.txt",
+      "artifact_file": "results/midterm_sprint_20261120/M5_strata_workbench_demo/gates/g2.json",
+      "enumerated": 40
+    }
+  ],
+  "no_console_window": true,
+  "creationflags": 134217728
+}

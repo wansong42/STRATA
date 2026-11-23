@@ -1,0 +1,32 @@
+PASS ST01_tangent_point_window
+PASS ST01b_point_tri_window
+PASS ST01c_point_tri_window_B
+PASS ST01d_disconnected_at_t0
+PASS ST01e_disconnected_at_tangency
+PASS ST02_same_t_never_connected
+PASS ST02b_connected_at_t0
+PASS ST03_open_domain_connected
+PASS ST03_no_flip_cell
+PASS ST04_root_ambiguous
+PASS ST04_collapse_to_connected
+PASS ST04_collapse_to_disconnected
+PASS ST05_all_connected_same_plate
+PASS ST05b_B_never_attached
+PASS ST05c_point_connected
+PASS ST05d_band_collapse_disconnected
+PASS ST05e_band_no_collapse
+PASS ST06_canon_sha
+PASS ST07a_lp_feasible
+PASS ST07b_lp_infeasible
+PASS ST07c_lp_max
+PASS ST08_budget_refused_path
+PASS ST09_forged_status_detected
+PASS ST10_cross_t_phantom_rejected
+PASS ST11_tangent_point_cell_present
+PASS ST12_forged_collapse_detected
+PASS ST13_vertex_mutation_changes_sha
+PASS ST14_synthetic_scope_rejected
+PASS ST15_rho_formula_case
+PASS ST15b_rho_cost_value
+
+30/30 self-tests passed

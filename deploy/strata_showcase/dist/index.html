@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f5f4ef">
+  <title>STRATA · 岩体非连续裂隙网络贯通可辨识性三维展示台</title>
+  <meta name="description" content="中国矿业大学（北京）复杂岩石非连续结构智能重构方法研究 · 双场地真实露头三维裂隙网络精确有理几何认证与主动下一步复核展示系统。">
+  <!-- 定制品牌徽记：三维岩体块段 + 非正交交叉裂隙面 + 端点 A→B 贯通路径 -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpolygon points='16,2 28.5,9.2 28.5,22.8 16,30 3.5,22.8 3.5,9.2' fill='%23111c18' stroke='%232e4a40' stroke-width='1.5' stroke-linejoin='round'/%3E%3Cpolygon points='8.5,9 21.5,12.2 19,24.5 6.5,20.5' fill='%2310b981' fill-opacity='.24' stroke='%2334d399' stroke-width='1.1' stroke-linejoin='round'/%3E%3Cpolygon points='14.5,6.8 25.5,14.5 23.5,24 12.2,17.2' fill='%23f59e0b' fill-opacity='.22' stroke='%23fbbf24' stroke-width='1.1' stroke-linejoin='round'/%3E%3Cpath d='M9.2 12.2 L16.2 16.5 L22.8 20.6' fill='none' stroke='%2334d399' stroke-width='2.1' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='9.2' cy='12.2' r='2.3' fill='%2314b8a6' stroke='%23ffffff' stroke-width='.9'/%3E%3Ccircle cx='22.8' cy='20.6' r='2.3' fill='%233b82f6' stroke='%23ffffff' stroke-width='.9'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div id="app" class="app-shell">
+    <!-- 顶部极简导航栏 -->
+    <header class="topbar" id="topbar" role="banner"></header>
+
+    <!-- 主画廊区：左侧宽阔 3D 实验室舞台 (~70%) + 右侧极简三页签决策栏 -->
+    <main class="workspace" id="workspace" data-mobile-sheet="half">
+      <!-- 主 3D 展示舞台 -->
+      <section class="stage-center" id="stage-center" aria-label="三维裂隙网络与双见证视口">
+        <!-- 紧凑型 1 分钟 3 步答辩导览条（仅导览开启时出现） -->
+        <div class="tour-ribbon" id="tour-banner" data-testid="guided-tour-banner" hidden></div>
+
+        <!-- 3D 画布框架 -->
+        <div class="viewport-frame" id="viewport" data-split="false">
+          <div class="vp-stage-wrap">
+            <div class="vp-stage-grid" id="vp-stage-grid">
+              <!-- 主视口 / 分屏左视口 (连通见证 m+, t+) -->
+              <div class="vp-pane vp-pane-primary" id="vp-pane-primary" data-testid="vp-pane-primary">
+                <div class="vp-pane-badge" id="vp-badge-primary" hidden></div>
+                <canvas id="plate" aria-label="三维裂隙网络主视图"></canvas>
+                <div class="vp-overlay" id="vp-overlay-primary"></div>
+              </div>
+
+              <!-- 分屏同步中轴 -->
+              <div class="vp-split-divider" id="vp-split-divider" hidden>
+                <span class="vp-sync-pill" title="左右双 3D 视口旋转、平移与缩放实时联动">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+                  </svg>
+                  <span>相机同步</span>
+                </span>
+              </div>
+
+              <!-- 分屏右视口 (断割见证 m-, t-) -->
+              <div class="vp-pane vp-pane-secondary" id="vp-pane-secondary" data-testid="vp-pane-secondary" hidden>
+                <div class="vp-pane-badge is-disconnected" id="vp-badge-secondary"></div>
+                <canvas id="plate-right" aria-label="三维裂隙网络断割见证对比视图"></canvas>
+                <div class="vp-overlay" id="vp-overlay-secondary"></div>
+              </div>
+            </div>
+
+            <!-- 左上角：极简画廊标题与核心判级遥测（无厚重边框，直接融于画布） -->
+            <div class="vp-hero-hud" id="statusrow"></div>
+
+            <!-- 右上角：3D 方位仪罗盘 -->
+            <div class="vp-compass" id="vp-compass" title="三维空间方位罗盘（点击复位全景）" data-action="fit-view"></div>
+
+            <!-- 右侧悬浮：极简垂直图标工具条 -->
+            <div class="vp-toolbar" id="vp-tools" role="toolbar" aria-label="三维视角控制"></div>
+
+            <!-- 桌面端左下角轻量 AI 讲解入口胶囊（点击直接切到右侧「AI 讲解」页签，绝不弹出悬浮窗遮挡 3D 画布） -->
+            <div class="ai-copilot-anchor" id="ai-copilot-anchor"></div>
+          </div>
+
+          <!-- 视口底部独立极简操控坞（绝不压挡 3D 模型） -->
+          <div class="vp-control-deck" id="vp-witness-bar" data-testid="vp-witness-bar"></div>
+
+          <!-- 极简底栏图例与动态比例尺 -->
+          <div class="vp-footer" id="vp-foot">
+            <div class="vp-legend" id="vp-legend"></div>
+            <div class="vp-scale-wrap">
+              <span class="vp-engine-tag" id="vp-engine-tag" data-testid="vp-engine-tag">WebGL 3D</span>
+              <div class="vp-scale" id="vp-scale" aria-label="动态比例尺"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 右栏：四页签极简工作面板（探索与复核 | 22 簇案例 | 基线与几何 | AI 讲解） -->
+      <aside class="panel-rail" id="inspector" aria-label="案例切换、主动复核、几何诊断与 AI 讲解">
+        <div class="mob-sheet-handle" id="mob-sheet-handle" data-testid="mobile-sheet-handle"></div>
+        <div class="rail-tabs" id="rail-tabs" role="tablist" aria-label="侧栏视图切换"></div>
+        <div class="rail-body" id="ins-scroll" data-testid="evidence-panel"></div>
+      </aside>
+    </main>
+
+    <!-- 移动端 (<900px) 底部四栏抽屉导航 -->
+    <nav class="mobile-sheet-nav" id="mobile-sheet-nav" aria-label="移动端面板切换"></nav>
+
+    <!-- 底部极简常驻学术边界与三项 null 声明 -->
+    <footer class="academic-footer" id="cmdbar" role="contentinfo"></footer>
+  </div>
+
+  <!-- 可信溯源与 SHA256 核验抽屉 -->
+  <div class="drawer-backdrop" id="provenance-backdrop" hidden></div>
+  <aside class="provenance-drawer" id="provenance-drawer" data-testid="provenance-drawer" aria-label="可信溯源与 SHA256 核验抽屉" hidden></aside>
+
+  <!-- 右下角独立轻量提示 Toast（绝不压顶部状态栏与稳定裕度 ρ） -->
+  <div id="toast-root" class="toast-stack-br" aria-live="polite"></div>
+
+  <noscript>
+    <div style="max-width:540px;margin:64px auto;padding:28px;font-family:system-ui,sans-serif;color:#141715;background:#ffffff;border:1px solid #e2e1da;border-radius:10px">
+      <h1 style="font-size:17px;font-weight:600;margin:0 0 8px">STRATA 三维展示平台需要启用 JavaScript</h1>
+      <p style="font-size:13px;color:#575c58;line-height:1.7;margin:0">本页面为纯只读离线/公网科研展示单页应用，内置本地 Three.js WebGL 渲染引擎、AI 智能导览助手与 22 簇真实露头 SHA256 数据包，零外部 CDN 依赖。</p>
+    </div>
+  </noscript>
+
+  <script src="./vendor/three.min.js"></script>
+  <script src="./viewer3d.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

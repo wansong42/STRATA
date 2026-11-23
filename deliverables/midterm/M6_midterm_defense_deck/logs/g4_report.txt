@@ -1,0 +1,2 @@
+verdict=CLEAN red=0 exempt=0 note=11 total=11 -> results/midterm_sprint_20261120/M6_midterm_defense_deck/gates/g4/draft_check.json (0.8s)
+

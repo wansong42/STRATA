@@ -1,0 +1,120 @@
+{
+  "all_rejected": true,
+  "at_utc": "2026-11-21T03:34:45.833660+00:00",
+  "controls": [
+    {
+      "cmd": "E:\\app2\\anacoda\\Anacoda\\envs\\pytorch_env\\python.exe -B -X utf8 C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M2_active_identifiability\\solve_real_clusters.py --verify-cert C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M2_active_identifiability\\_nc_scratch\\M2-N1a_model.json C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M2_active_identifiability\\_nc_scratch\\M2-N1a_forged_cert.json",
+      "description": "真实坐标域异时(cross-t)并集假通路：单看并集连通，但同一(m,t)均断，篡改证书伪报连通必须非零拒收",
+      "forged_union_cert_exit_code": 2,
+      "forged_union_cert_stdout": "{\"ok\": false, \"status\": \"CERTIFICATE_INVALID\", \"reason\": \"top-level status 'CERTIFIED_CONNECTED' disagrees with exact cells ('CERTIFIED_DISCONNECTED')\"}",
+      "id": "M2-N1a",
+      "naive_union_connected": true,
+      "phantom_union_path_detected": true,
+      "rejected_with_teeth": true,
+      "solver_certified_disconnected": true
+    },
+    {
+      "cmd": "E:\\app2\\anacoda\\Anacoda\\envs\\pytorch_env\\python.exe -B -X utf8 C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M2_active_identifiability\\solve_real_clusters.py --verify-cert C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M2_active_identifiability\\_nc_scratch\\M2-N1b_model.json C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M2_active_identifiability\\_nc_scratch\\M2-N1b_forged_cert.json",
+      "description": "真实坐标域异模式(cross-mode)并集假通路：单看并集连通，但同一(m,t)均断，篡改证书伪报连通必须非零拒收",
+      "forged_union_cert_exit_code": 2,
+      "forged_union_cert_stdout": "{\"ok\": false, \"status\": \"CERTIFICATE_INVALID\", \"reason\": \"top-level status 'CERTIFIED_CONNECTED' disagrees with exact cells ('CERTIFIED_DISCONNECTED')\"}",
+      "id": "M2-N1b",
+      "naive_union_connected": true,
+      "phantom_union_path_detected": true,
+      "rejected_with_teeth": true,
+      "solver_certified_disconnected": true
+    },
+    {
+      "cmd": "E:\\app2\\anacoda\\Anacoda\\envs\\pytorch_env\\python.exe -B -X utf8 C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M2_active_identifiability\\solve_real_clusters.py --verify-cert results\\midterm_sprint_20261120\\M1_real_to_exact_bridge\\clusters\\jardim_c02\\model.json C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M2_active_identifiability\\_nc_scratch\\M2-N2_tampered_witness_cert.json",
+      "description": "将真实 AMBIGUOUS 簇 jardim_c02 的 connected_witness 篡改为非法排除带内的 t=-1/2，本地证书自检必须非零拒收",
+      "exit_code": 2,
+      "id": "M2-N2",
+      "rejected_with_teeth": true,
+      "stdout": "{\"ok\": false, \"status\": \"CERTIFICATE_INVALID\", \"reason\": \"connected_witness t=-1/2 is NOT in feasible segments of mode m0\"}"
+    },
+    {
+      "cmd": "E:\\app2\\anacoda\\Anacoda\\envs\\pytorch_env\\python.exe -B -X utf8 C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M2_active_identifiability\\active_identifiability.py --verify-active results\\midterm_sprint_20261120\\M1_real_to_exact_bridge\\clusters\\perozzo_c04\\model.json results\\midterm_sprint_20261120\\M2_active_identifiability\\runs\\run_20261120_exact_v1\\cases\\perozzo_c04\\certification.json C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M2_active_identifiability\\_nc_scratch\\M2-N3_forged_active_on_certified.json",
+      "description": "对真实 CERTIFIED_CONNECTED 簇 perozzo_c04 伪造主动复核推荐列表，守卫必须非零拒收",
+      "exit_code": 2,
+      "id": "M2-N3",
+      "natural_active_status": "ALREADY_CERTIFIED",
+      "natural_ranked_empty": true,
+      "rejected_with_teeth": true,
+      "stdout": "{\"ok\": false, \"status\": \"ACTIVE_CHECK_INVALID\", \"reason\": \"certified cluster must report ALREADY_CERTIFIED, got 'ACTIVE_RECOMMENDATIONS_READY'\"}"
+    },
+    {
+      "cmd": "E:\\app2\\anacoda\\Anacoda\\envs\\pytorch_env\\python.exe -B -X utf8 C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M2_active_identifiability\\active_identifiability.py --verify-active C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M2_active_identifiability\\_nc_scratch\\M2-N4_model_with_isolated.json C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M2_active_identifiability\\_nc_scratch\\M2-N4_cert.json C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M2_active_identifiability\\_nc_scratch\\M2-N4_tampered_isolated_rank1.json",
+      "description": "在真实 AMBIGUOUS 簇 perozzo_c02 注入完全孤立无关裂隙：自然收益严格为 0/1 且排在有效裂隙之后；若强行篡改提升至第 1 名，守卫必须非零拒收",
+      "exit_code": 2,
+      "id": "M2-N4",
+      "isolated_natural_cbf": "0/1",
+      "isolated_natural_mrf": "0/1",
+      "isolated_natural_rank": 8,
+      "isolated_natural_rmf": "0/1",
+      "natural_zero_and_behind_effective": true,
+      "rejected_with_teeth": true,
+      "stdout": "{\"ok\": false, \"status\": \"ACTIVE_CHECK_INVALID\", \"reason\": \"isolated fracture perozzo_isolated_irrelevant_dummy has non-zero gain (M2-N4)\"}",
+      "total_fractures": 8
+    },
+    {
+      "cmd": "E:\\app2\\anacoda\\Anacoda\\envs\\pytorch_env\\python.exe -B -X utf8 C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M2_active_identifiability\\active_identifiability.py --verify-active results\\midterm_sprint_20261120\\M1_real_to_exact_bridge\\clusters\\jardim_c02\\model.json results\\midterm_sprint_20261120\\M2_active_identifiability\\runs\\run_20261120_exact_v1\\cases\\jardim_c02\\certification.json C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M2_active_identifiability\\_nc_scratch\\M2-N5_tampered_collapse_branch.json",
+      "description": "篡改 jardim_c02 collapse_tree 首推裂隙分支 post_status（原 AMBIGUOUS_WITH_VERIFIED_WITNESSES → 伪造 CERTIFIED_DISCONNECTED），一致性守卫必须非零拒收",
+      "exit_code": 2,
+      "id": "M2-N5",
+      "rejected_with_teeth": true,
+      "stdout": "{\"ok\": false, \"status\": \"ACTIVE_CHECK_INVALID\", \"reason\": \"collapse_tree mismatch on frag_786debfdca7bb1f52f2ff3766d61ca0c/mode_TILT_0DEG: claimed=CERTIFIED_DISCONNECTED actual=AMBIGUOUS_WITH_VERIFIED_WITNESSES (M2-N5)\"}"
+    },
+    {
+      "cmd": "E:\\app2\\anacoda\\Anacoda\\envs\\pytorch_env\\python.exe -B -X utf8 C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M2_active_identifiability\\solve_real_clusters.py --model C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M2_active_identifiability\\_nc_scratch\\M2-N6a_synthetic_impersonation.json --out C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M2_active_identifiability\\_nc_scratch\\M2-N6a_out.json --no-verify-source-sha",
+      "description": "输入 scope 冒充合成域（SYNTHETIC_DECLARED_TRIANGLE_UNION）的非法模型，必须非零退出且输出拒收信封",
+      "exit_code": 2,
+      "id": "M2-N6a",
+      "refusal_status": "REFUSED",
+      "rejected_with_teeth": true,
+      "search_complete": false,
+      "stdout": "{\"status\": \"REFUSED\", \"search_complete\": false, \"reason\": \"REAL_SCOPE_VIOLATION: SYNTHETIC_DECLARED_TRIANGLE_UNION is strictly forbidden for real-derived conditioned models (permanent track separation)\"}"
+    },
+    {
+      "cmd": "E:\\app2\\anacoda\\Anacoda\\envs\\pytorch_env\\python.exe -B -X utf8 C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M2_active_identifiability\\solve_real_clusters.py --model C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M2_active_identifiability\\_nc_scratch\\M2-N6b_cross_frame.json --out C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M2_active_identifiability\\_nc_scratch\\M2-N6b_out.json --no-verify-source-sha",
+      "description": "输入跨场地坐标系污染模型（Perozzo 簇挂 Jardim 坐标系），必须非零退出且输出拒收信封",
+      "exit_code": 2,
+      "id": "M2-N6b",
+      "refusal_status": "REFUSED",
+      "rejected_with_teeth": true,
+      "search_complete": false,
+      "stdout": "{\"status\": \"REFUSED\", \"search_complete\": false, \"reason\": \"CROSS_SITE_FRAME_MISMATCH: site_id='perozzo_finale_ligure' requires frame 'perozzo_2024_finale_ligure_las_utm_v1', got 'jardim_garcia_quarry_uh_source_coordinates_v1'\"}"
+    },
+    {
+      "cmd": "E:\\app2\\anacoda\\Anacoda\\envs\\pytorch_env\\python.exe -B -X utf8 C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M2_active_identifiability\\solve_real_clusters.py --model C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M2_active_identifiability\\_nc_scratch\\M2-N6c_empty_segments.json --out C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M2_active_identifiability\\_nc_scratch\\M2-N6c_out.json --no-verify-source-sha",
+      "description": "输入全模式空合法段（空分母）模型，必须非零退出且输出拒收信封，不产伪 PASS",
+      "exit_code": 2,
+      "id": "M2-N6c",
+      "refusal_status": "REFUSED",
+      "rejected_with_teeth": true,
+      "search_complete": false,
+      "stdout": "{\"status\": \"REFUSED\", \"search_complete\": false, \"reason\": \"reference t is outside feasible segments of reference mode\"}"
+    },
+    {
+      "budget_telemetry": {
+        "cells_accumulated_before_mode": 3358,
+        "declared_budget_cells": 4096,
+        "declared_budget_pairs": 65536,
+        "halted_in_mode": "m4",
+        "limit_kind": "cells",
+        "mode_cells_required": 835,
+        "pairs_done_at_halt": 8260
+      },
+      "cmd": "E:\\app2\\anacoda\\Anacoda\\envs\\pytorch_env\\python.exe -B -X utf8 C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M2_active_identifiability\\solve_real_clusters.py --model results\\midterm_sprint_20261120\\M1_real_to_exact_bridge\\clusters\\jardim_c01\\model.json --out C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M2_active_identifiability\\_nc_scratch\\M2-N7_jardim_c01_budget_refusal.json --no-verify-source-sha",
+      "description": "真实簇 jardim_c01 超出声明 budget.cells=4096（需 5024 cells）：CLI 必须非零退出(4)并输出 BUDGET_EXCEEDED 拒收信封，绝不静默扩预算或截断细胞",
+      "exit_code": 4,
+      "id": "M2-N7",
+      "refusal_status": "BUDGET_EXCEEDED",
+      "rejected_with_teeth": true,
+      "search_complete": false,
+      "stdout": "{\"status\": \"BUDGET_EXCEEDED\", \"search_complete\": false, \"reason\": \"cell work budget exhausted during partition in mode m4 (accumulated 3358 + mode_cells 835 > 4096)\"}"
+    }
+  ],
+  "correctly_rejected_with_teeth": 10,
+  "schema": "m2-negative-controls/v1",
+  "total_controls": 10
+}

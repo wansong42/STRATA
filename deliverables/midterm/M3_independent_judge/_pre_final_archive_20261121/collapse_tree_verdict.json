@@ -1,0 +1,32 @@
+{
+ "jardim_c02": {
+  "branches_checked": 14,
+  "first_disagreement": null,
+  "verdict": "AGREE"
+ },
+ "jardim_c03": {
+  "branches_checked": 10,
+  "first_disagreement": null,
+  "verdict": "AGREE"
+ },
+ "jardim_c04": {
+  "branches_checked": 12,
+  "first_disagreement": null,
+  "verdict": "AGREE"
+ },
+ "jardim_c05": {
+  "branches_checked": 13,
+  "first_disagreement": null,
+  "verdict": "AGREE"
+ },
+ "jardim_c06": {
+  "branches_checked": 13,
+  "first_disagreement": null,
+  "verdict": "AGREE"
+ },
+ "perozzo_c02": {
+  "branches_checked": 13,
+  "first_disagreement": null,
+  "verdict": "AGREE"
+ }
+}

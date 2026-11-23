@@ -1,0 +1,206 @@
+{
+  "schema": "m7-signoff/v1",
+  "at_utc": "2026-11-21T14:10:09.472637+00:00",
+  "verdict": "SIGNED_PASS",
+  "checks": [
+    {
+      "check": "M3 counts.AGREE==22",
+      "ok": true,
+      "detail": {
+        "AGREE": 22,
+        "DISAGREE": 0,
+        "MALFORMED": 0,
+        "UNDECIDABLE": 0
+      }
+    },
+    {
+      "check": "M3 counts.DISAGREE==0",
+      "ok": true,
+      "detail": 0
+    },
+    {
+      "check": "M3 逐簇 AGREE==22",
+      "ok": true,
+      "detail": {
+        "agree": 22,
+        "total": 22
+      }
+    },
+    {
+      "check": "M3 逐簇 DISAGREE==0",
+      "ok": true,
+      "detail": 0
+    },
+    {
+      "check": "M3 MALFORMED/UNDECIDABLE==0",
+      "ok": true,
+      "detail": {
+        "AGREE": 22,
+        "DISAGREE": 0,
+        "MALFORMED": 0,
+        "UNDECIDABLE": 0
+      }
+    },
+    {
+      "check": "M3 拒收仅 jardim_c01",
+      "ok": true,
+      "detail": [
+        "jardim_c01"
+      ]
+    },
+    {
+      "check": "MANIFEST verdict==PASS",
+      "ok": true,
+      "detail": "PASS"
+    },
+    {
+      "check": "MANIFEST 证据 0 不符",
+      "ok": true,
+      "detail": 0
+    },
+    {
+      "check": "MANIFEST 跨单一致",
+      "ok": true,
+      "detail": {
+        "m3_counts": {
+          "AGREE": 22,
+          "DISAGREE": 0,
+          "MALFORMED": 0,
+          "UNDECIDABLE": 0
+        },
+        "m3_refused": [
+          "jardim_c01"
+        ],
+        "m3_agree_22": true,
+        "m3_disagree_zero": true,
+        "m3_m1_input_match": true,
+        "m3_m2_input_match": true,
+        "m6_m3_sync_sha_match": true,
+        "m6_m3_agree": 22,
+        "m6_m3_disagree": 0,
+        "m6_placeholder_zero": true
+      }
+    },
+    {
+      "check": "四道门禁五段原始退出码全 0",
+      "ok": true,
+      "detail": {
+        "g1": 0,
+        "g2": 0,
+        "g3": 0,
+        "g4m6": 0,
+        "g4report": 0
+      }
+    },
+    {
+      "check": "g1 9/9",
+      "ok": true,
+      "detail": {
+        "total": 9,
+        "pass_": 9,
+        "fail": 0,
+        "verdict": "PASS"
+      }
+    },
+    {
+      "check": "g2 40/40",
+      "ok": true,
+      "detail": {
+        "total": 40,
+        "passed": 40,
+        "failed": 0,
+        "mode": "quick",
+        "registered_total": 41,
+        "skipped": [
+          "S20 --with-tests: pytest 整合"
+        ]
+      }
+    },
+    {
+      "check": "g3 非豁免混标 0",
+      "ok": true,
+      "detail": {
+        "mislabel": [],
+        "exempt": 8
+      }
+    },
+    {
+      "check": "g4 四稿 CLEAN",
+      "ok": true,
+      "detail": {
+        "m6_ppt_outline": {
+          "verdict": "CLEAN",
+          "n_red": 0
+        },
+        "m6_spoken_script": {
+          "verdict": "CLEAN",
+          "n_red": 0
+        },
+        "m6_qa_20": {
+          "verdict": "CLEAN",
+          "n_red": 0
+        },
+        "m7_report": {
+          "verdict": "CLEAN",
+          "n_red": 0
+        }
+      }
+    },
+    {
+      "check": "SMOKE verdict==PASS",
+      "ok": true,
+      "detail": "PASS"
+    },
+    {
+      "check": "SMOKE 冷启动 2 场地 ≥3 案例",
+      "ok": true,
+      "detail": {
+        "cases_loaded": 4,
+        "jardim_cases": 2,
+        "perozzo_cases": 2,
+        "apply_check_ok": 3,
+        "apply_check_total": 3,
+        "step2_collapses_ok": 2,
+        "badges_green_agree": 4,
+        "badges_total": 4,
+        "external_requests_runtime": 0,
+        "cases_cold_ms": 4159.5,
+        "cases_warm_ms": 4150.2,
+        "cases_latency_under_2s": false
+      }
+    },
+    {
+      "check": "SMOKE 零外部请求",
+      "ok": true,
+      "detail": 0
+    },
+    {
+      "check": "SMOKE 无残留进程",
+      "ok": true,
+      "detail": {
+        "terminate_seconds": 2.06,
+        "forced_kill": false,
+        "returncode": 1,
+        "port_closed": true,
+        "residual_pid": null
+      }
+    },
+    {
+      "check": "OFFLINE verdict==PASS",
+      "ok": true,
+      "detail": "PASS"
+    },
+    {
+      "check": "OFFLINE app 外部引用 0",
+      "ok": true,
+      "detail": "PASS"
+    },
+    {
+      "check": "OFFLINE 本地引用 0 缺失",
+      "ok": true,
+      "detail": null
+    }
+  ],
+  "failed": [],
+  "alert": null
+}

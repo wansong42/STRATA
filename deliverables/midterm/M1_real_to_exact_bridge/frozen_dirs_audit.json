@@ -1,0 +1,18 @@
+{
+  "at_utc": "2026-11-21T03:17:40.206084+00:00",
+  "checked_historical_files": 115,
+  "concurrent_external_runs_appends": [
+    "results/w180_technical_route_20261117/execution_next/dispatch_20261118/TE_judge/runs/20261120T153737_999466Z/audit_controls/dunder_import.py",
+    "results/w180_technical_route_20261117/execution_next/dispatch_20261118/TE_judge/runs/20261120T153737_999466Z/audit_controls/exec_module.py",
+    "results/w180_technical_route_20261117/execution_next/dispatch_20261118/TE_judge/runs/20261120T153737_999466Z/audit_controls/import_module.py",
+    "results/w180_technical_route_20261117/execution_next/dispatch_20261118/TE_judge/runs/20261120T153737_999466Z/audit_controls/spec_from_file_location.py",
+    "results/w180_technical_route_20261117/execution_next/dispatch_20261118/TE_judge/runs/20261120T154150_456893Z/audit_controls/dunder_import.py",
+    "results/w180_technical_route_20261117/execution_next/dispatch_20261118/TE_judge/runs/20261120T154150_456893Z/audit_controls/exec_module.py",
+    "results/w180_technical_route_20261117/execution_next/dispatch_20261118/TE_judge/runs/20261120T154150_456893Z/audit_controls/import_module.py",
+    "results/w180_technical_route_20261117/execution_next/dispatch_20261118/TE_judge/runs/20261120T154150_456893Z/audit_controls/spec_from_file_location.py"
+  ],
+  "drifts": [],
+  "drifts_count": 0,
+  "schema": "m1-frozen-dirs-audit/v1",
+  "zero_modification_confirmed": true
+}

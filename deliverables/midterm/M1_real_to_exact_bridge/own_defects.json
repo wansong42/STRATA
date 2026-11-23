@@ -1,0 +1,34 @@
+{
+  "schema": "own-defects/v1",
+  "task_id": "M1",
+  "at_utc": "2026-11-20T15:38:00+00:00",
+  "not_verified": [
+    "未在 M1 内运行全量 22 簇的精确整网连通认证求解（TC_network/compile_network.py 完整片对投影与细胞普查属于 M2 职责，M1 仅核验了实时 schema 准入、全模式精确端点附着与内存态无损投影通过冻结 TC_network/network_format.py#validate()）。",
+    "未验证地下体内无条件贯通真值、人工耗时或水力连通/渗透率（三项空分母指标严格保持 null）。",
+    "未从 8,320 万点 Perozzo 原始 LAS 点云重新分割或重新拟合平面；Perozzo 16 簇基于已发布的专家平面表（Manual-Discontinuities-Geometrical-Info.xlsx）并辅以 DXF 迹线几何绑定残差审计与 LAS 头/SHA 校验。",
+    "real_network_format.py#validate(verify_source_sha=True) 默认对 <=100 MiB 的源文件逐字节重算 SHA256，而对 2.5 GB 的 Pointcloud_Full-Resolution.las 默认核验精确字节数（完整 2.5 GB SHA256 已在 prereg_freeze_receipt.json 冻结时全量实测通过，并可通过 --hash-large-files 强制逐次全量哈希）。",
+    "未检验各向异性/非均匀边界延展对 Jardim 含洞片段拓扑的影响；当前延展模式均以洞内探测点（含洞片段）或质心为缩放中心做各向同性相似缩放。"
+  ],
+  "absence_of_problem_is_not_proof": [
+    "Perozzo 2024 的条件正八边形有限盘模型（CONDITIONED_HEX_OCT_DISK_FROM_EXPERT_PLANE）相对圆形专家盘存在最高 R*(1-cos 22.5 deg) ≈ 7.6%（实测 0.078–0.458 m）的径向近似偏差，且全部外边界标为 ASSUMED_NOT_OBSERVED；通过准入校验仅说明条件模型自洽，不证明真实岩体裂隙端缘恰好止于该八边形。",
+    "Jardim Garcia 片段在 64 三角预算下的保拓扑折线简化对极狭长凹多边形产生了最高 1.2487 m 的 Tier-3 二维豪斯多夫偏差（jardim_c03），且含数十个微孔的再拟合片段（frag_42fe2b00... 77 个、frag_ecd9cedb... 57 个）仅保留面积最大的 1 个主真实孔洞（>=0.01 m^2），其余微孔在简化预算内未单独建模。",
+    "连续法向平移速度 v_i = sign_i * k * sigma_i * n_i（k=2、沿 A->B 投影排序交替符号）与第二分层（MUTUAL_EXCL_ATTRIB_MULTISEG）的双段排除带 (-3/5,-2/5) 及互斥归属区间 [-1,-1/10] vs [1/10,1] 属于以实测拟合残差为尺度的显式条件设计假设，并非由 T-B 多观测交集自动反演或现场位移实测得到。",
+    "perozzo_c02 的标称最小非零片对间距为 0.000433 m，已落入 2x Tier-2 量化误差包络内并如实打标 quantization_sensitive = true；该簇在 t=0 附近的标称接触判定可能对 1e-4 m 有理网格量化敏感。",
+    "22 簇内存投影全部通过 TC_network/network_format.py#validate() 仅证明输入结构与基础配额合规，不保证 M2 运行精确片对接触投影时所有簇均不触发 4096 细胞 / 65536 片对的运行时算力预算上限。"
+  ],
+  "found_while_working": [
+    "【上游数据陈旧基向量缺陷】逐一拿 Jardim 46 个 fragment 对照原始 points.ply 核验时发现：已拆分再拟合片段 frag_ecd9cedbc96720d94aa06f3a592b532f 在 project.json#artifacts.surface_geometry['surf_2c34...'].frame_local 中残留拆分前旋转 90° 的陈旧局部基向量（若盲信该字段会产生 2.867 m UV 错位）；改用 support_refit 原始规则（mean(unique(sp)) + canonical_basis(normal)）后 46/46 片段与 points.ply 100% 对齐（51/51 采样支撑点落入有限多边形内）。",
+    "【VW 简化 O(n^4) 性能陷阱】首版 build_real_clusters.py 在 329 顶点多边形（frag_42fe2b00...）的 Visvalingam-Whyatt 每步内层循环都调用 O(n^2) 精确 Fraction 自交检测导致卡死；优化为按有效三角面积排序并短路取首个合法删点、在接近目标顶点数时启用精确 Fraction 自交检验后，全量 22 簇构建耗时降至 ~17 秒。",
+    "【初版 Jardim 种子未过滤非正交下限】首版构建遗漏了对 Jardim 候选种子检查 prereg.json 已冻结的 min_non_orthogonal_pairs >= 2 规则，导致初版 jardim_c03 仅含近平行面（0 对非正交）；已在未改动 prereg.json 的前提下修补 build_real_clusters.py 严格执行该冻结条款，修复后 6/6 Jardim 簇均满足 >=2 对非正交（其中 3 簇含真实保留孔洞）。",
+    "【负控 M1-N7 触发层级微调】初版 M1-N7 使用 (2^8200+1)/(2^8200)（4939 字符 > 4096）先命中了文本长度闸门而非 8192 位长闸门；已改为 (2^8195+1)/1（2468 字符 <= 4096，8196 位 > 8192）使 8192 位长闸门被直接击穿验证。",
+    "【固定端点随移动平面脱离的几何陷阱】冻结预注册前识别出 TC 内核端点 A/B 速度恒为 0，若锚点所在裂隙具非零法向速度则一切 t!=0 均会人为退化为端点悬空；因此在 prereg.json 中将锚点裂隙 f_A/f_B 设为固定参考面（v=0 且不参与倾角旋转），并经 verify_m1.py 证实 22 簇 x 6 模式共 132 个模式下端点 A/B 均以精确零距离附着于对应锚点三角形。",
+    "【并行会话向 TE_judge/runs/ 尾追运行目录导致的初版守卫误报】验证过程中检测到另一并行会话于 15:37:37Z 在 TE_judge/runs/20261120T153737_999466Z/ 新增了自测输出，导致初版按目录总文件数比对的冻结审计误报；已遵照 AGENTS.md §4（冻结面只认历史判据本体、不锁活目录总文件数）修正为逐件核验全部历史基线文件的 SHA256 与字节数零变更，同时把外部并行追加的 runs/ 子目录透明登记在 frozen_dirs_audit.json#concurrent_external_runs_appends。"
+  ],
+  "scope_creep_refused": [
+    "拒绝修改 TC_network/、TB_feasible/、TE_judge/、data/、src/ 下任何既有文件字节（经 frozen_dirs_audit.json 核验 0 漂移）。",
+    "拒绝执行全量 pytest、git commit 或 git push。",
+    "拒绝在选簇或参数设定阶段偷看任何贯通性计算结果（prereg.json 冻结时刻严格早于建簇时刻，零按答案挑例）。",
+    "拒绝把 to_core_kernel_payload() 生成的合成 scope 投影写入磁盘（仅限内存中传递给精确求解器，落盘永久保持 REAL_DERIVED_CONDITIONED_FINITE_UNION）。",
+    "拒绝给空分母指标（field_error_rate / human_time / hydraulic）填 0 或估值，一律保持 null。"
+  ]
+}

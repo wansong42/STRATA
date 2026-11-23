@@ -1,0 +1,25 @@
+========================================================================
+T70 复现认证 + T74 独立重实现 top-5 数学真相锚
+========================================================================
+
+[Section A] 独立重实现度量 (纯 numpy, 不依赖项目度量)...
+  [PASS] random_anchor: {'measured': 57.2969, 'expected': 57.29577951308232, 'diff': 0.0012, 'status': 'PASS', 'note': '∫₀¹ arccos(u) du 弧度 = 1 rad = 57.2958° (度量自洽真相锚)'}
+  [PASS] identity: {'measured': 0.000115, 'expected': 0.0, 'diff': 0.000115, 'status': 'PASS'}
+  [PASS] rotation_invariance: {'max_diff': 0.0, 'status': 'PASS'}
+  [PASS] permutation_invariance: {'max_diff': 0.0, 'status': 'PASS'}
+  (耗时 1.5s)
+
+[Section B] fresh 复现 (调 canonical 函数从零重算)...
+  [PASS] NNS-001 36.687° l1_local MAE = 36.6871° (Δ=0.0001)  [2.5s]
+  [PASS] NNS-011 12.37° honest oracle@K12 (beishan22) = 12.3705° (Δ=0.0005)
+       (合并口径 11.0243° == strict.json 11.024° -> 一致)  [34.3s]
+  [PASS] NNS-026 (=NNS-001): mae_mean=36.687° (Δ=0.0001)  [0.0s]
+  [PASS] T30 0.37° pointcloud gate mae = 0.3674° (verdict=PASS)
+  [PASS] DEP-008 12.69° FORGE K12 锚点 (deprecated=True, old=9.35->new=12.69): FORGE K12 锚点 sin/cos 互换 bug (T58 修复)
+
+========================================================================
+总计 9 项: PASS=9  FAIL=0
+结论: 全部通过
+报告已落盘: C:\Users\晚菘\Documents\Default Project\results\midterm_sprint_20261120\M6_midterm_defense_deck\gates\g1.json
+========================================================================
+

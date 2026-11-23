@@ -1,0 +1,29 @@
+{
+  "schema": "own-defects/v1",
+  "task_id": "M4",
+  "at_utc": "2026-11-21T04:38:45+00:00",
+  "not_verified": [
+    "M4 未从头重演 M2 的多步主动决策树（collapse_tree）；fig5 与 active_collapse_comparison 直接消费并交叉校验 M2 summary.json#active_collapse_simulation 的落盘结果，多步树内部状态合法性须与 M2 源码及 active_check.json 联审。",
+    "jardim_c01 在 M2 run_20261120_exact_v1 中因单元预算超限进入 BUDGET_EXCEEDED（search_complete=false, cells=[]），故全量 22 簇中仅有 21 簇参与静默翻转率与幻觉通路率分母；M4 对 jardim_c01 不作任何贯通或断割断言。",
+    "真实野外观测误差率（field_error_rate）、人工解译/复核实测耗时（human_time）与水力渗透连通性（hydraulic）均无独立现场真值，恒保留 null。",
+    "fig1 展示的历史三阶段非 oracle 数据阶梯锚点（NNS-001 / NNS-046 / NNS-021）源自既有在盘交付件与 M0 基线，本单未从 2026-08 合成扫描脚本全量重跑合成域扫描。"
+  ],
+  "absence_of_problem_is_not_proof": [
+    "Baseline 2（朴素并集图）在 14 个 M2 可证断割簇上跨状态幻觉通路误报率为 0/14，仅说明在这 14 个来自 Perozzo 2024 的簇中跨模式/跨 t 接触并集恰好未形成 A-to-B 通路；不能由此反向推断朴素并集图在一般三维多裂隙簇上不会出现假阳性幻觉路径。",
+    "Jardim Garcia 场地的 certified_disconnected_count = 0（因 5 簇歧义 + 1 簇 BUDGET_EXCEEDED），故其 phantom_fp_given_disconnected_rate 必须为 null；这不代表 Jardim 场地不存在断割风险，更不允许填 0.0。",
+    "fig1..fig5 的视觉零重叠与零缺失字形是在本机 Noto Sans SC + Matplotlib Agg PNG 像素渲染下经人工目视检查确认的；矢量 SVG 在缺少相同中文字体的其他系统浏览器中的回退效果未跨平台实测。",
+    "已完备 21 簇中 Naive Union（全 22 簇含 21 完备簇 + jardim_c01）与 M2 cells active_edges 并集交叉核验无差异，仅证明 M1-M2-M4 的区间投影与三元 BFS 接触图口径一致，不验证物理真实开度或工程扰动。"
+  ],
+  "found_while_working": [
+    "本机 pytorch_env 未安装 openpyxl，直接使用标准库 zipfile + xml.etree.ElementTree（流式读取 sharedStrings 与 sheet1 XML）解析 Perozzo 2024 两份 xlsx；期间实测发现 Automatic-Discontinuities-Geometrical-Info.xlsx（202,371 行）在第 109210 行与第 109821 行存在 Kcolinearity 空单元格（None），已在 perozzo_dse_vs_manual_summary.json 按逐列有效计数诚实登记而非丢弃整行。",
+    "接通 M2 runs/run_20261120_exact_v1 后发现 jardim_c01 为 BUDGET_EXCEEDED 拒答态且 active_check.json 中 certified_branch_fraction 为有理分数字符串（非浮点）；初版脚手架对 REFUSED 状态会直接中止，初版 fig4 也会把非歧义空 rho 标为 C- 并把 90 位有理分数直接打在 3D 子图标题上造成右溢出，均已修正并复验全部 5 张 PNG。",
+    "初版 fig2 使用 Unicode 下标字符导致 Matplotlib 缺失字形告警，已改用 LaTeX mathtext（$|\\mathbf{n}_i \\cdot \\mathbf{n}_j|$），实现 0 告警渲染。",
+    "verify_m4.py 原先对 plt.show( 采用纯字符串匹配误伤了 plot_figures.py 头部文档注释说明，且 --audit-summary 与 --run-negative-controls 同传时会提前退出；已升级为 ast.Call 节点语法检查并规范默认全量执行路径。"
+  ],
+  "scope_creep_refused": [
+    "未修改 M0/M1/M2、TC_network/、TB_feasible/、TE_judge/、data/ 或 src/ 中任何既有文件。",
+    "未运行已退役的全量 pytest；未把 G2 与其他重量级门禁并发抢占桌面 GPU，严格将其留至最后错峰单独运行。",
+    "未引入任何 oracle 数值（严禁出现 12.37 / 12.3705 等禁值，且特意将 Perozzo 中位半径倍比精确记为 12.3663 或约 12.4x），未混合合成域与真实露头域分母。",
+    "未执行 git commit 或 git push；未弹出任何 cmd.exe / python.exe / Matplotlib GUI 桌面窗口。"
+  ]
+}

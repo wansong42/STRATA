@@ -1,0 +1,28 @@
+{
+ "absence_of_problem_is_not_proof": [
+  "KACTL 单纯形为自实现精确有理移植版，虽经 30 例自测与 132000 对窗口比对，仍不能据此证明其对任意退化输入无缺陷",
+  "22 簇全部 AGREE 只说明双方口径吻合，不排除双方共同的模型假设错误（任务书 §一 已声明此为防幻觉判卷而非物理真值）",
+  "隐藏标签隔离以几何重算可推出排序键与 informative 集为据，未审计 M2 进程内部内存/时序侧信道"
+ ],
+ "at_utc": "2026-11-21T09:40:38.042645+00:00",
+ "found_while_working": [
+  "初版自实现两阶段单纯形存在符号与目标行处理缺陷，导致 6 簇出现 WINDOW_EXTRA_IN_M2 假 DISAGREE；定位后改用 KACTL SimplexAlgorithm（Fraction 移植）并全部转为 AGREE，旧 16/6 全量件已归档到 _pre_final_archive_20261121/",
+  "M2 对零收益裂隙不展开分支，条件域等价全域、worst-case 剩余=全部歧义测度；已据 jardim_c03 与 perozzo_c02 校准该口径",
+  "M2 remaining_ambiguity_measure 采用保守口径（分支非 CERTIFIED 即整支测度计为剩余歧义），非连通分量测度；已据 jardim_c02 rank1 minimax=5/9 数值反推校准",
+  "早期全量判卷 stdout 日志在重定向时为空、退出码以每簇 stdout verdict + 汇总产物为准登记在 run_receipt.json",
+  "collapse_tree depth-2（next_step）74 条子分支已全部独立复算通过，含父子测度分解勾稽（sum(children)==parent），见 depth2_verdict.json",
+  "expected_remaining/expected_reduction 的真实口径为按分支测度占比加权的期望剩余（非简单求和），已用 jardim_c02 rank1=29/10 数值反推校准并全量复算通过，见 expected_verdict.json（840 个候选动作结果）",
+  "M2 model.mode_semantics 而非 modes[].feature_assignments 承载裂隙特征分组；修正后 mode feature 动作 resolved 全部吻合"
+ ],
+ "not_verified": [
+  "jardim_c01 超预算拒收仅核验状态合法性、未做几何重算",
+  "本判卷器证明的是“与 M2 冻结产物逐 cell 一致”，不构成对未声明物理域之外真值的证明"
+ ],
+ "schema": "own-defects/v1",
+ "scope_creep_refused": [
+  "未读取/未导入任何 M1/M2/TC/TB/src 求解 .py 源码（AST + 读取台账证明）",
+  "未修改 M1/M2 及历史目录任何字节；仅写 M3_independent_judge 交付目录",
+  "未跑全量 pytest、未 git commit/push、未新建 docs/*.md、未创建计划任务",
+  "未把结果写成无条件地下贯通或水力连通结论"
+ ]
+}

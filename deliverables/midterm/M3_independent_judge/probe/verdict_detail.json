@@ -1,0 +1,10 @@
+{
+ "jardim_c02": {
+  "cluster_id": "jardim_c02",
+  "first_disagreement": {
+   "detail": "TypeError('list indices must be integers or slices, not tuple')",
+   "reason": "JUDGE_EXCEPTION"
+  },
+  "verdict": "MALFORMED"
+ }
+}

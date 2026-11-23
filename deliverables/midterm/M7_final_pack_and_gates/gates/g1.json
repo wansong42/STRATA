@@ -1,0 +1,71 @@
+{
+  "generated": "2026-11-21 21:42",
+  "checks": {
+    "A_random_anchor": {
+      "measured": 57.2969,
+      "expected": 57.29577951308232,
+      "diff": 0.0012,
+      "status": "PASS",
+      "note": "∫₀¹ arccos(u) du 弧度 = 1 rad = 57.2958° (度量自洽真相锚)"
+    },
+    "A_identity": {
+      "measured": 0.000115,
+      "expected": 0.0,
+      "diff": 0.000115,
+      "status": "PASS"
+    },
+    "A_rotation_invariance": {
+      "max_diff": 0.0,
+      "status": "PASS"
+    },
+    "A_permutation_invariance": {
+      "max_diff": 0.0,
+      "status": "PASS"
+    },
+    "B_nns001_l1local": {
+      "measured": 36.6871,
+      "expected": 36.687,
+      "diff": 0.0001,
+      "status": "PASS"
+    },
+    "B_nns011_oracle": {
+      "measured_beishan22": 12.3705,
+      "expected": 12.37,
+      "diff": 0.0005,
+      "status": "PASS",
+      "combined": 11.0243,
+      "canonical_strict_json": 11.024,
+      "combined_ok": true
+    },
+    "B_nns026_merged": {
+      "ledger": 36.687,
+      "mae_mean": 36.6871,
+      "p50": 31.4875,
+      "diff_vs_mae_mean": 0.0001,
+      "status": "PASS",
+      "note": "NNS-026=T78 修订后并入 NNS-001 (l1_local=36.687°); 旧 31.7° 信息墙已迁移至 NNS-045 (信息墙探针口径)"
+    },
+    "C_t30_gate": {
+      "measured": 0.3674,
+      "expected": 0.37,
+      "diff": 0.0026,
+      "verdict": "PASS",
+      "status": "PASS"
+    },
+    "C_dep008_forge_anchor": {
+      "id": "DEP-008",
+      "value": 12.69,
+      "deprecated": true,
+      "old_value": 9.35,
+      "reason": "FORGE K12 锚点 sin/cos 互换 bug (T58 修复)",
+      "status": "PASS",
+      "note": "DEP=已纠正/废弃数字; 校验 old->new 溯源 + 值=12.69; forge 管线 fresh 重算为 T70 剩余动作"
+    }
+  },
+  "summary": {
+    "total": 9,
+    "pass_": 9,
+    "fail": 0,
+    "verdict": "PASS"
+  }
+}

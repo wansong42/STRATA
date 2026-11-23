@@ -1,0 +1,494 @@
+{
+ "files_scanned": 9,
+ "files_skipped": [],
+ "hits_total": 8,
+ "mislabel_hits": [],
+ "exempt_hits": [
+  {
+   "file": "docs/论文_墙_发现过程技术报告.md",
+   "face": "INTERNAL_MATERIAL",
+   "rule": "R-A",
+   "line": 231,
+   "token": "1.3840",
+   "exempt": true,
+   "sentence": "- **S1 兑现了 R132 反常档 A-2 的预言**：组心从\"符号对齐均值\"换成**精度加权**，把 **5.5980° 压到 1.3840°** ⇒ 这是墙以内一次真实、可复算的改进（上述两端读数皆为绝对误差水平而非增益；配对增益须按源件逐靶读）。"
+  },
+  {
+   "file": "docs/论文_墙_发现过程技术报告.md",
+   "face": "INTERNAL_MATERIAL",
+   "rule": "R-A",
+   "line": 300,
+   "token": "1.3840",
+   "exempt": true,
+   "sentence": "- 勘误 R304-E8 → 原 L231：`5.5980°` 与 `1.3840°` 都是绝对误差水平，同句写增益即命中混标闸"
+  },
+  {
+   "file": "results/_retired_narrative_20261001/技术路线_终局_结题锚定与治理退役_v2.0.md",
+   "face": "EVIDENCE",
+   "rule": "R-A",
+   "line": 107,
+   "token": "1.3833",
+   "exempt": true,
+   "sentence": "- 配对增益栏（0.6769–2.2745°）与绝对误差水平栏（1.3833–4.3738°）**严禁混引**（R263 混标闸）。"
+  },
+  {
+   "file": "results/_retired_narrative_20261001/技术路线_终局_结题锚定与治理退役_v2.0.md",
+   "face": "EVIDENCE",
+   "rule": "R-A",
+   "line": 107,
+   "token": "4.3738",
+   "exempt": true,
+   "sentence": "- 配对增益栏（0.6769–2.2745°）与绝对误差水平栏（1.3833–4.3738°）**严禁混引**（R263 混标闸）。"
+  },
+  {
+   "file": "results/_retired_narrative_20261001/技术路线_终局_结题锚定与治理退役_v2.0.md",
+   "face": "EVIDENCE",
+   "rule": "R-B",
+   "line": 107,
+   "token": "1.3833-4.3738",
+   "exempt": true,
+   "sentence": "- 配对增益栏（0.6769–2.2745°）与绝对误差水平栏（1.3833–4.3738°）**严禁混引**（R263 混标闸）。"
+  },
+  {
+   "file": "results/_retired_narrative_20261001/治理退役声明.md",
+   "face": "EVIDENCE",
+   "rule": "R-A",
+   "line": 45,
+   "token": "1.3833",
+   "exempt": true,
+   "sentence": "- 配对增益（0.6769–2.2745°）与绝对误差水平（1.3833–4.3738°）两栏严禁混引（R263 闸）。"
+  },
+  {
+   "file": "results/_retired_narrative_20261001/治理退役声明.md",
+   "face": "EVIDENCE",
+   "rule": "R-A",
+   "line": 45,
+   "token": "4.3738",
+   "exempt": true,
+   "sentence": "- 配对增益（0.6769–2.2745°）与绝对误差水平（1.3833–4.3738°）两栏严禁混引（R263 闸）。"
+  },
+  {
+   "file": "results/_retired_narrative_20261001/治理退役声明.md",
+   "face": "EVIDENCE",
+   "rule": "R-B",
+   "line": 45,
+   "token": "1.3833-4.3738",
+   "exempt": true,
+   "sentence": "- 配对增益（0.6769–2.2745°）与绝对误差水平（1.3833–4.3738°）两栏严禁混引（R263 闸）。"
+  }
+ ],
+ "by_rule": {
+  "R-A": 0,
+  "R-B": 0,
+  "R-C": 0
+ },
+ "by_face": {},
+ "sets": {
+  "absolute_values": [
+   1.3833,
+   1.4485,
+   2.2399,
+   2.5075,
+   2.7974,
+   2.8844,
+   2.9168,
+   3.531,
+   4.006,
+   4.3738,
+   4.782,
+   5.6649,
+   13.7902,
+   15.3737
+  ],
+  "headroom_values": [
+   -1.5835,
+   -0.4875,
+   -0.1687,
+   0.1817,
+   0.3277,
+   0.475,
+   0.6769,
+   0.8946,
+   1.2911,
+   1.3489,
+   1.5011,
+   2.2745,
+   5.4596
+  ]
+ },
+ "scope": "delivery",
+ "enumeration_mode": "in_process_run_scan",
+ "sum_reconcile": {
+  "by_rule_sum": 0,
+  "by_face_sum": 0,
+  "non_exempt_total": 0,
+  "ok": true
+ },
+ "scope_detail": {
+  "scope": "delivery",
+  "口径": "in_process_run_scan",
+  "n_files_in_scope": 9,
+  "files_scanned": 9,
+  "files_in_scope": [
+   "docs/作者自述_墙论文口述原料_v1.md",
+   "docs/墙主张_范围与机制_作者取料件_v1.md",
+   "docs/墙论文_体例与禁止项_作者取料件_v1.md",
+   "docs/墙论文_作者考问卷_v1.md",
+   "docs/墙论文_证明状态_作者取料件_v1.md",
+   "docs/论文_墙_发现过程技术报告.md",
+   "results/_retired_narrative_20261001/技术路线_终局_结题锚定与治理退役_v2.0.md",
+   "results/_retired_narrative_20261001/架构师交接文档_20260923_终局轮_治理退役与三单签发.md",
+   "results/_retired_narrative_20261001/治理退役声明.md"
+  ],
+  "authority": {
+   "sources": {
+    "A_manifest": {
+     "file": "results/r322_final_settlement/retirement_manifest.json",
+     "pointers": [
+      "guards.G-4.extraction_docs_frozen",
+      "guards.G-5.whitelist_new_allowed"
+     ],
+     "files": [
+      "docs/作者自述_墙论文口述原料_v1.md",
+      "docs/墙主张_范围与机制_作者取料件_v1.md",
+      "docs/墙论文_体例与禁止项_作者取料件_v1.md",
+      "docs/墙论文_作者考问卷_v1.md",
+      "docs/墙论文_证明状态_作者取料件_v1.md",
+      "docs/架构师交接文档_20260923_终局轮_治理退役与三单签发.md",
+      "docs/治理退役声明.md"
+     ]
+    },
+    "B_declaration": {
+     "file": "results/_retired_narrative_20261001/治理退役声明.md",
+     "method": "regex docs/*.md in section 二 + self",
+     "files": [
+      "docs/作者自述_墙论文口述原料_v1.md",
+      "docs/墙主张_范围与机制_作者取料件_v1.md",
+      "docs/墙论文_体例与禁止项_作者取料件_v1.md",
+      "docs/墙论文_作者考问卷_v1.md",
+      "docs/墙论文_证明状态_作者取料件_v1.md",
+      "docs/技术路线_终局_结题锚定与治理退役_v2.0.md",
+      "docs/论文_墙_发现过程技术报告.md",
+      "results/_retired_narrative_20261001/治理退役声明.md"
+     ]
+    }
+   },
+   "sets_identical": false,
+   "A_minus_B": [
+    "docs/架构师交接文档_20260923_终局轮_治理退役与三单签发.md",
+    "docs/治理退役声明.md"
+   ],
+   "B_minus_A": [
+    "docs/技术路线_终局_结题锚定与治理退役_v2.0.md",
+    "docs/论文_墙_发现过程技术报告.md",
+    "results/_retired_narrative_20261001/治理退役声明.md"
+   ],
+   "ruling": "两源不同 ⇒ 不调和, 按更严 (并集) 实现; 差集如实随结果输出",
+   "union": [
+    "docs/作者自述_墙论文口述原料_v1.md",
+    "docs/墙主张_范围与机制_作者取料件_v1.md",
+    "docs/墙论文_体例与禁止项_作者取料件_v1.md",
+    "docs/墙论文_作者考问卷_v1.md",
+    "docs/墙论文_证明状态_作者取料件_v1.md",
+    "docs/论文_墙_发现过程技术报告.md",
+    "results/_retired_narrative_20261001/技术路线_终局_结题锚定与治理退役_v2.0.md",
+    "results/_retired_narrative_20261001/架构师交接文档_20260923_终局轮_治理退役与三单签发.md",
+    "results/_retired_narrative_20261001/治理退役声明.md"
+   ],
+   "provenance": {
+    "docs/墙论文_作者考问卷_v1.md": [
+     "manifest:G-4+G-5",
+     "declaration:§二"
+    ],
+    "results/_retired_narrative_20261001/技术路线_终局_结题锚定与治理退役_v2.0.md": [
+     "declaration:§二",
+     "relocated_from:docs/技术路线_终局_结题锚定与治理退役_v2.0.md"
+    ],
+    "docs/论文_墙_发现过程技术报告.md": [
+     "declaration:§二"
+    ],
+    "results/_retired_narrative_20261001/治理退役声明.md": [
+     "declaration:§二+self"
+    ],
+    "docs/墙论文_证明状态_作者取料件_v1.md": [
+     "manifest:G-4+G-5",
+     "declaration:§二"
+    ],
+    "docs/墙主张_范围与机制_作者取料件_v1.md": [
+     "manifest:G-4+G-5",
+     "declaration:§二"
+    ],
+    "docs/墙论文_体例与禁止项_作者取料件_v1.md": [
+     "manifest:G-4+G-5",
+     "declaration:§二"
+    ],
+    "results/_retired_narrative_20261001/架构师交接文档_20260923_终局轮_治理退役与三单签发.md": [
+     "manifest:G-4+G-5",
+     "relocated_from:docs/架构师交接文档_20260923_终局轮_治理退役与三单签发.md"
+    ],
+    "docs/作者自述_墙论文口述原料_v1.md": [
+     "manifest:G-4+G-5",
+     "declaration:§二"
+    ]
+   }
+  },
+  "per_file_red": {
+   "docs/作者自述_墙论文口述原料_v1.md": 0,
+   "docs/墙主张_范围与机制_作者取料件_v1.md": 0,
+   "docs/墙论文_体例与禁止项_作者取料件_v1.md": 0,
+   "docs/墙论文_作者考问卷_v1.md": 0,
+   "docs/墙论文_证明状态_作者取料件_v1.md": 0,
+   "docs/论文_墙_发现过程技术报告.md": 0,
+   "results/_retired_narrative_20261001/技术路线_终局_结题锚定与治理退役_v2.0.md": 0,
+   "results/_retired_narrative_20261001/架构师交接文档_20260923_终局轮_治理退役与三单签发.md": 0,
+   "results/_retired_narrative_20261001/治理退役声明.md": 0
+  },
+  "missing_on_disk": [],
+  "unreadable": [],
+  "non_exempt_hits": 0,
+  "exempt_hits": 8,
+  "by_rule": {
+   "R-A": 0,
+   "R-B": 0,
+   "R-C": 0
+  },
+  "by_rule_sum": 0,
+  "by_face": {},
+  "by_face_sum": 0,
+  "sum_reconcile_ok": true,
+  "violations": [],
+  "text_source_note": null,
+  "exit_code": 0,
+  "fail_on_hit": true,
+  "rc": 0
+ },
+ "delivery_face_per_file": {
+  "union": [
+   "docs/作者自述_墙论文口述原料_v1.md",
+   "docs/墙主张_范围与机制_作者取料件_v1.md",
+   "docs/墙论文_体例与禁止项_作者取料件_v1.md",
+   "docs/墙论文_作者考问卷_v1.md",
+   "docs/墙论文_证明状态_作者取料件_v1.md",
+   "docs/论文_墙_发现过程技术报告.md",
+   "results/_retired_narrative_20261001/技术路线_终局_结题锚定与治理退役_v2.0.md",
+   "results/_retired_narrative_20261001/架构师交接文档_20260923_终局轮_治理退役与三单签发.md",
+   "results/_retired_narrative_20261001/治理退役声明.md"
+  ],
+  "per_file": {
+   "docs/作者自述_墙论文口述原料_v1.md": {
+    "red_hits": 0,
+    "on_disk": true,
+    "in_corpus_enumeration": true,
+    "sources": [
+     "manifest:G-4+G-5",
+     "declaration:§二"
+    ]
+   },
+   "docs/墙主张_范围与机制_作者取料件_v1.md": {
+    "red_hits": 0,
+    "on_disk": true,
+    "in_corpus_enumeration": true,
+    "sources": [
+     "manifest:G-4+G-5",
+     "declaration:§二"
+    ]
+   },
+   "docs/墙论文_体例与禁止项_作者取料件_v1.md": {
+    "red_hits": 0,
+    "on_disk": true,
+    "in_corpus_enumeration": true,
+    "sources": [
+     "manifest:G-4+G-5",
+     "declaration:§二"
+    ]
+   },
+   "docs/墙论文_作者考问卷_v1.md": {
+    "red_hits": 0,
+    "on_disk": true,
+    "in_corpus_enumeration": true,
+    "sources": [
+     "manifest:G-4+G-5",
+     "declaration:§二"
+    ]
+   },
+   "docs/墙论文_证明状态_作者取料件_v1.md": {
+    "red_hits": 0,
+    "on_disk": true,
+    "in_corpus_enumeration": true,
+    "sources": [
+     "manifest:G-4+G-5",
+     "declaration:§二"
+    ]
+   },
+   "docs/论文_墙_发现过程技术报告.md": {
+    "red_hits": 0,
+    "on_disk": true,
+    "in_corpus_enumeration": true,
+    "sources": [
+     "declaration:§二"
+    ]
+   },
+   "results/_retired_narrative_20261001/技术路线_终局_结题锚定与治理退役_v2.0.md": {
+    "red_hits": 0,
+    "on_disk": true,
+    "in_corpus_enumeration": false,
+    "sources": [
+     "declaration:§二",
+     "relocated_from:docs/技术路线_终局_结题锚定与治理退役_v2.0.md"
+    ]
+   },
+   "results/_retired_narrative_20261001/架构师交接文档_20260923_终局轮_治理退役与三单签发.md": {
+    "red_hits": 0,
+    "on_disk": true,
+    "in_corpus_enumeration": false,
+    "sources": [
+     "manifest:G-4+G-5",
+     "relocated_from:docs/架构师交接文档_20260923_终局轮_治理退役与三单签发.md"
+    ]
+   },
+   "results/_retired_narrative_20261001/治理退役声明.md": {
+    "red_hits": 0,
+    "on_disk": true,
+    "in_corpus_enumeration": false,
+    "sources": [
+     "declaration:§二+self"
+    ]
+   }
+  },
+  "sets_identical": false,
+  "A_minus_B": [
+   "docs/架构师交接文档_20260923_终局轮_治理退役与三单签发.md",
+   "docs/治理退役声明.md"
+  ],
+  "B_minus_A": [
+   "docs/技术路线_终局_结题锚定与治理退役_v2.0.md",
+   "docs/论文_墙_发现过程技术报告.md",
+   "results/_retired_narrative_20261001/治理退役声明.md"
+  ],
+  "total_red_on_delivery_face": 0,
+  "any_union_file_not_enumerated": [
+   "results/_retired_narrative_20261001/技术路线_终局_结题锚定与治理退役_v2.0.md",
+   "results/_retired_narrative_20261001/架构师交接文档_20260923_终局轮_治理退役与三单签发.md",
+   "results/_retired_narrative_20261001/治理退役声明.md"
+  ],
+  "any_union_file_off_disk": []
+ },
+ "default_path_reconcile": {
+  "scope": "delivery",
+  "baseline_file": "results/_architect_watch_20260924/r263_scope/before_snapshot.json",
+  "criteria_ast_before_after": {
+   "n_before": 35,
+   "n_after": 66,
+   "drifted": [],
+   "added": [
+    "cst:AUTHORITY_DECLARATION",
+    "cst:AUTHORITY_MANIFEST",
+    "cst:BEFORE_SNAPSHOT",
+    "cst:DECL_SEC_END",
+    "cst:DECL_SEC_START",
+    "cst:DOC_PATH_RX",
+    "cst:MUTABLE_NODES",
+    "cst:PILL_ID",
+    "cst:PILL_TARGET",
+    "cst:RECONCILE_EVIDENCE",
+    "cst:SCAN_MODE",
+    "cst:SCOPE_CHOICES",
+    "cst:SCOPE_DELIVERY",
+    "cst:SCOPE_FULL",
+    "cst:_RELOC_CACHE",
+    "cst:_RELOC_MANIFEST",
+    "fn:_relocation_map",
+    "fn:_scan_targets",
+    "fn:_self_rel",
+    "fn:_set_digest",
+    "fn:build_scope_detail",
+    "fn:criteria_ast_before_after",
+    "fn:criteria_ast_diff",
+    "fn:criteria_ast_fingerprint",
+    "fn:default_path_reconcile",
+    "fn:delivery_face_authority",
+    "fn:delivery_face_counts",
+    "fn:delivery_face_files",
+    "fn:evaluate_scope",
+    "fn:scope_selftest",
+    "fn:scope_targets"
+   ],
+   "removed": [],
+   "before_copy": "results/_architect_watch_20260924/r263_scope/scanner_before/r263_gain_mislabel_scan.py",
+   "present": true,
+   "conclusion": "PASS"
+  },
+  "applicable": false,
+  "baseline_on_disk": true,
+  "conclusion": "not_applicable_to_new_scope (改前不存在 delivery 路径); 默认路径逐位对账留痕 = results/_architect_watch_20260924/r263_scope/full_baseline_reconcile.json, 实测读数 = 370",
+  "baseline_full_red_hit_set_sha256": "d7691d2ef810c40256c6b04bf5c44d37c5ef961f4a6b9232754979b6b59fd141"
+ },
+ "criteria_ast_fingerprint": {
+  "cst:ROOT": "41981261fc977603c646dedaea9a5c6253f15f6bbdac9960ab4abd383a9b388e",
+  "cst:HDRM_FILE": "7168f03d82b65d32fc8dd93f085031c6f84c3ffc0c689134b4672f0fdc00334d",
+  "cst:R212_FILE": "2fc33c733fd479d4bde70bb0a818bc142e78c52b2924dc2b451a836887de1a2e",
+  "cst:GAIN_RX": "083a5fbc61a53d28d959fdbcf3ece4d7fea6de0507a50c950ed339fc5cab3412",
+  "cst:ABS_RX": "56dfd4df6985190e18eb7921f8a2efe9b956d2319706a38d1cba56a418ac0700",
+  "cst:COUNT_RX": "a5b2ab54f471fc21d064364ac6e0e5cc4ee7dfbbf23b3c0e9ab1c3b0a4e72083",
+  "cst:SET_CONTEXT_RX": "a0806082c45f6e762d98cf39764a282f73507995e06119f1acbe550cea907772",
+  "cst:DEGRADATION_NEUTRAL_RX": "f2a8c5400a7c542f450c72e958f22865b6a390f440638128b74c022840398792",
+  "cst:EXEMPTION_MARKERS": "391ffe5768f703ab1d28b8832a6a59d01bb478b5fda0319530cb076cbf1566c0",
+  "cst:NUMBER_RX": "baa25c62313cd1d0a77a6d22b0f63e73527af043ee6d8268a725a290115c5830",
+  "cst:INTERVAL_RX": "d11dce6183d288b1d227764eea1048e958a694431efba8a3514897bef9cd162d",
+  "fn:_load_sets": "2021173e39f99b1d9d26141b882c4a875f6d7ea13fc19fcfa37305ff89411360",
+  "fn:_dp_forms": "162f2edf3cf2770770ca282a8fc57ae259a0e2964b2c44629d178d8894ba4138",
+  "cst:HARD_UNIT_RX": "bf3145a1e0de9f5ed4143c06be0f9314118273f3e771628aafe55c2b9d27b824",
+  "fn:split_sentences": "2f31c2b0d52c8b277987c57c80f22f927ef077f13a970b3f47e3c15cac802f10",
+  "fn:_sent_split": "7aa00333ada6d27d3db459fe3cf317efdee15da06814416e227c5b4500ef2c13",
+  "fn:has_marker": "a2b5203a332b58b5441aef5d4c16933d4b3a27f8be109536110a3b021619b4c7",
+  "fn:scan_text": "1d14f4d0b8654d629f6cf1b9c5a5b3ceea8b410e867d3c34323f1b643157c8a9",
+  "cst:TEXT_EXT": "ba520408eb381ed1ff90cf5adf32f96a76f98101edfff8e0c34334c01c8c2336",
+  "cst:SKIP_NAME_RX": "371d1e3f85a47748655f92ba29b366fcd865dcfff943c8d91a8c1b48eee85cbe",
+  "cst:CORPUS": "e467ac25d966205b203099fe377675a3c0a29d6a21441a92695db9fda52016cc",
+  "cst:CORPUS_ROOT_DOCS": "a824cdf20f853ba297ad38d18b98837a596e2866d763525d1bc6c2025e7a1111",
+  "cst:CORPUS_FILES": "26d4122280cb555c8416593e9a48d4caa5cd88a9272fb8e6775f6cfe0505554e",
+  "cst:PDF_FACES": "42ab43964c26c0af721a09b118af5af7a3f541b3ef62687af2425d025e1e1eb1",
+  "cst:CODE_EXT": "dbc9860fc9babb7f44de20f0f266514ebd8f666dd8dc0c4f8af2e2b718598ce2",
+  "cst:SCOPE_FULL": "52c3f627657e294d73e8c0d2fe8e6e1bdac972ac77cadf511768feb13c847370",
+  "cst:SCOPE_DELIVERY": "966f7ce7e609f49ed735d0718a5632649a1072e4949dbe2b5efe2de44047aaba",
+  "cst:SCOPE_CHOICES": "22b2f4827de16a7ae78430240ee588859e7fc2da9fee36505fdbc7d3c679d516",
+  "cst:SCAN_MODE": "fa5edb3fd8609dc20be6003213dfcf7d2b28426f1712d2c8fc3ee14c52ce6506",
+  "cst:AUTHORITY_MANIFEST": "1fb5dfe9978f64bf8206789ad09721549cc4fcc3f4b83e7f05ef0344b19002d3",
+  "cst:AUTHORITY_DECLARATION": "a90fef891447b1b540d695a2554eb785188e93355af22a8af230d3d4be60fdd8",
+  "cst:DECL_SEC_START": "488b1c4d65c21bcb5d30c3f60ff3f7d102af079d0fef42f2b9efe7f5b80157e9",
+  "cst:DECL_SEC_END": "6bdf05a1df8175a4927c5461526ef76dd7bd4f30e0b465648874cffe1985899d",
+  "cst:DOC_PATH_RX": "2856269161eb45dcd966f02fb1005a2e92f933cddfd01a2f54bccc54985f0f87",
+  "cst:PILL_TARGET": "c4dc5f4e061dc2cd339b96e8523d61ba71a17fe1b4b7f78829e71dc0b69a30b5",
+  "cst:PILL_ID": "ca3df3c12034063c625a6821f92ddd27cce356348a1d07f72e7ed5358595c893",
+  "cst:MUTABLE_NODES": "9f977994867ccc064c8e9b33f0450442859cd0b84cf8fcaa1d6a9cd2a1199b73",
+  "fn:iter_targets": "764b8163b6e2eb9e5c26c475ef35acff602e61f5aca6071b40e90259bfb91e85",
+  "fn:reflow": "88e98f9f75b8ef9100836a6d300e1600608e4793401972bf8589231b507c8157",
+  "fn:read_text": "7f9e5fb4feda603627e19ef5ce117a3a5149cae756fffa6a7afe6cfe20a51986",
+  "cst:FACE_RULES": "c4d0003759ace92d98a66e51300731213ab8a43349ac25825ef660a0a0cf5362",
+  "fn:classify": "7007ef8323eaa82e21b816037e9d3a0e632eb7f8150b6d7e83a030451ec1e9f9",
+  "cst:_RELOC_MANIFEST": "5a086d9401c00737ff44da1c45351b620df916fc7ffffb6fb417d185b2866a50",
+  "cst:_RELOC_CACHE": "f566fc3193e81a9fe3ae9a7cf5af0de02eaa81b2fbe97ebe948d55568c21c3a5",
+  "fn:_relocation_map": "af80fbe5eaef937e56d1cb97460af3e7f119e8e62d1212b751d17b3fbdc096bd",
+  "fn:delivery_face_authority": "c6d451cdcc2147ab362ebb03fa5f1b1205bfe17db0f65ce1829dd204dfd3470c",
+  "fn:delivery_face_files": "7a5bb4ec6d8059c91699e7e060ebed7eba4a11bc69991592970cb7f7edeb7e41",
+  "fn:scope_targets": "e0dd0bb8f2aea5ff2f6cf9987e8267ffd988c7afa93e318b88c475c4f70f7c25",
+  "fn:criteria_ast_fingerprint": "a5f800186a1d7d8b80a2e9dbf8169d7a9fd711b80cf14177a3adb30d26a17d90",
+  "fn:criteria_ast_diff": "8f0d8ffc420ce3b5c8dcd1d2d83f3e15988a113a140824cf804e6b40147e9745",
+  "fn:_self_rel": "38b7cf44ce426c9fb44353cc53ad03ded6e0cc337c7097f29f9fe2f6cb5f9f40",
+  "fn:build_scope_detail": "4a9a513f2b0354f37995b8638ef3560409daf16e0c85bfa295812b0e509250df",
+  "fn:evaluate_scope": "942001ab645f537115cf6a1bfe70ffa45cac3637067df382f539e749d5a69ae0",
+  "cst:NEGATIVE_PILLS": "d4d243bd9d3c147d1275b5ab97d8970ef3ef0edb65490d9dc90e4c964fc067a1",
+  "cst:POSITIVE_CONTROLS": "5cd0670ca728b7e5def63dc6bf1012dc7ea3700b4d39dc3dab9c8a15c09f833b",
+  "fn:scope_selftest": "b548c703c34c8741cbb8eecfec076ae7c1b1f694b18f2467d61f2bb55b661eed",
+  "cst:PROSE_EXT": "bccc37eac012dc511b3e80a2ec5f7e77960cbae1c3f8e7c0e36bf9bc8485f18a",
+  "fn:is_prose": "02785f7c5b4e5ffbcd6d7ec891b24e1017d343c517660b2046d018a3fa6dc666",
+  "fn:scan_file": "474e229b8bdd43cac5226517949713a17015aa4227e2d0b19952655e4c1058f6",
+  "fn:_scan_targets": "fca074c9ee1d598be0099edc0a9fe09555d78b0ed74f2fc501daa727f46b16a8",
+  "fn:_set_digest": "e3abf5ad86852978377333c2aa80818f55296ff43b4e2ef6aec0c8df866c99b8",
+  "cst:BEFORE_SNAPSHOT": "5215b6d19ee0811f893414734a57a3aebc98f40b835edc4dda7f751f2f742376",
+  "cst:RECONCILE_EVIDENCE": "c26ffd87b9513b9490340d974325c169b3c09882f9cadf46bf251d6cbe311f3b",
+  "fn:criteria_ast_before_after": "155fb27b6e93c1bdce93b5f984c7168a17419e35da32e71129bc892d2d243462",
+  "fn:default_path_reconcile": "3b70fe69921ed24b8327f5b6ba3356f03bf68b2e70d1f775d742b328bab26972",
+  "fn:delivery_face_counts": "d21abb06a6533ec93512ad37f11f7c9d0529bf4da444abd5f480e3ce41b4cac9"
+ }
+}

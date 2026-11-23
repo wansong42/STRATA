@@ -1,0 +1,5963 @@
+{
+  "schema": "m6-number-traceability-map/v1",
+  "built_at_utc": "2026-11-21T06:14:58.658379+00:00",
+  "scope": "Complete 100% number traceability map for M6 midterm defense 15-page PPT outline, 8-minute spoken script, and 20 sharp judge Q&A cards.",
+  "m3_sync_status": {
+    "m3_present": false,
+    "status": "PENDING_M3",
+    "source_json": "results/midterm_sprint_20261120/M3_independent_judge/verdict_batch.json"
+  },
+  "summary": {
+    "total_registered_entries": 87,
+    "total_distinct_tokens": 212,
+    "untraced_number_count": 0,
+    "oracle_number_count": 0,
+    "deprecated_number_count": 0,
+    "cross_column_mix_count": 0
+  },
+  "field_error_rate": null,
+  "human_time": null,
+  "hydraulic": null,
+  "entries": [
+    {
+      "entry_id": "TM-001",
+      "metric_name": "无联结钻孔逐点隐伏均值角距 (北山 22 井 × 10 种子)",
+      "rendered_tokens": [
+        "36.69°",
+        "36.69"
+      ],
+      "recomputed_value": 36.69,
+      "source_json": "results/midterm_sprint_20261120/M4_benchmark_figures/data_ladder_anchors.json",
+      "source_sha256": "2b507fbbfd975c7c8b1e6e98c6df412b6ae7a103de3c3a42e693b22456a3b7a1",
+      "json_path": "stages[0].value_deg",
+      "raw_value_in_json": 36.6871,
+      "recompute_rule": "round_2dp",
+      "scope": "北山 22 井 × 10 seeds 严格无泄漏无联结钻孔 (l1_local) 逐点隐伏角距均值，非理想真值指派上界",
+      "enumeration": "北山 22 口钻孔 × 10 随机种子全量盲测枚举",
+      "measured_at_utc": "2026-11-21T04:23:36.071372+00:00",
+      "domain_track": "HISTORICAL_DATA_LADDER_NON_ORACLE",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 8,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 29,
+          "token": "36.69°"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 226,
+          "token": "36.69°"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 242,
+          "token": "36.69°"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 18,
+          "token": "36.69°"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 66,
+          "token": "36.69°"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 106,
+          "token": "36.69°"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 109,
+          "token": "36.69°"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 142,
+          "token": "36.69°"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-002",
+      "metric_name": "单孔无联结经验信息墙锚点均值",
+      "rendered_tokens": [
+        "30.50°",
+        "30.50"
+      ],
+      "recomputed_value": 30.5,
+      "source_json": "results/r226_anchor_305/anchor_stats.json",
+      "source_sha256": "84c10f8ea461c5d3aacf27cfd512f7a9b5e79e57650c95832e2a944297fadd7b",
+      "json_path": "anchor_value_deg",
+      "raw_value_in_json": 30.49781036376953,
+      "recompute_rule": "round_2dp",
+      "scope": "单孔无联结方向估计经验信息墙锚点均值（与 95% 区间 [27.01°, 34.25°] 成套绑定）",
+      "enumeration": "北山 22 井聚类自助重抽全枚举",
+      "measured_at_utc": "2026-09-19T00:00:00+00:00",
+      "domain_track": "HISTORICAL_DATA_LADDER_NON_ORACLE",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 12,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 27,
+          "token": "30.50°"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 30,
+          "token": "30.50°"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 32,
+          "token": "30.50°"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 216,
+          "token": "30.50°"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 226,
+          "token": "30.50°"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 242,
+          "token": "30.50°"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 16,
+          "token": "30.50°"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 18,
+          "token": "30.50°"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 122,
+          "token": "30.50°"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 66,
+          "token": "30.50°"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 109,
+          "token": "30.50°"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 142,
+          "token": "30.50°"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-003",
+      "metric_name": "经验信息墙锚点 95% 聚类自助置信区间下限",
+      "rendered_tokens": [
+        "27.01°",
+        "27.01"
+      ],
+      "recomputed_value": 27.01,
+      "source_json": "results/r226_anchor_305/anchor_stats.json",
+      "source_sha256": "84c10f8ea461c5d3aacf27cfd512f7a9b5e79e57650c95832e2a944297fadd7b",
+      "json_path": "statistics.ci95_cluster_bootstrap.lo",
+      "raw_value_in_json": 27.014327144622804,
+      "recompute_rule": "round_2dp",
+      "scope": "与经验信息墙点估计 30.50° 同次聚类自助重抽得到的 95% 置信区间下限",
+      "enumeration": "聚类 bootstrap 重抽分布 2.5% 分位点",
+      "measured_at_utc": "2026-09-19T00:00:00+00:00",
+      "domain_track": "HISTORICAL_DATA_LADDER_NON_ORACLE",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 4,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 30,
+          "token": "27.01°"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 32,
+          "token": "27.01°"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 18,
+          "token": "27.01°"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 109,
+          "token": "27.01°"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-004",
+      "metric_name": "经验信息墙锚点 95% 聚类自助置信区间上限",
+      "rendered_tokens": [
+        "34.25°",
+        "34.25"
+      ],
+      "recomputed_value": 34.25,
+      "source_json": "results/r226_anchor_305/anchor_stats.json",
+      "source_sha256": "84c10f8ea461c5d3aacf27cfd512f7a9b5e79e57650c95832e2a944297fadd7b",
+      "json_path": "statistics.ci95_cluster_bootstrap.hi",
+      "raw_value_in_json": 34.2478009223938,
+      "recompute_rule": "round_2dp",
+      "scope": "与经验信息墙点估计 30.50° 同次聚类自助重抽得到的 95% 置信区间上限",
+      "enumeration": "聚类 bootstrap 重抽分布 97.5% 分位点",
+      "measured_at_utc": "2026-09-19T00:00:00+00:00",
+      "domain_track": "HISTORICAL_DATA_LADDER_NON_ORACLE",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 4,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 30,
+          "token": "34.25°"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 32,
+          "token": "34.25°"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 18,
+          "token": "34.25°"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 109,
+          "token": "34.25°"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-005",
+      "metric_name": "FMI 井壁成像迹线 K=12 组系模态角距",
+      "rendered_tokens": [
+        "12.87°",
+        "12.87"
+      ],
+      "recomputed_value": 12.87,
+      "source_json": "results/midterm_sprint_20261120/M4_benchmark_figures/data_ladder_anchors.json",
+      "source_sha256": "2b507fbbfd975c7c8b1e6e98c6df412b6ae7a103de3c3a42e693b22456a3b7a1",
+      "json_path": "stages[1].value_deg",
+      "raw_value_in_json": 12.8681,
+      "recompute_rule": "round_2dp",
+      "scope": "FORGE 双井 FMI 井壁成像迹线 K=12 anchored 组系级模态角距（非 oracle 读数）",
+      "enumeration": "FORGE 双井全量成像记录 K=12 组系对照",
+      "measured_at_utc": "2026-11-21T04:23:36.071372+00:00",
+      "domain_track": "HISTORICAL_DATA_LADDER_NON_ORACLE",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 6,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 29,
+          "token": "12.87°"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 242,
+          "token": "12.87°"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 18,
+          "token": "12.87°"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 66,
+          "token": "12.87°"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 106,
+          "token": "12.87°"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 109,
+          "token": "12.87°"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-006",
+      "metric_name": "合成壁面稠密点云基准角距 (60% 隐伏, 2.5cm 噪)",
+      "rendered_tokens": [
+        "0.37°",
+        "0.37"
+      ],
+      "recomputed_value": 0.37,
+      "source_json": "results/midterm_sprint_20261120/M4_benchmark_figures/data_ladder_anchors.json",
+      "source_sha256": "2b507fbbfd975c7c8b1e6e98c6df412b6ae7a103de3c3a42e693b22456a3b7a1",
+      "json_path": "stages[2].value_deg",
+      "raw_value_in_json": 0.3674,
+      "recompute_rule": "round_2dp",
+      "scope": "合成 K=4 多走向四壁空间分离稠密点云基准（60% 隐伏、2.5cm 噪声；纯合成基准，严禁外推为野外实测精度）",
+      "enumeration": "合成四壁空间分离点云基准全量评估",
+      "measured_at_utc": "2026-11-21T04:23:36.071372+00:00",
+      "domain_track": "HISTORICAL_DATA_LADDER_NON_ORACLE",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 7,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 29,
+          "token": "0.37°"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 36,
+          "token": "0.37°"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 242,
+          "token": "0.37°"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 18,
+          "token": "0.37°"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 66,
+          "token": "0.37°"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 109,
+          "token": "0.37°"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 111,
+          "token": "0.37°"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-007",
+      "metric_name": "合成点云基准噪声幅度与隐伏比例及置信水平协议常数",
+      "rendered_tokens": [
+        "2.5",
+        "60%",
+        "95%"
+      ],
+      "recomputed_value": 3,
+      "source_json": "results/midterm_sprint_20261120/M4_benchmark_figures/data_ladder_anchors.json",
+      "source_sha256": "2b507fbbfd975c7c8b1e6e98c6df412b6ae7a103de3c3a42e693b22456a3b7a1",
+      "json_path": "stages[2].stage_order",
+      "raw_value_in_json": 3,
+      "recompute_rule": "exact_int",
+      "scope": "数据阶梯第三阶合成协议标签（60% 隐伏、2.5 厘米高斯噪声）与墙锚 95% 置信区间水平",
+      "enumeration": "数据阶梯协议常数（stages 共 3 阶）",
+      "measured_at_utc": "2026-11-21T04:23:36.071372+00:00",
+      "domain_track": "HISTORICAL_DATA_LADDER_NON_ORACLE",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 7,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 29,
+          "token": "2.5"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 18,
+          "token": "2.5"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 29,
+          "token": "60%"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 18,
+          "token": "60%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 30,
+          "token": "95%"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 18,
+          "token": "95%"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 109,
+          "token": "95%"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-008",
+      "metric_name": "Perozzo 2024 自动点云分割 (DSE) 面片总数",
+      "rendered_tokens": [
+        "202,371",
+        "202371"
+      ],
+      "recomputed_value": 202371,
+      "source_json": "results/midterm_sprint_20261120/M4_benchmark_figures/perozzo_dse_vs_manual_summary.json",
+      "source_sha256": "eb7884c0afe11637c6abb51c8ddb520d5270453b1609cf4c946938d0fec89942",
+      "json_path": "automatic_dse.declared_data_rows",
+      "raw_value_in_json": 202371,
+      "recompute_rule": "exact_int",
+      "scope": "Perozzo 2024 公开数据 Automatic-Discontinuities-Geometrical-Info.xlsx 自动分割面总数（独立分栏，不作真值）",
+      "enumeration": "标准库 zipfile+ElementTree 全表流式解析 202,371 行",
+      "measured_at_utc": "2026-11-20T15:46:21.376568+00:00",
+      "domain_track": "PEROZZO_DSE_VS_MANUAL_SEPARATE_COLUMN",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 6,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 42,
+          "token": "202,371"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 45,
+          "token": "202,371"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 48,
+          "token": "202,371"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 244,
+          "token": "202,371"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 25,
+          "token": "202,371"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 35,
+          "token": "202,371"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-009",
+      "metric_name": "Perozzo 2024 专家人工解译面片与迹线总数",
+      "rendered_tokens": [
+        "1,405",
+        "1405"
+      ],
+      "recomputed_value": 1405,
+      "source_json": "results/midterm_sprint_20261120/M4_benchmark_figures/perozzo_dse_vs_manual_summary.json",
+      "source_sha256": "eb7884c0afe11637c6abb51c8ddb520d5270453b1609cf4c946938d0fec89942",
+      "json_path": "manual.declared_data_rows",
+      "raw_value_in_json": 1405,
+      "recompute_rule": "exact_int",
+      "scope": "Perozzo 2024 公开数据 Manual-Discontinuities-Geometrical-Info.xlsx 专家人工解译面总数（同源匹配 1,405 条 DXF 迹线）",
+      "enumeration": "全表 1,405 行与 1,405 条三维多段线全枚举",
+      "measured_at_utc": "2026-11-20T15:46:21.376568+00:00",
+      "domain_track": "PEROZZO_DSE_VS_MANUAL_SEPARATE_COLUMN",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 10,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 42,
+          "token": "1,405"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 45,
+          "token": "1,405"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 48,
+          "token": "1,405"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 71,
+          "token": "1,405"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 25,
+          "token": "1,405"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 42,
+          "token": "1,405"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 26,
+          "token": "1,405"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 35,
+          "token": "1,405"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 166,
+          "token": "1,405"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 195,
+          "token": "1,405"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-010",
+      "metric_name": "Perozzo 2024 自动分割相对专家解译数量过分割倍比",
+      "rendered_tokens": [
+        "144.04",
+        "144.0363"
+      ],
+      "recomputed_value": 144.04,
+      "source_json": "results/midterm_sprint_20261120/M4_benchmark_figures/perozzo_dse_vs_manual_summary.json",
+      "source_sha256": "eb7884c0afe11637c6abb51c8ddb520d5270453b1609cf4c946938d0fec89942",
+      "json_path": "comparison.oversegmentation_count_ratio",
+      "raw_value_in_json": 144.0363,
+      "recompute_rule": "round_2dp",
+      "scope": "Perozzo 2024 自动 DSE 面数 (202,371) 与专家解译面数 (1,405) 的过分割比值 (202371/1405 = 144.0363)",
+      "enumeration": "全量自动表与专家表行数比",
+      "measured_at_utc": "2026-11-20T15:46:21.376568+00:00",
+      "domain_track": "PEROZZO_DSE_VS_MANUAL_SEPARATE_COLUMN",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 6,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 39,
+          "token": "144.04"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 42,
+          "token": "144.04"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 226,
+          "token": "144.04"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 25,
+          "token": "144.04"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 35,
+          "token": "144.04"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 38,
+          "token": "144.04"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-011",
+      "metric_name": "Perozzo 2024 自动 DSE 分割面中位半径 (p50, m)",
+      "rendered_tokens": [
+        "0.11",
+        "0.106392"
+      ],
+      "recomputed_value": 0.11,
+      "source_json": "results/midterm_sprint_20261120/M4_benchmark_figures/perozzo_dse_vs_manual_summary.json",
+      "source_sha256": "eb7884c0afe11637c6abb51c8ddb520d5270453b1609cf4c946938d0fec89942",
+      "json_path": "automatic_dse.metrics.Radius.p50",
+      "raw_value_in_json": 0.106392,
+      "recompute_rule": "round_2dp",
+      "scope": "Perozzo 2024 自动 DSE 202,371 个分割面的圆盘半径中位数 (0.106392 m ≈ 0.11 m)",
+      "enumeration": "202,371 个自动分割面半径全排序中位数",
+      "measured_at_utc": "2026-11-20T15:46:21.376568+00:00",
+      "domain_track": "PEROZZO_DSE_VS_MANUAL_SEPARATE_COLUMN",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 2,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 42,
+          "token": "0.11"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 25,
+          "token": "0.11"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-012",
+      "metric_name": "Perozzo 2024 专家人工解译面中位半径 (p50, m)",
+      "rendered_tokens": [
+        "1.32",
+        "1.315676"
+      ],
+      "recomputed_value": 1.32,
+      "source_json": "results/midterm_sprint_20261120/M4_benchmark_figures/perozzo_dse_vs_manual_summary.json",
+      "source_sha256": "eb7884c0afe11637c6abb51c8ddb520d5270453b1609cf4c946938d0fec89942",
+      "json_path": "manual.metrics.Radius.p50",
+      "raw_value_in_json": 1.315676,
+      "recompute_rule": "round_2dp",
+      "scope": "Perozzo 2024 专家人工解译 1,405 个面的圆盘半径中位数 (1.315676 m ≈ 1.32 m)",
+      "enumeration": "1,405 个专家面半径全排序中位数",
+      "measured_at_utc": "2026-11-20T15:46:21.376568+00:00",
+      "domain_track": "PEROZZO_DSE_VS_MANUAL_SEPARATE_COLUMN",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 2,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 42,
+          "token": "1.32"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 25,
+          "token": "1.32"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-013",
+      "metric_name": "Perozzo 2024 自动 DSE 半径 < 0.50 m 微碎面占比",
+      "rendered_tokens": [
+        "91.16%",
+        "91.16",
+        "0.50",
+        "0.5"
+      ],
+      "recomputed_value": 91.16,
+      "source_json": "results/midterm_sprint_20261120/M4_benchmark_figures/perozzo_dse_vs_manual_summary.json",
+      "source_sha256": "eb7884c0afe11637c6abb51c8ddb520d5270453b1609cf4c946938d0fec89942",
+      "json_path": "automatic_dse.radius_threshold_fractions.lt_0p50m",
+      "raw_value_in_json": 0.911623,
+      "recompute_rule": "pct_round_2dp",
+      "scope": "Perozzo 2024 自动 DSE 面中半径 < 0.50 m 的碎片比例 (184,486 / 202,371 = 91.1623%)",
+      "enumeration": "202,371 个自动面按 R < 0.50 m 阈值全量计数",
+      "measured_at_utc": "2026-11-20T15:46:21.376568+00:00",
+      "domain_track": "PEROZZO_DSE_VS_MANUAL_SEPARATE_COLUMN",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 8,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 42,
+          "token": "91.16%"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 25,
+          "token": "91.16%"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 35,
+          "token": "91.16%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 42,
+          "token": "0.50"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 25,
+          "token": "0.50"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 35,
+          "token": "0.50"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 194,
+          "token": "0.50"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 166,
+          "token": "0.5"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-014",
+      "metric_name": "Perozzo 2024 专家人工解译面半径 < 0.50 m 占比",
+      "rendered_tokens": [
+        "7.69%",
+        "7.69"
+      ],
+      "recomputed_value": 7.69,
+      "source_json": "results/midterm_sprint_20261120/M4_benchmark_figures/perozzo_dse_vs_manual_summary.json",
+      "source_sha256": "eb7884c0afe11637c6abb51c8ddb520d5270453b1609cf4c946938d0fec89942",
+      "json_path": "manual.radius_threshold_fractions.lt_0p50m",
+      "raw_value_in_json": 0.076868,
+      "recompute_rule": "pct_round_2dp",
+      "scope": "Perozzo 2024 专家解译面中半径 < 0.50 m 的比例 (108 / 1,405 = 7.6868%)",
+      "enumeration": "1,405 个专家面按 R < 0.50 m 阈值全量计数",
+      "measured_at_utc": "2026-11-20T15:46:21.376568+00:00",
+      "domain_track": "PEROZZO_DSE_VS_MANUAL_SEPARATE_COLUMN",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 2,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 42,
+          "token": "7.69%"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 25,
+          "token": "7.69%"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-015",
+      "metric_name": "巴西 Jardim Garcia 采石场原始点云总点数",
+      "rendered_tokens": [
+        "60,343,162",
+        "60343162"
+      ],
+      "recomputed_value": 60343162,
+      "source_json": "results/w160_full_pointcloud_roi/roi/uh_roi_patch/observation.json",
+      "source_sha256": "4b6c9ec12352a23582b6aaf1e58aa5d2caa39c7325b25da69340c1b6baa3bc0b",
+      "json_path": "lineage.raw_point_total",
+      "raw_value_in_json": 60343162,
+      "recompute_rule": "exact_int",
+      "scope": "巴西 Jardim Garcia 采石场完整无人机数字露头点云 UH_UH_points.ply 原始总点数",
+      "enumeration": "完整 PLY 文件流式全扫描计数",
+      "measured_at_utc": "2026-11-13T14:15:46+08:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 6,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 16,
+          "token": "60,343,162"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 70,
+          "token": "60,343,162"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 13,
+          "token": "60,343,162"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 41,
+          "token": "60,343,162"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 18,
+          "token": "60,343,162"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 67,
+          "token": "60,343,162"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-016",
+      "metric_name": "巴西 Jardim Garcia 主研究区 (ROI) 全分辨率点云点数",
+      "rendered_tokens": [
+        "1,279,478",
+        "1279478"
+      ],
+      "recomputed_value": 1279478,
+      "source_json": "results/w160_full_pointcloud_roi/roi/uh_roi_patch/observation.json",
+      "source_sha256": "4b6c9ec12352a23582b6aaf1e58aa5d2caa39c7325b25da69340c1b6baa3bc0b",
+      "json_path": "point_cloud.point_total",
+      "raw_value_in_json": 1279478,
+      "recompute_rule": "exact_int",
+      "scope": "巴西 Jardim Garcia 采石场 uh_roi_patch 固定包围盒全分辨率无抽稀子集点数",
+      "enumeration": "固定 AABB 包围盒内全量点枚举",
+      "measured_at_utc": "2026-11-13T14:15:46+08:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 2,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 70,
+          "token": "1,279,478"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 41,
+          "token": "1,279,478"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-017",
+      "metric_name": "意大利 Finale Ligure (Perozzo 2024) 全分辨率激光点云总点数",
+      "rendered_tokens": [
+        "83,208,117",
+        "83208117"
+      ],
+      "recomputed_value": 83208117,
+      "source_json": "results/w180_technical_route_20261117/execution_next/dispatch_20261118/TH_data/format_probe.json",
+      "source_sha256": "e2dfcd292751716928865158506e502883734cee2d1e5648e092b0a48845f723",
+      "json_path": "las_full.n_points",
+      "raw_value_in_json": 83208117,
+      "recompute_rule": "exact_int",
+      "scope": "意大利 Finale Ligure (Perozzo 2024) Pointcloud_Full-Resolution.las 全分辨率点云总点数",
+      "enumeration": "2.5 GB LAS 1.2 头部点记录总数直接解析并经整件 SHA256 校验",
+      "measured_at_utc": "2026-11-19T08:30:37.560367+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 6,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 16,
+          "token": "83,208,117"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 71,
+          "token": "83,208,117"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 13,
+          "token": "83,208,117"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 42,
+          "token": "83,208,117"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 18,
+          "token": "83,208,117"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 67,
+          "token": "83,208,117"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-018",
+      "metric_name": "双真实露头场地构建的三维多裂隙相互作用簇总数",
+      "rendered_tokens": [
+        "22",
+        "22/22"
+      ],
+      "recomputed_value": 22,
+      "source_json": "results/midterm_sprint_20261120/M1_real_to_exact_bridge/cluster_register.json",
+      "source_sha256": "2778ba4a096f431235273222bcd5b74b27f9419d33cc34606790bc758bba6bcf",
+      "json_path": "counts.total_clusters",
+      "raw_value_in_json": 22,
+      "recompute_rule": "exact_int",
+      "scope": "双真实露头派生条件有限多裂隙并集模型 (REAL_DERIVED_CONDITIONED_FINITE_UNION) 总簇数 (巴西 6 簇 + 意大利 16 簇)",
+      "enumeration": "预注册规则下双场地全枚举 22 簇",
+      "measured_at_utc": "2026-11-20T15:34:31.475564+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 48,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 16,
+          "token": "22"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 24,
+          "token": "22"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 29,
+          "token": "22"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 36,
+          "token": "22"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 41,
+          "token": "22"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 48,
+          "token": "22"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 61,
+          "token": "22"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 67,
+          "token": "22"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 68,
+          "token": "22"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 77,
+          "token": "22"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 85,
+          "token": "22"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 93,
+          "token": "22"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 101,
+          "token": "22"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 130,
+          "token": "22"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 138,
+          "token": "22"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 187,
+          "token": "22"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 196,
+          "token": "22"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 213,
+          "token": "22"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 227,
+          "token": "22"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 244,
+          "token": "22"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 246,
+          "token": "22"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 248,
+          "token": "22"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 13,
+          "token": "22"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 18,
+          "token": "22"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 24,
+          "token": "22"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-019",
+      "metric_name": "巴西 Jardim Garcia 采石场真实三维裂隙簇数与每簇模式数",
+      "rendered_tokens": [
+        "6"
+      ],
+      "recomputed_value": 6,
+      "source_json": "results/midterm_sprint_20261120/M1_real_to_exact_bridge/cluster_register.json",
+      "source_sha256": "2778ba4a096f431235273222bcd5b74b27f9419d33cc34606790bc758bba6bcf",
+      "json_path": "counts.jardim_garcia_uh",
+      "raw_value_in_json": 6,
+      "recompute_rule": "exact_int",
+      "scope": "巴西 Jardim Garcia 采石场构建的真实三维裂隙簇数量（6 簇），亦等于每簇声明的离散不确定性模式数（6 模式）及完备集歧义簇总数（6 簇）",
+      "enumeration": "巴西场地 46 个真实拟合面按预注册最远点采样生成 6 簇",
+      "measured_at_utc": "2026-11-20T15:34:31.475564+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 70,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 7,
+          "token": "6"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 53,
+          "token": "6"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 61,
+          "token": "6"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 70,
+          "token": "6"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 73,
+          "token": "6"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 77,
+          "token": "6"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 79,
+          "token": "6"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 80,
+          "token": "6"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 82,
+          "token": "6"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 83,
+          "token": "6"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 84,
+          "token": "6"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 89,
+          "token": "6"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 98,
+          "token": "6"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 110,
+          "token": "6"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 119,
+          "token": "6"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 123,
+          "token": "6"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 134,
+          "token": "6"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 147,
+          "token": "6"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 156,
+          "token": "6"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 161,
+          "token": "6"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 162,
+          "token": "6"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 196,
+          "token": "6"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 208,
+          "token": "6"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 213,
+          "token": "6"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 214,
+          "token": "6"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-020",
+      "metric_name": "意大利 Perozzo 2024 露头真实三维裂隙簇数量",
+      "rendered_tokens": [
+        "16"
+      ],
+      "recomputed_value": 16,
+      "source_json": "results/midterm_sprint_20261120/M1_real_to_exact_bridge/cluster_register.json",
+      "source_sha256": "2778ba4a096f431235273222bcd5b74b27f9419d33cc34606790bc758bba6bcf",
+      "json_path": "counts.perozzo_finale_ligure",
+      "raw_value_in_json": 16,
+      "recompute_rule": "exact_int",
+      "scope": "意大利 Finale Ligure (Perozzo 2024) 按 2×2 空间象限分层构建的条件有限八边形三维簇数量",
+      "enumeration": "4 个空间象限 × 每象限 4 簇（簇大小 6, 7, 8, 9 片）= 16 簇",
+      "measured_at_utc": "2026-11-20T15:34:31.475564+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 12,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 71,
+          "token": "16"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 83,
+          "token": "16"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 129,
+          "token": "16"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 179,
+          "token": "16"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 244,
+          "token": "16"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 42,
+          "token": "16"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 7,
+          "token": "16"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 159,
+          "token": "16"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 161,
+          "token": "16"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 166,
+          "token": "16"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 190,
+          "token": "16"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 195,
+          "token": "16"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-021",
+      "metric_name": "保拓扑保留真实岩石孔洞的三维裂隙簇数量",
+      "rendered_tokens": [
+        "3"
+      ],
+      "recomputed_value": 3,
+      "source_json": "results/midterm_sprint_20261120/M1_real_to_exact_bridge/cluster_register.json",
+      "source_sha256": "2778ba4a096f431235273222bcd5b74b27f9419d33cc34606790bc758bba6bcf",
+      "json_path": "counts.clusters_with_preserved_holes",
+      "raw_value_in_json": 3,
+      "recompute_rule": "exact_int",
+      "scope": "巴西 Jardim Garcia 采石场中保拓扑保留真实内环孔洞（绝不凸包填洞）的三维裂隙簇数量 (jardim_c01, jardim_c04, jardim_c06)",
+      "enumeration": "全量 22 簇孔洞保留审计计数",
+      "measured_at_utc": "2026-11-20T15:34:31.475564+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 56,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 4,
+          "token": "3"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 38,
+          "token": "3"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 51,
+          "token": "3"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 60,
+          "token": "3"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 70,
+          "token": "3"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 74,
+          "token": "3"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 80,
+          "token": "3"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 83,
+          "token": "3"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 85,
+          "token": "3"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 87,
+          "token": "3"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 92,
+          "token": "3"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 117,
+          "token": "3"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 130,
+          "token": "3"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 134,
+          "token": "3"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 142,
+          "token": "3"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 145,
+          "token": "3"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 156,
+          "token": "3"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 164,
+          "token": "3"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 171,
+          "token": "3"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 176,
+          "token": "3"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 194,
+          "token": "3"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 204,
+          "token": "3"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 206,
+          "token": "3"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 213,
+          "token": "3"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 216,
+          "token": "3"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-022",
+      "metric_name": "标准外延与倾角微扰分层 (STANDARD_EXT_TILT) 真实簇数量",
+      "rendered_tokens": [
+        "13"
+      ],
+      "recomputed_value": 13,
+      "source_json": "results/midterm_sprint_20261120/M1_real_to_exact_bridge/cluster_register.json",
+      "source_sha256": "2778ba4a096f431235273222bcd5b74b27f9419d33cc34606790bc758bba6bcf",
+      "json_path": "counts.standard_ext_tilt_clusters",
+      "raw_value_in_json": 13,
+      "recompute_rule": "exact_int",
+      "scope": "采用径向外延 (1.00x/1.15x) × 精确毕达哥拉斯有理倾角旋转 (0°/±3.95°) 的真实簇数量",
+      "enumeration": "22 簇中 stratum == STANDARD_EXT_TILT 计数",
+      "measured_at_utc": "2026-11-20T15:34:31.475564+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 11,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 74,
+          "token": "13"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 191,
+          "token": "13"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 193,
+          "token": "13"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 42,
+          "token": "13"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 99,
+          "token": "13"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 105,
+          "token": "13"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 106,
+          "token": "13"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 19,
+          "token": "13"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 103,
+          "token": "13"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 126,
+          "token": "13"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 131,
+          "token": "13"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-023",
+      "metric_name": "多段可行域与互斥归属分层 (MUTUAL_EXCL_ATTRIB_MULTISEG) 真实簇数量",
+      "rendered_tokens": [
+        "9"
+      ],
+      "recomputed_value": 9,
+      "source_json": "results/midterm_sprint_20261120/M1_real_to_exact_bridge/cluster_register.json",
+      "source_sha256": "2778ba4a096f431235273222bcd5b74b27f9419d33cc34606790bc758bba6bcf",
+      "json_path": "counts.mutual_excl_attrib_multiseg_clusters",
+      "raw_value_in_json": 9,
+      "recompute_rule": "exact_int",
+      "scope": "包含双闭段可行域 [-1,-3/5]∪[-2/5,1] 与关键裂隙边界支持互斥归属的真实簇数量（亦等于每簇最大裂隙片数 9 及 M5 端到端截图数 9）",
+      "enumeration": "22 簇中 stratum == MUTUAL_EXCL_ATTRIB_MULTISEG 计数",
+      "measured_at_utc": "2026-11-20T15:34:31.475564+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 26,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 65,
+          "token": "9"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 73,
+          "token": "9"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 74,
+          "token": "9"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 125,
+          "token": "9"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 131,
+          "token": "9"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 162,
+          "token": "9"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 174,
+          "token": "9"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 177,
+          "token": "9"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 183,
+          "token": "9"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 187,
+          "token": "9"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 229,
+          "token": "9"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 3,
+          "token": "9"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 42,
+          "token": "9"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 69,
+          "token": "9"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 70,
+          "token": "9"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 75,
+          "token": "9"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 84,
+          "token": "9"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 94,
+          "token": "9"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 45,
+          "token": "9"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 58,
+          "token": "9"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 69,
+          "token": "9"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 92,
+          "token": "9"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 126,
+          "token": "9"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 145,
+          "token": "9"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 166,
+          "token": "9"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-024",
+      "metric_name": "量化敏感真实簇数量 (perozzo_c02)",
+      "rendered_tokens": [
+        "1"
+      ],
+      "recomputed_value": 1,
+      "source_json": "results/midterm_sprint_20261120/M1_real_to_exact_bridge/cluster_register.json",
+      "source_sha256": "2778ba4a096f431235273222bcd5b74b27f9419d33cc34606790bc758bba6bcf",
+      "json_path": "counts.quantization_sensitive_clusters",
+      "raw_value_in_json": 1,
+      "recompute_rule": "exact_int",
+      "scope": "标称最小非零片间间隙落入 2 倍 Tier-2 量化误差包络的真实簇数量 (perozzo_c02: 0.000433 m)",
+      "enumeration": "22 簇量化敏感度全量扫描计数",
+      "measured_at_utc": "2026-11-20T15:34:31.475564+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 94,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 7,
+          "token": "1"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 11,
+          "token": "1"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 13,
+          "token": "1"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 19,
+          "token": "1"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 22,
+          "token": "1"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 24,
+          "token": "1"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 27,
+          "token": "1"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 32,
+          "token": "1"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 35,
+          "token": "1"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 42,
+          "token": "1"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 45,
+          "token": "1"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 48,
+          "token": "1"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 51,
+          "token": "1"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 53,
+          "token": "1"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 56,
+          "token": "1"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 57,
+          "token": "1"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 59,
+          "token": "1"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 70,
+          "token": "1"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 71,
+          "token": "1"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 74,
+          "token": "1"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 77,
+          "token": "1"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 82,
+          "token": "1"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 83,
+          "token": "1"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 93,
+          "token": "1"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 99,
+          "token": "1"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-025",
+      "metric_name": "双场地 22 簇裂隙对总数",
+      "rendered_tokens": [
+        "490"
+      ],
+      "recomputed_value": 490,
+      "source_json": "results/midterm_sprint_20261120/M1_real_to_exact_bridge/cluster_register.json",
+      "source_sha256": "2778ba4a096f431235273222bcd5b74b27f9419d33cc34606790bc758bba6bcf",
+      "json_path": "non_orthogonality_aggregate.total_fracture_pairs",
+      "raw_value_in_json": 490,
+      "recompute_rule": "exact_int",
+      "scope": "双场地 22 个真实三维簇内所有裂隙无序对总数（巴西 6×15=90 对 + 意大利 400 对 = 490 对）",
+      "enumeration": "22 簇内全部 C(n_i, 2) 裂隙对全枚举",
+      "measured_at_utc": "2026-11-20T15:34:31.475564+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 4,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 41,
+          "token": "490"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 44,
+          "token": "490"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 48,
+          "token": "490"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 24,
+          "token": "490"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-026",
+      "metric_name": "双场地 22 簇中显著非正交的三维裂隙对数量",
+      "rendered_tokens": [
+        "337"
+      ],
+      "recomputed_value": 337,
+      "source_json": "results/midterm_sprint_20261120/M1_real_to_exact_bridge/cluster_register.json",
+      "source_sha256": "2778ba4a096f431235273222bcd5b74b27f9419d33cc34606790bc758bba6bcf",
+      "json_path": "non_orthogonality_aggregate.non_orthogonal_pairs_0p05_0p95",
+      "raw_value_in_json": 337,
+      "recompute_rule": "exact_int",
+      "scope": "法向点积绝对值落在开区间 (0.05, 0.95) 内的显著非正交斜交裂隙对数量",
+      "enumeration": "490 对裂隙法向点积逐对精确计算",
+      "measured_at_utc": "2026-11-20T15:34:31.475564+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 2,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 41,
+          "token": "337"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 24,
+          "token": "337"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-027",
+      "metric_name": "双场地 22 簇显著非正交三维裂隙对占比",
+      "rendered_tokens": [
+        "68.78%",
+        "68.78",
+        "0.05",
+        "0.95"
+      ],
+      "recomputed_value": 68.78,
+      "source_json": "results/midterm_sprint_20261120/M1_real_to_exact_bridge/cluster_register.json",
+      "source_sha256": "2778ba4a096f431235273222bcd5b74b27f9419d33cc34606790bc758bba6bcf",
+      "json_path": "non_orthogonality_aggregate.non_orthogonal_pair_fraction",
+      "raw_value_in_json": 0.6878,
+      "recompute_rule": "pct_round_2dp",
+      "scope": "双场地 22 簇 490 对裂隙中法向点积绝对值在 (0.05, 0.95) 的非正交比例 (337/490 = 68.7755% ≈ 68.78%)",
+      "enumeration": "490 对裂隙全枚举",
+      "measured_at_utc": "2026-11-20T15:34:31.475564+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 10,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 39,
+          "token": "68.78%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 41,
+          "token": "68.78%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 216,
+          "token": "68.78%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 226,
+          "token": "68.78%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 244,
+          "token": "68.78%"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 24,
+          "token": "68.78%"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 122,
+          "token": "68.78%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 41,
+          "token": "0.05"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 166,
+          "token": "0.05"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 41,
+          "token": "0.95"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-028",
+      "metric_name": "单簇三角形预算上限",
+      "rendered_tokens": [
+        "64"
+      ],
+      "recomputed_value": 64,
+      "source_json": "results/midterm_sprint_20261120/M1_real_to_exact_bridge/prereg.json",
+      "source_sha256": "f12186af21f896038ad249c54c4a8f1e54b8aac8cda0c6c5aa4b42d52e10593d",
+      "json_path": "global_budgets.max_triangles_per_mode",
+      "raw_value_in_json": 64,
+      "recompute_rule": "exact_int",
+      "scope": "预注册声明的每簇每模式最大有理三角形数量预算上限",
+      "enumeration": "22 簇 132 模式全量核验 (实测 36–56 <= 64)",
+      "measured_at_utc": "2026-11-20T14:52:28.720200+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 3,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 73,
+          "token": "64"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 42,
+          "token": "64"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 43,
+          "token": "64"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-029",
+      "metric_name": "有理数坐标位长预算上限",
+      "rendered_tokens": [
+        "8,192",
+        "8192"
+      ],
+      "recomputed_value": 8192,
+      "source_json": "results/midterm_sprint_20261120/M1_real_to_exact_bridge/prereg.json",
+      "source_sha256": "f12186af21f896038ad249c54c4a8f1e54b8aac8cda0c6c5aa4b42d52e10593d",
+      "json_path": "global_budgets.max_rational_bit_length",
+      "raw_value_in_json": 8192,
+      "recompute_rule": "exact_int",
+      "scope": "预注册声明的精确有理数分子/分母最大二进制位长预算上限",
+      "enumeration": "22 簇全部有理坐标与速度分量位长核验",
+      "measured_at_utc": "2026-11-20T14:52:28.720200+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 1,
+      "occurrences": [
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 45,
+          "token": "8,192"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-030",
+      "metric_name": "单簇精确细胞算力预算上限",
+      "rendered_tokens": [
+        "4,096",
+        "4096"
+      ],
+      "recomputed_value": 4096,
+      "source_json": "results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/cases/jardim_c01/certification.json",
+      "source_sha256": "6043b699c7e5b6b8de1a5cf0d5279ac0bb9ad6ca8e2f072588bfcc58fd605883",
+      "json_path": "budget_telemetry.declared_budget_cells",
+      "raw_value_in_json": 4096,
+      "recompute_rule": "exact_int",
+      "scope": "预注册声明的单簇跨模式精确 POINT/OPEN 细胞总算力预算上限（超出即触发 BUDGET_EXCEEDED 诚实拒答）",
+      "enumeration": "22 簇运行期逐模式细胞累积硬守卫",
+      "measured_at_utc": "2026-11-20T15:56:43+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 13,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 80,
+          "token": "4,096"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 85,
+          "token": "4,096"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 90,
+          "token": "4,096"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 134,
+          "token": "4,096"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 201,
+          "token": "4,096"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 214,
+          "token": "4,096"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 48,
+          "token": "4,096"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 111,
+          "token": "4,096"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 117,
+          "token": "4,096"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 43,
+          "token": "4,096"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 45,
+          "token": "4,096"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 70,
+          "token": "4,096"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 167,
+          "token": "4,096"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-031",
+      "metric_name": "单簇片对接触窗口算力预算上限",
+      "rendered_tokens": [
+        "65,536",
+        "65536"
+      ],
+      "recomputed_value": 65536,
+      "source_json": "results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/cases/jardim_c01/certification.json",
+      "source_sha256": "6043b699c7e5b6b8de1a5cf0d5279ac0bb9ad6ca8e2f072588bfcc58fd605883",
+      "json_path": "budget_telemetry.declared_budget_pairs",
+      "raw_value_in_json": 65536,
+      "recompute_rule": "exact_int",
+      "scope": "预注册声明的单簇三角形对接触窗口求交预算上限",
+      "enumeration": "22 簇运行期片对计数守卫",
+      "measured_at_utc": "2026-11-20T15:56:43+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 2,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 214,
+          "token": "65,536"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 45,
+          "token": "65,536"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-032",
+      "metric_name": "jardim_c01 在模式 m4 停止前已累积细胞数",
+      "rendered_tokens": [
+        "3,358",
+        "3358"
+      ],
+      "recomputed_value": 3358,
+      "source_json": "results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/cases/jardim_c01/certification.json",
+      "source_sha256": "6043b699c7e5b6b8de1a5cf0d5279ac0bb9ad6ca8e2f072588bfcc58fd605883",
+      "json_path": "budget_telemetry.cells_accumulated_before_mode",
+      "raw_value_in_json": 3358,
+      "recompute_rule": "exact_int",
+      "scope": "jardim_c01 在模式 m0..m3 已累积的精确 POINT/OPEN 细胞数",
+      "enumeration": "jardim_c01 前 4 个模式全枚举",
+      "measured_at_utc": "2026-11-20T15:56:43+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 3,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 85,
+          "token": "3,358"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 48,
+          "token": "3,358"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 45,
+          "token": "3,358"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-033",
+      "metric_name": "jardim_c01 在模式 m4 所需的精确细胞数",
+      "rendered_tokens": [
+        "835"
+      ],
+      "recomputed_value": 835,
+      "source_json": "results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/cases/jardim_c01/certification.json",
+      "source_sha256": "6043b699c7e5b6b8de1a5cf0d5279ac0bb9ad6ca8e2f072588bfcc58fd605883",
+      "json_path": "budget_telemetry.mode_cells_required",
+      "raw_value_in_json": 835,
+      "recompute_rule": "exact_int",
+      "scope": "jardim_c01 在模式 m4 划分所需的精确细胞数 (3358 + 835 = 4193 > 4096 触发预算拒答)",
+      "enumeration": "jardim_c01 模式 m4 事件点划分计数",
+      "measured_at_utc": "2026-11-20T15:56:43+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 3,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 85,
+          "token": "835"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 48,
+          "token": "835"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 45,
+          "token": "835"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-034",
+      "metric_name": "jardim_c01 至模式 m4 触发预算上限时的累积细胞数與全模式总需细胞数",
+      "rendered_tokens": [
+        "4,193",
+        "4193",
+        "5,024",
+        "5024"
+      ],
+      "recomputed_value": 4193,
+      "source_json": "results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/cases/jardim_c01/certification.json",
+      "source_sha256": "6043b699c7e5b6b8de1a5cf0d5279ac0bb9ad6ca8e2f072588bfcc58fd605883",
+      "json_path": [
+        "budget_telemetry.cells_accumulated_before_mode",
+        "budget_telemetry.mode_cells_required"
+      ],
+      "raw_value_in_json": [
+        3358,
+        835
+      ],
+      "recompute_rule": "sum_list",
+      "scope": "jardim_c01 在模式 m4 触发 BUDGET_EXCEEDED 时的细胞数 (3358 + 835 = 4193 > 4096；全 6 模式合计 5024 细胞)",
+      "enumeration": "jardim_c01 模式 m0..m4 累积细胞求和",
+      "measured_at_utc": "2026-11-20T15:56:43+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 8,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 85,
+          "token": "4,193"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 48,
+          "token": "4,193"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 43,
+          "token": "4,193"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 45,
+          "token": "4,193"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 85,
+          "token": "5,024"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 201,
+          "token": "5,024"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 48,
+          "token": "5,024"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 45,
+          "token": "5,024"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-035",
+      "metric_name": "完成完备精确有理三态认证的真实簇数量",
+      "rendered_tokens": [
+        "21",
+        "0/21",
+        "6/21"
+      ],
+      "recomputed_value": 21,
+      "source_json": "results/midterm_sprint_20261120/M4_benchmark_figures/benchmark_summary.json",
+      "source_sha256": "2783744eacf3f43054aa196b88cac0ff9952f7fc66101d2bc494fb35fe90370f",
+      "json_path": "real_outcrop_benchmarks.combined_real_conditioned.completed_count",
+      "raw_value_in_json": 21,
+      "recompute_rule": "exact_int",
+      "scope": "双场地 22 簇中在 4,096 细胞预算内完成全模式精确有理三态认证的完备分母簇数 (21 簇)",
+      "enumeration": "22 簇减去 1 簇 BUDGET_EXCEEDED (jardim_c01) = 21 簇",
+      "measured_at_utc": "2026-11-21T04:25:15.510652+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 48,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 17,
+          "token": "21"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 24,
+          "token": "21"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 36,
+          "token": "21"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 48,
+          "token": "21"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 53,
+          "token": "21"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 61,
+          "token": "21"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 80,
+          "token": "21"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 82,
+          "token": "21"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 83,
+          "token": "21"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 84,
+          "token": "21"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 85,
+          "token": "21"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 93,
+          "token": "21"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 98,
+          "token": "21"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 105,
+          "token": "21"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 123,
+          "token": "21"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 138,
+          "token": "21"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 156,
+          "token": "21"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 171,
+          "token": "21"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 187,
+          "token": "21"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 196,
+          "token": "21"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 208,
+          "token": "21"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 213,
+          "token": "21"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 220,
+          "token": "21"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 227,
+          "token": "21"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 236,
+          "token": "21"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-036",
+      "metric_name": "完备认证真实簇中确定断割 (CERTIFIED_DISCONNECTED) 簇数",
+      "rendered_tokens": [
+        "14",
+        "0/14",
+        "14/16"
+      ],
+      "recomputed_value": 14,
+      "source_json": "results/midterm_sprint_20261120/M4_benchmark_figures/benchmark_summary.json",
+      "source_sha256": "2783744eacf3f43054aa196b88cac0ff9952f7fc66101d2bc494fb35fe90370f",
+      "json_path": "real_outcrop_benchmarks.combined_real_conditioned.certified_disconnected_count",
+      "raw_value_in_json": 14,
+      "recompute_rule": "exact_int",
+      "scope": "在全部 6 个离散模式与全部合法参数 t 下均被证明不贯通的真实簇数量 (14 簇，全部位于意大利 Perozzo 场地)",
+      "enumeration": "21 个完备认证簇全模式最小割核验计数",
+      "measured_at_utc": "2026-11-21T04:25:15.510652+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 34,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 74,
+          "token": "14"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 82,
+          "token": "14"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 84,
+          "token": "14"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 89,
+          "token": "14"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 210,
+          "token": "14"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 246,
+          "token": "14"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 40,
+          "token": "14"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 49,
+          "token": "14"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 51,
+          "token": "14"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 113,
+          "token": "14"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 114,
+          "token": "14"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 71,
+          "token": "14"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 74,
+          "token": "14"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 75,
+          "token": "14"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 76,
+          "token": "14"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 79,
+          "token": "14"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 83,
+          "token": "14"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 102,
+          "token": "14"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 103,
+          "token": "14"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 139,
+          "token": "14"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 164,
+          "token": "14"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 167,
+          "token": "14"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 190,
+          "token": "14"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 195,
+          "token": "14"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 84,
+          "token": "0/14"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-037",
+      "metric_name": "完备认证真实簇中确定贯通 (CERTIFIED_CONNECTED) 占比",
+      "rendered_tokens": [
+        "4.76%",
+        "4.76"
+      ],
+      "recomputed_value": 4.76,
+      "source_json": "results/midterm_sprint_20261120/M4_benchmark_figures/benchmark_summary.json",
+      "source_sha256": "2783744eacf3f43054aa196b88cac0ff9952f7fc66101d2bc494fb35fe90370f",
+      "json_path": "real_outcrop_benchmarks.combined_real_conditioned.certified_connected_rate",
+      "raw_value_in_json": 0.047619,
+      "recompute_rule": "pct_round_2dp",
+      "scope": "21 个完备认证真实簇中全模式确定贯通的比例 (1/21 = 4.7619%，即 perozzo_c04)",
+      "enumeration": "21 个完备认证簇三态计数",
+      "measured_at_utc": "2026-11-21T04:25:15.510652+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 2,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 82,
+          "token": "4.76%"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 49,
+          "token": "4.76%"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-038",
+      "metric_name": "完备认证真实簇中确定断割占比 (及首推极小极大 2/3 消歧率)",
+      "rendered_tokens": [
+        "66.67%",
+        "66.67",
+        "2/3"
+      ],
+      "recomputed_value": 66.67,
+      "source_json": "results/midterm_sprint_20261120/M4_benchmark_figures/benchmark_summary.json",
+      "source_sha256": "2783744eacf3f43054aa196b88cac0ff9952f7fc66101d2bc494fb35fe90370f",
+      "json_path": "real_outcrop_benchmarks.combined_real_conditioned.certified_disconnected_rate",
+      "raw_value_in_json": 0.666667,
+      "recompute_rule": "pct_round_2dp",
+      "scope": "21 个完备认证真实簇中全模式确定断割的比例 (14/21 = 2/3 = 66.6667%)，亦等于 10/15 非正交率与 2/3 极小极大消歧比",
+      "enumeration": "21 个完备认证簇三态计数",
+      "measured_at_utc": "2026-11-21T04:25:15.510652+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 7,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 82,
+          "token": "66.67%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 147,
+          "token": "66.67%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 176,
+          "token": "66.67%"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 49,
+          "token": "66.67%"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 98,
+          "token": "66.67%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 176,
+          "token": "2/3"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 98,
+          "token": "2/3"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-039",
+      "metric_name": "名义单态 DFN 静默翻转率与完备集多解歧义占比 (6/21)",
+      "rendered_tokens": [
+        "28.57%",
+        "28.57"
+      ],
+      "recomputed_value": 28.57,
+      "source_json": "results/midterm_sprint_20261120/M4_benchmark_figures/benchmark_summary.json",
+      "source_sha256": "2783744eacf3f43054aa196b88cac0ff9952f7fc66101d2bc494fb35fe90370f",
+      "json_path": "real_outcrop_benchmarks.combined_real_conditioned.nominal_dfn.silent_flip_rate",
+      "raw_value_in_json": 0.285714,
+      "recompute_rule": "pct_round_2dp",
+      "scope": "21 个完备认证真实簇上名义单态 DFN (Baseline 1) 发生静默翻转的比例 (6/21 = 28.5714%)，亦即双见证可辨识歧义簇占比",
+      "enumeration": "21 个完备簇上名义参考态 (m0, t=0) 与全合法域对比",
+      "measured_at_utc": "2026-11-21T04:25:15.510652+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 12,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 53,
+          "token": "28.57%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 80,
+          "token": "28.57%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 82,
+          "token": "28.57%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 83,
+          "token": "28.57%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 196,
+          "token": "28.57%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 227,
+          "token": "28.57%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 246,
+          "token": "28.57%"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 30,
+          "token": "28.57%"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 49,
+          "token": "28.57%"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 50,
+          "token": "28.57%"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 18,
+          "token": "28.57%"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 36,
+          "token": "28.57%"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-040",
+      "metric_name": "名义单态 DFN 假安全连通风险率与漏报断割风险率 (各 3/21)",
+      "rendered_tokens": [
+        "14.29%",
+        "14.29"
+      ],
+      "recomputed_value": 14.29,
+      "source_json": "results/midterm_sprint_20261120/M4_benchmark_figures/benchmark_summary.json",
+      "source_sha256": "2783744eacf3f43054aa196b88cac0ff9952f7fc66101d2bc494fb35fe90370f",
+      "json_path": "real_outcrop_benchmarks.combined_real_conditioned.nominal_dfn.silent_flip_false_positive_risk_rate",
+      "raw_value_in_json": 0.142857,
+      "recompute_rule": "pct_round_2dp",
+      "scope": "21 个完备真实簇中名义单态 DFN 报连通但存在合法断割反例 (3/21 = 14.2857%) 或报断割但存在合法连通反例 (3/21 = 14.2857%) 的比例",
+      "enumeration": "6 例静默翻转簇按名义态极性二分 (3 例假安全连通 + 3 例漏报连通)",
+      "measured_at_utc": "2026-11-21T04:25:15.510652+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 2,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 83,
+          "token": "14.29%"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 50,
+          "token": "14.29%"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-041",
+      "metric_name": "超算力预算诚实拒答簇占比 (1/22)",
+      "rendered_tokens": [
+        "4.55%",
+        "4.55"
+      ],
+      "recomputed_value": 4.55,
+      "source_json": "results/midterm_sprint_20261120/M4_benchmark_figures/benchmark_summary.json",
+      "source_sha256": "2783744eacf3f43054aa196b88cac0ff9952f7fc66101d2bc494fb35fe90370f",
+      "json_path": "real_outcrop_benchmarks.combined_real_conditioned.budget_exceeded_rate",
+      "raw_value_in_json": 0.045455,
+      "recompute_rule": "pct_round_2dp",
+      "scope": "全量 22 个真实簇中超出 4,096 细胞预算触发 BUDGET_EXCEEDED 诚实拒答的比例 (1/22 = 4.5455%, jardim_c01)",
+      "enumeration": "全量 22 簇预算状态统计",
+      "measured_at_utc": "2026-11-21T04:25:15.510652+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 2,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 85,
+          "token": "4.55%"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 48,
+          "token": "4.55%"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-042",
+      "metric_name": "本文方法声明模型内静默误判率及朴素并集图在 14 例真断割簇上的跨状态假通路率",
+      "rendered_tokens": [
+        "0.00%",
+        "0.00",
+        "0"
+      ],
+      "recomputed_value": 0.0,
+      "source_json": "results/midterm_sprint_20261120/M4_benchmark_figures/benchmark_summary.json",
+      "source_sha256": "2783744eacf3f43054aa196b88cac0ff9952f7fc66101d2bc494fb35fe90370f",
+      "json_path": "real_outcrop_benchmarks.combined_real_conditioned.ours.silent_misjudgment_within_declared_model_rate",
+      "raw_value_in_json": 0.0,
+      "recompute_rule": "pct_round_2dp",
+      "scope": "本文方法在声明条件模型内的静默误判率 (0/21 = 0.00%)，以及朴素并集图在 14 例已完备断割簇上的跨状态假通路误报率 (0/14 = 0.00%)",
+      "enumeration": "21 个完备认证簇全量核验",
+      "measured_at_utc": "2026-11-21T04:25:15.510652+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 52,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 17,
+          "token": "0.00%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 80,
+          "token": "0.00%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 84,
+          "token": "0.00%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 85,
+          "token": "0.00%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 87,
+          "token": "0.00%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 196,
+          "token": "0.00%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 227,
+          "token": "0.00%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 246,
+          "token": "0.00%"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 13,
+          "token": "0.00%"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 51,
+          "token": "0.00%"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 52,
+          "token": "0.00%"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 122,
+          "token": "0.00%"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 18,
+          "token": "0.00%"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 20,
+          "token": "0.00%"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 68,
+          "token": "0.00%"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 74,
+          "token": "0.00%"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 76,
+          "token": "0.00%"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 79,
+          "token": "0.00%"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 102,
+          "token": "0.00%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 17,
+          "token": "0"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 84,
+          "token": "0"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 85,
+          "token": "0"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 89,
+          "token": "0"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 105,
+          "token": "0"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 129,
+          "token": "0"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-043",
+      "metric_name": "巴西场地完备簇静默翻转率、歧义簇并集掩盖率与第 5 步完全坍缩率",
+      "rendered_tokens": [
+        "100.00%",
+        "100.00",
+        "5/5",
+        "6/6"
+      ],
+      "recomputed_value": 100.0,
+      "source_json": "results/midterm_sprint_20261120/M4_benchmark_figures/benchmark_summary.json",
+      "source_sha256": "2783744eacf3f43054aa196b88cac0ff9952f7fc66101d2bc494fb35fe90370f",
+      "json_path": "real_outcrop_benchmarks.jardim_garcia_uh.nominal_dfn.silent_flip_rate",
+      "raw_value_in_json": 1.0,
+      "recompute_rule": "pct_round_2dp",
+      "scope": "巴西场地 5/5 完备簇静默翻转率 (100.00%)、朴素并集图在 6/6 歧义簇上掩盖断割反例比例 (100.00%)、以及极小极大策略第 5 步测度坍缩率 (100.00%)",
+      "enumeration": "完备集与歧义集全枚举",
+      "measured_at_utc": "2026-11-21T04:25:15.510652+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 46,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 7,
+          "token": "100.00%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 53,
+          "token": "100.00%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 80,
+          "token": "100.00%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 83,
+          "token": "100.00%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 84,
+          "token": "100.00%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 116,
+          "token": "100.00%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 117,
+          "token": "100.00%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 119,
+          "token": "100.00%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 131,
+          "token": "100.00%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 161,
+          "token": "100.00%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 176,
+          "token": "100.00%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 196,
+          "token": "100.00%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 208,
+          "token": "100.00%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 236,
+          "token": "100.00%"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 4,
+          "token": "100.00%"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 30,
+          "token": "100.00%"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 50,
+          "token": "100.00%"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 51,
+          "token": "100.00%"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 65,
+          "token": "100.00%"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 66,
+          "token": "100.00%"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 75,
+          "token": "100.00%"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 93,
+          "token": "100.00%"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 8,
+          "token": "100.00%"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 18,
+          "token": "100.00%"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 46,
+          "token": "100.00%"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-044",
+      "metric_name": "意大利 Perozzo 场地名义单态 DFN 静默翻转率与确定贯通率 (1/16)",
+      "rendered_tokens": [
+        "6.25%",
+        "6.25",
+        "1/16"
+      ],
+      "recomputed_value": 6.25,
+      "source_json": "results/midterm_sprint_20261120/M4_benchmark_figures/benchmark_summary.json",
+      "source_sha256": "2783744eacf3f43054aa196b88cac0ff9952f7fc66101d2bc494fb35fe90370f",
+      "json_path": "real_outcrop_benchmarks.perozzo_finale_ligure.nominal_dfn.silent_flip_rate",
+      "raw_value_in_json": 0.0625,
+      "recompute_rule": "pct_round_2dp",
+      "scope": "意大利 Perozzo 2024 场地 16 簇中多解歧义/名义静默翻转比例 (1/16 = 6.25%, perozzo_c02) 及确定贯通比例 (1/16 = 6.25%, perozzo_c04)",
+      "enumeration": "意大利场地 16 簇全枚举",
+      "measured_at_utc": "2026-11-21T04:25:15.510652+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 4,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 83,
+          "token": "6.25%"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 195,
+          "token": "6.25%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 83,
+          "token": "1/16"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 195,
+          "token": "1/16"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-045",
+      "metric_name": "意大利 Perozzo 场地确定断割占比 (14/16)",
+      "rendered_tokens": [
+        "87.50%",
+        "87.50"
+      ],
+      "recomputed_value": 87.5,
+      "source_json": "results/midterm_sprint_20261120/M4_benchmark_figures/benchmark_summary.json",
+      "source_sha256": "2783744eacf3f43054aa196b88cac0ff9952f7fc66101d2bc494fb35fe90370f",
+      "json_path": "real_outcrop_benchmarks.perozzo_finale_ligure.certified_disconnected_rate",
+      "raw_value_in_json": 0.875,
+      "recompute_rule": "pct_round_2dp",
+      "scope": "意大利 Perozzo 2024 场地 16 簇中全模式确定断割的比例 (14/16 = 87.50%)",
+      "enumeration": "意大利场地 16 簇全枚举",
+      "measured_at_utc": "2026-11-21T04:25:15.510652+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 2,
+      "occurrences": [
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 190,
+          "token": "87.50%"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 195,
+          "token": "87.50%"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-046",
+      "metric_name": "6 例真实歧义簇稳定裕度 rho 最小值 (jardim_c02 / jardim_c06)",
+      "rendered_tokens": [
+        "0.0873",
+        "0.087305"
+      ],
+      "recomputed_value": 0.0873,
+      "source_json": "results/midterm_sprint_20261120/M4_benchmark_figures/benchmark_summary.json",
+      "source_sha256": "2783744eacf3f43054aa196b88cac0ff9952f7fc66101d2bc494fb35fe90370f",
+      "json_path": "real_outcrop_benchmarks.combined_real_conditioned.ours.rho_stats.min",
+      "raw_value_in_json": 0.087305,
+      "recompute_rule": "round_4dp",
+      "scope": "6 例真实多解歧义簇中距名义状态最近的翻转稳定裕度最小值 (13402215363513865792/153510319155720467101 ≈ 0.0873)",
+      "enumeration": "6 例歧义簇精确有理 rho 下确界最小值",
+      "measured_at_utc": "2026-11-21T04:25:15.510652+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 9,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 98,
+          "token": "0.0873"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 101,
+          "token": "0.0873"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 147,
+          "token": "0.0873"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 248,
+          "token": "0.0873"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 58,
+          "token": "0.0873"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 87,
+          "token": "0.0873"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 143,
+          "token": "0.0873"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 148,
+          "token": "0.0873"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 152,
+          "token": "0.0873"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-047",
+      "metric_name": "6 例真实歧义簇稳定裕度 rho 最大值 (jardim_c03)",
+      "rendered_tokens": [
+        "1.6448",
+        "1.644842"
+      ],
+      "recomputed_value": 1.6448,
+      "source_json": "results/midterm_sprint_20261120/M4_benchmark_figures/benchmark_summary.json",
+      "source_sha256": "2783744eacf3f43054aa196b88cac0ff9952f7fc66101d2bc494fb35fe90370f",
+      "json_path": "real_outcrop_benchmarks.combined_real_conditioned.ours.rho_stats.max",
+      "raw_value_in_json": 1.644842,
+      "recompute_rule": "round_4dp",
+      "scope": "6 例真实多解歧义簇中翻转稳定裕度最大值 (jardim_c03: 267267754361473/162488437424625 ≈ 1.6448)",
+      "enumeration": "6 例歧义簇精确有理 rho 下确界最大值",
+      "measured_at_utc": "2026-11-21T04:25:15.510652+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 7,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 98,
+          "token": "1.6448"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 101,
+          "token": "1.6448"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 248,
+          "token": "1.6448"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 58,
+          "token": "1.6448"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 148,
+          "token": "1.6448"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 152,
+          "token": "1.6448"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 153,
+          "token": "1.6448"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-048",
+      "metric_name": "6 例真实歧义簇稳定裕度 rho 均值",
+      "rendered_tokens": [
+        "0.7339",
+        "0.733945"
+      ],
+      "recomputed_value": 0.7339,
+      "source_json": "results/midterm_sprint_20261120/M4_benchmark_figures/benchmark_summary.json",
+      "source_sha256": "2783744eacf3f43054aa196b88cac0ff9952f7fc66101d2bc494fb35fe90370f",
+      "json_path": "real_outcrop_benchmarks.combined_real_conditioned.ours.rho_stats.mean",
+      "raw_value_in_json": 0.733945,
+      "recompute_rule": "round_4dp",
+      "scope": "6 例真实多解歧义簇精确稳定裕度算术平均值 (0.733945 ≈ 0.7339)",
+      "enumeration": "6 例歧义簇全枚举平均",
+      "measured_at_utc": "2026-11-21T04:25:15.510652+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 3,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 98,
+          "token": "0.7339"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 58,
+          "token": "0.7339"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 152,
+          "token": "0.7339"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-049",
+      "metric_name": "6 例真实歧义簇稳定裕度 rho 中位数 (p50)",
+      "rendered_tokens": [
+        "0.4733",
+        "0.473347"
+      ],
+      "recomputed_value": 0.4733,
+      "source_json": "results/midterm_sprint_20261120/M4_benchmark_figures/benchmark_summary.json",
+      "source_sha256": "2783744eacf3f43054aa196b88cac0ff9952f7fc66101d2bc494fb35fe90370f",
+      "json_path": "real_outcrop_benchmarks.combined_real_conditioned.ours.rho_stats.p50",
+      "raw_value_in_json": 0.473347,
+      "recompute_rule": "round_4dp",
+      "scope": "6 例真实多解歧义簇精确稳定裕度中位数 (0.473347 ≈ 0.4733)",
+      "enumeration": "6 例歧义簇排序中位数",
+      "measured_at_utc": "2026-11-21T04:25:15.510652+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 3,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 98,
+          "token": "0.4733"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 58,
+          "token": "0.4733"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 152,
+          "token": "0.4733"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-050",
+      "metric_name": "含洞真实簇 jardim_c04 稳定裕度 rho",
+      "rendered_tokens": [
+        "1.6375",
+        "1.637524"
+      ],
+      "recomputed_value": 1.6375,
+      "source_json": "results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/summary.json",
+      "source_sha256": "3a2cf6bf392251f1d5c61830adf466cb2b3aeca6ef48a54beaac84e9c5f33546",
+      "json_path": "rho_distribution_ambiguous[cluster_id=jardim_c04].rho_infimum_float",
+      "raw_value_in_json": 1.63752372,
+      "recompute_rule": "round_4dp",
+      "scope": "含真实拓扑孔洞簇 jardim_c04 的精确稳定裕度下确界 (1.63752372 ≈ 1.6375, attained = false)",
+      "enumeration": "jardim_c04 全 6 模式 1,755 个细胞翻转距离下确界",
+      "measured_at_utc": "2026-11-21T03:31:56.401297+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 5,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 99,
+          "token": "1.6375"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 101,
+          "token": "1.6375"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 248,
+          "token": "1.6375"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 58,
+          "token": "1.6375"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 153,
+          "token": "1.6375"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-051",
+      "metric_name": "真实簇 jardim_c05 稳定裕度 rho",
+      "rendered_tokens": [
+        "0.3671",
+        "0.367063"
+      ],
+      "recomputed_value": 0.3671,
+      "source_json": "results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/summary.json",
+      "source_sha256": "3a2cf6bf392251f1d5c61830adf466cb2b3aeca6ef48a54beaac84e9c5f33546",
+      "json_path": "rho_distribution_ambiguous[cluster_id=jardim_c05].rho_infimum_float",
+      "raw_value_in_json": 0.36706265,
+      "recompute_rule": "round_4dp",
+      "scope": "巴西采石场真实簇 jardim_c05 的精确稳定裕度下确界 (0.36706265 ≈ 0.3671, attained = false)",
+      "enumeration": "jardim_c05 全 6 模式 898 个细胞翻转距离下确界",
+      "measured_at_utc": "2026-11-21T03:31:56.401297+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 1,
+      "occurrences": [
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 153,
+          "token": "0.3671"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-052",
+      "metric_name": "意大利真实簇 perozzo_c02 稳定裕度 rho",
+      "rendered_tokens": [
+        "0.5796",
+        "0.579632"
+      ],
+      "recomputed_value": 0.5796,
+      "source_json": "results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/summary.json",
+      "source_sha256": "3a2cf6bf392251f1d5c61830adf466cb2b3aeca6ef48a54beaac84e9c5f33546",
+      "json_path": "rho_distribution_ambiguous[cluster_id=perozzo_c02].rho_infimum_float",
+      "raw_value_in_json": 0.57963174,
+      "recompute_rule": "round_4dp",
+      "scope": "意大利露头唯一多解歧义簇 perozzo_c02 的精确稳定裕度下确界 (722756298054416/1246923256017417 ≈ 0.5796, attained = true)",
+      "enumeration": "perozzo_c02 全 6 模式 378 个细胞翻转距离下确界",
+      "measured_at_utc": "2026-11-21T03:31:56.401297+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 3,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 101,
+          "token": "0.5796"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 176,
+          "token": "0.5796"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 98,
+          "token": "0.5796"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-053",
+      "metric_name": "本文测度分裂策略 (OURS_MEASURE_SPLIT) 期望消歧步数 (按测度加权)",
+      "rendered_tokens": [
+        "2.05",
+        "2.052422"
+      ],
+      "recomputed_value": 2.05,
+      "source_json": "results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/summary.json",
+      "source_sha256": "3a2cf6bf392251f1d5c61830adf466cb2b3aeca6ef48a54beaac84e9c5f33546",
+      "json_path": "active_collapse_simulation.aggregate_all_ambiguous.OURS_MEASURE_SPLIT.mean_steps_measure_float",
+      "raw_value_in_json": 2.052422,
+      "recompute_rule": "round_2dp",
+      "scope": "全部 6 例真实歧义簇同分母零泄漏反事实闭环仿真中，本文测度分裂策略的平均消歧复核步数 (2.052422 ≈ 2.05 步)",
+      "enumeration": "6 簇 6,045 个原子细胞信念域决策树全分支勒贝格测度精确加权",
+      "measured_at_utc": "2026-11-21T03:31:56.401297+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 19,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 17,
+          "token": "2.05"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 108,
+          "token": "2.05"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 111,
+          "token": "2.05"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 196,
+          "token": "2.05"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 200,
+          "token": "2.05"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 213,
+          "token": "2.05"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 228,
+          "token": "2.05"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 250,
+          "token": "2.05"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 13,
+          "token": "2.05"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 65,
+          "token": "2.05"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 111,
+          "token": "2.05"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 122,
+          "token": "2.05"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 37,
+          "token": "2.05"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 68,
+          "token": "2.05"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 85,
+          "token": "2.05"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 89,
+          "token": "2.05"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 91,
+          "token": "2.05"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 144,
+          "token": "2.05"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 186,
+          "token": "2.05"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-054",
+      "metric_name": "本文测度分裂策略 (OURS_MEASURE_SPLIT) 期望消歧步数 (按细胞加权)",
+      "rendered_tokens": [
+        "2.26",
+        "2.26371"
+      ],
+      "recomputed_value": 2.26,
+      "source_json": "results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/summary.json",
+      "source_sha256": "3a2cf6bf392251f1d5c61830adf466cb2b3aeca6ef48a54beaac84e9c5f33546",
+      "json_path": "active_collapse_simulation.aggregate_all_ambiguous.OURS_MEASURE_SPLIT.mean_steps_cells_float",
+      "raw_value_in_json": 2.26371,
+      "recompute_rule": "round_2dp",
+      "scope": "全部 6 例真实歧义簇上本文测度分裂策略按离散细胞计数的平均消歧步数 (2.26371 ≈ 2.26 步)",
+      "enumeration": "6 簇 6,045 个原子细胞全分支计数加权",
+      "measured_at_utc": "2026-11-21T03:31:56.401297+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 2,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 111,
+          "token": "2.26"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 65,
+          "token": "2.26"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-055",
+      "metric_name": "本文测度分裂策略第 1 步累计消歧测度比例",
+      "rendered_tokens": [
+        "57.02%",
+        "57.02"
+      ],
+      "recomputed_value": 57.02,
+      "source_json": "results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/summary.json",
+      "source_sha256": "3a2cf6bf392251f1d5c61830adf466cb2b3aeca6ef48a54beaac84e9c5f33546",
+      "json_path": "active_collapse_simulation.aggregate_all_ambiguous.OURS_MEASURE_SPLIT.step1_collapse_rate_measure",
+      "raw_value_in_json": 0.570227,
+      "recompute_rule": "pct_round_2dp",
+      "scope": "仅复核第 1 条推荐临界裂隙后，本文测度分裂策略在 6 例真实歧义簇上消除的参数测度歧义比例 (57.0227%)",
+      "enumeration": "6 簇第 1 步决策树叶节点已认证测度占比均值",
+      "measured_at_utc": "2026-11-21T03:31:56.401297+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 6,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 108,
+          "token": "57.02%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 116,
+          "token": "57.02%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 119,
+          "token": "57.02%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 228,
+          "token": "57.02%"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 65,
+          "token": "57.02%"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 89,
+          "token": "57.02%"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-056",
+      "metric_name": "本文测度分裂策略第 2 步累计消歧测度比例",
+      "rendered_tokens": [
+        "69.63%",
+        "69.63"
+      ],
+      "recomputed_value": 69.63,
+      "source_json": "results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/summary.json",
+      "source_sha256": "3a2cf6bf392251f1d5c61830adf466cb2b3aeca6ef48a54beaac84e9c5f33546",
+      "json_path": "active_collapse_simulation.aggregate_all_ambiguous.OURS_MEASURE_SPLIT.step2_collapse_rate_measure",
+      "raw_value_in_json": 0.696342,
+      "recompute_rule": "pct_round_2dp",
+      "scope": "复核前 2 步临界裂隙后，本文测度分裂策略累计消除的参数测度歧义比例 (69.6342%)",
+      "enumeration": "6 簇第 2 步决策树已认证测度占比均值",
+      "measured_at_utc": "2026-11-21T03:31:56.401297+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 0,
+      "occurrences": []
+    },
+    {
+      "entry_id": "TM-057",
+      "metric_name": "本文测度分裂策略第 3 步累计消歧测度比例",
+      "rendered_tokens": [
+        "85.38%",
+        "85.38"
+      ],
+      "recomputed_value": 85.38,
+      "source_json": "results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/summary.json",
+      "source_sha256": "3a2cf6bf392251f1d5c61830adf466cb2b3aeca6ef48a54beaac84e9c5f33546",
+      "json_path": "active_collapse_simulation.aggregate_all_ambiguous.OURS_MEASURE_SPLIT.step3_collapse_rate_measure",
+      "raw_value_in_json": 0.853803,
+      "recompute_rule": "pct_round_2dp",
+      "scope": "复核前 3 步临界裂隙后，本文测度分裂策略累计消除的参数测度歧义比例 (85.3803%)",
+      "enumeration": "6 簇第 3 步决策树已认证测度占比均值",
+      "measured_at_utc": "2026-11-21T03:31:56.401297+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 2,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 117,
+          "token": "85.38%"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 65,
+          "token": "85.38%"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-058",
+      "metric_name": "本文极小极大策略 (OURS_MINIMAX_EXACT) 期望消歧步数 (按测度加权)",
+      "rendered_tokens": [
+        "2.30",
+        "2.29552"
+      ],
+      "recomputed_value": 2.3,
+      "source_json": "results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/summary.json",
+      "source_sha256": "3a2cf6bf392251f1d5c61830adf466cb2b3aeca6ef48a54beaac84e9c5f33546",
+      "json_path": "active_collapse_simulation.aggregate_all_ambiguous.OURS_MINIMAX_EXACT.mean_steps_measure_float",
+      "raw_value_in_json": 2.29552,
+      "recompute_rule": "round_2dp",
+      "scope": "全部 6 例真实歧义簇上本文零先验极小极大策略的平均消歧复核步数 (2.29552 ≈ 2.30 步)",
+      "enumeration": "6 簇 6,045 个细胞信念域决策树全分支测度加权",
+      "measured_at_utc": "2026-11-21T03:31:56.401297+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 4,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 112,
+          "token": "2.30"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 250,
+          "token": "2.30"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 66,
+          "token": "2.30"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 89,
+          "token": "2.30"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-059",
+      "metric_name": "本文极小极大策略 (OURS_MINIMAX_EXACT) 期望消歧步数 (按细胞加权)",
+      "rendered_tokens": [
+        "2.36",
+        "2.36217"
+      ],
+      "recomputed_value": 2.36,
+      "source_json": "results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/summary.json",
+      "source_sha256": "3a2cf6bf392251f1d5c61830adf466cb2b3aeca6ef48a54beaac84e9c5f33546",
+      "json_path": "active_collapse_simulation.aggregate_all_ambiguous.OURS_MINIMAX_EXACT.mean_steps_cells_float",
+      "raw_value_in_json": 2.36217,
+      "recompute_rule": "round_2dp",
+      "scope": "全部 6 例真实歧义簇上本文极小极大策略按细胞计数的平均消歧步数 (2.36217 ≈ 2.36 步)",
+      "enumeration": "6 簇 6,045 个细胞全分支计数加权",
+      "measured_at_utc": "2026-11-21T03:31:56.401297+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 2,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 112,
+          "token": "2.36"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 66,
+          "token": "2.36"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-060",
+      "metric_name": "本文极小极大策略第 1 步累计消歧测度比例",
+      "rendered_tokens": [
+        "31.84%",
+        "31.84"
+      ],
+      "recomputed_value": 31.84,
+      "source_json": "results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/summary.json",
+      "source_sha256": "3a2cf6bf392251f1d5c61830adf466cb2b3aeca6ef48a54beaac84e9c5f33546",
+      "json_path": "active_collapse_simulation.aggregate_all_ambiguous.OURS_MINIMAX_EXACT.step1_collapse_rate_measure",
+      "raw_value_in_json": 0.318417,
+      "recompute_rule": "pct_round_2dp",
+      "scope": "本文极小极大策略第 1 步消除的参数测度歧义比例 (31.8417%)",
+      "enumeration": "6 簇第 1 步已认证测度占比均值",
+      "measured_at_utc": "2026-11-21T03:31:56.401297+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 0,
+      "occurrences": []
+    },
+    {
+      "entry_id": "TM-061",
+      "metric_name": "本文极小极大策略第 2 步累计消歧测度比例",
+      "rendered_tokens": [
+        "60.28%",
+        "60.28"
+      ],
+      "recomputed_value": 60.28,
+      "source_json": "results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/summary.json",
+      "source_sha256": "3a2cf6bf392251f1d5c61830adf466cb2b3aeca6ef48a54beaac84e9c5f33546",
+      "json_path": "active_collapse_simulation.aggregate_all_ambiguous.OURS_MINIMAX_EXACT.step2_collapse_rate_measure",
+      "raw_value_in_json": 0.60276,
+      "recompute_rule": "pct_round_2dp",
+      "scope": "本文极小极大策略第 2 步累计消除的参数测度歧义比例 (60.2760%)",
+      "enumeration": "6 簇第 2 步已认证测度占比均值",
+      "measured_at_utc": "2026-11-21T03:31:56.401297+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 0,
+      "occurrences": []
+    },
+    {
+      "entry_id": "TM-062",
+      "metric_name": "本文极小极大策略第 3 步累计消歧测度比例",
+      "rendered_tokens": [
+        "80.53%",
+        "80.53"
+      ],
+      "recomputed_value": 80.53,
+      "source_json": "results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/summary.json",
+      "source_sha256": "3a2cf6bf392251f1d5c61830adf466cb2b3aeca6ef48a54beaac84e9c5f33546",
+      "json_path": "active_collapse_simulation.aggregate_all_ambiguous.OURS_MINIMAX_EXACT.step3_collapse_rate_measure",
+      "raw_value_in_json": 0.805333,
+      "recompute_rule": "pct_round_2dp",
+      "scope": "本文极小极大策略第 3 步累计消除的参数测度歧义比例 (80.5333%)",
+      "enumeration": "6 簇第 3 步已认证测度占比均值",
+      "measured_at_utc": "2026-11-21T03:31:56.401297+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 0,
+      "occurrences": []
+    },
+    {
+      "entry_id": "TM-063",
+      "metric_name": "本文极小极大策略第 4 步累计消歧测度比例",
+      "rendered_tokens": [
+        "97.80%",
+        "97.80"
+      ],
+      "recomputed_value": 97.8,
+      "source_json": "results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/summary.json",
+      "source_sha256": "3a2cf6bf392251f1d5c61830adf466cb2b3aeca6ef48a54beaac84e9c5f33546",
+      "json_path": "active_collapse_simulation.aggregate_all_ambiguous.OURS_MINIMAX_EXACT.collapse_curve_measure_float.4",
+      "raw_value_in_json": 0.97797,
+      "recompute_rule": "pct_round_2dp",
+      "scope": "本文极小极大策略第 4 步累计消除的参数测度歧义比例 (97.7970% ≈ 97.80%，第 5 步达 100.00%)",
+      "enumeration": "6 簇第 4 步已认证测度占比均值",
+      "measured_at_utc": "2026-11-21T03:31:56.401297+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 2,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 117,
+          "token": "97.80%"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 66,
+          "token": "97.80%"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-064",
+      "metric_name": "随机复核基线 (BASELINE_RANDOM, 20 种子) 期望消歧步数 (测度加权)",
+      "rendered_tokens": [
+        "4.65",
+        "4.6505"
+      ],
+      "recomputed_value": 4.65,
+      "source_json": "results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/summary.json",
+      "source_sha256": "3a2cf6bf392251f1d5c61830adf466cb2b3aeca6ef48a54beaac84e9c5f33546",
+      "json_path": "active_collapse_simulation.aggregate_all_ambiguous.BASELINE_RANDOM.mean_steps_measure_float",
+      "raw_value_in_json": 4.6505,
+      "recompute_rule": "round_2dp",
+      "scope": "20 个确定性随机种子 (0..19) 在 6 例真实歧义簇上的平均消歧复核步数 (4.6505 ≈ 4.65 步)",
+      "enumeration": "6 簇 × 20 种子全分支精确重算平均",
+      "measured_at_utc": "2026-11-21T03:31:56.401297+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 10,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 17,
+          "token": "4.65"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 113,
+          "token": "4.65"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 196,
+          "token": "4.65"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 228,
+          "token": "4.65"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 250,
+          "token": "4.65"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 13,
+          "token": "4.65"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 67,
+          "token": "4.65"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 122,
+          "token": "4.65"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 68,
+          "token": "4.65"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 91,
+          "token": "4.65"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-065",
+      "metric_name": "随机复核基线 (BASELINE_RANDOM) 期望消歧步数 (细胞加权)",
+      "rendered_tokens": [
+        "4.95",
+        "4.95082"
+      ],
+      "recomputed_value": 4.95,
+      "source_json": "results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/summary.json",
+      "source_sha256": "3a2cf6bf392251f1d5c61830adf466cb2b3aeca6ef48a54beaac84e9c5f33546",
+      "json_path": "active_collapse_simulation.aggregate_all_ambiguous.BASELINE_RANDOM.mean_steps_cells_float",
+      "raw_value_in_json": 4.95082,
+      "recompute_rule": "round_2dp",
+      "scope": "随机复核基线按细胞计数的平均消歧步数 (4.95082 ≈ 4.95 步)",
+      "enumeration": "6 簇 × 20 种子细胞加权平均",
+      "measured_at_utc": "2026-11-21T03:31:56.401297+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 1,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 113,
+          "token": "4.95"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-066",
+      "metric_name": "随机复核基线第 1 步消歧测度比例",
+      "rendered_tokens": [
+        "23.93%",
+        "23.93"
+      ],
+      "recomputed_value": 23.93,
+      "source_json": "results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/summary.json",
+      "source_sha256": "3a2cf6bf392251f1d5c61830adf466cb2b3aeca6ef48a54beaac84e9c5f33546",
+      "json_path": "active_collapse_simulation.aggregate_all_ambiguous.BASELINE_RANDOM.step1_collapse_rate_measure",
+      "raw_value_in_json": 0.239303,
+      "recompute_rule": "pct_round_2dp",
+      "scope": "随机复核基线在第 1 步消除的参数测度歧义比例 (23.9303%)",
+      "enumeration": "6 簇 × 20 种子第 1 步平均",
+      "measured_at_utc": "2026-11-21T03:31:56.401297+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 2,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 116,
+          "token": "23.93%"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 67,
+          "token": "23.93%"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-067",
+      "metric_name": "随机复核基线第 12 步累计消歧测度比例",
+      "rendered_tokens": [
+        "97.21%",
+        "97.21"
+      ],
+      "recomputed_value": 97.21,
+      "source_json": "results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/summary.json",
+      "source_sha256": "3a2cf6bf392251f1d5c61830adf466cb2b3aeca6ef48a54beaac84e9c5f33546",
+      "json_path": "active_collapse_simulation.aggregate_all_ambiguous.BASELINE_RANDOM.collapse_curve_measure_float.12",
+      "raw_value_in_json": 0.972078,
+      "recompute_rule": "pct_round_2dp",
+      "scope": "随机复核基线至第 12 步截断上限时的累计消歧测度比例 (97.2078% ≈ 97.21%，仍未完全坍缩)",
+      "enumeration": "6 簇 × 20 种子第 12 步平均",
+      "measured_at_utc": "2026-11-21T03:31:56.401297+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 2,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 117,
+          "token": "97.21%"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 67,
+          "token": "97.21%"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-068",
+      "metric_name": "几何启发式基线 (按尺寸或距离) 期望消歧步数 (测度加权)",
+      "rendered_tokens": [
+        "4.92",
+        "4.918113"
+      ],
+      "recomputed_value": 4.92,
+      "source_json": "results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/summary.json",
+      "source_sha256": "3a2cf6bf392251f1d5c61830adf466cb2b3aeca6ef48a54beaac84e9c5f33546",
+      "json_path": "active_collapse_simulation.aggregate_all_ambiguous.BASELINE_HEURISTIC_SIZE_OR_DIST.mean_steps_measure_float",
+      "raw_value_in_json": 4.918113,
+      "recompute_rule": "round_2dp",
+      "scope": "传统几何启发式 (BASELINE_HEURISTIC_SIZE_OR_DIST) 在 6 例真实歧义簇上的平均消歧步数 (4.918113 ≈ 4.92 步)",
+      "enumeration": "6 簇全分支测度加权平均",
+      "measured_at_utc": "2026-11-21T03:31:56.401297+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 4,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 114,
+          "token": "4.92"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 250,
+          "token": "4.92"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 67,
+          "token": "4.92"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 91,
+          "token": "4.92"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-069",
+      "metric_name": "几何启发式基线 (按尺寸或距离) 期望消歧步数 (细胞加权)",
+      "rendered_tokens": [
+        "5.30",
+        "5.297053"
+      ],
+      "recomputed_value": 5.3,
+      "source_json": "results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/summary.json",
+      "source_sha256": "3a2cf6bf392251f1d5c61830adf466cb2b3aeca6ef48a54beaac84e9c5f33546",
+      "json_path": "active_collapse_simulation.aggregate_all_ambiguous.BASELINE_HEURISTIC_SIZE_OR_DIST.mean_steps_cells_float",
+      "raw_value_in_json": 5.297053,
+      "recompute_rule": "round_2dp",
+      "scope": "传统几何启发式 (按尺寸或距离) 按细胞计数的平均消歧步数 (5.297053 ≈ 5.30 步)",
+      "enumeration": "6 簇全分支细胞加权平均",
+      "measured_at_utc": "2026-11-21T03:31:56.401297+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 1,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 114,
+          "token": "5.30"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-070",
+      "metric_name": "几何启发式基线 (按尺寸或距离) 第 1 步消歧测度比例",
+      "rendered_tokens": [
+        "11.81%",
+        "11.81"
+      ],
+      "recomputed_value": 11.81,
+      "source_json": "results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/summary.json",
+      "source_sha256": "3a2cf6bf392251f1d5c61830adf466cb2b3aeca6ef48a54beaac84e9c5f33546",
+      "json_path": "active_collapse_simulation.aggregate_all_ambiguous.BASELINE_HEURISTIC_SIZE_OR_DIST.step1_collapse_rate_measure",
+      "raw_value_in_json": 0.118084,
+      "recompute_rule": "pct_round_2dp",
+      "scope": "传统几何启发式 (按尺寸或距离) 第 1 步消除的参数测度歧义比例 (11.8084%)",
+      "enumeration": "6 簇第 1 步测度占比均值",
+      "measured_at_utc": "2026-11-21T03:31:56.401297+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 2,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 116,
+          "token": "11.81%"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 67,
+          "token": "11.81%"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-071",
+      "metric_name": "最大面积几何启发式基线 (BASELINE_HEURISTIC_MAX_AREA) 期望消歧步数 (测度加权)",
+      "rendered_tokens": [
+        "3.99",
+        "3.993562"
+      ],
+      "recomputed_value": 3.99,
+      "source_json": "results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/summary.json",
+      "source_sha256": "3a2cf6bf392251f1d5c61830adf466cb2b3aeca6ef48a54beaac84e9c5f33546",
+      "json_path": "active_collapse_simulation.aggregate_all_ambiguous.BASELINE_HEURISTIC_MAX_AREA.mean_steps_measure_float",
+      "raw_value_in_json": 3.993562,
+      "recompute_rule": "round_2dp",
+      "scope": "按最大面积优先的几何启发式基线在 6 例真实歧义簇上的平均消歧步数 (3.993562 ≈ 3.99 步)",
+      "enumeration": "6 簇全分支测度加权平均",
+      "measured_at_utc": "2026-11-21T03:31:56.401297+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 4,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 114,
+          "token": "3.99"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 250,
+          "token": "3.99"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 67,
+          "token": "3.99"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 91,
+          "token": "3.99"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-072",
+      "metric_name": "最大面积几何启发式基线期望消歧步数 (细胞加权)",
+      "rendered_tokens": [
+        "4.04",
+        "4.043571"
+      ],
+      "recomputed_value": 4.04,
+      "source_json": "results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/summary.json",
+      "source_sha256": "3a2cf6bf392251f1d5c61830adf466cb2b3aeca6ef48a54beaac84e9c5f33546",
+      "json_path": "active_collapse_simulation.aggregate_all_ambiguous.BASELINE_HEURISTIC_MAX_AREA.mean_steps_cells_float",
+      "raw_value_in_json": 4.043571,
+      "recompute_rule": "round_2dp",
+      "scope": "按最大面积优先的几何启发式基线按细胞计数的平均消歧步数 (4.043571 ≈ 4.04 步)",
+      "enumeration": "6 簇全分支细胞加权平均",
+      "measured_at_utc": "2026-11-21T03:31:56.401297+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 1,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 114,
+          "token": "4.04"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-073",
+      "metric_name": "最大面积几何启发式基线第 1 步消歧测度比例",
+      "rendered_tokens": [
+        "10.52%",
+        "10.52"
+      ],
+      "recomputed_value": 10.52,
+      "source_json": "results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/summary.json",
+      "source_sha256": "3a2cf6bf392251f1d5c61830adf466cb2b3aeca6ef48a54beaac84e9c5f33546",
+      "json_path": "active_collapse_simulation.aggregate_all_ambiguous.BASELINE_HEURISTIC_MAX_AREA.step1_collapse_rate_measure",
+      "raw_value_in_json": 0.105189,
+      "recompute_rule": "pct_round_2dp",
+      "scope": "按最大面积优先的几何启发式基线第 1 步消除的参数测度歧义比例 (10.5189%)",
+      "enumeration": "6 簇第 1 步测度占比均值",
+      "measured_at_utc": "2026-11-21T03:31:56.401297+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 2,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 116,
+          "token": "10.52%"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 67,
+          "token": "10.52%"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-074",
+      "metric_name": "含洞真实簇 jardim_c04 首推 #1 临界裂隙单步消歧测度比例",
+      "rendered_tokens": [
+        "91.05%",
+        "91.05"
+      ],
+      "recomputed_value": 91.05,
+      "source_json": "results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/cases/jardim_c04/active_check.json",
+      "source_sha256": "d629a7abaae3aaf6bbc104abd8dc0a8e1f538b4326e5f3f99d14819f182cb587",
+      "json_path": "ranked_fractures[0].resolved_measure_fraction_float",
+      "raw_value_in_json": 0.91049968,
+      "recompute_rule": "pct_round_2dp",
+      "scope": "jardim_c04 首推 #1 含洞临界裂隙 (frag_42fe2b00c4c29df3738fe3dae68010c4) 单步复核消除的参数测度歧义比例 (91.049968%)",
+      "enumeration": "jardim_c04 首推裂隙子分支精确勒贝格测度比 (91845670672828818661327/100873918294502374666431)",
+      "measured_at_utc": "2026-11-21T03:31:56+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 4,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 116,
+          "token": "91.05%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 161,
+          "token": "91.05%"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 65,
+          "token": "91.05%"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 93,
+          "token": "91.05%"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-075",
+      "metric_name": "jardim_c02 与 jardim_c06 首推裂隙极小极大消歧比例 (5/9)",
+      "rendered_tokens": [
+        "55.56%",
+        "55.56",
+        "5/9"
+      ],
+      "recomputed_value": 55.56,
+      "source_json": "results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/summary.json",
+      "source_sha256": "3a2cf6bf392251f1d5c61830adf466cb2b3aeca6ef48a54beaac84e9c5f33546",
+      "json_path": "clusters[cluster_id=jardim_c02].top_minimax_reduction_fraction",
+      "raw_value_in_json": "5/9",
+      "recompute_rule": "frac_pct_round_2dp",
+      "scope": "jardim_c02 与 jardim_c06 首推 #1 临界裂隙单步极小极大最坏剩余歧义缩减比例 (5/9 ≈ 55.56%)",
+      "enumeration": "jardim_c02 / jardim_c06 首推裂隙各模态分支极小极大评分",
+      "measured_at_utc": "2026-11-21T03:31:56.401297+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 4,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 162,
+          "token": "55.56%"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 94,
+          "token": "55.56%"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 162,
+          "token": "5/9"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 94,
+          "token": "5/9"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-076",
+      "metric_name": "jardim_c02 精确细胞总数",
+      "rendered_tokens": [
+        "751"
+      ],
+      "recomputed_value": 751,
+      "source_json": "results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/summary.json",
+      "source_sha256": "3a2cf6bf392251f1d5c61830adf466cb2b3aeca6ef48a54beaac84e9c5f33546",
+      "json_path": "clusters[cluster_id=jardim_c02].cells",
+      "raw_value_in_json": 751,
+      "recompute_rule": "exact_int",
+      "scope": "jardim_c02 在全 6 个离散模式下的精确 POINT/OPEN 细胞总数",
+      "enumeration": "jardim_c02 全模式事件点划分细胞计数",
+      "measured_at_utc": "2026-11-21T03:31:56.401297+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 3,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 147,
+          "token": "751"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 156,
+          "token": "751"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 87,
+          "token": "751"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-077",
+      "metric_name": "jardim_c04 精确细胞总数",
+      "rendered_tokens": [
+        "1,755",
+        "1755"
+      ],
+      "recomputed_value": 1755,
+      "source_json": "results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/summary.json",
+      "source_sha256": "3a2cf6bf392251f1d5c61830adf466cb2b3aeca6ef48a54beaac84e9c5f33546",
+      "json_path": "clusters[cluster_id=jardim_c04].cells",
+      "raw_value_in_json": 1755,
+      "recompute_rule": "exact_int",
+      "scope": "含真实孔洞簇 jardim_c04 在全 6 个离散模式下的精确 POINT/OPEN 细胞总数",
+      "enumeration": "jardim_c04 全模式事件点划分细胞计数",
+      "measured_at_utc": "2026-11-21T03:31:56.401297+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 4,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 99,
+          "token": "1,755"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 161,
+          "token": "1,755"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 58,
+          "token": "1,755"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 93,
+          "token": "1,755"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-078",
+      "metric_name": "perozzo_c02 精确细胞总数",
+      "rendered_tokens": [
+        "378"
+      ],
+      "recomputed_value": 378,
+      "source_json": "results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/summary.json",
+      "source_sha256": "3a2cf6bf392251f1d5c61830adf466cb2b3aeca6ef48a54beaac84e9c5f33546",
+      "json_path": "clusters[cluster_id=perozzo_c02].cells",
+      "raw_value_in_json": 378,
+      "recompute_rule": "exact_int",
+      "scope": "意大利露头歧义簇 perozzo_c02 在全 6 个离散模式下的精确 POINT/OPEN 细胞总数",
+      "enumeration": "perozzo_c02 全模式事件点划分细胞计数",
+      "measured_at_utc": "2026-11-21T03:31:56.401297+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 2,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 176,
+          "token": "378"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 98,
+          "token": "378"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-079",
+      "metric_name": "jardim_c02 / jardim_c06 标称最小非零片间间隙 (0.00297 m = 2.97 mm)",
+      "rendered_tokens": [
+        "0.00297",
+        "2.97"
+      ],
+      "recomputed_value": 0.00297,
+      "source_json": "results/midterm_sprint_20261120/M1_real_to_exact_bridge/cluster_register.json",
+      "source_sha256": "2778ba4a096f431235273222bcd5b74b27f9419d33cc34606790bc758bba6bcf",
+      "json_path": "clusters[cluster_id=jardim_c02].min_nominal_pair_gap_m",
+      "raw_value_in_json": 0.00297,
+      "recompute_rule": "exact_float",
+      "scope": "巴西采石场 jardim_c02 与 jardim_c06 簇在名义状态下的最小非零裂隙对三维间距 (0.00297 m)",
+      "enumeration": "簇内 15 对裂隙名义三维距离最小值",
+      "measured_at_utc": "2026-11-20T15:34:31.475564+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 4,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 148,
+          "token": "0.00297"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 89,
+          "token": "0.00297"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 194,
+          "token": "0.00297"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 194,
+          "token": "2.97"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-080",
+      "metric_name": "perozzo_c02 标称最小非零片间间隙 (m, 量化敏感簇)",
+      "rendered_tokens": [
+        "0.000433"
+      ],
+      "recomputed_value": 0.000433,
+      "source_json": "results/midterm_sprint_20261120/M1_real_to_exact_bridge/cluster_register.json",
+      "source_sha256": "2778ba4a096f431235273222bcd5b74b27f9419d33cc34606790bc758bba6bcf",
+      "json_path": "clusters[cluster_id=perozzo_c02].min_nominal_pair_gap_m",
+      "raw_value_in_json": 0.000433,
+      "recompute_rule": "exact_float",
+      "scope": "意大利露头 perozzo_c02 簇在名义状态下的最小非零裂隙对间距 (0.000433 m，诚实打标 quantization_sensitive = true)",
+      "enumeration": "perozzo_c02 簇内 21 对裂隙名义三维距离最小值",
+      "measured_at_utc": "2026-11-20T15:34:31.475564+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 3,
+      "occurrences": [
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 132,
+          "token": "0.000433"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 135,
+          "token": "0.000433"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 195,
+          "token": "0.000433"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-081",
+      "metric_name": "perozzo_c04 与 perozzo_c14 标称最小片间间隙边界及法向角量化偏差范围",
+      "rendered_tokens": [
+        "0.007336",
+        "1.124851",
+        "0.002448°",
+        "0.004626°",
+        "0.002448",
+        "0.004626",
+        "0.0024°",
+        "0.0046°",
+        "0.0024",
+        "0.0046"
+      ],
+      "recomputed_value": 0.007336,
+      "source_json": "results/midterm_sprint_20261120/M1_real_to_exact_bridge/cluster_register.json",
+      "source_sha256": "2778ba4a096f431235273222bcd5b74b27f9419d33cc34606790bc758bba6bcf",
+      "json_path": "clusters[cluster_id=perozzo_c04].min_nominal_pair_gap_m",
+      "raw_value_in_json": 0.007336,
+      "recompute_rule": "exact_float",
+      "scope": "意大利场地非歧义簇标称最小间距代表范围 (perozzo_c04: 0.007336 m 至 perozzo_c14: 1.124851 m) 及 22 簇最大法向角量化偏差范围 (0.002448°–0.004626°)",
+      "enumeration": "22 簇 cluster_register.json 逐簇几何指标全枚举",
+      "measured_at_utc": "2026-11-20T15:34:31.475564+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 5,
+      "occurrences": [
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 195,
+          "token": "0.007336"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 195,
+          "token": "1.124851"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 134,
+          "token": "0.002448°"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 134,
+          "token": "0.004626°"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 132,
+          "token": "0.0046°"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-082",
+      "metric_name": "物理不确定性建模参数常数 (外延倍数、毕达哥拉斯旋转角与多段可行域端点)",
+      "rendered_tokens": [
+        "1.00",
+        "1.15",
+        "0°",
+        "3.95°",
+        "3.95",
+        "3/5",
+        "2/5",
+        "40/41",
+        "9/41",
+        "0.15",
+        "0.05",
+        "8.0"
+      ],
+      "recomputed_value": 0.15,
+      "source_json": "results/midterm_sprint_20261120/M1_real_to_exact_bridge/prereg.json",
+      "source_sha256": "f12186af21f896038ad249c54c4a8f1e54b8aac8cda0c6c5aa4b42d52e10593d",
+      "json_path": "site_A_jardim_garcia.fragment_eligibility.min_primary_region_area_m2",
+      "raw_value_in_json": 0.15,
+      "recompute_rule": "exact_float",
+      "scope": "预注册物理建模常数：最小主区域面积 0.15 m2、Perozzo 拟合残差上限 0.05 m、半径范围 0.5–8.0 m、外延 1.00x/1.15x、有理旋转 (40/41, 9/41) 对应 ±3.95°、多段可行域 [-1,-3/5]∪[-2/5,1]",
+      "enumeration": "M1 prereg.json 冻结几何与不确定性建模参数",
+      "measured_at_utc": "2026-11-20T14:52:28.720200+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 27,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 74,
+          "token": "1.00"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 26,
+          "token": "1.00"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 126,
+          "token": "1.00"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 74,
+          "token": "1.15"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 26,
+          "token": "1.15"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 126,
+          "token": "1.15"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 74,
+          "token": "0°"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 162,
+          "token": "0°"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 42,
+          "token": "0°"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 94,
+          "token": "0°"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 26,
+          "token": "0°"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 126,
+          "token": "0°"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 74,
+          "token": "3.95°"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 42,
+          "token": "3.95°"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 26,
+          "token": "3.95°"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 126,
+          "token": "3.95°"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 74,
+          "token": "3/5"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 126,
+          "token": "3/5"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 74,
+          "token": "2/5"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 126,
+          "token": "2/5"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 126,
+          "token": "40/41"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 126,
+          "token": "9/41"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 165,
+          "token": "0.15"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 166,
+          "token": "0.15"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 41,
+          "token": "0.05"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-083",
+      "metric_name": "21 个完备认证真实簇枚举的精确片对接触窗口总数與精确细胞总数",
+      "rendered_tokens": [
+        "124,560",
+        "124560",
+        "10,512",
+        "10512",
+        "6,045",
+        "6045"
+      ],
+      "recomputed_value": 22,
+      "source_json": "results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1/summary.json",
+      "source_sha256": "3a2cf6bf392251f1d5c61830adf466cb2b3aeca6ef48a54beaac84e9c5f33546",
+      "json_path": "clusters",
+      "raw_value_in_json": [
+        {
+          "active_check_path": "cases/jardim_c01/active_check.json",
+          "active_status": "NOT_APPLICABLE_REFUSED",
+          "cells": 0,
+          "certification_path": "cases/jardim_c01/certification.json",
+          "cluster_id": "jardim_c01",
+          "fracture_count": 6,
+          "input_sha256": "190bc0efbc0df3f481d99c9705022e1c7e053537ed6410ae42d5045e2dd60480",
+          "mode_count": 6,
+          "naive_union_connected": null,
+          "nominal_connected": null,
+          "pairs": 0,
+          "phantom_union_path": null,
+          "rho_infimum": null,
+          "rho_infimum_float": null,
+          "search_complete": false,
+          "silent_flip_under_declared_model": null,
+          "site_id": "jardim_garcia_uh",
+          "status": "BUDGET_EXCEEDED",
+          "stratum": "STANDARD_EXT_TILT",
+          "top_action_type": null,
+          "top_guarantees_1step": null,
+          "top_minimax_reduction_fraction": null,
+          "top_recommended_fracture": null,
+          "top_resolved_measure_fraction": null,
+          "top_witness_diff_role": null,
+          "triangles_per_mode": 56
+        },
+        {
+          "active_check_path": "cases/jardim_c02/active_check.json",
+          "active_status": "ACTIVE_RECOMMENDATIONS_READY",
+          "cells": 751,
+          "certification_path": "cases/jardim_c02/certification.json",
+          "cluster_id": "jardim_c02",
+          "fracture_count": 6,
+          "input_sha256": "3497b419d37361a9ccabbd0df60bd2341fd947cf87e7fc4a32ab5028bc74f518",
+          "mode_count": 6,
+          "naive_union_connected": true,
+          "nominal_connected": false,
+          "pairs": 4212,
+          "phantom_union_path": false,
+          "rho_infimum": "13402215363513865792/153510319155720467101",
+          "rho_infimum_float": 0.08730498,
+          "search_complete": true,
+          "silent_flip_under_declared_model": true,
+          "site_id": "jardim_garcia_uh",
+          "status": "AMBIGUOUS_WITH_VERIFIED_WITNESSES",
+          "stratum": "MUTUAL_EXCL_ATTRIB_MULTISEG",
+          "top_action_type": "RESOLVE_MODE_FEATURE",
+          "top_guarantees_1step": false,
+          "top_minimax_reduction_fraction": "5/9",
+          "top_recommended_fracture": "frag_786debfdca7bb1f52f2ff3766d61ca0c",
+          "top_resolved_measure_fraction": "0/1",
+          "top_witness_diff_role": "MODE_BRANCH_CANDIDATE",
+          "triangles_per_mode": 36
+        },
+        {
+          "active_check_path": "cases/jardim_c03/active_check.json",
+          "active_status": "ACTIVE_RECOMMENDATIONS_READY",
+          "cells": 1306,
+          "certification_path": "cases/jardim_c03/certification.json",
+          "cluster_id": "jardim_c03",
+          "fracture_count": 6,
+          "input_sha256": "936eac13306392e77bd927e5bc88993e938edb7da6fb96a5490ef0c063ea7b18",
+          "mode_count": 6,
+          "naive_union_connected": true,
+          "nominal_connected": true,
+          "pairs": 4212,
+          "phantom_union_path": false,
+          "rho_infimum": "267267754361473/162488437424625",
+          "rho_infimum_float": 1.64484168,
+          "search_complete": true,
+          "silent_flip_under_declared_model": true,
+          "site_id": "jardim_garcia_uh",
+          "status": "AMBIGUOUS_WITH_VERIFIED_WITNESSES",
+          "stratum": "STANDARD_EXT_TILT",
+          "top_action_type": "REFINE_PARAMETER_BAND",
+          "top_guarantees_1step": true,
+          "top_minimax_reduction_fraction": "1/1",
+          "top_recommended_fracture": "frag_1dbe5f133943f651df4e22f7b02b5100",
+          "top_resolved_measure_fraction": "1/1",
+          "top_witness_diff_role": "IN_CONNECTED_PATH_AND_CUT_BOUNDARY",
+          "triangles_per_mode": 36
+        },
+        {
+          "active_check_path": "cases/jardim_c04/active_check.json",
+          "active_status": "ACTIVE_RECOMMENDATIONS_READY",
+          "cells": 1755,
+          "certification_path": "cases/jardim_c04/certification.json",
+          "cluster_id": "jardim_c04",
+          "fracture_count": 6,
+          "input_sha256": "507fb483a703025267a0556c50f09847c9704cb4459901985935cd75504bb4e4",
+          "mode_count": 6,
+          "naive_union_connected": true,
+          "nominal_connected": true,
+          "pairs": 6762,
+          "phantom_union_path": false,
+          "rho_infimum": "10196508254396718982234/6226785079907553991755",
+          "rho_infimum_float": 1.63752372,
+          "search_complete": true,
+          "silent_flip_under_declared_model": true,
+          "site_id": "jardim_garcia_uh",
+          "status": "AMBIGUOUS_WITH_VERIFIED_WITNESSES",
+          "stratum": "MUTUAL_EXCL_ATTRIB_MULTISEG",
+          "top_action_type": "REFINE_PARAMETER_BAND",
+          "top_guarantees_1step": false,
+          "top_minimax_reduction_fraction": "91845670672828818661327/100873918294502374666431",
+          "top_recommended_fracture": "frag_42fe2b00c4c29df3738fe3dae68010c4",
+          "top_resolved_measure_fraction": "91845670672828818661327/100873918294502374666431",
+          "top_witness_diff_role": "IN_CONNECTED_PATH_AND_CUT_BOUNDARY",
+          "triangles_per_mode": 46
+        },
+        {
+          "active_check_path": "cases/jardim_c05/active_check.json",
+          "active_status": "ACTIVE_RECOMMENDATIONS_READY",
+          "cells": 898,
+          "certification_path": "cases/jardim_c05/certification.json",
+          "cluster_id": "jardim_c05",
+          "fracture_count": 6,
+          "input_sha256": "511659fa66fbb714892ebeb68409561ef16940de8bdeff9eb67de461d50e1d24",
+          "mode_count": 6,
+          "naive_union_connected": true,
+          "nominal_connected": true,
+          "pairs": 4212,
+          "phantom_union_path": false,
+          "rho_infimum": "278595465126625169396/758986133217494918379",
+          "rho_infimum_float": 0.36706265,
+          "search_complete": true,
+          "silent_flip_under_declared_model": true,
+          "site_id": "jardim_garcia_uh",
+          "status": "AMBIGUOUS_WITH_VERIFIED_WITNESSES",
+          "stratum": "STANDARD_EXT_TILT",
+          "top_action_type": "RESOLVE_MODE_FEATURE",
+          "top_guarantees_1step": false,
+          "top_minimax_reduction_fraction": "2/3",
+          "top_recommended_fracture": "frag_b184ead18658fe63931939e64b218bad",
+          "top_resolved_measure_fraction": "0/1",
+          "top_witness_diff_role": "ON_CONNECTED_WITNESS_PATH",
+          "triangles_per_mode": 36
+        },
+        {
+          "active_check_path": "cases/jardim_c06/active_check.json",
+          "active_status": "ACTIVE_RECOMMENDATIONS_READY",
+          "cells": 957,
+          "certification_path": "cases/jardim_c06/certification.json",
+          "cluster_id": "jardim_c06",
+          "fracture_count": 6,
+          "input_sha256": "8dae157e73e2282771a958f18456d963f0ea7842f0e948647201c3c248f3c89e",
+          "mode_count": 6,
+          "naive_union_connected": true,
+          "nominal_connected": false,
+          "pairs": 6762,
+          "phantom_union_path": false,
+          "rho_infimum": "13402215363513865792/153510319155720467101",
+          "rho_infimum_float": 0.08730498,
+          "search_complete": true,
+          "silent_flip_under_declared_model": true,
+          "site_id": "jardim_garcia_uh",
+          "status": "AMBIGUOUS_WITH_VERIFIED_WITNESSES",
+          "stratum": "MUTUAL_EXCL_ATTRIB_MULTISEG",
+          "top_action_type": "RESOLVE_MODE_FEATURE",
+          "top_guarantees_1step": false,
+          "top_minimax_reduction_fraction": "5/9",
+          "top_recommended_fracture": "frag_306f0d79a2c51ef819597b812f515062",
+          "top_resolved_measure_fraction": "0/1",
+          "top_witness_diff_role": "IN_CONNECTED_PATH_AND_CUT_BOUNDARY",
+          "triangles_per_mode": 46
+        },
+        {
+          "active_check_path": "cases/perozzo_c01/active_check.json",
+          "active_status": "ALREADY_CERTIFIED",
+          "cells": 692,
+          "certification_path": "cases/perozzo_c01/certification.json",
+          "cluster_id": "perozzo_c01",
+          "fracture_count": 6,
+          "input_sha256": "c9a1077e19c4037f396a50855b38212434f69ab5cc4fad91f74776eb8cbc8cab",
+          "mode_count": 6,
+          "naive_union_connected": false,
+          "nominal_connected": false,
+          "pairs": 4212,
+          "phantom_union_path": false,
+          "rho_infimum": null,
+          "rho_infimum_float": null,
+          "search_complete": true,
+          "silent_flip_under_declared_model": false,
+          "site_id": "perozzo_finale_ligure",
+          "status": "CERTIFIED_DISCONNECTED",
+          "stratum": "STANDARD_EXT_TILT",
+          "top_action_type": null,
+          "top_guarantees_1step": null,
+          "top_minimax_reduction_fraction": null,
+          "top_recommended_fracture": null,
+          "top_resolved_measure_fraction": null,
+          "top_witness_diff_role": null,
+          "triangles_per_mode": 36
+        },
+        {
+          "active_check_path": "cases/perozzo_c02/active_check.json",
+          "active_status": "ACTIVE_RECOMMENDATIONS_READY",
+          "cells": 378,
+          "certification_path": "cases/perozzo_c02/certification.json",
+          "cluster_id": "perozzo_c02",
+          "fracture_count": 7,
+          "input_sha256": "b7a5a8ee745caf2524cec0bd4c3671825c8ee1f90f891a55e7fe861fba986cb4",
+          "mode_count": 6,
+          "naive_union_connected": true,
+          "nominal_connected": false,
+          "pairs": 5670,
+          "phantom_union_path": false,
+          "rho_infimum": "722756298054416/1246923256017417",
+          "rho_infimum_float": 0.57963174,
+          "search_complete": true,
+          "silent_flip_under_declared_model": true,
+          "site_id": "perozzo_finale_ligure",
+          "status": "AMBIGUOUS_WITH_VERIFIED_WITNESSES",
+          "stratum": "STANDARD_EXT_TILT",
+          "top_action_type": "RESOLVE_MODE_FEATURE",
+          "top_guarantees_1step": false,
+          "top_minimax_reduction_fraction": "2/3",
+          "top_recommended_fracture": "perozzo_row_0462",
+          "top_resolved_measure_fraction": "0/1",
+          "top_witness_diff_role": "ON_CONNECTED_WITNESS_PATH",
+          "triangles_per_mode": 42
+        },
+        {
+          "active_check_path": "cases/perozzo_c03/active_check.json",
+          "active_status": "ALREADY_CERTIFIED",
+          "cells": 341,
+          "certification_path": "cases/perozzo_c03/certification.json",
+          "cluster_id": "perozzo_c03",
+          "fracture_count": 8,
+          "input_sha256": "2bce94bd7fc28bfd417786c42dce1a155148fd3672bf8d9281c1dbe99e5fe1c3",
+          "mode_count": 6,
+          "naive_union_connected": false,
+          "nominal_connected": false,
+          "pairs": 7344,
+          "phantom_union_path": false,
+          "rho_infimum": null,
+          "rho_infimum_float": null,
+          "search_complete": true,
+          "silent_flip_under_declared_model": false,
+          "site_id": "perozzo_finale_ligure",
+          "status": "CERTIFIED_DISCONNECTED",
+          "stratum": "MUTUAL_EXCL_ATTRIB_MULTISEG",
+          "top_action_type": null,
+          "top_guarantees_1step": null,
+          "top_minimax_reduction_fraction": null,
+          "top_recommended_fracture": null,
+          "top_resolved_measure_fraction": null,
+          "top_witness_diff_role": null,
+          "triangles_per_mode": 48
+        },
+        {
+          "active_check_path": "cases/perozzo_c04/active_check.json",
+          "active_status": "ALREADY_CERTIFIED",
+          "cells": 1002,
+          "certification_path": "cases/perozzo_c04/certification.json",
+          "cluster_id": "perozzo_c04",
+          "fracture_count": 9,
+          "input_sha256": "75cdb9cfd89d28e886d1a5811886cd403180bf9fe5f4ffddc014f4036ed3c1e7",
+          "mode_count": 6,
+          "naive_union_connected": true,
+          "nominal_connected": true,
+          "pairs": 9234,
+          "phantom_union_path": false,
+          "rho_infimum": null,
+          "rho_infimum_float": null,
+          "search_complete": true,
+          "silent_flip_under_declared_model": false,
+          "site_id": "perozzo_finale_ligure",
+          "status": "CERTIFIED_CONNECTED",
+          "stratum": "STANDARD_EXT_TILT",
+          "top_action_type": null,
+          "top_guarantees_1step": null,
+          "top_minimax_reduction_fraction": null,
+          "top_recommended_fracture": null,
+          "top_resolved_measure_fraction": null,
+          "top_witness_diff_role": null,
+          "triangles_per_mode": 54
+        },
+        {
+          "active_check_path": "cases/perozzo_c05/active_check.json",
+          "active_status": "ALREADY_CERTIFIED",
+          "cells": 68,
+          "certification_path": "cases/perozzo_c05/certification.json",
+          "cluster_id": "perozzo_c05",
+          "fracture_count": 6,
+          "input_sha256": "1101dff95f53be17d70260ed60416bd6c03c06174ebf9b60768cd72a65fababe",
+          "mode_count": 6,
+          "naive_union_connected": false,
+          "nominal_connected": false,
+          "pairs": 4212,
+          "phantom_union_path": false,
+          "rho_infimum": null,
+          "rho_infimum_float": null,
+          "search_complete": true,
+          "silent_flip_under_declared_model": false,
+          "site_id": "perozzo_finale_ligure",
+          "status": "CERTIFIED_DISCONNECTED",
+          "stratum": "STANDARD_EXT_TILT",
+          "top_action_type": null,
+          "top_guarantees_1step": null,
+          "top_minimax_reduction_fraction": null,
+          "top_recommended_fracture": null,
+          "top_resolved_measure_fraction": null,
+          "top_witness_diff_role": null,
+          "triangles_per_mode": 36
+        },
+        {
+          "active_check_path": "cases/perozzo_c06/active_check.json",
+          "active_status": "ALREADY_CERTIFIED",
+          "cells": 39,
+          "certification_path": "cases/perozzo_c06/certification.json",
+          "cluster_id": "perozzo_c06",
+          "fracture_count": 7,
+          "input_sha256": "0220f1ad045b3717fe3c41f1dade121e126ac6d3a083cc3abdf5a08b1ca13465",
+          "mode_count": 6,
+          "naive_union_connected": false,
+          "nominal_connected": false,
+          "pairs": 5670,
+          "phantom_union_path": false,
+          "rho_infimum": null,
+          "rho_infimum_float": null,
+          "search_complete": true,
+          "silent_flip_under_declared_model": false,
+          "site_id": "perozzo_finale_ligure",
+          "status": "CERTIFIED_DISCONNECTED",
+          "stratum": "MUTUAL_EXCL_ATTRIB_MULTISEG",
+          "top_action_type": null,
+          "top_guarantees_1step": null,
+          "top_minimax_reduction_fraction": null,
+          "top_recommended_fracture": null,
+          "top_resolved_measure_fraction": null,
+          "top_witness_diff_role": null,
+          "triangles_per_mode": 42
+        },
+        {
+          "active_check_path": "cases/perozzo_c07/active_check.json",
+          "active_status": "ALREADY_CERTIFIED",
+          "cells": 296,
+          "certification_path": "cases/perozzo_c07/certification.json",
+          "cluster_id": "perozzo_c07",
+          "fracture_count": 8,
+          "input_sha256": "394520aad2d69124ddb008ebd74709ac02f5ca536e3ae4230c74d76bbf1de1c5",
+          "mode_count": 6,
+          "naive_union_connected": false,
+          "nominal_connected": false,
+          "pairs": 7344,
+          "phantom_union_path": false,
+          "rho_infimum": null,
+          "rho_infimum_float": null,
+          "search_complete": true,
+          "silent_flip_under_declared_model": false,
+          "site_id": "perozzo_finale_ligure",
+          "status": "CERTIFIED_DISCONNECTED",
+          "stratum": "STANDARD_EXT_TILT",
+          "top_action_type": null,
+          "top_guarantees_1step": null,
+          "top_minimax_reduction_fraction": null,
+          "top_recommended_fracture": null,
+          "top_resolved_measure_fraction": null,
+          "top_witness_diff_role": null,
+          "triangles_per_mode": 48
+        },
+        {
+          "active_check_path": "cases/perozzo_c08/active_check.json",
+          "active_status": "ALREADY_CERTIFIED",
+          "cells": 72,
+          "certification_path": "cases/perozzo_c08/certification.json",
+          "cluster_id": "perozzo_c08",
+          "fracture_count": 9,
+          "input_sha256": "552f1021e9233c566bead2f3d45e41522ac39d0fa02370d3a38a8f95648c12fd",
+          "mode_count": 6,
+          "naive_union_connected": false,
+          "nominal_connected": false,
+          "pairs": 9234,
+          "phantom_union_path": false,
+          "rho_infimum": null,
+          "rho_infimum_float": null,
+          "search_complete": true,
+          "silent_flip_under_declared_model": false,
+          "site_id": "perozzo_finale_ligure",
+          "status": "CERTIFIED_DISCONNECTED",
+          "stratum": "STANDARD_EXT_TILT",
+          "top_action_type": null,
+          "top_guarantees_1step": null,
+          "top_minimax_reduction_fraction": null,
+          "top_recommended_fracture": null,
+          "top_resolved_measure_fraction": null,
+          "top_witness_diff_role": null,
+          "triangles_per_mode": 54
+        },
+        {
+          "active_check_path": "cases/perozzo_c09/active_check.json",
+          "active_status": "ALREADY_CERTIFIED",
+          "cells": 47,
+          "certification_path": "cases/perozzo_c09/certification.json",
+          "cluster_id": "perozzo_c09",
+          "fracture_count": 6,
+          "input_sha256": "6af178508dc2531b8ecfe76b9c513cc6b95d25033675a5957e1da9e5a9ca62e9",
+          "mode_count": 6,
+          "naive_union_connected": false,
+          "nominal_connected": false,
+          "pairs": 4212,
+          "phantom_union_path": false,
+          "rho_infimum": null,
+          "rho_infimum_float": null,
+          "search_complete": true,
+          "silent_flip_under_declared_model": false,
+          "site_id": "perozzo_finale_ligure",
+          "status": "CERTIFIED_DISCONNECTED",
+          "stratum": "MUTUAL_EXCL_ATTRIB_MULTISEG",
+          "top_action_type": null,
+          "top_guarantees_1step": null,
+          "top_minimax_reduction_fraction": null,
+          "top_recommended_fracture": null,
+          "top_resolved_measure_fraction": null,
+          "top_witness_diff_role": null,
+          "triangles_per_mode": 36
+        },
+        {
+          "active_check_path": "cases/perozzo_c10/active_check.json",
+          "active_status": "ALREADY_CERTIFIED",
+          "cells": 110,
+          "certification_path": "cases/perozzo_c10/certification.json",
+          "cluster_id": "perozzo_c10",
+          "fracture_count": 7,
+          "input_sha256": "29bc5fc5947b5138b58abe86566614dde99f47af9e26d571e32e09d6ab6ccc93",
+          "mode_count": 6,
+          "naive_union_connected": false,
+          "nominal_connected": false,
+          "pairs": 5670,
+          "phantom_union_path": false,
+          "rho_infimum": null,
+          "rho_infimum_float": null,
+          "search_complete": true,
+          "silent_flip_under_declared_model": false,
+          "site_id": "perozzo_finale_ligure",
+          "status": "CERTIFIED_DISCONNECTED",
+          "stratum": "STANDARD_EXT_TILT",
+          "top_action_type": null,
+          "top_guarantees_1step": null,
+          "top_minimax_reduction_fraction": null,
+          "top_recommended_fracture": null,
+          "top_resolved_measure_fraction": null,
+          "top_witness_diff_role": null,
+          "triangles_per_mode": 42
+        },
+        {
+          "active_check_path": "cases/perozzo_c11/active_check.json",
+          "active_status": "ALREADY_CERTIFIED",
+          "cells": 290,
+          "certification_path": "cases/perozzo_c11/certification.json",
+          "cluster_id": "perozzo_c11",
+          "fracture_count": 8,
+          "input_sha256": "c3c43d2e9e865a46027619255b265fe1ed30d87ea7db52ed3ee637ac9835e5d4",
+          "mode_count": 6,
+          "naive_union_connected": false,
+          "nominal_connected": false,
+          "pairs": 7344,
+          "phantom_union_path": false,
+          "rho_infimum": null,
+          "rho_infimum_float": null,
+          "search_complete": true,
+          "silent_flip_under_declared_model": false,
+          "site_id": "perozzo_finale_ligure",
+          "status": "CERTIFIED_DISCONNECTED",
+          "stratum": "STANDARD_EXT_TILT",
+          "top_action_type": null,
+          "top_guarantees_1step": null,
+          "top_minimax_reduction_fraction": null,
+          "top_recommended_fracture": null,
+          "top_resolved_measure_fraction": null,
+          "top_witness_diff_role": null,
+          "triangles_per_mode": 48
+        },
+        {
+          "active_check_path": "cases/perozzo_c12/active_check.json",
+          "active_status": "ALREADY_CERTIFIED",
+          "cells": 235,
+          "certification_path": "cases/perozzo_c12/certification.json",
+          "cluster_id": "perozzo_c12",
+          "fracture_count": 9,
+          "input_sha256": "71b46a0753adcf09d8288930e1652758537ca2d81c58c549ad9c97cf694a9288",
+          "mode_count": 6,
+          "naive_union_connected": false,
+          "nominal_connected": false,
+          "pairs": 9234,
+          "phantom_union_path": false,
+          "rho_infimum": null,
+          "rho_infimum_float": null,
+          "search_complete": true,
+          "silent_flip_under_declared_model": false,
+          "site_id": "perozzo_finale_ligure",
+          "status": "CERTIFIED_DISCONNECTED",
+          "stratum": "MUTUAL_EXCL_ATTRIB_MULTISEG",
+          "top_action_type": null,
+          "top_guarantees_1step": null,
+          "top_minimax_reduction_fraction": null,
+          "top_recommended_fracture": null,
+          "top_resolved_measure_fraction": null,
+          "top_witness_diff_role": null,
+          "triangles_per_mode": 54
+        },
+        {
+          "active_check_path": "cases/perozzo_c13/active_check.json",
+          "active_status": "ALREADY_CERTIFIED",
+          "cells": 78,
+          "certification_path": "cases/perozzo_c13/certification.json",
+          "cluster_id": "perozzo_c13",
+          "fracture_count": 6,
+          "input_sha256": "b2ff8a6e8db944f91a9b6df2b5baecd4cc4facaa93cf70ba7ce126406dd76f71",
+          "mode_count": 6,
+          "naive_union_connected": false,
+          "nominal_connected": false,
+          "pairs": 4212,
+          "phantom_union_path": false,
+          "rho_infimum": null,
+          "rho_infimum_float": null,
+          "search_complete": true,
+          "silent_flip_under_declared_model": false,
+          "site_id": "perozzo_finale_ligure",
+          "status": "CERTIFIED_DISCONNECTED",
+          "stratum": "STANDARD_EXT_TILT",
+          "top_action_type": null,
+          "top_guarantees_1step": null,
+          "top_minimax_reduction_fraction": null,
+          "top_recommended_fracture": null,
+          "top_resolved_measure_fraction": null,
+          "top_witness_diff_role": null,
+          "triangles_per_mode": 36
+        },
+        {
+          "active_check_path": "cases/perozzo_c14/active_check.json",
+          "active_status": "ALREADY_CERTIFIED",
+          "cells": 680,
+          "certification_path": "cases/perozzo_c14/certification.json",
+          "cluster_id": "perozzo_c14",
+          "fracture_count": 7,
+          "input_sha256": "69f5e2f9102ff3bd5a519a8c375fd9275db532ebd20830b339f7875f7a3ed5f3",
+          "mode_count": 6,
+          "naive_union_connected": false,
+          "nominal_connected": false,
+          "pairs": 5670,
+          "phantom_union_path": false,
+          "rho_infimum": null,
+          "rho_infimum_float": null,
+          "search_complete": true,
+          "silent_flip_under_declared_model": false,
+          "site_id": "perozzo_finale_ligure",
+          "status": "CERTIFIED_DISCONNECTED",
+          "stratum": "STANDARD_EXT_TILT",
+          "top_action_type": null,
+          "top_guarantees_1step": null,
+          "top_minimax_reduction_fraction": null,
+          "top_recommended_fracture": null,
+          "top_resolved_measure_fraction": null,
+          "top_witness_diff_role": null,
+          "triangles_per_mode": 42
+        },
+        {
+          "active_check_path": "cases/perozzo_c15/active_check.json",
+          "active_status": "ALREADY_CERTIFIED",
+          "cells": 167,
+          "certification_path": "cases/perozzo_c15/certification.json",
+          "cluster_id": "perozzo_c15",
+          "fracture_count": 8,
+          "input_sha256": "368d1bc2736870fdae440845acef2cca2eac1baaa480ae28dbf1c16b45f274a2",
+          "mode_count": 6,
+          "naive_union_connected": false,
+          "nominal_connected": false,
+          "pairs": 7344,
+          "phantom_union_path": false,
+          "rho_infimum": null,
+          "rho_infimum_float": null,
+          "search_complete": true,
+          "silent_flip_under_declared_model": false,
+          "site_id": "perozzo_finale_ligure",
+          "status": "CERTIFIED_DISCONNECTED",
+          "stratum": "MUTUAL_EXCL_ATTRIB_MULTISEG",
+          "top_action_type": null,
+          "top_guarantees_1step": null,
+          "top_minimax_reduction_fraction": null,
+          "top_recommended_fracture": null,
+          "top_resolved_measure_fraction": null,
+          "top_witness_diff_role": null,
+          "triangles_per_mode": 48
+        },
+        {
+          "active_check_path": "cases/perozzo_c16/active_check.json",
+          "active_status": "ALREADY_CERTIFIED",
+          "cells": 389,
+          "certification_path": "cases/perozzo_c16/certification.json",
+          "cluster_id": "perozzo_c16",
+          "fracture_count": 9,
+          "input_sha256": "502cc3cda45c408c6943e30cb52173197cde54b9d9b0e0727e5ff0b89f0ce46a",
+          "mode_count": 6,
+          "naive_union_connected": false,
+          "nominal_connected": false,
+          "pairs": 9234,
+          "phantom_union_path": false,
+          "rho_infimum": null,
+          "rho_infimum_float": null,
+          "search_complete": true,
+          "silent_flip_under_declared_model": false,
+          "site_id": "perozzo_finale_ligure",
+          "status": "CERTIFIED_DISCONNECTED",
+          "stratum": "MUTUAL_EXCL_ATTRIB_MULTISEG",
+          "top_action_type": null,
+          "top_guarantees_1step": null,
+          "top_minimax_reduction_fraction": null,
+          "top_recommended_fracture": null,
+          "top_resolved_measure_fraction": null,
+          "top_witness_diff_role": null,
+          "triangles_per_mode": 54
+        }
+      ],
+      "recompute_rule": "len",
+      "scope": "M2 在 21 个完备认证真实簇上累计枚举的精确有理片对接触窗口总数 (124,560 对)、精确 POINT/OPEN 细胞总数 (10,512 个) 及 6 个歧义簇细胞总数 (6,045 个)",
+      "enumeration": "21 个完备簇 sum(pairs)=124560, sum(cells)=10512, 6 个歧义簇 sum(cells)=6045",
+      "measured_at_utc": "2026-11-21T03:31:56.401297+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 15,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 96,
+          "token": "124,560"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 98,
+          "token": "124,560"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 57,
+          "token": "124,560"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 45,
+          "token": "124,560"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 96,
+          "token": "10,512"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 98,
+          "token": "10,512"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 105,
+          "token": "10,512"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 57,
+          "token": "10,512"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 36,
+          "token": "10,512"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 45,
+          "token": "10,512"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 110,
+          "token": "6,045"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 123,
+          "token": "6,045"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 250,
+          "token": "6,045"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 64,
+          "token": "6,045"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 91,
+          "token": "6,045"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-084",
+      "metric_name": "22 簇精确有理整网认证总求解耗时 (秒)",
+      "rendered_tokens": [
+        "135.23",
+        "135.226"
+      ],
+      "recomputed_value": 178.39,
+      "source_json": "results/midterm_sprint_20261120/M2_active_identifiability/verification_report.json",
+      "source_sha256": "1a5b7c103986fbd337fdcb92184e45a39fdf94b386098cadd8e9a46f6936d6b6",
+      "json_path": "elapsed_seconds",
+      "raw_value_in_json": 178.391,
+      "recompute_rule": "round_2dp",
+      "scope": "M2 双场地 22 簇精确有理整网认证运行总耗时 (135.226 s ≈ 135.23 s)",
+      "enumeration": "22 簇顺序精确求解墙钟时间总和",
+      "measured_at_utc": "2026-11-21T03:34:54.803976+00:00",
+      "domain_track": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 3,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 98,
+          "token": "135.23"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 57,
+          "token": "135.23"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 45,
+          "token": "135.23"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-085",
+      "metric_name": "合成域独立判卷器 (TE_judge) 基础接触与 Farkas 证书回环判定总数",
+      "rendered_tokens": [
+        "784",
+        "19",
+        "24",
+        "340",
+        "360"
+      ],
+      "recomputed_value": 784,
+      "source_json": "results/w180_technical_route_20261117/execution_next/dispatch_20261118/TE_judge/self_test_result.json",
+      "source_sha256": "001f901e6235283ea46eb8ea7be8ed1c588271c3c4cfa63dd25998b301941868",
+      "json_path": [
+        "totals.hand_cases.n",
+        "totals.positive_controls.n",
+        "totals.negative_controls.n",
+        "totals.coverage_controls.n",
+        "totals.dual_pair_cross_check.n",
+        "totals.dual_network_cross_check.n",
+        "totals.certificate_roundtrip.n"
+      ],
+      "raw_value_in_json": [
+        19,
+        16,
+        24,
+        5,
+        340,
+        20,
+        360
+      ],
+      "recompute_rule": "sum_list",
+      "scope": "合成有理三角形域独立判卷器 (TE-judge/1.0.0) 基础与回环判定总数 (19+16+24+5+340+20+360 = 784 条，0 失败)",
+      "enumeration": "TE_judge 7 大测试族全量枚举",
+      "measured_at_utc": "2026-11-19T08:23:25.256310+00:00",
+      "domain_track": "SYNTHETIC_INDEPENDENT_JUDGE_ARCHIVE",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 9,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 129,
+          "token": "784"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 138,
+          "token": "784"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 73,
+          "token": "784"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 56,
+          "token": "784"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 129,
+          "token": "19"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 190,
+          "token": "19"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 129,
+          "token": "24"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 129,
+          "token": "340"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 129,
+          "token": "360"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-086",
+      "metric_name": "合成域整网基础断言数 (467)、全区间连续语义断言数 (156)、跨模式断言数 (45) 与合计 (668 / 672)",
+      "rendered_tokens": [
+        "668",
+        "672",
+        "467",
+        "156",
+        "45"
+      ],
+      "recomputed_value": 467,
+      "source_json": "results/w180_technical_route_20261117/execution_next/dispatch_20261118/TC_network/result.json",
+      "source_sha256": "95cbba5fde3b1d6fc2ff13b9a0bbb57afb1c7aa0f0e4183cb0b4ae69114e21ab",
+      "json_path": "enumeration.claims",
+      "raw_value_in_json": 467,
+      "recompute_rule": "exact_int",
+      "scope": "合成声明有理三角形域整网基础断言 (467 条) + 全区间连续语义独立复算 (156 条) + 跨模式搜索独立复算 (45 条，另加 4 条定向例) = 668 条 (含定向 672 条)，分歧数 0",
+      "enumeration": "TC_network (467) + TL_whole_network (156) + TN_cross_mode (45+4) 全枚举",
+      "measured_at_utc": "2026-11-20T15:51:19+00:00",
+      "domain_track": "SYNTHETIC_INDEPENDENT_JUDGE_ARCHIVE",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 24,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 129,
+          "token": "668"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 138,
+          "token": "668"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 73,
+          "token": "668"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 56,
+          "token": "668"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 59,
+          "token": "668"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 129,
+          "token": "672"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 73,
+          "token": "672"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 56,
+          "token": "672"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 129,
+          "token": "467"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 138,
+          "token": "467"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 73,
+          "token": "467"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 56,
+          "token": "467"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 129,
+          "token": "156"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 138,
+          "token": "156"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 73,
+          "token": "156"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 56,
+          "token": "156"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 129,
+          "token": "45"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 138,
+          "token": "45"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 73,
+          "token": "45"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 81,
+          "token": "45"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 89,
+          "token": "45"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 91,
+          "token": "45"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 93,
+          "token": "45"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 56,
+          "token": "45"
+        }
+      ]
+    },
+    {
+      "entry_id": "TM-087",
+      "metric_name": "STRATA 产品既有单元测试回归通过数与端到端校验参数",
+      "rendered_tokens": [
+        "290",
+        "8855",
+        "134217728",
+        "409",
+        "36",
+        "37",
+        "132",
+        "46",
+        "941",
+        "0/1",
+        "8/8"
+      ],
+      "recomputed_value": 290,
+      "source_json": "results/midterm_sprint_20261120/M5_strata_workbench_demo/result.json",
+      "source_sha256": "51243b720ef81603cb6fc1bd9ba5b7a9799b99b37edbc5a5a92ffc2356cac658",
+      "json_path": "enumeration.surface_product_pytest_passed",
+      "raw_value_in_json": 290,
+      "recompute_rule": "exact_int",
+      "scope": "M5 既有 tests/surface_product/ 单元回归通过数 (290 passed, 1 skipped, 0 failed)、隔离演示端口 8855、无窗标志 134217728 及冲刺期四模块负控总数 (12+10+5+9=36 项负控 + 1 项回归 = 37 项)",
+      "enumeration": "M1(12)+M2(10)+M4(5)+M5(9+1) 负控与回归全量枚举",
+      "measured_at_utc": "2026-11-21T04:37:29.170300+00:00",
+      "domain_track": "ENGINEERING_VERIFICATION_AND_GATES",
+      "is_oracle": false,
+      "is_deprecated": false,
+      "occurrence_count": 51,
+      "occurrences": [
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 131,
+          "token": "290"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 176,
+          "token": "290"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 187,
+          "token": "290"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 213,
+          "token": "290"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 75,
+          "token": "290"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 98,
+          "token": "290"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 57,
+          "token": "290"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 69,
+          "token": "290"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 175,
+          "token": "290"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 145,
+          "token": "8855"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 181,
+          "token": "8855"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 83,
+          "token": "8855"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 172,
+          "token": "8855"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 177,
+          "token": "134217728"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 177,
+          "token": "134217728"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 134,
+          "token": "409"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 156,
+          "token": "409"
+        },
+        {
+          "doc": "评委最尖锐20问_标准应答卡.md",
+          "line": 175,
+          "token": "409"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 36,
+          "token": "36"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 73,
+          "token": "36"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 131,
+          "token": "36"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 138,
+          "token": "36"
+        },
+        {
+          "doc": "PPT大纲_大创中期_15页.md",
+          "line": 147,
+          "token": "36"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 42,
+          "token": "36"
+        },
+        {
+          "doc": "口头讲稿_8分钟实战版.md",
+          "line": 75,
+          "token": "36"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schema": "m7-gate-exit-codes/v1",
+  "at_utc": "2026-11-21T14:10:09.132469+00:00",
+  "gate": "g4report",
+  "record": {
+    "tag": "g4_m7_report",
+    "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 scripts/r303_draft_check.py --draft C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M7_final_pack_and_gates\\report.md --doc-class governance --json-only --out C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M7_final_pack_and_gates\\gates\\g4\\m7_report",
+    "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+    "executed": true,
+    "exit_code": 0,
+    "seconds": 0.99,
+    "stdout_file": "logs/g4_m7_report.log",
+    "enumerated": 1
+  }
+}

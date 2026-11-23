@@ -1,0 +1,200 @@
+{
+  "schema": "m5-negative-controls/v1",
+  "task_id": "M5",
+  "started_at_utc": "2026-11-21T04:04:18.403200+00:00",
+  "finished_at_utc": "2026-11-21T04:15:09.765347+00:00",
+  "no_console_window": true,
+  "creationflags": 134217728,
+  "controls_summary": {
+    "total_classes": 5,
+    "total_checks": 10,
+    "all_toothed_rejections_passed": true,
+    "surface_product_regression_passed": true,
+    "browser_e2e_and_bad_add_fragment_passed": true
+  },
+  "M5_N1_to_M5_N3": [
+    {
+      "id": "M5-N1a",
+      "scenario": "篡改隔离副本 jardim_c02/model.json 1 个字节（保留原 register 与 M2 证书）",
+      "expected_reject": true,
+      "http_status": 409,
+      "ok": false,
+      "error_code": "MODEL_SHA256_MISMATCH",
+      "reason": "MODEL_SHA256_MISMATCH for 'jardim_c02': register expects 3497b419d37361a9ccabbd0df60bd2341fd947cf87e7fc4a32ab5028bc74f518, disk is 7d1463a2eee7641250d80be645e16dd8003e1c9bac9c047eab3f992ceb3fd698",
+      "correctly_rejected": true
+    },
+    {
+      "id": "M5-N1b",
+      "scenario": "篡改 1 字节并同步刷新 register 哈希，但 M2 certification.json#input_sha256 仍为原值",
+      "expected_reject": true,
+      "http_status": 409,
+      "ok": false,
+      "error_code": "CERT_INPUT_SHA256_MISMATCH",
+      "reason": "CERT_INPUT_SHA256_MISMATCH for 'jardim_c02': certification.json expects '3497b419d37361a9ccabbd0df60bd2341fd947cf87e7fc4a32ab5028bc74f518', model.json is 7d1463a2eee7641250d80be645e16dd8003e1c9bac9c047eab3f992ceb3fd698",
+      "correctly_rejected": true
+    },
+    {
+      "id": "M5-N2a",
+      "scenario": "请求不存在的 cluster_id=nonexistent_cluster_999",
+      "expected_reject": true,
+      "http_status": 404,
+      "ok": false,
+      "error_code": "CLUSTER_NOT_FOUND",
+      "reason": "cluster not found: 'nonexistent_cluster_999'",
+      "correctly_rejected": true
+    },
+    {
+      "id": "M5-N2b",
+      "scenario": "对有效歧义簇请求非法 branch_id=FAKE_ILLEGAL_BRANCH_999",
+      "expected_reject": true,
+      "http_status": 400,
+      "ok": false,
+      "error_code": "INVALID_BRANCH_ID",
+      "reason": "illegal branch_id 'FAKE_ILLEGAL_BRANCH_999' for fracture 'frag_306f0d79a2c51ef819597b812f515062'; allowed=['band_left', 'band_right']",
+      "correctly_rejected": true
+    },
+    {
+      "id": "M5-N2c",
+      "scenario": "对已精确认证的 perozzo_c01 (CERTIFIED_DISCONNECTED) 强行发起 apply_check",
+      "expected_reject": true,
+      "http_status": 400,
+      "ok": false,
+      "error_code": "INVALID_CHECK_TARGET",
+      "reason": "fracture 'perozzo_row_0620' has no declared active-check branches in cluster 'perozzo_c01' (status=CERTIFIED_DISCONNECTED)",
+      "correctly_rejected": true
+    },
+    {
+      "id": "M5-N2d",
+      "scenario": "对两步坍缩分支提交非法 step2_branch_id=FAKE_STEP2_BRANCH_999",
+      "expected_reject": true,
+      "http_status": 400,
+      "ok": false,
+      "error_code": "INVALID_BRANCH_ID",
+      "reason": "illegal step2_branch_id 'FAKE_STEP2_BRANCH_999' for next_step 'frag_306f0d79a2c51ef819597b812f515062'; allowed=['band_left', 'band_right']",
+      "correctly_rejected": true
+    },
+    {
+      "id": "M5-N3a",
+      "scenario": "向真实 clusters/ 目录投放 scope=SYNTHETIC_DECLARED_TRIANGLE_UNION 冒充文件",
+      "expected_reject": true,
+      "http_status": 409,
+      "ok": false,
+      "error_code": "SCOPE_VIOLATION",
+      "reason": "REAL_SCOPE_VIOLATION in real clusters directory (synthetic_impostor): scope='SYNTHETIC_DECLARED_TRIANGLE_UNION' is forbidden (required 'REAL_DERIVED_CONDITIONED_FINITE_UNION')",
+      "correctly_rejected": true
+    },
+    {
+      "id": "M5-N3b",
+      "scenario": "已登记真实簇 jardim_c02 的 scope 被改写为 SYNTHETIC_DECLARED_TRIANGLE_UNION",
+      "expected_reject": true,
+      "http_status": 409,
+      "ok": false,
+      "error_code": "SCOPE_VIOLATION",
+      "reason": "REAL_SCOPE_VIOLATION in real clusters directory (jardim_c02): scope='SYNTHETIC_DECLARED_TRIANGLE_UNION' is forbidden (required 'REAL_DERIVED_CONDITIONED_FINITE_UNION')",
+      "correctly_rejected": true
+    }
+  ],
+  "M5_N4_regression": {
+    "id": "M5-N4",
+    "scenario": "复跑既有 tests/surface_product/ 定向回归测试（验证 T-D 编辑/保存/导出契约零破坏）",
+    "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 -m pytest tests/surface_product -q --tb=short",
+    "exit_code": 0,
+    "summary": "290 passed, 1 skipped in 603.68s (0:10:03)",
+    "stdout_file": "runtime/pytest_surface_product.stdout.txt",
+    "correctly_passed": true
+  },
+  "M5_N5_browser_e2e": {
+    "base": "http://127.0.0.1:8855",
+    "started_at_utc": "2026-11-21T04:14:37.905Z",
+    "steps": [],
+    "externalRequests": [],
+    "consoleErrors": [],
+    "pageErrors": [],
+    "screenshots": [
+      {
+        "name": "00_workbench_add_fragment.png",
+        "path": "C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M5_strata_workbench_demo\\screenshots\\00_workbench_add_fragment.png",
+        "bytes": 182646
+      },
+      {
+        "name": "01_overview_jardim_c02_ambiguous.png",
+        "path": "C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M5_strata_workbench_demo\\screenshots\\01_overview_jardim_c02_ambiguous.png",
+        "bytes": 261751
+      },
+      {
+        "name": "02_witness_connected_emerald.png",
+        "path": "C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M5_strata_workbench_demo\\screenshots\\02_witness_connected_emerald.png",
+        "bytes": 265543
+      },
+      {
+        "name": "03_witness_disconnected_crimson.png",
+        "path": "C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M5_strata_workbench_demo\\screenshots\\03_witness_disconnected_crimson.png",
+        "bytes": 264867
+      },
+      {
+        "name": "04a_step1_narrowed_jardim_c02.png",
+        "path": "C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M5_strata_workbench_demo\\screenshots\\04a_step1_narrowed_jardim_c02.png",
+        "bytes": 271467
+      },
+      {
+        "name": "04_active_collapse_certified_disconnected.png",
+        "path": "C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M5_strata_workbench_demo\\screenshots\\04_active_collapse_certified_disconnected.png",
+        "bytes": 248710
+      },
+      {
+        "name": "05_jardim_c04_holed_before_collapse.png",
+        "path": "C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M5_strata_workbench_demo\\screenshots\\05_jardim_c04_holed_before_collapse.png",
+        "bytes": 273557
+      },
+      {
+        "name": "06_active_collapse_certified_connected.png",
+        "path": "C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M5_strata_workbench_demo\\screenshots\\06_active_collapse_certified_connected.png",
+        "bytes": 250848
+      },
+      {
+        "name": "07_perozzo_c02_outcrop_overview.png",
+        "path": "C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M5_strata_workbench_demo\\screenshots\\07_perozzo_c02_outcrop_overview.png",
+        "bytes": 270244
+      }
+    ],
+    "addFragmentCheck": {
+      "hasOption": true,
+      "optionCount": 11,
+      "skeletonKeys": [
+        "surface_id",
+        "fragment"
+      ],
+      "committedVersion": "2"
+    },
+    "dualWitnessCheck": {
+      "clusterId": "jardim_c02",
+      "nominalChangedToConnected": true,
+      "connectedChangedToDisconnected": true,
+      "connectedCaption": "JARDIM GARCIA 真实露头 · JARDIM_C02 (m0, t=-0.0437) · 翠绿连通链 · 5 片 · 10 处真实接触",
+      "disconnectedCaption": "JARDIM GARCIA 真实露头 · JARDIM_C02 (m0, t=0.0000) · 红橙断割见证 · S=5 片 / T=1 片"
+    },
+    "activeCollapseCheck": {
+      "jardim_c02_before": "AMBIGUOUS_WITH_VERIFIED_WITNESSES",
+      "jardim_c02_step1": "AMBIGUOUS_WITH_VERIFIED_WITNESSES",
+      "jardim_c02_after_step2": "CERTIFIED_DISCONNECTED",
+      "jardim_c02_after_reset": "AMBIGUOUS_WITH_VERIFIED_WITNESSES",
+      "jardim_c02_provenance_initial": "预计算真包 · M2",
+      "jardim_c02_provenance_collapse": "预计算真包 · M2",
+      "jardim_c04_after": "CERTIFIED_CONNECTED",
+      "perozzo_c02_loaded": true,
+      "clusterCountRendered": 22
+    },
+    "negativeUiCheck": {
+      "badAddFragment": {
+        "httpStatus": 400,
+        "error": {
+          "code": "BAD_TARGET",
+          "message": "observation is missing: obs_synth",
+          "type": "TransactionError"
+        }
+      }
+    },
+    "ok": true,
+    "finished_at_utc": "2026-11-21T04:15:09.329Z"
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "schema": "dispatch-result/v1",
+  "task_id": "M6",
+  "at_utc": "2026-11-21T12:35:41.844634+00:00",
+  "status": "PASS",
+  "scope": "大创中期答辩四幕 15 页 PPT 大纲、8 分钟逐页实战讲稿、A/B/C 三档 20 问应答卡、88 项数字溯源映射、离线 HTML 演示包；M3 已落盘并完成回填（22/22 簇独立核验 AGREE、0 分歧，jardim_c01 仅做超预算拒答状态一致性核验）；四道现役门禁与 verify_m6 全量校验、5 项负控全部通过",
+  "enumeration": {
+    "positive_cases": 3,
+    "positive_passed": 3,
+    "negative_controls": 5,
+    "negative_correctly_rejected": 5,
+    "traceability_entries_verified": 88,
+    "distinct_tokens_registered": 212,
+    "numeric_occurrences_checked": 613,
+    "ppt_pages": 15,
+    "script_pages": 15,
+    "qa_cards": 20,
+    "html_slides": 15,
+    "m3_pending_placeholders_remaining": 0,
+    "m3_agree": 22,
+    "m3_disagree": 0,
+    "m3_refused_budget_only": [
+      "jardim_c01"
+    ]
+  },
+  "commands": [
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 \"C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M6_midterm_defense_deck\\verify_m6.py\" --run-negative-controls",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 613,
+      "stdout_file": "logs/verify_m6.txt",
+      "stderr_file": null,
+      "tag": "verify_m6_full"
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 \"C:\\Users\\晚菘\\Documents\\Default Project\\scripts\\repro_certify.py\" --out \"C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M6_midterm_defense_deck\\gates\\g1.json\"",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 9,
+      "stdout_file": "logs/g1.txt",
+      "stderr_file": "gates/g1.json",
+      "tag": "g1_repro_certify"
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 \"C:\\Users\\晚菘\\Documents\\Default Project\\scripts\\r263_gain_mislabel_scan.py\" --scope delivery --fail-on-hit --out \"C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M6_midterm_defense_deck\\gates\\g3.json\"",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 9,
+      "stdout_file": "logs/g3.txt",
+      "stderr_file": "gates/g3.json",
+      "tag": "g3_r263_delivery"
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 \"C:\\Users\\晚菘\\Documents\\Default Project\\scripts\\r303_draft_check.py\" --draft \"C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M6_midterm_defense_deck\\PPT大纲_大创中期_15页.md\" --doc-class paper --json-only --out \"C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M6_midterm_defense_deck\\gates\\g4_ppt_outline\"",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 1,
+      "stdout_file": "logs/g4_ppt.txt",
+      "stderr_file": "gates/g4_ppt_outline/draft_check.json",
+      "tag": "g4_ppt"
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 \"C:\\Users\\晚菘\\Documents\\Default Project\\scripts\\r303_draft_check.py\" --draft \"C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M6_midterm_defense_deck\\口头讲稿_8分钟实战版.md\" --doc-class paper --json-only --out \"C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M6_midterm_defense_deck\\gates\\g4_spoken_script\"",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 1,
+      "stdout_file": "logs/g4_script.txt",
+      "stderr_file": "gates/g4_spoken_script/draft_check.json",
+      "tag": "g4_script"
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 \"C:\\Users\\晚菘\\Documents\\Default Project\\scripts\\r303_draft_check.py\" --draft \"C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M6_midterm_defense_deck\\评委最尖锐20问_标准应答卡.md\" --doc-class paper --json-only --out \"C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M6_midterm_defense_deck\\gates\\g4_qa_20\"",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 1,
+      "stdout_file": "logs/g4_qa.txt",
+      "stderr_file": "gates/g4_qa_20/draft_check.json",
+      "tag": "g4_qa"
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 \"C:\\Users\\晚菘\\Documents\\Default Project\\scripts\\r303_draft_check.py\" --draft \"C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M6_midterm_defense_deck\\report.md\" --doc-class governance --json-only --out \"C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M6_midterm_defense_deck\\gates\\g4\"",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 1,
+      "stdout_file": "logs/g4_report.txt",
+      "stderr_file": "gates/g4/draft_check.json",
+      "tag": "g4_report"
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 -m fractureflow.selfcheck --quick --out \"C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M6_midterm_defense_deck\\gates\\g2.json\"",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 40,
+      "stdout_file": "logs/g2.txt",
+      "stderr_file": "gates/g2.json",
+      "tag": "g2_selfcheck_quick"
+    }
+  ],
+  "gates": {
+    "g1_repro_certify": "PASS 9/9 (exit 0)",
+    "g2_selfcheck_quick": "PASS 40/40 (exit 0)",
+    "g3_r263_delivery": "PASS files_scanned=9, 非豁免混标命中=0（mislabel_hits=[]；8 条均为已豁免命中；sum_reconcile.ok=true；exit 0）",
+    "g4_r303_draft": "CLEAN n_red=0 × 4（3 份核心文稿 paper + 本报告 governance）",
+    "verify_m6": "PASS 88 条目 / 613 处数字 / 3 核心文稿 / 5 负控 (exit 0)"
+  },
+  "honesty_boundary": {
+    "naive_union_on_14_disconnected": "0/14（如实报告，主要危害在 6/6 歧义簇上 MASKS_DISCONNECTED_WITNESS；跨状态假通路牙口由 M2-N1a/b 定向负控实证）",
+    "jardim_c01": "按声明 4,096 细胞预算诚实输出 BUDGET_EXCEEDED，不静默截断、不混入 21 簇完备认证分母",
+    "m3_independent_judge": "22/22 AGREE、DISAGREE=0；其中 21 簇几何复算，jardim_c01 仅拒答状态一致性核验（不冒充几何重算）"
+  },
+  "evidence": [
+    {
+      "file": "PPT大纲_大创中期_15页.md",
+      "bytes": 43982,
+      "sha256": "5dbf6296cd3e4bf2d4e59515ceba797e60085e76a9add43d945679aeb12eff90"
+    },
+    {
+      "file": "口头讲稿_8分钟实战版.md",
+      "bytes": 21399,
+      "sha256": "12c8df76dbb77ad8e30e4c39c96569c61fc9ee12e6b85660142924ceafbcdb9c"
+    },
+    {
+      "file": "评委最尖锐20问_标准应答卡.md",
+      "bytes": 41366,
+      "sha256": "79fff90d648cdc0c0d0b4bec6f0f27efdd658db196aa3a9f7618dccb006b018c"
+    },
+    {
+      "file": "number_traceability_map.json",
+      "bytes": 209317,
+      "sha256": "1ae443cb9be0f2f176217daf8563a7c0d363e5f9807f7bc4849cbfbf85dc3e68"
+    },
+    {
+      "file": "build_midterm_deck.py",
+      "bytes": 87668,
+      "sha256": "0e2a7937ee0f271802314f0d262e2a43285c3f7bc4f1b164147e102b59b723fb"
+    },
+    {
+      "file": "midterm_deck.html",
+      "bytes": 139452,
+      "sha256": "6f2e242aaae9ae4469568fea87fd1446ab2dc2992ee219eeeea5013e914d2a60"
+    },
+    {
+      "file": "verify_m6.py",
+      "bytes": 24542,
+      "sha256": "581599fa2f88100007d0f8153752ac1c58d47daa17c50f63f7755001757f5771"
+    },
+    {
+      "file": "negative_controls.json",
+      "bytes": 6052,
+      "sha256": "aa6db9fa88d26ffe593e2561377647392d87896bdbc40847cb01d199e17520aa"
+    },
+    {
+      "file": "own_defects.json",
+      "bytes": 3910,
+      "sha256": "99d1b4c6055f208d2fdbf7ea595615c324fdccf0d3f073211cd657dd349db090"
+    },
+    {
+      "file": "run_receipt.json",
+      "bytes": 5854,
+      "sha256": "4a17b7fa90c6fbc10d6bf675bed98a581cfdb5b6e0000cd13fd2c6607db0616d"
+    },
+    {
+      "file": "run_m6_gates.py",
+      "bytes": 7603,
+      "sha256": "ba52955c51424a96769560a66f0adb650bf6d1114e3f67d5b11c7c1a04dd63b2"
+    },
+    {
+      "file": "report.md",
+      "bytes": 13023,
+      "sha256": "e8b9f44741d7deabf9040ee002e567dd0ede836670e81b154e5a72d8ed280d1c"
+    },
+    {
+      "file": "gates/g1.json",
+      "bytes": 1904,
+      "sha256": "1be2bf1bf5c059b00f93f3908252da0c858b4f0b1fda57c88bb06f9cbefe6378"
+    },
+    {
+      "file": "gates/g2.json",
+      "bytes": 10720,
+      "sha256": "1f0477220f35a1c1fa1bb92af0fa9023be5a3ea13d087fe4ecd523d52dbd8e60"
+    },
+    {
+      "file": "gates/g3.json",
+      "bytes": 20648,
+      "sha256": "0ac4a4d81ad180c824577809c08958394590d5e4a11acf930671cfa4dca0f412"
+    },
+    {
+      "file": "gates/g4/draft_check.json",
+      "bytes": 12276,
+      "sha256": "a5ffb89950f4dfde435ddd6039e5b87c8aaae4881bb2c4a75d491d00847ca4eb"
+    },
+    {
+      "file": "gates/g4_ppt_outline/draft_check.json",
+      "bytes": 2991,
+      "sha256": "a253b0c3fbad73f2a424c2843b23ec18b28e6db462ef9b37d39a97fa221b7d94"
+    },
+    {
+      "file": "gates/g4_spoken_script/draft_check.json",
+      "bytes": 2877,
+      "sha256": "cc61f6222ef2e5dfb6a70a6f25722b139a734f29389bb1b47573cd45b2785859"
+    },
+    {
+      "file": "gates/g4_qa_20/draft_check.json",
+      "bytes": 2884,
+      "sha256": "0eedb3fd1ab9d693dc29acd1b148e6b9e2c190e350733e5fa818b69b2101de0b"
+    }
+  ],
+  "not_claimed": [
+    "非地下体内无条件贯通真值",
+    "非水力连通/渗流导通",
+    "非野外地质师实测工时（human_time 为信念树仿真步数）",
+    "未把 jardim_c01 超预算拒答混入 21 簇完备认证分母，也未声称对该簇做了几何重算",
+    "独立判卷 22/22 AGREE 不等于证明代码绝对无 bug",
+    "离线 HTML 仅做结构/占位/资源约束程序核验，未完成逐页浏览器视觉验收，不宣称投影排版零缺陷",
+    "HTML 为加分项演示包，非原生 PPTX 成品"
+  ],
+  "field_error_rate": null,
+  "human_time": null,
+  "hydraulic": null
+}

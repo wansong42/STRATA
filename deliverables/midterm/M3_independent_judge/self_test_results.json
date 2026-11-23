@@ -1,0 +1,159 @@
+{
+ "cases": [
+  {
+   "case": "ST01_tangent_point_window",
+   "detail": "window=(Fraction(1, 2), Fraction(1, 2), True, True)",
+   "passed": true
+  },
+  {
+   "case": "ST01b_point_tri_window",
+   "detail": "window=(Fraction(0, 1), Fraction(0, 1), True, True)",
+   "passed": true
+  },
+  {
+   "case": "ST01c_point_tri_window_B",
+   "detail": "window=(Fraction(0, 1), Fraction(0, 1), True, True)",
+   "passed": true
+  },
+  {
+   "case": "ST01d_disconnected_at_t0",
+   "detail": "active=[('@A', 'L'), ('@B', 'R')]",
+   "passed": true
+  },
+  {
+   "case": "ST01e_disconnected_at_tangency",
+   "detail": "active=[('L', 'R')]",
+   "passed": true
+  },
+  {
+   "case": "ST02_same_t_never_connected",
+   "detail": "exists=False",
+   "passed": true
+  },
+  {
+   "case": "ST02b_connected_at_t0",
+   "detail": "",
+   "passed": true
+  },
+  {
+   "case": "ST03_open_domain_connected",
+   "detail": "",
+   "passed": true
+  },
+  {
+   "case": "ST03_no_flip_cell",
+   "detail": "",
+   "passed": true
+  },
+  {
+   "case": "ST04_root_ambiguous",
+   "detail": "status=AMBIGUOUS_WITH_VERIFIED_WITNESSES",
+   "passed": true
+  },
+  {
+   "case": "ST04_collapse_to_connected",
+   "detail": "status=CERTIFIED_CONNECTED",
+   "passed": true
+  },
+  {
+   "case": "ST04_collapse_to_disconnected",
+   "detail": "status=CERTIFIED_DISCONNECTED",
+   "passed": true
+  },
+  {
+   "case": "ST05_all_connected_same_plate",
+   "detail": "status=CERTIFIED_CONNECTED",
+   "passed": true
+  },
+  {
+   "case": "ST05b_B_never_attached",
+   "detail": "status=CERTIFIED_DISCONNECTED",
+   "passed": true
+  },
+  {
+   "case": "ST05c_point_connected",
+   "detail": "status=AMBIGUOUS_WITH_VERIFIED_WITNESSES",
+   "passed": true
+  },
+  {
+   "case": "ST05d_band_collapse_disconnected",
+   "detail": "status=CERTIFIED_DISCONNECTED",
+   "passed": true
+  },
+  {
+   "case": "ST05e_band_no_collapse",
+   "detail": "status=AMBIGUOUS_WITH_VERIFIED_WITNESSES",
+   "passed": true
+  },
+  {
+   "case": "ST06_canon_sha",
+   "detail": "",
+   "passed": true
+  },
+  {
+   "case": "ST07a_lp_feasible",
+   "detail": "",
+   "passed": true
+  },
+  {
+   "case": "ST07b_lp_infeasible",
+   "detail": "",
+   "passed": true
+  },
+  {
+   "case": "ST07c_lp_max",
+   "detail": "",
+   "passed": true
+  },
+  {
+   "case": "ST08_budget_refused_path",
+   "detail": "verdict=AGREE",
+   "passed": true
+  },
+  {
+   "case": "ST09_forged_status_detected",
+   "detail": "",
+   "passed": true
+  },
+  {
+   "case": "ST10_cross_t_phantom_rejected",
+   "detail": "exists=False",
+   "passed": true
+  },
+  {
+   "case": "ST11_tangent_point_cell_present",
+   "detail": "",
+   "passed": true
+  },
+  {
+   "case": "ST12_forged_collapse_detected",
+   "detail": "",
+   "passed": true
+  },
+  {
+   "case": "ST13_vertex_mutation_changes_sha",
+   "detail": "",
+   "passed": true
+  },
+  {
+   "case": "ST14_synthetic_scope_rejected",
+   "detail": "",
+   "passed": true
+  },
+  {
+   "case": "ST15_rho_formula_case",
+   "detail": "status=CERTIFIED_DISCONNECTED",
+   "passed": true
+  },
+  {
+   "case": "ST15b_rho_cost_value",
+   "detail": "cost=1",
+   "passed": true
+  }
+ ],
+ "failed": 0,
+ "passed": 30,
+ "schema": "m3-self-test/v1",
+ "total": 30,
+ "verdict": "PASS"
+}

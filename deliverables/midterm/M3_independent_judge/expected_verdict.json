@@ -1,0 +1,45 @@
+{
+ "action_outcomes_recomputed": 840,
+ "all_agree": true,
+ "cases": {
+  "jardim_c02": {
+   "action_outcomes_recomputed": 94,
+   "cluster_id": "jardim_c02",
+   "errors": [],
+   "verdict": "AGREE"
+  },
+  "jardim_c03": {
+   "action_outcomes_recomputed": 154,
+   "cluster_id": "jardim_c03",
+   "errors": [],
+   "verdict": "AGREE"
+  },
+  "jardim_c04": {
+   "action_outcomes_recomputed": 230,
+   "cluster_id": "jardim_c04",
+   "errors": [],
+   "verdict": "AGREE"
+  },
+  "jardim_c05": {
+   "action_outcomes_recomputed": 102,
+   "cluster_id": "jardim_c05",
+   "errors": [],
+   "verdict": "AGREE"
+  },
+  "jardim_c06": {
+   "action_outcomes_recomputed": 222,
+   "cluster_id": "jardim_c06",
+   "errors": [],
+   "verdict": "AGREE"
+  },
+  "perozzo_c02": {
+   "action_outcomes_recomputed": 38,
+   "cluster_id": "perozzo_c02",
+   "errors": [],
+   "verdict": "AGREE"
+  }
+ },
+ "clusters": 6,
+ "schema": "m3-expected-verdict/v1",
+ "verify_expected_sha256": "6bde2065367bbfd9425b28fd11c943cfd0ce8e09f00241f8f915d4cac902ea39"
+}

@@ -1,0 +1,52 @@
+{
+ "all_agree": true,
+ "cases": {
+  "jardim_c02": {
+   "cluster_id": "jardim_c02",
+   "depth2_branches": 16,
+   "depth2_parents": 7,
+   "errors": [],
+   "verdict": "AGREE"
+  },
+  "jardim_c03": {
+   "cluster_id": "jardim_c03",
+   "depth2_branches": 2,
+   "depth2_parents": 1,
+   "errors": [],
+   "verdict": "AGREE"
+  },
+  "jardim_c04": {
+   "cluster_id": "jardim_c04",
+   "depth2_branches": 8,
+   "depth2_parents": 3,
+   "errors": [],
+   "verdict": "AGREE"
+  },
+  "jardim_c05": {
+   "cluster_id": "jardim_c05",
+   "depth2_branches": 17,
+   "depth2_parents": 7,
+   "errors": [],
+   "verdict": "AGREE"
+  },
+  "jardim_c06": {
+   "cluster_id": "jardim_c06",
+   "depth2_branches": 19,
+   "depth2_parents": 7,
+   "errors": [],
+   "verdict": "AGREE"
+  },
+  "perozzo_c02": {
+   "cluster_id": "perozzo_c02",
+   "depth2_branches": 12,
+   "depth2_parents": 5,
+   "errors": [],
+   "verdict": "AGREE"
+  }
+ },
+ "clusters": 6,
+ "depth2_branches": 74,
+ "depth2_parents": 30,
+ "schema": "m3-depth2-verdict/v1",
+ "verify_depth2_sha256": "5f0149ac4a65da089ea4925c9a49d73b80c48672a684709c9d5527dcc12dba68"
+}

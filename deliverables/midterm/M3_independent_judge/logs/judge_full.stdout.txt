@@ -1,0 +1,33 @@
+{
+ "verdicts": {
+  "jardim_c01": "AGREE",
+  "jardim_c02": "AGREE",
+  "jardim_c03": "AGREE",
+  "jardim_c04": "AGREE",
+  "jardim_c05": "AGREE",
+  "jardim_c06": "AGREE",
+  "perozzo_c01": "AGREE",
+  "perozzo_c02": "AGREE",
+  "perozzo_c03": "AGREE",
+  "perozzo_c04": "AGREE",
+  "perozzo_c05": "AGREE",
+  "perozzo_c06": "AGREE",
+  "perozzo_c07": "AGREE",
+  "perozzo_c08": "AGREE",
+  "perozzo_c09": "AGREE",
+  "perozzo_c10": "AGREE",
+  "perozzo_c11": "AGREE",
+  "perozzo_c12": "AGREE",
+  "perozzo_c13": "AGREE",
+  "perozzo_c14": "AGREE",
+  "perozzo_c15": "AGREE",
+  "perozzo_c16": "AGREE"
+ },
+ "counts": {
+  "AGREE": 22,
+  "DISAGREE": 0,
+  "MALFORMED": 0,
+  "UNDECIDABLE": 0
+ },
+ "read_ledger_records": 68
+}

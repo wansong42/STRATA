@@ -1,0 +1,82 @@
+{"event": "env", "pid": 10012, "executable": "E:\\app2\\anacoda\\Anacoda\\envs\\pytorch_env\\python.exe", "python": "3.10.20", "cwd": "C:\\Users\\晚菘\\Documents\\Default Project", "platform": "win32", "sandbox_env": {}, "hook_modules_loaded": {"sandboxcap.dll": false, "network_hook.dll": false}, "measured_at": "2026-11-21T11:39:25+0800"}
+{"event": "check_start", "index": 0, "group": "几何约定", "name": "dip_dipdir_to_normal 水平面", "measured_at": "2026-11-21T11:39:25+0800"}
+{"event": "check_end", "index": 0, "group": "几何约定", "name": "dip_dipdir_to_normal 水平面", "passed": true, "elapsed_s": 0.02, "measured_at": "2026-11-21T11:39:25+0800"}
+{"event": "check_start", "index": 1, "group": "几何约定", "name": "dip_dipdir_to_normal 垂直面", "measured_at": "2026-11-21T11:39:25+0800"}
+{"event": "check_end", "index": 1, "group": "几何约定", "name": "dip_dipdir_to_normal 垂直面", "passed": true, "elapsed_s": 0.0, "measured_at": "2026-11-21T11:39:25+0800"}
+{"event": "check_start", "index": 2, "group": "几何约定", "name": "dip_dipdir_to_normal 45°", "measured_at": "2026-11-21T11:39:25+0800"}
+{"event": "check_end", "index": 2, "group": "几何约定", "name": "dip_dipdir_to_normal 45°", "passed": true, "elapsed_s": 0.0, "measured_at": "2026-11-21T11:39:25+0800"}
+{"event": "check_start", "index": 3, "group": "几何约定", "name": "FORGE 16B 血统锚点", "measured_at": "2026-11-21T11:39:25+0800"}
+{"event": "check_end", "index": 3, "group": "几何约定", "name": "FORGE 16B 血统锚点", "passed": true, "elapsed_s": 0.03, "measured_at": "2026-11-21T11:39:25+0800"}
+{"event": "check_start", "index": 4, "group": "几何约定", "name": "Terzaghi 权重方向", "measured_at": "2026-11-21T11:39:25+0800"}
+{"event": "check_end", "index": 4, "group": "几何约定", "name": "Terzaghi 权重方向", "passed": true, "elapsed_s": 0.003, "measured_at": "2026-11-21T11:39:25+0800"}
+{"event": "check_start", "index": 5, "group": "几何约定", "name": "arccos 前 abs+clip", "measured_at": "2026-11-21T11:39:25+0800"}
+{"event": "check_end", "index": 5, "group": "几何约定", "name": "arccos 前 abs+clip", "passed": true, "elapsed_s": 0.0, "measured_at": "2026-11-21T11:39:25+0800"}
+{"event": "check_start", "index": 6, "group": "泄漏毒丸", "name": "毒丸: 几何约定 (水平面→竖直法向)", "measured_at": "2026-11-21T11:39:25+0800"}
+{"event": "check_end", "index": 6, "group": "泄漏毒丸", "name": "毒丸: 几何约定 (水平面→竖直法向)", "passed": true, "elapsed_s": 0.0, "measured_at": "2026-11-21T11:39:25+0800"}
+{"event": "check_start", "index": 7, "group": "泄漏毒丸", "name": "毒丸: strict 默认值", "measured_at": "2026-11-21T11:39:25+0800"}
+{"event": "check_end", "index": 7, "group": "泄漏毒丸", "name": "毒丸: strict 默认值", "passed": true, "elapsed_s": 0.004, "measured_at": "2026-11-21T11:39:25+0800"}
+{"event": "check_start", "index": 8, "group": "泄漏毒丸", "name": "毒丸: Terzaghi 方向", "measured_at": "2026-11-21T11:39:25+0800"}
+{"event": "check_end", "index": 8, "group": "泄漏毒丸", "name": "毒丸: Terzaghi 方向", "passed": true, "elapsed_s": 0.0, "measured_at": "2026-11-21T11:39:25+0800"}
+{"event": "check_start", "index": 9, "group": "泄漏毒丸", "name": "S23 数据构造毒丸: nrm_full 污染不影响 set_dirs (T76)", "measured_at": "2026-11-21T11:39:25+0800"}
+{"event": "check_end", "index": 9, "group": "泄漏毒丸", "name": "S23 数据构造毒丸: nrm_full 污染不影响 set_dirs (T76)", "passed": true, "elapsed_s": 0.053, "measured_at": "2026-11-21T11:39:25+0800"}
+{"event": "check_start", "index": 10, "group": "泄漏毒丸", "name": "S24 Route B 无观测裂隙不产出零向量 (BUG-1)", "measured_at": "2026-11-21T11:39:25+0800"}
+{"event": "check_end", "index": 10, "group": "泄漏毒丸", "name": "S24 Route B 无观测裂隙不产出零向量 (BUG-1)", "passed": true, "elapsed_s": 0.028, "measured_at": "2026-11-21T11:39:25+0800"}
+{"event": "check_start", "index": 11, "group": "泄漏毒丸", "name": "S25 站点索引跨进程稳定 (BUG-3)", "measured_at": "2026-11-21T11:39:25+0800"}
+{"event": "check_end", "index": 11, "group": "泄漏毒丸", "name": "S25 站点索引跨进程稳定 (BUG-3)", "passed": true, "elapsed_s": 0.011, "measured_at": "2026-11-21T11:39:25+0800"}
+{"event": "check_start", "index": 12, "group": "管道断裂探测", "name": "S26 L4 融合按条目索引解析 (BUG-5)", "measured_at": "2026-11-21T11:39:25+0800"}
+{"event": "check_end", "index": 12, "group": "管道断裂探测", "name": "S26 L4 融合按条目索引解析 (BUG-5)", "passed": true, "elapsed_s": 1.209, "measured_at": "2026-11-21T11:39:26+0800"}
+{"event": "check_start", "index": 13, "group": "管道断裂探测", "name": "S27 local_frames 等变性: fixed 等变 / legacy 非等变 (BUG-2)", "measured_at": "2026-11-21T11:39:26+0800"}
+{"event": "check_end", "index": 13, "group": "管道断裂探测", "name": "S27 local_frames 等变性: fixed 等变 / legacy 非等变 (BUG-2)", "passed": true, "elapsed_s": 0.066, "measured_at": "2026-11-21T11:39:26+0800"}
+{"event": "check_start", "index": 14, "group": "管道断裂探测", "name": "S29 场景指标面-轴语义毒丸 (法向≠通道方向)", "measured_at": "2026-11-21T11:39:26+0800"}
+{"event": "check_end", "index": 14, "group": "管道断裂探测", "name": "S29 场景指标面-轴语义毒丸 (法向≠通道方向)", "passed": true, "elapsed_s": 0.009, "measured_at": "2026-11-21T11:39:26+0800"}
+{"event": "check_start", "index": 15, "group": "管道断裂探测", "name": "S30 geo_prior 批量一致性 [known-fail: H1]", "measured_at": "2026-11-21T11:39:26+0800"}
+{"event": "check_end", "index": 15, "group": "管道断裂探测", "name": "S30 geo_prior 批量一致性 [known-fail: H1]", "passed": true, "elapsed_s": 0.289, "measured_at": "2026-11-21T11:39:26+0800"}
+{"event": "check_start", "index": 16, "group": "管道断裂探测", "name": "S31 json.dump allow_nan 守卫扫描 (缺守卫/错位)", "measured_at": "2026-11-21T11:39:26+0800"}
+{"event": "check_end", "index": 16, "group": "管道断裂探测", "name": "S31 json.dump allow_nan 守卫扫描 (缺守卫/错位)", "passed": true, "elapsed_s": 45.129, "measured_at": "2026-11-21T11:40:11+0800"}
+{"event": "check_start", "index": 17, "group": "管道断裂探测", "name": "S32 产状↔法向往返一致 (全库变换点扫描)", "measured_at": "2026-11-21T11:40:11+0800"}
+{"event": "check_end", "index": 17, "group": "管道断裂探测", "name": "S32 产状↔法向往返一致 (全库变换点扫描)", "passed": true, "elapsed_s": 1.567, "measured_at": "2026-11-21T11:40:13+0800"}
+{"event": "check_start", "index": 18, "group": "口径扫描", "name": "废弃数字扫描", "measured_at": "2026-11-21T11:40:13+0800"}
+{"event": "check_end", "index": 18, "group": "口径扫描", "name": "废弃数字扫描", "passed": true, "elapsed_s": 1004.776, "measured_at": "2026-11-21T11:56:58+0800"}
+{"event": "check_start", "index": 19, "group": "口径扫描", "name": "口径一致性抽查", "measured_at": "2026-11-21T11:56:58+0800"}
+{"event": "check_end", "index": 19, "group": "口径扫描", "name": "口径一致性抽查", "passed": true, "elapsed_s": 0.003, "measured_at": "2026-11-21T11:56:58+0800"}
+{"event": "check_start", "index": 20, "group": "口径扫描", "name": "occ 掩码语义反向扫描", "measured_at": "2026-11-21T11:56:58+0800"}
+{"event": "check_end", "index": 20, "group": "口径扫描", "name": "occ 掩码语义反向扫描", "passed": true, "elapsed_s": 0.0, "measured_at": "2026-11-21T11:56:58+0800"}
+{"event": "check_start", "index": 21, "group": "口径扫描", "name": "S28 图账同源: 论文图表脚本零手抄数字", "measured_at": "2026-11-21T11:56:58+0800"}
+{"event": "check_end", "index": 21, "group": "口径扫描", "name": "S28 图账同源: 论文图表脚本零手抄数字", "passed": true, "elapsed_s": 0.058, "measured_at": "2026-11-21T11:56:58+0800"}
+{"event": "check_start", "index": 22, "group": "资产完整性", "name": "关键 results 存在性", "measured_at": "2026-11-21T11:56:58+0800"}
+{"event": "check_end", "index": 22, "group": "资产完整性", "name": "关键 results 存在性", "passed": true, "elapsed_s": 0.001, "measured_at": "2026-11-21T11:56:58+0800"}
+{"event": "check_start", "index": 23, "group": "资产完整性", "name": "单测文件存在性", "measured_at": "2026-11-21T11:56:58+0800"}
+{"event": "check_end", "index": 23, "group": "资产完整性", "name": "单测文件存在性", "passed": true, "elapsed_s": 0.0, "measured_at": "2026-11-21T11:56:58+0800"}
+{"event": "check_start", "index": 24, "group": "单元回归", "name": "回归: B1 type_aware 双键区分", "measured_at": "2026-11-21T11:56:58+0800"}
+{"event": "check_end", "index": 24, "group": "单元回归", "name": "回归: B1 type_aware 双键区分", "passed": true, "elapsed_s": 0.011, "measured_at": "2026-11-21T11:56:58+0800"}
+{"event": "check_start", "index": 25, "group": "单元回归", "name": "回归: B5 空簇跳过", "measured_at": "2026-11-21T11:56:58+0800"}
+{"event": "check_end", "index": 25, "group": "单元回归", "name": "回归: B5 空簇跳过", "passed": true, "elapsed_s": 0.001, "measured_at": "2026-11-21T11:56:58+0800"}
+{"event": "check_start", "index": 26, "group": "单元回归", "name": "回归: B7 贯通判定用 domain 边界 (功能)", "measured_at": "2026-11-21T11:56:58+0800"}
+{"event": "check_end", "index": 26, "group": "单元回归", "name": "回归: B7 贯通判定用 domain 边界 (功能)", "passed": true, "elapsed_s": 0.002, "measured_at": "2026-11-21T11:56:58+0800"}
+{"event": "check_start", "index": 27, "group": "单元回归", "name": "S22 随机锚点 + 不变性 (数学真相锚)", "measured_at": "2026-11-21T11:56:58+0800"}
+{"event": "check_end", "index": 27, "group": "单元回归", "name": "S22 随机锚点 + 不变性 (数学真相锚)", "passed": true, "elapsed_s": 0.045, "measured_at": "2026-11-21T11:56:58+0800"}
+{"event": "check_start", "index": 28, "group": "管道断裂探测", "name": "S17 冲突检测: >40° 双源触发 conflict_matches", "measured_at": "2026-11-21T11:56:58+0800"}
+{"event": "check_end", "index": 28, "group": "管道断裂探测", "name": "S17 冲突检测: >40° 双源触发 conflict_matches", "passed": true, "elapsed_s": 1.701, "measured_at": "2026-11-21T11:57:00+0800"}
+{"event": "check_start", "index": 29, "group": "管道断裂探测", "name": "S18 聚类管道: spherical_kmeans 输出有效组系", "measured_at": "2026-11-21T11:57:00+0800"}
+{"event": "check_end", "index": 29, "group": "管道断裂探测", "name": "S18 聚类管道: spherical_kmeans 输出有效组系", "passed": true, "elapsed_s": 0.012, "measured_at": "2026-11-21T11:57:00+0800"}
+{"event": "check_start", "index": 30, "group": "管道断裂探测", "name": "S19 SetTable 生成: set_table_from_normals K=4", "measured_at": "2026-11-21T11:57:00+0800"}
+{"event": "check_end", "index": 30, "group": "管道断裂探测", "name": "S19 SetTable 生成: set_table_from_normals K=4", "passed": true, "elapsed_s": 0.003, "measured_at": "2026-11-21T11:57:00+0800"}
+{"event": "check_start", "index": 31, "group": "管道断裂探测", "name": "S21 数字台账: JSON 一致性 + 落单扫描", "measured_at": "2026-11-21T11:57:00+0800"}
+{"event": "check_end", "index": 31, "group": "管道断裂探测", "name": "S21 数字台账: JSON 一致性 + 落单扫描", "passed": true, "elapsed_s": 33.374, "measured_at": "2026-11-21T11:57:33+0800"}
+{"event": "check_skip", "index": 32, "group": "管道断裂探测", "name": "S20 --with-tests: pytest 整合", "measured_at": "2026-11-21T11:57:33+0800"}
+{"event": "check_start", "index": 33, "group": "几何约定", "name": "S33 几何约定 grep 门禁 (手搓产状转换拦截)", "measured_at": "2026-11-21T11:57:33+0800"}
+{"event": "check_end", "index": 33, "group": "几何约定", "name": "S33 几何约定 grep 门禁 (手搓产状转换拦截)", "passed": true, "elapsed_s": 1.757, "measured_at": "2026-11-21T11:57:35+0800"}
+{"event": "check_start", "index": 34, "group": "几何约定", "name": "S35 产状<->法向参数序台账与三分量往返硬闸", "measured_at": "2026-11-21T11:57:35+0800"}
+{"event": "check_end", "index": 34, "group": "几何约定", "name": "S35 产状<->法向参数序台账与三分量往返硬闸", "passed": true, "elapsed_s": 133.29, "measured_at": "2026-11-21T11:59:48+0800"}
+{"event": "check_start", "index": 35, "group": "管道断裂探测", "name": "S34 静默半加载扫描 (named_parameters 过滤 + strict=False)", "measured_at": "2026-11-21T11:59:48+0800"}
+{"event": "check_end", "index": 35, "group": "管道断裂探测", "name": "S34 静默半加载扫描 (named_parameters 过滤 + strict=False)", "passed": true, "elapsed_s": 3.348, "measured_at": "2026-11-21T11:59:51+0800"}
+{"event": "check_start", "index": 36, "group": "R185 方向统计", "name": "R185 配分函数对 Dawson 闭式", "measured_at": "2026-11-21T11:59:51+0800"}
+{"event": "check_end", "index": 36, "group": "R185 方向统计", "name": "R185 配分函数对 Dawson 闭式", "passed": true, "elapsed_s": 0.039, "measured_at": "2026-11-21T11:59:52+0800"}
+{"event": "check_start", "index": 37, "group": "R185 方向统计", "name": "R185 批量拟合 == 单条拟合", "measured_at": "2026-11-21T11:59:52+0800"}
+{"event": "check_end", "index": 37, "group": "R185 方向统计", "name": "R185 批量拟合 == 单条拟合", "passed": true, "elapsed_s": 3.353, "measured_at": "2026-11-21T11:59:55+0800"}
+{"event": "check_start", "index": 38, "group": "R185 方向统计", "name": "R185 可微层梯度检验", "measured_at": "2026-11-21T11:59:55+0800"}
+{"event": "check_end", "index": 38, "group": "R185 方向统计", "name": "R185 可微层梯度检验", "passed": true, "elapsed_s": 2.037, "measured_at": "2026-11-21T11:59:57+0800"}
+{"event": "check_start", "index": 39, "group": "R185 方向统计", "name": "R185 terzaghi_summary 返回 dict", "measured_at": "2026-11-21T11:59:57+0800"}
+{"event": "check_end", "index": 39, "group": "R185 方向统计", "name": "R185 terzaghi_summary 返回 dict", "passed": true, "elapsed_s": 0.001, "measured_at": "2026-11-21T11:59:57+0800"}
+{"event": "check_start", "index": 40, "group": "R185 方向统计", "name": "R185 R185 交付物存在且门全过", "measured_at": "2026-11-21T11:59:57+0800"}
+{"event": "check_end", "index": 40, "group": "R185 方向统计", "name": "R185 R185 交付物存在且门全过", "passed": true, "elapsed_s": 0.015, "measured_at": "2026-11-21T11:59:57+0800"}

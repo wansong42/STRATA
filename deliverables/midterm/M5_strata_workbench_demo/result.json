@@ -1,0 +1,242 @@
+{
+  "schema": "dispatch-result/v1",
+  "task_id": "M5",
+  "at_utc": "2026-11-21T04:37:29.170300+00:00",
+  "status": "PASS",
+  "scope": "REAL_DERIVED_CONDITIONED_FINITE_UNION: STRATA 3D workbench integration for all 22 M1 real outcrop clusters, M2 precomputed exact certification/active_check/collapse_tree (including 2-step next_step collapse & live exact fallback), explicit PENDING_M3 badge when M3 absent, dual-witness toggle, windowless launcher (port 8855), and T-M ADD_FRAGMENT fix",
+  "enumeration": {
+    "positive_cases": 22,
+    "positive_passed": 22,
+    "negative_controls": 9,
+    "negative_correctly_rejected": 9,
+    "surface_product_pytest_passed": 290,
+    "surface_product_pytest_skipped": 1,
+    "surface_product_pytest_failed": 0,
+    "browser_e2e_screenshots": 9,
+    "browser_external_requests": 0
+  },
+  "commands": [
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 results/midterm_sprint_20261120/M5_strata_workbench_demo/smoke_verify_m5.py --full-pytest",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 300
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 scripts/repro_certify.py --out results/midterm_sprint_20261120/M5_strata_workbench_demo/gates/g1.json",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 9
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 scripts/r263_gain_mislabel_scan.py --scope delivery --fail-on-hit --out results/midterm_sprint_20261120/M5_strata_workbench_demo/gates/g3.json",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 9
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 scripts/r303_draft_check.py --draft results/midterm_sprint_20261120/M5_strata_workbench_demo/report.md --doc-class governance --json-only --out results/midterm_sprint_20261120/M5_strata_workbench_demo/gates/g4",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 1
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 -m fractureflow.selfcheck --quick --out results/midterm_sprint_20261120/M5_strata_workbench_demo/gates/g2.json",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 40
+    }
+  ],
+  "evidence": [
+    {
+      "file": "src/fractureflow/surface_product/identifiability_bridge.py",
+      "bytes": 109729,
+      "sha256": "e4349ad9083e1110dcc1bdfd4db1c00641e5302919d9c1a87b37387e0d918fac"
+    },
+    {
+      "file": "src/fractureflow/surface_product/workbench_server.py",
+      "bytes": 15436,
+      "sha256": "f43bad9653bde3a585b665c06d3d7975a2286b217753cb0414f8f11a450a05db"
+    },
+    {
+      "file": "demos/workbench/index.html",
+      "bytes": 3356,
+      "sha256": "679cda033da5a07413734bf918f18e48f70a13efc107c4b5c655e531a14e7cb5"
+    },
+    {
+      "file": "demos/workbench/core_api.js",
+      "bytes": 51952,
+      "sha256": "7a198eaab716647c96eeddf759931c3a351f6a781ce27ac8c2db8db150d54923"
+    },
+    {
+      "file": "demos/workbench/plate.js",
+      "bytes": 53952,
+      "sha256": "c0b246cbf998fecc45c3f643b2ba913c1f37d8d11a860f3af55b975b7ccb18eb"
+    },
+    {
+      "file": "demos/workbench/app.js",
+      "bytes": 141906,
+      "sha256": "9f6076c725d9fb1b672a3f1ca9654a0d486105232b3bacb2c92400dc4d1f2541"
+    },
+    {
+      "file": "demos/workbench/styles.css",
+      "bytes": 67223,
+      "sha256": "29cd35cfd975993f0a5443e4e25aeba172e4af9d7e82a8c96c2791c87b732a28"
+    },
+    {
+      "file": "results/midterm_sprint_20261120/M5_strata_workbench_demo/launch_strata_demo.py",
+      "bytes": 8458,
+      "sha256": "73553950cc31fd1590e215490cffc1d524d43993d783843499101971f819e290"
+    },
+    {
+      "file": "results/midterm_sprint_20261120/M5_strata_workbench_demo/launch_strata_demo.pyw",
+      "bytes": 678,
+      "sha256": "cdec01331672feccb207e1340be49b7502b91f5e517bff5c4ac030518614b401"
+    },
+    {
+      "file": "results/midterm_sprint_20261120/M5_strata_workbench_demo/smoke_verify_m5.py",
+      "bytes": 33838,
+      "sha256": "0df2c60c724b04174eff09b603234bbdf07fba52b134d219af5261e975aca5c7"
+    },
+    {
+      "file": "results/midterm_sprint_20261120/M5_strata_workbench_demo/archive_verification.json",
+      "bytes": 2613,
+      "sha256": "b3e875d017b544982c5929169fc015cf0ee627473551a0a0cdf5949abf61d00f"
+    },
+    {
+      "file": "results/midterm_sprint_20261120/M5_strata_workbench_demo/negative_controls.json",
+      "bytes": 8954,
+      "sha256": "d010a0ad5c9911ad5d7285d80a906053293bf65401ed9a4e16c10ec3d40067f8"
+    },
+    {
+      "file": "results/midterm_sprint_20261120/M5_strata_workbench_demo/own_defects.json",
+      "bytes": 5112,
+      "sha256": "1570bd00efd3916e5db7faa9114f4a76d9c826c589fbefa7b023c58716a1b5c0"
+    },
+    {
+      "file": "results/midterm_sprint_20261120/M5_strata_workbench_demo/run_receipt.json",
+      "bytes": 4071,
+      "sha256": "9c22f5cc4310bf2ce5725a011b9eb7a51df3d5af18a8ca0334ed117c3520f95c"
+    },
+    {
+      "file": "results/midterm_sprint_20261120/M5_strata_workbench_demo/report.md",
+      "bytes": 17690,
+      "sha256": "c5f3776a0a6ada0c04055908e9551d4467c391f759fbe25c3679b07a5d874945"
+    },
+    {
+      "file": "results/midterm_sprint_20261120/M5_strata_workbench_demo/gates/g1.json",
+      "bytes": 1904,
+      "sha256": "7d78a4ad96b28445f9d2d9c4b00e9f4f5ac6425d81e6e0fcb6eccc606499c30d"
+    },
+    {
+      "file": "results/midterm_sprint_20261120/M5_strata_workbench_demo/gates/g2.json",
+      "bytes": 10720,
+      "sha256": "a3420b5188edb74a338977767864d12973132a0b4c12cc61a93b5b13a4214270"
+    },
+    {
+      "file": "results/midterm_sprint_20261120/M5_strata_workbench_demo/gates/g3.json",
+      "bytes": 20648,
+      "sha256": "e5c9276f8f25f0896fb0898eb673f3f7fc13ff8b3931d98b77c21e79d447d89b"
+    },
+    {
+      "file": "results/midterm_sprint_20261120/M5_strata_workbench_demo/gates/g4/draft_check.json",
+      "bytes": 2980,
+      "sha256": "1fd69e24ee6bcd3b5d5af37d60e612931572c70f0f7c6dd9b043c910f02da10b"
+    },
+    {
+      "file": "results/midterm_sprint_20261120/M5_strata_workbench_demo/screenshots/00_workbench_add_fragment.png",
+      "bytes": 182646,
+      "sha256": "c8de611ce10d19cd190de36440289cfe2771356e5f97693152af26b401e3d9ce"
+    },
+    {
+      "file": "results/midterm_sprint_20261120/M5_strata_workbench_demo/screenshots/01_overview_jardim_c02_ambiguous.png",
+      "bytes": 261751,
+      "sha256": "c5b7e8ff55efae500ddba47402741a2046bd0c0e736137f21419cfc85fd60218"
+    },
+    {
+      "file": "results/midterm_sprint_20261120/M5_strata_workbench_demo/screenshots/02_witness_connected_emerald.png",
+      "bytes": 265543,
+      "sha256": "1f06a7f61d3bcbd1855fcbb699c5876b9fd1b0b3b178b6cfdc8a8959b830919b"
+    },
+    {
+      "file": "results/midterm_sprint_20261120/M5_strata_workbench_demo/screenshots/03_witness_disconnected_crimson.png",
+      "bytes": 264867,
+      "sha256": "7aa7b76239b6ef30e7f4ef10b3f5a61aead1b004c8051b40005d2555c9c39ee9"
+    },
+    {
+      "file": "results/midterm_sprint_20261120/M5_strata_workbench_demo/screenshots/04_active_collapse_certified_disconnected.png",
+      "bytes": 248710,
+      "sha256": "94ba03eeb88bef2d6e185eaec60226ce6d4d4e843658d6f8cf9b40333e290334"
+    },
+    {
+      "file": "results/midterm_sprint_20261120/M5_strata_workbench_demo/screenshots/04a_step1_narrowed_jardim_c02.png",
+      "bytes": 271467,
+      "sha256": "e9cdbc7919cf7e2dd6ddd241b88132a8fed668cc9ae3c3ddd71186ad990d6f1e"
+    },
+    {
+      "file": "results/midterm_sprint_20261120/M5_strata_workbench_demo/screenshots/05_jardim_c04_holed_before_collapse.png",
+      "bytes": 273557,
+      "sha256": "617ccd9bc464939516b6720fc77a56fdaaba9fd3bed317cf0fc65d692e4f1dd4"
+    },
+    {
+      "file": "results/midterm_sprint_20261120/M5_strata_workbench_demo/screenshots/06_active_collapse_certified_connected.png",
+      "bytes": 250848,
+      "sha256": "0771372680171beab505cd26215d8d4a18dc6894e79b8da5836ee8239d7ab3d4"
+    },
+    {
+      "file": "results/midterm_sprint_20261120/M5_strata_workbench_demo/screenshots/07_perozzo_c02_outcrop_overview.png",
+      "bytes": 270244,
+      "sha256": "d085f2ac20712e2133934b5880cc8cec2fb669bded883d0b2f470d535471fe07"
+    }
+  ],
+  "gates": {
+    "g1_repro_certify": {
+      "file": "gates/g1.json",
+      "exit_code": 0,
+      "verdict": "PASS",
+      "total": 9,
+      "pass": 9,
+      "fail": 0
+    },
+    "g2_selfcheck_quick": {
+      "file": "gates/g2.json",
+      "exit_code": 0,
+      "total": 40,
+      "passed": 40,
+      "failed": 0,
+      "skipped": [
+        "S20 --with-tests: pytest 整合"
+      ]
+    },
+    "g3_r263_gain_mislabel_scan": {
+      "file": "gates/g3.json",
+      "exit_code": 0,
+      "files_scanned": 9,
+      "mislabel_hits": 0
+    },
+    "g4_r303_draft_check": {
+      "file": "gates/g4/draft_check.json",
+      "exit_code": 0,
+      "verdict": "CLEAN",
+      "doc_class": "governance",
+      "n_red": 0,
+      "n_note": 0
+    }
+  },
+  "not_claimed": [
+    "Subsurface 3D connectivity ground truth in unexposed rock volume (field_error_rate = null)",
+    "Real human geologist measurement or review duration (human_time = null)",
+    "Hydraulic conductivity or flow connectivity (hydraulic = null)",
+    "Live M3 heterogenous independent judge AGREE/DISAGREE verdicts (M3 verdict_batch.json not yet landed on disk at handoff; UI displays PENDING_M3)",
+    "Equivalence or cross-tabulation between REAL_DERIVED_CONDITIONED_FINITE_UNION and SYNTHETIC_DECLARED_TRIANGLE_UNION",
+    "Windows symlink permission test_w154_portable_project.py:447 (skipped under Windows environment policy)"
+  ],
+  "field_error_rate": null,
+  "human_time": null,
+  "hydraulic": null
+}

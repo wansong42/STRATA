@@ -1,0 +1,74 @@
+{
+  "at_utc": "2026-11-21T14:10:09.197406+00:00",
+  "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+  "cwd": "C:\\Users\\晚菘\\Documents\\Default Project",
+  "env_overrides": {
+    "PYTHONPATH": "C:\\Users\\晚菘\\Documents\\Default Project\\src (仅 g2/服务)",
+    "KMP_DUPLICATE_LIB_OK": "TRUE"
+  },
+  "commands": [
+    {
+      "cmd": "python build_manifest.py",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 216,
+      "stdout_file": "（控制台，产物 MIDTERM_MANIFEST.json）"
+    },
+    {
+      "cmd": "python run_gates.py --only g1,g3,g4m6",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 13,
+      "stdout_file": "logs/g1.log, logs/g3.log, logs/g4_m6_*.log"
+    },
+    {
+      "cmd": "python run_gates.py --only g2",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 40,
+      "stdout_file": "logs/g2.log"
+    },
+    {
+      "cmd": "python run_gates.py --only g4report",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 1,
+      "stdout_file": "logs/g4_m7_report.log"
+    },
+    {
+      "cmd": "python cold_start_smoke.py",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 4,
+      "stdout_file": "cold_start_smoke.json（本单产物）"
+    },
+    {
+      "cmd": "python offline_asset_audit.py",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 7,
+      "stdout_file": "offline_asset_audit.json（本单产物）"
+    },
+    {
+      "cmd": "python negative_controls.py",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 3,
+      "stdout_file": "negative_controls.json（本单产物）"
+    }
+  ],
+  "no_console_window": true,
+  "creationflags": 134217728,
+  "notes": [
+    "全部子进程 shell=False 且带 CREATE_NO_WINDOW=134217728；长作业 g2 单跑 833.7 秒，原始退出码 0",
+    "g4 对本报告在报告定稿后复跑，产物 gates/g4/m7_report/draft_check.json",
+    "g4 对本报告退出码 0，verdict=CLEAN，n_red=0"
+  ]
+}

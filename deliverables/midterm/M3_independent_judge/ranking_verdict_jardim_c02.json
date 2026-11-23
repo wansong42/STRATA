@@ -1,0 +1,30 @@
+{
+ "jardim_c02": {
+  "branches_recomputed": 14,
+  "cluster_id": "jardim_c02",
+  "errors": [],
+  "geometry_reduction_by_fracture": {
+   "frag_306f0d79a2c51ef819597b812f515062": "229182802871326155697/460530957467161401303",
+   "frag_57938d882e4eeb5ba73c5d93774330ab": "145536750803772814327/2879187597431193951162",
+   "frag_786debfdca7bb1f52f2ff3766d61ca0c": "5/9",
+   "frag_aa2efc59e4bb045b5b9dd38f96b9adf7": "1/3",
+   "frag_e3ca713228b14ac98cd439099bb12dbf": "229182802871326155697/460530957467161401303",
+   "frag_e608e4df6677f690703959567073bdb6": "12705410935672264/27696118373898561"
+  },
+  "hidden_label_isolation": "排序键与 informative 集全部由几何条件域重算推出；未引入地下真值标签",
+  "not_independently_recomputed": [
+   "expected_remaining_ambiguity_measure",
+   "expected_ambiguity_reduction_fraction",
+   "measure_split_best_action_id",
+   "measure_split_resolved_measure_fraction"
+  ],
+  "ranked_fracture_count": 6,
+  "top_fracture_ids": [
+   "frag_786debfdca7bb1f52f2ff3766d61ca0c",
+   "frag_306f0d79a2c51ef819597b812f515062",
+   "frag_e3ca713228b14ac98cd439099bb12dbf"
+  ],
+  "verdict": "AGREE",
+  "zero_gain_fractures": []
+ }
+}

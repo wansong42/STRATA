@@ -1,0 +1,12 @@
+wrote C:\Users\晚菘\Documents\Default Project\results\midterm_sprint_20261120\M6_midterm_defense_deck\gates\g3.json
+scope=delivery in_scope=9 scanned=9 red=0 exempt=8 violations=0
+  FILE red=0   docs/作者自述_墙论文口述原料_v1.md
+  FILE red=0   docs/墙主张_范围与机制_作者取料件_v1.md
+  FILE red=0   docs/墙论文_体例与禁止项_作者取料件_v1.md
+  FILE red=0   docs/墙论文_作者考问卷_v1.md
+  FILE red=0   docs/墙论文_证明状态_作者取料件_v1.md
+  FILE red=0   docs/论文_墙_发现过程技术报告.md
+  FILE red=0   results/_retired_narrative_20261001/技术路线_终局_结题锚定与治理退役_v2.0.md
+  FILE red=0   results/_retired_narrative_20261001/架构师交接文档_20260923_终局轮_治理退役与三单签发.md
+  FILE red=0   results/_retired_narrative_20261001/治理退役声明.md
+

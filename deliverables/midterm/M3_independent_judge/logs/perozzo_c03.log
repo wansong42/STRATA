@@ -1,0 +1,12 @@
+{
+ "verdicts": {
+  "perozzo_c03": "AGREE"
+ },
+ "counts": {
+  "AGREE": 1,
+  "DISAGREE": 0,
+  "MALFORMED": 0,
+  "UNDECIDABLE": 0
+ },
+ "read_ledger_records": 5
+}

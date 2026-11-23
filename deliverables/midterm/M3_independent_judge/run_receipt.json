@@ -1,0 +1,101 @@
+{
+ "at_utc": "2026-11-21T09:43:50.056551+00:00",
+ "commands": [
+  {
+   "cmd": "judge_real.py --only <cid>（22 独立进程）",
+   "enumerated": 22,
+   "executed": true,
+   "exit_code": 0,
+   "stderr_file": "（同 log 重定向）",
+   "stdout_file": "logs/<cid>.log"
+  },
+  {
+   "cmd": "verify_ranking.py <cid>（6 独立进程）",
+   "enumerated": 75,
+   "executed": true,
+   "exit_code": 0,
+   "stderr_file": "（同 log 重定向）",
+   "stdout_file": "logs/ranking3_<cid>.log"
+  },
+  {
+   "cmd": "self_test.py",
+   "enumerated": 30,
+   "executed": true,
+   "exit_code": 0,
+   "stdout_file": "logs/self_test.log"
+  },
+  {
+   "cmd": "negative_controls.py",
+   "enumerated": 6,
+   "executed": true,
+   "exit_code": 0,
+   "stdout_file": "logs/negative_controls.log"
+  },
+  {
+   "cmd": "audit_imports.py",
+   "enumerated": 5,
+   "executed": true,
+   "exit_code": 0,
+   "stdout_file": "（控制台）"
+  },
+  {
+   "cmd": "scripts/repro_certify.py --out gates/g1.json",
+   "enumerated": 9,
+   "executed": true,
+   "exit_code": 0
+  },
+  {
+   "cmd": "PYTHONPATH=src KMP_DUPLICATE_LIB_OK=TRUE python -m fractureflow.selfcheck --quick --out gates/g2.json",
+   "enumerated": 40,
+   "executed": true,
+   "exit_code": 0,
+   "stdout_file": "logs/g2.log"
+  },
+  {
+   "cmd": "scripts/r263_gain_mislabel_scan.py --scope delivery --fail-on-hit --out gates/g3.json",
+   "enumerated": 9,
+   "executed": true,
+   "exit_code": 0
+  },
+  {
+   "cmd": "scripts/r303_draft_check.py --draft report.md --doc-class governance --json-only --out gates/g4",
+   "enumerated": 0,
+   "executed": true,
+   "exit_code": 0
+  },
+  {
+   "cmd": "verify_depth2.py <cid>（6 独立进程）",
+   "enumerated": 74,
+   "executed": true,
+   "exit_code": 0,
+   "stdout_file": "logs/depth2_<cid>.log"
+  },
+  {
+   "cmd": "verify_expected.py <cid>（6 独立进程）",
+   "enumerated": 840,
+   "executed": true,
+   "exit_code": 0,
+   "stdout_file": "logs/expected3_<cid>.log"
+  },
+  {
+   "cmd": "scripts/r303_draft_check.py --draft report.md --doc-class governance --json-only --out gates/g4（更新后重跑）",
+   "enumerated": 0,
+   "executed": true,
+   "exit_code": 0
+  }
+ ],
+ "creationflags": 134217728,
+ "cwd": "C:\\Users\\晚菘\\Documents\\Default Project",
+ "env_overrides": {
+  "KMP_DUPLICATE_LIB_OK": "TRUE",
+  "PYTHONPATH": "src"
+ },
+ "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+ "no_console_window": true,
+ "notes": [
+  "判卷与门禁均以无窗方式启动；22 个逐簇判卷进程退出码 0，逐簇 verdict_batch 记录 read_ledger_records=5、verdict=AGREE",
+  "全量判卷最终汇总由 22 个逐簇产物合并，合并脚本见 verdict_batch.json#case_artifacts（每簇 sha256 可重算）",
+  "G2 selfcheck 以 runpy 方式在 PYTHONPATH=src 且 KMP_DUPLICATE_LIB_OK=TRUE 下运行，日志 logs/g2.log",
+  "本轮新增 depth-2 74 分支与 expected 840 候选动作独立复算，全部 AGREE；expected 口径为按分支测度占比加权"
+ ]
+}

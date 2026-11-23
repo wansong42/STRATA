@@ -1,0 +1,15 @@
+{
+  "schema": "devlog-append-receipt/v1",
+  "at_utc": "2026-11-21T14:06:48.225687+00:00",
+  "log": "C:\\Users\\晚菘\\Documents\\Default Project\\results\\devlog\\开发日志.md",
+  "archived": "C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M7_final_pack_and_gates\\_pre_edit_archive\\开发日志_20261121_pre_M3M7.md",
+  "before_sha256": "527948db8cccff0f8a9293e792a2bb2cd1968e62ec02d5f2b7c4fff075106090",
+  "after_sha256": "6b56604fad9ef9a554bb6cfaf18615c6556e9c662fd59e7e45bfb8e8e6fc2345",
+  "before_bytes": 1572821,
+  "after_bytes": 1574850,
+  "archive_sha_equal": true,
+  "appended_lines": 2,
+  "m3_line_present": true,
+  "m7_line_present": true,
+  "prefix_newline_added": false
+}

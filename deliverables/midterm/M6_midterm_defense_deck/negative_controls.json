@@ -1,0 +1,103 @@
+{
+  "schema": "m6-negative-controls/v1",
+  "at_utc": "2026-11-21T12:08:31.192728+00:00",
+  "no_console_window": true,
+  "creationflags": 134217728,
+  "scratch_dir": "results/midterm_sprint_20261120/M6_midterm_defense_deck/_nc_scratch/run_20261121T120822_370549Z",
+  "scratch_retained_for_evidence": true,
+  "total_families": 3,
+  "total_cases": 5,
+  "correctly_rejected": 5,
+  "all_passed": true,
+  "cases": [
+    {
+      "id": "M6-N1a",
+      "family": "M6-N1",
+      "scenario": "在讲稿副本中故意塞入内部代号 W161 与 NNS-001",
+      "expected_failure": "verify_m6.py 非零退出 (exit_code=3) 且 r303 (doc_class=paper) 判 HIT (R5 RED)",
+      "verify_m6_exit_code": 3,
+      "verify_m6_stderr": "code=3 INTERNAL_CODE_LEAK: token='W161' in nc_n1a_internal_code.md",
+      "r303_verdict": "HIT",
+      "r303_n_red": 1,
+      "correctly_rejected": true
+    },
+    {
+      "id": "M6-N1b",
+      "family": "M6-N1",
+      "scenario": "在 PPT 大纲副本中故意塞入 oracle 禁引数值 12.37°",
+      "expected_failure": "verify_m6.py 非零退出 (exit_code=4, ORACLE_VALUE_FORBIDDEN) 且 r303 判 HIT (R3b RED)",
+      "verify_m6_exit_code": 4,
+      "verify_m6_stderr": "code=4 ORACLE_VALUE_FORBIDDEN: token='12.37' in nc_n1b_oracle_1237.md",
+      "r303_verdict": "HIT",
+      "r303_n_red": 1,
+      "correctly_rejected": true
+    },
+    {
+      "id": "M6-N1c",
+      "family": "M6-N1",
+      "scenario": "在应答卡副本中故意混入 R263 绝对误差冒充配对增益的病灶句 (1.38-4.37 deg)",
+      "expected_failure": "verify_m6.py 复用 r263 判据非零退出 (exit_code=5, R263_GAIN_MISLABEL_HIT)",
+      "verify_m6_exit_code": 5,
+      "verify_m6_stderr": "code=5 R263_GAIN_MISLABEL_HIT: rule=R-A token='1.38' in nc_n1c_r263_mislabel.md",
+      "correctly_rejected": true
+    },
+    {
+      "id": "M6-N2",
+      "family": "M6-N2",
+      "scenario": "在 PPT 大纲副本中故意写一个不在 number_traceability_map.json 里的无源百分比 73.49%",
+      "expected_failure": "verify_m6.py 抓出 UNTRACED_NUMBER_TOKEN: '73.49%' 非零退出 (exit_code=2) 且 r303 报 R1a RED",
+      "verify_m6_exit_code": 2,
+      "verify_m6_stderr": "code=2 UNTRACED_NUMBER_TOKEN: token='73.49%' in nc_n2_untraced_pct.md is not registered in number_traceability_map.json",
+      "r303_verdict": "HIT",
+      "r303_n_red": 1,
+      "correctly_rejected": true
+    },
+    {
+      "id": "M6-N3",
+      "family": "M6-N3",
+      "scenario": "对全部 3 份核心答辩文稿真实传入 --draft 跑通 r303 (verdict==CLEAN, n_red==0)，并验证不传 --draft 的空跑必以 exit_code=2 失败拒收",
+      "expected_failure": "不传 --draft 时 r303 必须非零退出 (exit_code=2)；传入 --draft 时 3/3 核心文稿必须 CLEAN 且 n_red=0",
+      "missing_draft_flag_exit_code": 2,
+      "missing_draft_flag_stderr": "usage: r303_draft_check.py [-h] --draft DRAFT [--out OUT] [--json-only]\n                           [--quiet] [--doc-class {paper,governance}]\nr303_draft_check.py: error: the following arguments are required: --draft",
+      "core_drafts_r303_runs": [
+        {
+          "draft": "PPT大纲_大创中期_15页.md",
+          "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 \"C:\\Users\\晚菘\\Documents\\Default Project\\scripts\\r303_draft_check.py\" --draft \"C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M6_midterm_defense_deck\\PPT大纲_大创中期_15页.md\" --doc-class paper --json-only --out \"C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M6_midterm_defense_deck\\gates\\g4_ppt_outline\"",
+          "exit_code": 0,
+          "verdict": "CLEAN",
+          "n_red": 0,
+          "n_exempt": 0,
+          "n_note": 0,
+          "n_findings": 0,
+          "output_json": "results/midterm_sprint_20261120/M6_midterm_defense_deck/gates/g4_ppt_outline/draft_check.json",
+          "output_sha256": "7e72af1194ec3464a615f1204b60e537c72b84e0707c23c511255f6970c73e1a"
+        },
+        {
+          "draft": "口头讲稿_8分钟实战版.md",
+          "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 \"C:\\Users\\晚菘\\Documents\\Default Project\\scripts\\r303_draft_check.py\" --draft \"C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M6_midterm_defense_deck\\口头讲稿_8分钟实战版.md\" --doc-class paper --json-only --out \"C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M6_midterm_defense_deck\\gates\\g4_spoken_script\"",
+          "exit_code": 0,
+          "verdict": "CLEAN",
+          "n_red": 0,
+          "n_exempt": 0,
+          "n_note": 0,
+          "n_findings": 0,
+          "output_json": "results/midterm_sprint_20261120/M6_midterm_defense_deck/gates/g4_spoken_script/draft_check.json",
+          "output_sha256": "b21e52bf5ca0831934863affc604a052361c1188084701da79b816ab9d907e4d"
+        },
+        {
+          "draft": "评委最尖锐20问_标准应答卡.md",
+          "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 \"C:\\Users\\晚菘\\Documents\\Default Project\\scripts\\r303_draft_check.py\" --draft \"C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M6_midterm_defense_deck\\评委最尖锐20问_标准应答卡.md\" --doc-class paper --json-only --out \"C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M6_midterm_defense_deck\\gates\\g4_qa_20\"",
+          "exit_code": 0,
+          "verdict": "CLEAN",
+          "n_red": 0,
+          "n_exempt": 0,
+          "n_note": 0,
+          "n_findings": 0,
+          "output_json": "results/midterm_sprint_20261120/M6_midterm_defense_deck/gates/g4_qa_20/draft_check.json",
+          "output_sha256": "08551878900e3b4d2d088e73cd011013c9cf06787b121195d43cec41c309491a"
+        }
+      ],
+      "correctly_rejected": true
+    }
+  ]
+}

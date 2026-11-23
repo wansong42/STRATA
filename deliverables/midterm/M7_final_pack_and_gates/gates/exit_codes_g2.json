@@ -1,0 +1,15 @@
+{
+  "schema": "m7-gate-exit-codes/v1",
+  "at_utc": "2026-11-21T13:57:39.144279+00:00",
+  "gate": "g2",
+  "record": {
+    "tag": "g2",
+    "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 -m fractureflow.selfcheck --quick --out C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M7_final_pack_and_gates\\gates\\g2.json",
+    "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+    "executed": true,
+    "exit_code": 0,
+    "seconds": 833.66,
+    "stdout_file": "logs/g2.log",
+    "enumerated": 40
+  }
+}

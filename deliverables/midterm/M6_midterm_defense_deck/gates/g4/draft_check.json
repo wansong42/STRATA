@@ -1,0 +1,321 @@
+{
+ "verdict": "CLEAN",
+ "n_findings": 12,
+ "n_red": 0,
+ "n_exempt": 0,
+ "n_note": 12,
+ "by_rule": {
+  "R5": {
+   "total": 12,
+   "red": 0,
+   "exempt": 0,
+   "note": 12
+  }
+ },
+ "whitelist_layers": {
+  "W1_number_kit": {
+   "values": 124,
+   "forms": 759,
+   "src": "results/r296_writing_kit/number_kit.json"
+  },
+  "W2_digital_ledger": {
+   "values": 819,
+   "forms": 4087,
+   "src": "results/digital_ledger.json"
+  },
+  "W3_number_table": {
+   "values": 124,
+   "forms": 755,
+   "src": "results/r259_thesis_draft/number_table.json"
+  },
+  "W4_registered_sources": {
+   "values": 0,
+   "forms": 114552,
+   "files": 196,
+   "src": "在册件点名的 results/*.json"
+  },
+  "W5_draft_cited_jsons": {
+   "values": 0,
+   "forms": 0,
+   "files": 0,
+   "src": "稿件行内点名的 results/*.json"
+  },
+  "W6_prose_carriers": {
+   "values": 0,
+   "forms": 490,
+   "files": 6,
+   "src": "PROSE_CARRIERS"
+  }
+ },
+ "doc_class": "governance",
+ "kind": "md",
+ "whitelist_missing_carriers": [],
+ "whitelist_unreadable_sources": [
+  {
+   "path": "results/r165_cvat/{cost_curve_run1.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r165_cvat/{cost_curve_run1_gtblack.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r184_module_a/t3_planefit.json + t2_triangulation.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r189_renderer_v1/t3_planefit.json + t2_triangulation.json + g1_regress.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r191_convention/g1_regress.json + engine_bench_r191.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r192_protocol_v2/variant_table.json + t2_prompts_run1.json + repro_check.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r193_lora_data_freeze/qc_report.json + manifest.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r194_3d_backbone_recon/t3_measured.json + t4_probe.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r196_lg_sam2_fusion/t2_box_sp_run1.json + t2_none_run1.json + t3_ablation.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r197_lora_m1/t3_gates_verdict.json + t3_variant_table.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r198_lora_loss_fix/t3_gates_verdict.json + t3_variant_table.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r263_gain_erratum/{manuscript_gates.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r275_em_weighting/{verdict,gates,default_path}.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/w40_omega_closeout/teeth_*.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/w45_omega_repricing/teeth_*.json",
+   "why": "missing"
+  }
+ ],
+ "r8_objects": {
+  "refs": [],
+  "defs": [],
+  "aliases": {}
+ },
+ "findings": [
+  {
+   "rule": "R5",
+   "line": 25,
+   "quote": "| `verify_m6.py` | 见 `result.json#evidence` | 见 `result.json#evidence` | 数字溯源、文稿守卫、r303 实跑和负控执行脚本 |",
+   "why": "[doc_class=governance 降级为 NOTE，规则本体未改] 内部代号「r303」入稿 (裁定 94.2: 代号一律不入稿)",
+   "pointer": "docs/论文_墙_发现过程技术报告.md 第 3 章「内部代号与治理计数」行",
+   "tokens": [
+    "r303"
+   ],
+   "severity": "NOTE",
+   "exempt": false,
+   "exempt_class": null,
+   "exempt_mark": null,
+   "exempt_reason": null,
+   "section": "【M6 交付报告】大创中期答辩四幕材料已完成 M3 回填、全量溯源与四门禁封稿 > 3. 交付物清单"
+  },
+  {
+   "rule": "R5",
+   "line": 30,
+   "quote": "| `gates/g4_ppt_outline/draft_check.json` | 见 `result.json#evidence` | 见 `result.json#evidence` | PPT 大纲的 r303 `--draft` 实跑结果 |",
+   "why": "[doc_class=governance 降级为 NOTE，规则本体未改] 内部代号「r303」入稿 (裁定 94.2: 代号一律不入稿)",
+   "pointer": "docs/论文_墙_发现过程技术报告.md 第 3 章「内部代号与治理计数」行",
+   "tokens": [
+    "r303"
+   ],
+   "severity": "NOTE",
+   "exempt": false,
+   "exempt_class": null,
+   "exempt_mark": null,
+   "exempt_reason": null,
+   "section": "【M6 交付报告】大创中期答辩四幕材料已完成 M3 回填、全量溯源与四门禁封稿 > 3. 交付物清单"
+  },
+  {
+   "rule": "R5",
+   "line": 31,
+   "quote": "| `gates/g4_spoken_script/draft_check.json` | 见 `result.json#evidence` | 见 `result.json#evidence` | 口头讲稿的 r303 `--draft` 实跑结果 |",
+   "why": "[doc_class=governance 降级为 NOTE，规则本体未改] 内部代号「r303」入稿 (裁定 94.2: 代号一律不入稿)",
+   "pointer": "docs/论文_墙_发现过程技术报告.md 第 3 章「内部代号与治理计数」行",
+   "tokens": [
+    "r303"
+   ],
+   "severity": "NOTE",
+   "exempt": false,
+   "exempt_class": null,
+   "exempt_mark": null,
+   "exempt_reason": null,
+   "section": "【M6 交付报告】大创中期答辩四幕材料已完成 M3 回填、全量溯源与四门禁封稿 > 3. 交付物清单"
+  },
+  {
+   "rule": "R5",
+   "line": 32,
+   "quote": "| `gates/g4_qa_20/draft_check.json` | 见 `result.json#evidence` | 见 `result.json#evidence` | 20 问应答卡的 r303 `--draft` 实跑结果 |",
+   "why": "[doc_class=governance 降级为 NOTE，规则本体未改] 内部代号「r303」入稿 (裁定 94.2: 代号一律不入稿)",
+   "pointer": "docs/论文_墙_发现过程技术报告.md 第 3 章「内部代号与治理计数」行",
+   "tokens": [
+    "r303"
+   ],
+   "severity": "NOTE",
+   "exempt": false,
+   "exempt_class": null,
+   "exempt_mark": null,
+   "exempt_reason": null,
+   "section": "【M6 交付报告】大创中期答辩四幕材料已完成 M3 回填、全量溯源与四门禁封稿 > 3. 交付物清单"
+  },
+  {
+   "rule": "R5",
+   "line": 33,
+   "quote": "| `gates/g4/draft_check.json` | 见 `result.json#evidence` | 见 `result.json#evidence` | 本报告的 r303 governance 门禁结果 |",
+   "why": "[doc_class=governance 降级为 NOTE，规则本体未改] 内部代号「r303」入稿 (裁定 94.2: 代号一律不入稿)",
+   "pointer": "docs/论文_墙_发现过程技术报告.md 第 3 章「内部代号与治理计数」行",
+   "tokens": [
+    "r303"
+   ],
+   "severity": "NOTE",
+   "exempt": false,
+   "exempt_class": null,
+   "exempt_mark": null,
+   "exempt_reason": null,
+   "section": "【M6 交付报告】大创中期答辩四幕材料已完成 M3 回填、全量溯源与四门禁封稿 > 3. 交付物清单"
+  },
+  {
+   "rule": "R5",
+   "line": 54,
+   "quote": "负控输入副本和 r303 结果留存在 `negative_controls.json#scratch_dir`，不做递归清理。",
+   "why": "[doc_class=governance 降级为 NOTE，规则本体未改] 内部代号「r303」入稿 (裁定 94.2: 代号一律不入稿)",
+   "pointer": "docs/论文_墙_发现过程技术报告.md 第 3 章「内部代号与治理计数」行",
+   "tokens": [
+    "r303"
+   ],
+   "severity": "NOTE",
+   "exempt": false,
+   "exempt_class": null,
+   "exempt_mark": null,
+   "exempt_reason": null,
+   "section": "【M6 交付报告】大创中期答辩四幕材料已完成 M3 回填、全量溯源与四门禁封稿 > 5. 负控实况"
+  },
+  {
+   "rule": "R5",
+   "line": 58,
+   "quote": "| `M6-N1a` | 讲稿副本塞入内部代号 | `3` | `INTERNAL_CODE_LEAK`；r303 `HIT`、`n_red = 1` | 是 |",
+   "why": "[doc_class=governance 降级为 NOTE，规则本体未改] 内部代号「r303」入稿 (裁定 94.2: 代号一律不入稿)",
+   "pointer": "docs/论文_墙_发现过程技术报告.md 第 3 章「内部代号与治理计数」行",
+   "tokens": [
+    "r303"
+   ],
+   "severity": "NOTE",
+   "exempt": false,
+   "exempt_class": null,
+   "exempt_mark": null,
+   "exempt_reason": null,
+   "section": "【M6 交付报告】大创中期答辩四幕材料已完成 M3 回填、全量溯源与四门禁封稿 > 5. 负控实况"
+  },
+  {
+   "rule": "R5",
+   "line": 59,
+   "quote": "| `M6-N1b` | PPT 副本塞入禁引读数 | `4` | `ORACLE_VALUE_FORBIDDEN`；r303 `HIT`、`n_red = 1` | 是 |",
+   "why": "[doc_class=governance 降级为 NOTE，规则本体未改] 内部代号「r303」入稿 (裁定 94.2: 代号一律不入稿)",
+   "pointer": "docs/论文_墙_发现过程技术报告.md 第 3 章「内部代号与治理计数」行",
+   "tokens": [
+    "r303"
+   ],
+   "severity": "NOTE",
+   "exempt": false,
+   "exempt_class": null,
+   "exempt_mark": null,
+   "exempt_reason": null,
+   "section": "【M6 交付报告】大创中期答辩四幕材料已完成 M3 回填、全量溯源与四门禁封稿 > 5. 负控实况"
+  },
+  {
+   "rule": "R5",
+   "line": 61,
+   "quote": "| `M6-N2` | PPT 副本写入未登记的无源百分比 | `2` | `UNTRACED_NUMBER_TOKEN`；r303 `HIT`、`n_red = 1` | 是 |",
+   "why": "[doc_class=governance 降级为 NOTE，规则本体未改] 内部代号「r303」入稿 (裁定 94.2: 代号一律不入稿)",
+   "pointer": "docs/论文_墙_发现过程技术报告.md 第 3 章「内部代号与治理计数」行",
+   "tokens": [
+    "r303"
+   ],
+   "severity": "NOTE",
+   "exempt": false,
+   "exempt_class": null,
+   "exempt_mark": null,
+   "exempt_reason": null,
+   "section": "【M6 交付报告】大创中期答辩四幕材料已完成 M3 回填、全量溯源与四门禁封稿 > 5. 负控实况"
+  },
+  {
+   "rule": "R5",
+   "line": 62,
+   "quote": "| `M6-N3` | 缺 `--draft` 的 r303 空跑 | `2` | 参数缺失非零拒收；同时 3 份核心文稿真实 `--draft` 均为 `CLEAN`、`n_red = 0` | 是 |",
+   "why": "[doc_class=governance 降级为 NOTE，规则本体未改] 内部代号「r303」入稿 (裁定 94.2: 代号一律不入稿)",
+   "pointer": "docs/论文_墙_发现过程技术报告.md 第 3 章「内部代号与治理计数」行",
+   "tokens": [
+    "r303"
+   ],
+   "severity": "NOTE",
+   "exempt": false,
+   "exempt_class": null,
+   "exempt_mark": null,
+   "exempt_reason": null,
+   "section": "【M6 交付报告】大创中期答辩四幕材料已完成 M3 回填、全量溯源与四门禁封稿 > 5. 负控实况"
+  },
+  {
+   "rule": "R5",
+   "line": 72,
+   "quote": "- **过程中发现并修复的问题**：初版 M3 回填把 `22/22` 写成“独立复算”，可能把 `jardim_c01` 的预算拒答状态核验误说成几何重算，已统一收紧为“独立核验”，并在 PPT 明确 21 簇几何复算、1 簇状态核验；旧负控脚本递归删除 `_nc_scratch` 被运行时 `CHAT_REFERENCE_PROTECTED` 拦截，已改为每次独立留档、零递归删除；门禁子进程的 `PYTHONPATH` 改为追加项目路径而非覆盖宿主守护路径。最终复核阶段曾因长命令超时中断，但 8 条命令的原始退出码已落盘且全为 0；随后单独刷新 `result.json` 并回读，19 件",
+   "why": "[doc_class=governance 降级为 NOTE，规则本体未改] 内部代号「r303」入稿 (裁定 94.2: 代号一律不入稿)",
+   "pointer": "docs/论文_墙_发现过程技术报告.md 第 3 章「内部代号与治理计数」行",
+   "tokens": [
+    "r303"
+   ],
+   "severity": "NOTE",
+   "exempt": false,
+   "exempt_class": null,
+   "exempt_mark": null,
+   "exempt_reason": null,
+   "section": "【M6 交付报告】大创中期答辩四幕材料已完成 M3 回填、全量溯源与四门禁封稿 > 6. 自有缺陷与未做事项"
+  },
+  {
+   "rule": "R5",
+   "line": 80,
+   "quote": "| 88 项溯源条目、613 处数字经全量核验，5 项负控全部正确拒收，3 份核心文稿 r303 均 CLEAN | 不可夸大朴素并集图断割簇 `0/14`，也不可将 `jardim_c01` 的拒答混入 21 簇完备认证分母或说成已做几何重算 |",
+   "why": "[doc_class=governance 降级为 NOTE，规则本体未改] 内部代号「r303」入稿 (裁定 94.2: 代号一律不入稿)",
+   "pointer": "docs/论文_墙_发现过程技术报告.md 第 3 章「内部代号与治理计数」行",
+   "tokens": [
+    "r303"
+   ],
+   "severity": "NOTE",
+   "exempt": false,
+   "exempt_class": null,
+   "exempt_mark": null,
+   "exempt_reason": null,
+   "section": "【M6 交付报告】大创中期答辩四幕材料已完成 M3 回填、全量溯源与四门禁封稿 > 7. 能主张 / 不能主张"
+  }
+ ],
+ "generated_at": "2026-11-21T20:35:41+0800",
+ "draft": {
+  "path": "results/midterm_sprint_20261120/M6_midterm_defense_deck/report.md",
+  "kind": "md",
+  "bytes": 13023,
+  "sha256": "e8b9f44741d7deabf9040ee002e567dd0ede836670e81b154e5a72d8ed280d1c"
+ }
+}

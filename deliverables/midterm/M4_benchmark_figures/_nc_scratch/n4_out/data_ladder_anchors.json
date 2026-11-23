@@ -1,0 +1,48 @@
+{
+  "at_utc": "2026-11-21T04:32:50.616337+00:00",
+  "contains_oracle": false,
+  "excluded_oracle_note": "Strict exclusion of all oracle / diagnostic ceiling readings (e.g. NNS-011 / NNS-009 / NNS-010).",
+  "schema": "m4-historical-data-ladder/v1",
+  "stages": [
+    {
+      "display_deg": "36.69°",
+      "is_oracle": false,
+      "is_synthetic": false,
+      "label_zh": "无联结钻孔 (L0/L1)",
+      "ledger_id": "NNS-001",
+      "metric_kind": "pointwise_hidden_acos_abs_cos_mae_deg",
+      "protocol_tag": "北山 22 井 × 10 seeds · 严格无泄漏 (l1_local)",
+      "source_json": "results/honest_leaderboard/l1_local__beishan_22.json",
+      "source_sha256": "3c809075efff1cee014c359aced7604ccdc0431eb410836bd5e5af33f902b30e",
+      "stage_order": 1,
+      "value_deg": 36.6871
+    },
+    {
+      "display_deg": "12.87°",
+      "is_oracle": false,
+      "is_synthetic": false,
+      "label_zh": "FMI 井壁迹线 (K=12)",
+      "ledger_id": "NNS-046",
+      "metric_kind": "set_level_modal_error_deg",
+      "protocol_tag": "FORGE 双井 FMI · K=12 anchored 组系级模态角距",
+      "source_json": "results/forge_kgrid_ext.json",
+      "source_sha256": "a23a27a9d68f086ad32f732a989280428ec14769669918dabaf3d51e6dc288da",
+      "stage_order": 2,
+      "value_deg": 12.8681
+    },
+    {
+      "display_deg": "0.37°",
+      "is_oracle": false,
+      "is_synthetic": true,
+      "label_zh": "稠密点云 (合成壁面)",
+      "ledger_id": "NNS-021",
+      "metric_kind": "pointwise_hidden_acos_abs_cos_mae_deg",
+      "protocol_tag": "合成 K=4 多走向壁面 (60% 隐伏, 2.5cm 噪 · 非实地开挖真值)",
+      "source_json": "results/pointcloud_gate.json",
+      "source_sha256": "73336fe99d87e05f319680b71b2f33d46b8da182187ca09a0e2d0fecd2bb6b27",
+      "stage_order": 3,
+      "value_deg": 0.3674
+    }
+  ],
+  "track": "HISTORICAL_DATA_LADDER_NON_ORACLE"
+}

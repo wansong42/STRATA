@@ -1,0 +1,256 @@
+{
+ "at_utc": "2026-11-21T09:43:50.056551+00:00",
+ "commands": [
+  {
+   "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 judge_real.py --m1 <M1> --m2-run <run> --out-dir per_case/<cid> --only <cid>（22 个独立进程，每个一簇）",
+   "enumerated": 22,
+   "executed": true,
+   "exit_code": 0,
+   "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe"
+  },
+  {
+   "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 self_test.py",
+   "enumerated": 30,
+   "executed": true,
+   "exit_code": 0,
+   "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe"
+  },
+  {
+   "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 negative_controls.py",
+   "enumerated": 6,
+   "executed": true,
+   "exit_code": 0,
+   "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe"
+  },
+  {
+   "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 verify_ranking.py <cid>（6 个独立进程）",
+   "enumerated": 75,
+   "executed": true,
+   "exit_code": 0,
+   "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe"
+  },
+  {
+   "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 audit_imports.py",
+   "enumerated": 5,
+   "executed": true,
+   "exit_code": 0,
+   "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe"
+  },
+  {
+   "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 scripts/repro_certify.py --out gates/g1.json",
+   "enumerated": 9,
+   "executed": true,
+   "exit_code": 0,
+   "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe"
+  },
+  {
+   "cmd": "PYTHONPATH=src KMP_DUPLICATE_LIB_OK=TRUE E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 -m fractureflow.selfcheck --quick --out gates/g2.json",
+   "enumerated": 40,
+   "executed": true,
+   "exit_code": 0,
+   "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe"
+  },
+  {
+   "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 scripts/r263_gain_mislabel_scan.py --scope delivery --fail-on-hit --out gates/g3.json",
+   "enumerated": 9,
+   "executed": true,
+   "exit_code": 0,
+   "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe"
+  },
+  {
+   "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 scripts/r303_draft_check.py --draft report.md --doc-class governance --json-only --out gates/g4",
+   "enumerated": 0,
+   "executed": true,
+   "exit_code": 0,
+   "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe"
+  },
+  {
+   "cmd": "verify_depth2.py <cid>（6 独立进程）",
+   "enumerated": 74,
+   "executed": true,
+   "exit_code": 0,
+   "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe"
+  },
+  {
+   "cmd": "verify_expected.py <cid>（6 独立进程）",
+   "enumerated": 840,
+   "executed": true,
+   "exit_code": 0,
+   "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe"
+  }
+ ],
+ "enumeration": {
+  "cells_recomputed": 10551,
+  "clusters": 22,
+  "clusters_agree": 22,
+  "clusters_disagree": 0,
+  "clusters_malformed": 0,
+  "clusters_undecidable": 0,
+  "collapse_branches_recomputed": 75,
+  "completed_certifications": 21,
+  "depth2_branches_recomputed": 74,
+  "depth2_parents": 30,
+  "expected_action_outcomes_recomputed": 840,
+  "import_audit_violations": 0,
+  "mode_evaluations": 126,
+  "negative_controls": 6,
+  "negative_correctly_rejected": 6,
+  "open_cells": 5199,
+  "pairs_enumerated": 132000,
+  "point_cells": 5352,
+  "positive_cases": 22,
+  "positive_passed": 22,
+  "ranked_branches_recomputed": 75,
+  "ranked_cases": 6,
+  "reachable_windows_recomputed": 22399,
+  "read_ledger_records": 110,
+  "read_ledger_violations": 0,
+  "refused_budget_exceeded": 1,
+  "self_test_cases": 30,
+  "self_test_passed": 30
+ },
+ "evidence": [
+  {
+   "bytes": 45444,
+   "file": "judge_real.py",
+   "sha256": "be567cff09bfbec03e8589b74cb85f5ef86911f83a9865190e11fc84f11b2290"
+  },
+  {
+   "bytes": 25674,
+   "file": "self_test.py",
+   "sha256": "86e72397a1f8e642c1b01f38b53ee6925b514d699d483838c21ad3983f26f49c"
+  },
+  {
+   "bytes": 8029,
+   "file": "negative_controls.py",
+   "sha256": "56cfb5ffc93dad0db8249c7b4b8ea117c409d8b01cecd031170088672e5bcd8a"
+  },
+  {
+   "bytes": 7023,
+   "file": "audit_imports.py",
+   "sha256": "485a17e05850c16f36b17ea5ee533d47cdb878788208102b5913fcfdb0f46cb7"
+  },
+  {
+   "bytes": 8772,
+   "file": "verify_ranking.py",
+   "sha256": "35972d520d44b49df538639727c902a198e0d623961b19a8645c66f5cace9571"
+  },
+  {
+   "bytes": 19133,
+   "file": "verdict_batch.json",
+   "sha256": "b122233573c3f56f4471e761abab3a523d36d6594ac58c600630257e357d85bf"
+  },
+  {
+   "bytes": 9488,
+   "file": "verdict_detail.json",
+   "sha256": "01bbac9bddd538f1714c28ea634f8937266c57a9d877684832d4bf38e18cef78"
+  },
+  {
+   "bytes": 622,
+   "file": "collapse_tree_verdict.json",
+   "sha256": "76b900c76000298235852555de4980ee1570c20704bbebca2cbeb659dae37e64"
+  },
+  {
+   "bytes": 1764,
+   "file": "negative_controls.json",
+   "sha256": "cb9806cb93bc9fcf7988a291ad07b6e106eab256a994681a6bfc392519047c1f"
+  },
+  {
+   "bytes": 532,
+   "file": "import_audit.json",
+   "sha256": "e0e56aaffe213e88ace10ee7b6d9a22938c112b0ba21454b44b99c670cf9630a"
+  },
+  {
+   "bytes": 23619,
+   "file": "read_ledger.jsonl",
+   "sha256": "8de5c4642201003c1f9156ece8c98d5d930870db3f1cbdcd74e4420b85d4caad"
+  },
+  {
+   "bytes": 2018,
+   "file": "independence_receipt.json",
+   "sha256": "e60a63c668eab2d35c66b59afeab52a7f9ecd991246146b78db6868a9d4ec527"
+  },
+  {
+   "bytes": 3294,
+   "file": "self_test_results.json",
+   "sha256": "b6b06cee3462799a32b2d7cf1743336c89bc53f32f95659f7cc6ef31ced02e7a"
+  },
+  {
+   "bytes": 7666,
+   "file": "ranking_verdict.json",
+   "sha256": "3c289d4df77600a185dd5744e57855d26b0f6a1a2ca04052e79ab29abb71906f"
+  },
+  {
+   "bytes": 1904,
+   "file": "gates/g1.json",
+   "sha256": "f46be9ae34a8be0ddb31747445e6d1dbdbdf6586e77605c22b6461bd09b80ff1"
+  },
+  {
+   "bytes": 10720,
+   "file": "gates/g2.json",
+   "sha256": "1e5a81065cc9fe9f3c3c2fa6219de42476f582f700c4266e4824a4bbc87c00c2"
+  },
+  {
+   "bytes": 20558,
+   "file": "gates/g3.json",
+   "sha256": "a7f5b6153358c76f8c865a1c77080795a6c288bd42a9be78c85c85452a9cd15a"
+  },
+  {
+   "bytes": 2851,
+   "file": "gates/g4/draft_check.json",
+   "sha256": "36b85737b27ebb20b292fa8027cd443fb4bc4b536b908fcd6cb81f6c92d8ad14"
+  },
+  {
+   "bytes": 9870,
+   "file": "report.md",
+   "sha256": "d730581e486b5a93510ea22bc467e06043878182e95fc6d9ef63ff11f39ccf3e"
+  },
+  {
+   "bytes": 2564,
+   "file": "own_defects.json",
+   "sha256": "5f1d0001e866cefca61326212bca71ebcc16bdb3fe19918a20072c1e692b3ba6"
+  },
+  {
+   "bytes": 4203,
+   "file": "verify_depth2.py",
+   "sha256": "5f0149ac4a65da089ea4925c9a49d73b80c48672a684709c9d5527dcc12dba68"
+  },
+  {
+   "bytes": 10561,
+   "file": "verify_expected.py",
+   "sha256": "6bde2065367bbfd9425b28fd11c943cfd0ce8e09f00241f8f915d4cac902ea39"
+  },
+  {
+   "bytes": 1137,
+   "file": "depth2_verdict.json",
+   "sha256": "2860639742d89e493ff5b4978b8cc7a36dd97d42ac905dc56064db6af695472a"
+  },
+  {
+   "bytes": 1051,
+   "file": "expected_verdict.json",
+   "sha256": "8909139be73a691af752e495119b3ccfd211a70f16091ec88f12a639d1fb37bb"
+  }
+ ],
+ "field_error_rate": null,
+ "gates": {
+  "g1": "PASS 9/9",
+  "g2": "PASS 40/40",
+  "g3": "PASS hits_total=0 mislabel",
+  "g4": "CLEAN"
+ },
+ "human_time": null,
+ "hydraulic": null,
+ "not_claimed": [
+  "非地下体内无条件贯通真值",
+  "非水力连通",
+  "真实派生条件域不等于合成域也不等于现场开挖真值",
+  "jardim_c01 超预算拒收仅做状态合法性核验未做几何重算",
+  "异模型家族独立性以任务书 §四 independence_receipt.json 为据、最终确认权在甲方",
+  "M2 完整排序键的同分二级规则（同 worst-case 并列时按 id 升序）以 M2 声明为参照",
+  "expected_remaining/expected_reduction 采用按分支测度占比加权口径（已用 M2 数值反推校准并全量复算通过）"
+ ],
+ "schema": "dispatch-result/v1",
+ "scope": "对 M1_real_to_exact_bridge 全部 22 簇真实派生条件有限并集域与 M2_active_identifiability/run_20261120_exact_v1（21 例完备认证 + jardim_c01 超预算拒收 + 6 簇 collapse_tree 及 ranked_fractures）做零共享代码精确有理独立判卷",
+ "status": "PASS",
+ "task_id": "M3"
+}

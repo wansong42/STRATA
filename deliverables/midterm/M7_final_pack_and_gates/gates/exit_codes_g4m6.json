@@ -1,0 +1,43 @@
+{
+  "schema": "m7-gate-exit-codes/v1",
+  "at_utc": "2026-11-21T13:43:28.495443+00:00",
+  "gate": "g4m6",
+  "record": {
+    "tag": "g4m6",
+    "combined_exit_code": 0,
+    "sub": [
+      {
+        "tag": "g4_m6_ppt_outline",
+        "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 scripts/r303_draft_check.py --draft C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M6_midterm_defense_deck\\PPT大纲_大创中期_15页.md --doc-class paper --json-only --out C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M7_final_pack_and_gates\\gates\\g4\\m6_ppt_outline",
+        "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+        "executed": true,
+        "exit_code": 0,
+        "seconds": 1.2,
+        "stdout_file": "logs/g4_m6_ppt_outline.log",
+        "enumerated": 1
+      },
+      {
+        "tag": "g4_m6_spoken_script",
+        "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 scripts/r303_draft_check.py --draft C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M6_midterm_defense_deck\\口头讲稿_8分钟实战版.md --doc-class paper --json-only --out C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M7_final_pack_and_gates\\gates\\g4\\m6_spoken_script",
+        "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+        "executed": true,
+        "exit_code": 0,
+        "seconds": 1.15,
+        "stdout_file": "logs/g4_m6_spoken_script.log",
+        "enumerated": 1
+      },
+      {
+        "tag": "g4_m6_qa_20",
+        "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 scripts/r303_draft_check.py --draft C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M6_midterm_defense_deck\\评委最尖锐20问_标准应答卡.md --doc-class paper --json-only --out C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M7_final_pack_and_gates\\gates\\g4\\m6_qa_20",
+        "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+        "executed": true,
+        "exit_code": 0,
+        "seconds": 1.25,
+        "stdout_file": "logs/g4_m6_qa_20.log",
+        "enumerated": 1
+      }
+    ],
+    "executed": true,
+    "enumerated": 3
+  }
+}

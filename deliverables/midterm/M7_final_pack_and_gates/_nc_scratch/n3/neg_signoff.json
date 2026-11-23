@@ -1,0 +1,59 @@
+{
+  "schema": "m7-signoff/v1",
+  "at_utc": "2026-11-21T13:53:22.232090+00:00",
+  "verdict": "REFUSED",
+  "checks": [
+    {
+      "check": "M3 counts.AGREE==22",
+      "ok": false,
+      "detail": {
+        "AGREE": 21,
+        "DISAGREE": 1,
+        "MALFORMED": 0,
+        "UNDECIDABLE": 0
+      }
+    },
+    {
+      "check": "M3 counts.DISAGREE==0",
+      "ok": false,
+      "detail": 1
+    },
+    {
+      "check": "M3 逐簇 AGREE==22",
+      "ok": false,
+      "detail": {
+        "agree": 21,
+        "total": 22
+      }
+    },
+    {
+      "check": "M3 逐簇 DISAGREE==0",
+      "ok": false,
+      "detail": 1
+    },
+    {
+      "check": "M3 MALFORMED/UNDECIDABLE==0",
+      "ok": true,
+      "detail": {
+        "AGREE": 21,
+        "DISAGREE": 1,
+        "MALFORMED": 0,
+        "UNDECIDABLE": 0
+      }
+    },
+    {
+      "check": "M3 拒收仅 jardim_c01",
+      "ok": true,
+      "detail": [
+        "jardim_c01"
+      ]
+    }
+  ],
+  "failed": [
+    "M3 counts.AGREE==22",
+    "M3 counts.DISAGREE==0",
+    "M3 逐簇 AGREE==22",
+    "M3 逐簇 DISAGREE==0"
+  ],
+  "alert": "REFUSE_SIGNOFF: M3 DISAGREE=1，终审不得签全 PASS"
+}

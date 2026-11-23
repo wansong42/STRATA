@@ -1,0 +1,354 @@
+{
+  "documents": {
+    "01": {
+      "bytes": 80918,
+      "sha256": "064f748c0bc5268c845f27b9717f645b8b59ba3b53a49ca67a627dcfd101eb1d",
+      "zip_ok": true,
+      "paragraphs": 510,
+      "tables": 3,
+      "characters_no_space": 23583,
+      "page_setup": [
+        {
+          "width_cm": 21.0,
+          "height_cm": 29.7,
+          "top_cm": 2.2,
+          "bottom_cm": 2.0,
+          "left_cm": 2.3,
+          "right_cm": 2.1,
+          "header": "演讲稿与评委问答",
+          "footer_has_page": true,
+          "footer_has_numpages": true
+        }
+      ],
+      "core_title": "演讲稿与评委问答"
+    },
+    "02": {
+      "bytes": 19316,
+      "sha256": "be6a8d329e377a72938a04d5a8817a555fdf913b33485f0a003dae0a2913daae",
+      "zip_ok": true,
+      "paragraphs": 97,
+      "tables": 2,
+      "characters_no_space": 7672,
+      "page_setup": [
+        {
+          "width_cm": 21.0,
+          "height_cm": 29.7,
+          "top_cm": 2.2,
+          "bottom_cm": 2.0,
+          "left_cm": 2.3,
+          "right_cm": 2.1,
+          "header": "复杂岩石非连续结构智能重构方法研究｜零基础通俗版",
+          "footer_has_page": true,
+          "footer_has_numpages": true
+        }
+      ],
+      "core_title": "项目通俗介绍（零基础版）"
+    },
+    "03": {
+      "bytes": 84404,
+      "sha256": "75b0456a9a7cb510ffde98a3d6d6563c7762133648cd63ca0960dd477f608466",
+      "zip_ok": true,
+      "paragraphs": 303,
+      "tables": 11,
+      "characters_no_space": 22476,
+      "page_setup": [
+        {
+          "width_cm": 21.0,
+          "height_cm": 29.7,
+          "top_cm": 2.2,
+          "bottom_cm": 2.0,
+          "left_cm": 2.3,
+          "right_cm": 2.1,
+          "header": "技术说明书（打印备查版）",
+          "footer_has_page": true,
+          "footer_has_numpages": true
+        }
+      ],
+      "core_title": "技术说明书（打印备查版）"
+    }
+  },
+  "checks": [
+    {
+      "name": "01 DOCX结构完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "01 A4与页边距",
+      "passed": true,
+      "detail": "{\"width_cm\": 21.0, \"height_cm\": 29.7, \"top_cm\": 2.2, \"bottom_cm\": 2.0, \"left_cm\": 2.3, \"right_cm\": 2.1, \"header\": \"演讲稿与评委问答\", \"footer_has_page\": true, \"footer_has_numpages\": true}"
+    },
+    {
+      "name": "01 页眉页脚页码",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "01 实际产物非空",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "01 三null与算不完",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "02 DOCX结构完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "02 A4与页边距",
+      "passed": true,
+      "detail": "{\"width_cm\": 21.0, \"height_cm\": 29.7, \"top_cm\": 2.2, \"bottom_cm\": 2.0, \"left_cm\": 2.3, \"right_cm\": 2.1, \"header\": \"复杂岩石非连续结构智能重构方法研究｜零基础通俗版\", \"footer_has_page\": true, \"footer_has_numpages\": true}"
+    },
+    {
+      "name": "02 页眉页脚页码",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "02 实际产物非空",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "02 三null与算不完",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "03 DOCX结构完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "03 A4与页边距",
+      "passed": true,
+      "detail": "{\"width_cm\": 21.0, \"height_cm\": 29.7, \"top_cm\": 2.2, \"bottom_cm\": 2.0, \"left_cm\": 2.3, \"right_cm\": 2.1, \"header\": \"技术说明书（打印备查版）\", \"footer_has_page\": true, \"footer_has_numpages\": true}"
+    },
+    {
+      "name": "03 页眉页脚页码",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "03 实际产物非空",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "03 三null与算不完",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "01 共27页讲稿",
+      "passed": true,
+      "detail": "27"
+    },
+    {
+      "name": "01 页号标题逐一对齐27页PPT",
+      "passed": true,
+      "detail": "{\"actual\": [\"第 01 页｜复杂岩石非连续结构智能重构方法研究\", \"第 02 页｜目录\", \"第 03 页｜PART 01 选题背景及意义\", \"第 04 页｜工程上为什么关心岩石里的裂隙通不通\", \"第 05 页｜我们能看到的信息，只有很小一部分\", \"第 06 页｜同一份编录，两种拼法，一个说通一个说断\", \"第 07 页｜前期做了什么，为什么中途换研究对象\", \"第 08 页｜PART 02 研究内容与思路\", \"第 09 页｜研究内容：两个核心问题\", \"第 10 页｜数据从哪来：两处公开露头＋一处中国编录\", \"第 11 页｜数据怎么处理：六千万个点变成能算通断的几片裂隙\", \"第 12 页｜PART 03 关键技术与方法\", \"第 13 页｜方法：不替不确定性投票，把符合观测的情况都算一遍\", \"第 14 页｜怎么算准：不到 3 毫米的间隙，不能用小数去猜\", \"第 15 页｜判不了的时候，下一步先查哪一片\", \"第 16 页｜结果凭什么可靠：换代码重算、故意喂错、规则先冻结\", \"第 17 页｜PART 04 阶段成果与演示\", \"第 18 页｜阶段成果：同一批样本，三种做法的定量对照\", \"第 19 页｜实机演示一：同一个簇，为什么既能通又能断\", \"第 20 页｜实机演示二：确认一片，歧义就收敛\", \"第 21 页｜软件平台：STRATA 工作台与证据链\", \"第 22 页｜成果用在哪、不能用到哪\", \"第 23 页｜PART 05 存在问题与下一步计划\", \"第 24 页｜对照申报书：哪几项做完了，哪一项滞后\", \"第 25 页｜下一步计划与团队分工\", \"第 26 页｜PART 06 总结与致谢\", \"第 27 页｜总结\"], \"expected\": [\"第 01 页｜复杂岩石非连续结构智能重构方法研究\", \"第 02 页｜目录\", \"第 03 页｜PART 01 选题背景及意义\", \"第 04 页｜工程上为什么关心岩石里的裂隙通不通\", \"第 05 页｜我们能看到的信息，只有很小一部分\", \"第 06 页｜同一份编录，两种拼法，一个说通一个说断\", \"第 07 页｜前期做了什么，为什么中途换研究对象\", \"第 08 页｜PART 02 研究内容与思路\", \"第 09 页｜研究内容：两个核心问题\", \"第 10 页｜数据从哪来：两处公开露头＋一处中国编录\", \"第 11 页｜数据怎么处理：六千万个点变成能算通断的几片裂隙\", \"第 12 页｜PART 03 关键技术与方法\", \"第 13 页｜方法：不替不确定性投票，把符合观测的情况都算一遍\", \"第 14 页｜怎么算准：不到 3 毫米的间隙，不能用小数去猜\", \"第 15 页｜判不了的时候，下一步先查哪一片\", \"第 16 页｜结果凭什么可靠：换代码重算、故意喂错、规则先冻结\", \"第 17 页｜PART 04 阶段成果与演示\", \"第 18 页｜阶段成果：同一批样本，三种做法的定量对照\", \"第 19 页｜实机演示一：同一个簇，为什么既能通又能断\", \"第 20 页｜实机演示二：确认一片，歧义就收敛\", \"第 21 页｜软件平台：STRATA 工作台与证据链\", \"第 22 页｜成果用在哪、不能用到哪\", \"第 23 页｜PART 05 存在问题与下一步计划\", \"第 24 页｜对照申报书：哪几项做完了，哪一项滞后\", \"第 25 页｜下一步计划与团队分工\", \"第 26 页｜PART 06 总结与致谢\", \"第 27 页｜总结\"]}"
+    },
+    {
+      "name": "01 每页四段式齐全",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "01 共33条分档问答",
+      "passed": true,
+      "detail": "33"
+    },
+    {
+      "name": "01 每问六要素齐全",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "01 常规时间轴10:45",
+      "passed": true,
+      "detail": "645"
+    },
+    {
+      "name": "01 压缩时间轴7:36",
+      "passed": true,
+      "detail": "456"
+    },
+    {
+      "name": "01 不承诺B级录屏",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "01 无旧15页数据阶梯叙事",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "02 十二节齐全",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "02 小词典26项覆盖",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "02 已移除冲突枚举总数",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "02 仿真非现场工时",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "03 每章与附录开头一句话答法",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "03 有自动目录域",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "03 有原生Word公式",
+      "passed": true,
+      "detail": "10"
+    },
+    {
+      "name": "03 有数字溯源总表",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "03 打印友好章标题分页",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "03 有限面与量化偏差分栏",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "03 c04一步分支非全分支保证",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "数字重算 21完备簇",
+      "passed": true,
+      "detail": "21"
+    },
+    {
+      "name": "数字重算 pairs=132000",
+      "passed": true,
+      "detail": "132000"
+    },
+    {
+      "name": "数字重算 cells=10551",
+      "passed": true,
+      "detail": "10551"
+    },
+    {
+      "name": "数字重算 36项独立负控",
+      "passed": true,
+      "detail": "{\"M1\": 12, \"M2\": 10, \"M3\": 6, \"M4\": 5, \"M7\": 3}"
+    },
+    {
+      "name": "数字重算 290条产品回归",
+      "passed": true,
+      "detail": "290 passed, 1 skipped in 603.68s (0:10:03)"
+    },
+    {
+      "name": "01 无三锚数据阶梯复活",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "01 论文软著状态未升格",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "02 无三锚数据阶梯复活",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "02 论文软著状态未升格",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "03 无三锚数据阶梯复活",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "03 论文软著状态未升格",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "另一人17页版 字节未变",
+      "passed": true,
+      "detail": "82836"
+    },
+    {
+      "name": "旧15页参照版 字节未变",
+      "passed": true,
+      "detail": "5124487"
+    }
+  ],
+  "numeric_recompute": {
+    "completed_cluster_count": 21,
+    "pairs_sum_m2": 132000,
+    "pairs_enumerated_m3": 132000,
+    "cells_sum_m2": 10551,
+    "cells_recomputed_m3": 10551,
+    "m2_built_at_utc": "2026-11-21T03:31:56.401297+00:00",
+    "negative_controls": {
+      "M1": 12,
+      "M2": 10,
+      "M3": 6,
+      "M4": 5,
+      "M7": 3
+    },
+    "negative_control_sum": 36,
+    "surface_product_regression": "290 passed, 1 skipped in 603.68s (0:10:03)"
+  },
+  "protected_ppt": {
+    "另一人17页版": {
+      "path": "C:\\Users\\晚菘\\Documents\\Default Project\\ppt_decks\\大创中期答辩_重做版\\大创中期答辩_重做版.pptx",
+      "bytes": 82836,
+      "mtime_ns": 1795325324622879500,
+      "sha256": "f125f8dc6eec932fc30b56091b36d0588f80fc2c991c5e60de0db73aa7841de0"
+    },
+    "旧15页参照版": {
+      "path": "C:\\Users\\晚菘\\Documents\\Default Project\\ppt_decks\\rock_discontinuity_midterm_20261121_230657\\rock_discontinuity_midterm_20261121_230657.pptx",
+      "bytes": 5124487,
+      "mtime_ns": 1795321987341988500,
+      "sha256": "f098ba217d94b89b03325c968d9f1e172ed1929818ea99132b3959839423ec23"
+    },
+    "定稿27页版": {
+      "path": "C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\PPT_大创报告版_20261122\\大创中期答辩_大创报告版.pptx",
+      "bytes": 9846740,
+      "mtime_ns": 1795421306030428200,
+      "sha256": "3f060ba01932512a22e997d14f02986e45fa8ab36871a37cee84ccb4597e2795"
+    }
+  },
+  "summary": {
+    "checks": 48,
+    "passed": 48,
+    "failed": 0
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "schema": "midterm-manifest/v1",
+  "at_utc": "2026-11-21T13:53:20.289350+00:00",
+  "scope": "M0–M6 七个交付目录规范四件在盘性 + result.json evidence 全量 SHA256 重算 + 跨单输入/回填一致性",
+  "units_dir": "C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M7_final_pack_and_gates\\_nc_scratch\\n1\\n1_neg",
+  "enumeration": {
+    "units": 1,
+    "spec_files_expected": 4,
+    "spec_files_present": 3,
+    "evidence_entries": 1,
+    "evidence_verified": 1,
+    "evidence_mismatch": 0
+  },
+  "units": [
+    {
+      "unit": "M0_fakeunit",
+      "dir": "C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M7_final_pack_and_gates\\_nc_scratch\\n1\\n1_neg\\M0_fakeunit",
+      "spec": {
+        "result.json": {
+          "present": true,
+          "bytes": 418,
+          "sha256": "bb7057fbf70dd38ae22925e2c53d0c96c62d7c5519c258b13bba039bbf10fee6"
+        },
+        "report.md": {
+          "present": true,
+          "bytes": 8,
+          "sha256": "ddc00976caf40a9a8b600b169e2b12ac5e37eef11044755e1f9e7e706a764f45"
+        },
+        "own_defects.json": {
+          "present": false,
+          "bytes": 0,
+          "sha256": null
+        },
+        "run_receipt.json": {
+          "present": true,
+          "bytes": 4,
+          "sha256": "e3566b3a06430868d71e9287dfd6c6c520a3da027aabea01951d407ee131dc2f"
+        }
+      },
+      "status": "PASS",
+      "evidence": {
+        "count": 1,
+        "verified": 1,
+        "mismatch": []
+      },
+      "negative_controls": {
+        "total": 1,
+        "correctly_rejected": 1,
+        "source": "result.json#enumeration",
+        "file_total": 1,
+        "file_all_passed": false
+      },
+      "gates": {},
+      "own_defects_keys": {}
+    }
+  ],
+  "cross_checks": {
+    "skipped": true
+  },
+  "verdict": "FAILED",
+  "reasons": [
+    "缺规范四件 1 件"
+  ],
+  "not_claimed": [
+    "哈希一致只证明交付件未被改动，不证明其科学结论正确",
+    "M0–M6 的负控结论由其各自 result.json/negative_controls.json 承载，本单只做汇总核对"
+  ]
+}

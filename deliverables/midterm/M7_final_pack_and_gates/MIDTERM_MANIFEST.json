@@ -1,0 +1,451 @@
+{
+  "schema": "midterm-manifest/v1",
+  "at_utc": "2026-11-21T13:31:17.618269+00:00",
+  "scope": "M0–M6 七个交付目录规范四件在盘性 + result.json evidence 全量 SHA256 重算 + 跨单输入/回填一致性",
+  "units_dir": "C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120",
+  "enumeration": {
+    "units": 7,
+    "spec_files_expected": 28,
+    "spec_files_present": 28,
+    "evidence_entries": 216,
+    "evidence_verified": 216,
+    "evidence_mismatch": 0
+  },
+  "units": [
+    {
+      "unit": "M0_cleanup_baseline",
+      "dir": "C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M0_cleanup_baseline",
+      "spec": {
+        "result.json": {
+          "present": true,
+          "bytes": 8808,
+          "sha256": "fcdc95ca8b3b2377e403124e37e8ccd7cc9a7c4057b1646e8387aab91af0d302"
+        },
+        "report.md": {
+          "present": true,
+          "bytes": 12859,
+          "sha256": "c344e5edfaefcf396977a3f5f20bcf01953c8e4f1b265da30aad3bade193bb39"
+        },
+        "own_defects.json": {
+          "present": true,
+          "bytes": 2503,
+          "sha256": "b994029a65381927e564d03a306379aabfd91f9cad975efc1143f7c5562264b9"
+        },
+        "run_receipt.json": {
+          "present": true,
+          "bytes": 5037,
+          "sha256": "81e90fdefe942d0f70043d20387340a5a8e32ddc86cd2dfa376354899e6e25d4"
+        }
+      },
+      "status": "PASS",
+      "evidence": {
+        "count": 21,
+        "verified": 21,
+        "mismatch": []
+      },
+      "negative_controls": {
+        "total": 3,
+        "correctly_rejected": 3,
+        "source": "result.json#enumeration",
+        "file_total": 3,
+        "file_all_passed": false
+      },
+      "gates": {},
+      "own_defects_keys": {
+        "not_verified": 5,
+        "absence_of_problem_is_not_proof": 4,
+        "found_while_working": 5,
+        "scope_creep_refused": 5
+      }
+    },
+    {
+      "unit": "M1_real_to_exact_bridge",
+      "dir": "C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M1_real_to_exact_bridge",
+      "spec": {
+        "result.json": {
+          "present": true,
+          "bytes": 10411,
+          "sha256": "02c854722a8333b0dd6c7b4b6af43378d5c01d34b0209184153533b6e9f1f5a2"
+        },
+        "report.md": {
+          "present": true,
+          "bytes": 16246,
+          "sha256": "6d7074508195976f8e0aba86e8d3bb33a80d45c0dca2bf44a1989fbbfef0e277"
+        },
+        "own_defects.json": {
+          "present": true,
+          "bytes": 6437,
+          "sha256": "fb6f52629d0620aa54f307275753c8b301d6014a403bcde475ec0a3c3f5d7eed"
+        },
+        "run_receipt.json": {
+          "present": true,
+          "bytes": 3317,
+          "sha256": "712efefc2669d0399edc60b23f00f9e78e890adfa0735efcb1a3ccd88eb44178"
+        }
+      },
+      "status": "PASS",
+      "evidence": {
+        "count": 38,
+        "verified": 38,
+        "mismatch": []
+      },
+      "negative_controls": {
+        "total": 12,
+        "correctly_rejected": 12,
+        "source": "result.json#enumeration",
+        "file_total": 12,
+        "file_all_passed": true
+      },
+      "gates": {
+        "g1_repro_certify": {
+          "enumerated": 9,
+          "exit_code": 0,
+          "file": "gates/g1.json"
+        },
+        "g2_selfcheck_quick": {
+          "enumerated": 40,
+          "exit_code": 0,
+          "file": "gates/g2.json"
+        },
+        "g3_r263_delivery": {
+          "enumerated": 9,
+          "exit_code": 0,
+          "file": "gates/g3.json"
+        },
+        "g4_r303_draft_check": {
+          "enumerated": 6,
+          "exit_code": 0,
+          "file": "gates/g4/draft_check.json",
+          "verdict": "CLEAN"
+        }
+      },
+      "own_defects_keys": {
+        "not_verified": 5,
+        "absence_of_problem_is_not_proof": 5,
+        "found_while_working": 6,
+        "scope_creep_refused": 5
+      }
+    },
+    {
+      "unit": "M2_active_identifiability",
+      "dir": "C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M2_active_identifiability",
+      "spec": {
+        "result.json": {
+          "present": true,
+          "bytes": 17602,
+          "sha256": "693a326b1236c724280c29b3b59281f74d2b3520acf22a708c00372e92ce5718"
+        },
+        "report.md": {
+          "present": true,
+          "bytes": 18012,
+          "sha256": "1249fb1fa332995edc3a2f681a62fb2900c34326c880f375a31fa3f909affcfc"
+        },
+        "own_defects.json": {
+          "present": true,
+          "bytes": 5924,
+          "sha256": "9f2c5ea4f27d0820d18332fea902b8980139c88d2629e2d18b565fa73b5d4cc4"
+        },
+        "run_receipt.json": {
+          "present": true,
+          "bytes": 5028,
+          "sha256": "d7a3a500b1b846bd4bed6f014fba53a947588851e4467327efd26a303e4fff5f"
+        }
+      },
+      "status": "PASS",
+      "evidence": {
+        "count": 59,
+        "verified": 59,
+        "mismatch": []
+      },
+      "negative_controls": {
+        "total": 10,
+        "correctly_rejected": 10,
+        "source": "result.json#enumeration",
+        "file_total": 10,
+        "file_all_passed": false
+      },
+      "gates": {
+        "g1_repro_certify": {
+          "enumerated": 9,
+          "exit_code": 0,
+          "file": "gates/g1.json"
+        },
+        "g2_selfcheck_quick": {
+          "enumerated": 40,
+          "exit_code": 0,
+          "file": "gates/g2.json"
+        },
+        "g3_r263_delivery": {
+          "enumerated": 9,
+          "exit_code": 0,
+          "file": "gates/g3.json"
+        },
+        "g4_r303_draft_check": {
+          "enumerated": 6,
+          "exit_code": 0,
+          "file": "gates/g4/draft_check.json",
+          "verdict": "CLEAN"
+        }
+      },
+      "own_defects_keys": {
+        "not_verified": 5,
+        "absence_of_problem_is_not_proof": 6,
+        "found_while_working": 4,
+        "scope_creep_refused": 5
+      }
+    },
+    {
+      "unit": "M3_independent_judge",
+      "dir": "C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M3_independent_judge",
+      "spec": {
+        "result.json": {
+          "present": true,
+          "bytes": 8550,
+          "sha256": "755147dbcce04f6fc75eae0535adb17a37193d0ebbf739e3bb68fd92c64ba405"
+        },
+        "report.md": {
+          "present": true,
+          "bytes": 9870,
+          "sha256": "d730581e486b5a93510ea22bc467e06043878182e95fc6d9ef63ff11f39ccf3e"
+        },
+        "own_defects.json": {
+          "present": true,
+          "bytes": 2564,
+          "sha256": "5f1d0001e866cefca61326212bca71ebcc16bdb3fe19918a20072c1e692b3ba6"
+        },
+        "run_receipt.json": {
+          "present": true,
+          "bytes": 3065,
+          "sha256": "6e968b45da7d3bee1d2bda66bca7ee26e68d2d14cd9b952c4454861be9812193"
+        }
+      },
+      "status": "PASS",
+      "evidence": {
+        "count": 24,
+        "verified": 24,
+        "mismatch": []
+      },
+      "negative_controls": {
+        "total": 6,
+        "correctly_rejected": 6,
+        "source": "result.json#enumeration",
+        "file_total": 6,
+        "file_all_passed": false
+      },
+      "gates": {
+        "g1": "PASS 9/9",
+        "g2": "PASS 40/40",
+        "g3": "PASS hits_total=0 mislabel",
+        "g4": "CLEAN"
+      },
+      "own_defects_keys": {
+        "not_verified": 2,
+        "absence_of_problem_is_not_proof": 3,
+        "found_while_working": 7,
+        "scope_creep_refused": 4
+      }
+    },
+    {
+      "unit": "M4_benchmark_figures",
+      "dir": "C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M4_benchmark_figures",
+      "spec": {
+        "result.json": {
+          "present": true,
+          "bytes": 8313,
+          "sha256": "eb26da9eb3a31f4202c3c97655266b2442571c0fa666601f25b05f51d667515c"
+        },
+        "report.md": {
+          "present": true,
+          "bytes": 16935,
+          "sha256": "357d998f4dd0441d65d1bfffce43beef48082c69bcd3e250bc475d06fb05cd1f"
+        },
+        "own_defects.json": {
+          "present": true,
+          "bytes": 4115,
+          "sha256": "ff8c026faea57cecc0c8d034f03f78993e632444a6766ac43b65e32615479455"
+        },
+        "run_receipt.json": {
+          "present": true,
+          "bytes": 4355,
+          "sha256": "37bec5066c33ce508c0130501b6b511da0b50334a5187b71f0e3814fe7d617e2"
+        }
+      },
+      "status": "PASS",
+      "evidence": {
+        "count": 27,
+        "verified": 27,
+        "mismatch": []
+      },
+      "negative_controls": {
+        "total": 5,
+        "correctly_rejected": 5,
+        "source": "result.json#enumeration",
+        "file_total": 5,
+        "file_all_passed": true
+      },
+      "gates": {},
+      "own_defects_keys": {
+        "not_verified": 4,
+        "absence_of_problem_is_not_proof": 4,
+        "found_while_working": 4,
+        "scope_creep_refused": 4
+      }
+    },
+    {
+      "unit": "M5_strata_workbench_demo",
+      "dir": "C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M5_strata_workbench_demo",
+      "spec": {
+        "result.json": {
+          "present": true,
+          "bytes": 10298,
+          "sha256": "51243b720ef81603cb6fc1bd9ba5b7a9799b99b37edbc5a5a92ffc2356cac658"
+        },
+        "report.md": {
+          "present": true,
+          "bytes": 17690,
+          "sha256": "c5f3776a0a6ada0c04055908e9551d4467c391f759fbe25c3679b07a5d874945"
+        },
+        "own_defects.json": {
+          "present": true,
+          "bytes": 5112,
+          "sha256": "1570bd00efd3916e5db7faa9114f4a76d9c826c589fbefa7b023c58716a1b5c0"
+        },
+        "run_receipt.json": {
+          "present": true,
+          "bytes": 4071,
+          "sha256": "9c22f5cc4310bf2ce5725a011b9eb7a51df3d5af18a8ca0334ed117c3520f95c"
+        }
+      },
+      "status": "PASS",
+      "evidence": {
+        "count": 28,
+        "verified": 28,
+        "mismatch": []
+      },
+      "negative_controls": {
+        "total": 9,
+        "correctly_rejected": 9,
+        "source": "result.json#enumeration",
+        "file_total": 10,
+        "file_all_passed": true
+      },
+      "gates": {
+        "g1_repro_certify": {
+          "file": "gates/g1.json",
+          "exit_code": 0,
+          "verdict": "PASS",
+          "total": 9,
+          "pass": 9,
+          "fail": 0
+        },
+        "g2_selfcheck_quick": {
+          "file": "gates/g2.json",
+          "exit_code": 0,
+          "total": 40,
+          "passed": 40,
+          "failed": 0,
+          "skipped": [
+            "S20 --with-tests: pytest 整合"
+          ]
+        },
+        "g3_r263_gain_mislabel_scan": {
+          "file": "gates/g3.json",
+          "exit_code": 0,
+          "files_scanned": 9,
+          "mislabel_hits": 0
+        },
+        "g4_r303_draft_check": {
+          "file": "gates/g4/draft_check.json",
+          "exit_code": 0,
+          "verdict": "CLEAN",
+          "doc_class": "governance",
+          "n_red": 0,
+          "n_note": 0
+        }
+      },
+      "own_defects_keys": {
+        "not_verified": 5,
+        "absence_of_problem_is_not_proof": 4,
+        "found_while_working": 4,
+        "scope_creep_refused": 5
+      }
+    },
+    {
+      "unit": "M6_midterm_defense_deck",
+      "dir": "C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M6_midterm_defense_deck",
+      "spec": {
+        "result.json": {
+          "present": true,
+          "bytes": 10988,
+          "sha256": "9f6a9fd3ea7ebbcc40d655d08103ca1a5d69e4729bb7664aacaa9a3e7ebe0cba"
+        },
+        "report.md": {
+          "present": true,
+          "bytes": 13023,
+          "sha256": "e8b9f44741d7deabf9040ee002e567dd0ede836670e81b154e5a72d8ed280d1c"
+        },
+        "own_defects.json": {
+          "present": true,
+          "bytes": 3910,
+          "sha256": "99d1b4c6055f208d2fdbf7ea595615c324fdccf0d3f073211cd657dd349db090"
+        },
+        "run_receipt.json": {
+          "present": true,
+          "bytes": 5854,
+          "sha256": "4a17b7fa90c6fbc10d6bf675bed98a581cfdb5b6e0000cd13fd2c6607db0616d"
+        }
+      },
+      "status": "PASS",
+      "evidence": {
+        "count": 19,
+        "verified": 19,
+        "mismatch": []
+      },
+      "negative_controls": {
+        "total": 5,
+        "correctly_rejected": 5,
+        "source": "result.json#enumeration",
+        "file_total": 5,
+        "file_all_passed": true
+      },
+      "gates": {
+        "g1_repro_certify": "PASS 9/9 (exit 0)",
+        "g2_selfcheck_quick": "PASS 40/40 (exit 0)",
+        "g3_r263_delivery": "PASS files_scanned=9, 非豁免混标命中=0（mislabel_hits=[]；8 条均为已豁免命中；sum_reconcile.ok=true；exit 0）",
+        "g4_r303_draft": "CLEAN n_red=0 × 4（3 份核心文稿 paper + 本报告 governance）",
+        "verify_m6": "PASS 88 条目 / 613 处数字 / 3 核心文稿 / 5 负控 (exit 0)"
+      },
+      "own_defects_keys": {
+        "not_verified": 4,
+        "absence_of_problem_is_not_proof": 4,
+        "found_while_working": 6,
+        "scope_creep_refused": 5
+      }
+    }
+  ],
+  "cross_checks": {
+    "m3_counts": {
+      "AGREE": 22,
+      "DISAGREE": 0,
+      "MALFORMED": 0,
+      "UNDECIDABLE": 0
+    },
+    "m3_refused": [
+      "jardim_c01"
+    ],
+    "m3_agree_22": true,
+    "m3_disagree_zero": true,
+    "m3_m1_input_match": true,
+    "m3_m2_input_match": true,
+    "m6_m3_sync_sha_match": true,
+    "m6_m3_agree": 22,
+    "m6_m3_disagree": 0,
+    "m6_placeholder_zero": true
+  },
+  "verdict": "PASS",
+  "reasons": [],
+  "not_claimed": [
+    "哈希一致只证明交付件未被改动，不证明其科学结论正确",
+    "M0–M6 的负控结论由其各自 result.json/negative_controls.json 承载，本单只做汇总核对"
+  ]
+}

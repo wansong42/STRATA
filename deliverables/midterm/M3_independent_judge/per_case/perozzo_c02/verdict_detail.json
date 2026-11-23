@@ -1,0 +1,18 @@
+{
+ "perozzo_c02": {
+  "checks": {
+   "canon_sha256": "b7a5a8ee745caf2524cec0bd4c3671825c8ee1f90f891a55e7fe861fba986cb4",
+   "cells_declared": 378,
+   "cells_recomputed": 378,
+   "collapse_tree_checked": 13,
+   "nominal_connected": false,
+   "rho_recomputed": "722756298054416/1246923256017417",
+   "windows_declared": 5670,
+   "windows_recomputed": 905
+  },
+  "cluster_id": "perozzo_c02",
+  "first_disagreement": null,
+  "status_m2": "AMBIGUOUS_WITH_VERIFIED_WITNESSES",
+  "verdict": "AGREE"
+ }
+}

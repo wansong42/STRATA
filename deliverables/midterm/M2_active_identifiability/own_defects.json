@@ -1,0 +1,33 @@
+{
+  "schema": "own-defects/v1",
+  "task_id": "M2",
+  "at_utc": "2026-11-21T03:35:00+00:00",
+  "not_verified": [
+    "未在 M2 内执行异模型零共享代码独立盲判（属 M3 任务职责；本单仅完成本地精确证书自检、与原始未加速冻结 TC_network/compile_network.py 的抽样逐项等价比对，以及 collapse_tree 首推裂隙的零缓存从头重算交叉验证）。",
+    "未验证 jardim_c01 在放宽细胞预算（实测需 5024 cells > 声明上限 budget.cells = 4096）下的整网连通性结论；严格按规范将其单列输出为 BUDGET_EXCEEDED 拒收信封并排除出 21 簇完整认证分母，不静默扩预算或截断细胞表。",
+    "未验证地下体内无条件贯通真值、人工现场复核耗时或水力连通/渗透率（field_error_rate、human_time、hydraulic 三项空分母指标严格保持 null）。",
+    "主动复核闭环仿真中 BASELINE_RANDOM 使用 20 个固定确定性种子（0..19）的精确算术平均，且所有策略均受最大步数上限 max_steps = 12 截断（OURS_MINIMAX_EXACT 在 5 步、OURS_MEASURE_SPLIT 在 7 步内已 100% 坍缩；BASELINE_RANDOM 在 12 步仍有 2.79% 测度未决、BASELINE_HEURISTIC_SIZE_OR_DIST 仍有 0.35% 测度未决，均值口径为 12 步截尾均值）。",
+    "collapse_tree 仅对每例 AMBIGUOUS 簇的 Top-3 推荐裂隙展开至深度 2（next_step），其余有效裂隙展开至深度 1；深度 >= 3 的连续交互由实时精确求解或重置回到根状态承载。"
+  ],
+  "absence_of_problem_is_not_proof": [
+    "精确几何加速（同速共顶点恒等与精确有理三轴 AABB 分离剪枝）已在 perozzo_c05 与 perozzo_c02 上经 audit_raw_tc_equivalence 证明与原始未修改 TC_network/compile_network.py 逐窗口、逐细胞、逐 rho 比特级一致，但未对全部 22 簇逐一重跑未加速冻结版 TC_network/compile_network.py。",
+    "CellLatticeIndex 精确开细胞常图限制索引已在 38 条实测分支与全部 collapse_tree 物化分支（直接调用 solve_conditioned_subdomain 并断言全等）上验证零偏差，但未在独立异模型代码库下复算（留待 M3）。",
+    "在声明共享参数 t 模型下，REFINE_PARAMETER_BAND(fid) 允许含内部接触切换的裂隙（包括不直接跨越名义断口的 SHARED_T_CONTACT_PROXY）作为全局共享 t 的代理观测；在声明模型内严格无泄漏，但在真实岩体各裂隙位移相互独立时，非主通路代理裂隙对主通路的约束力可能弱于共享 t 模型假设。",
+    "14 个真实 CERTIFIED_DISCONNECTED 簇（均来自 Perozzo 场地）中实测朴素并集假通路（phantom_union_path）为 0/14；这说明本批 14 个断割实簇未天然触发跨状态并集假通路（拦截牙口已由 M2-N1a 异时与 M2-N1b 异模式负控实证，但不可据此反推所有真实露头均不会出现并集假通路）。",
+    "perozzo_c02（Perozzo 场地唯一 AMBIGUOUS 簇）在上游 M1 已标记 quantization_sensitive = true（标称最小非零间距 0.000433 m 落入 2x Tier-2 量化误差包络）；M2 精确认证结论与 rho = 0.57963174 忠实于 M1 量化模型，但继承上游对 1e-4 m 有理网格量化的边界敏感性。",
+    "OURS_MEASURE_SPLIT 使用声明可行域上的均匀勒贝格测度加权期望（无先验偏置假设），若现场真实分布高度非均匀，其平均步数表现可能相对零先验的 OURS_MINIMAX_EXACT 发生次序变化。"
+  ],
+  "found_while_working": [
+    "【真实簇预算触发实证：jardim_c01 5024 > 4096 cells】全量扫描 22 簇时，jardim_c01（56 三角/模式、含 2 个保洞片段、15 对标称接触）的精确事件网格达到 5024 cells，超出 model.json 声明的 budget.cells = 4096；按 M2 §3.1 拒收信封条款诚实输出 BUDGET_EXCEEDED（CLI 退出码 4）并单列排除出贯通分母（21 簇完成 + 1 簇预算拒收），同时增设 M2-N7 负控防止静默扩预算。",
+    "【active_identifiability 性能瓶颈与 CellLatticeIndex 精确不变量优化】初版在候选动作打分循环中对每个分支重跑 O(|cells| x |pairs|) 窗口扫描与 BFS，导致单簇耗时过长；利用开细胞内部接触图恒定的精确数学不变量实现 CellLatticeIndex（含对跨模式阈值精确拆分 OPEN 细胞与精确 Fraction 测度累加），经 38 条分支逐项等价断言后提速 48 倍（单簇全动作 0.35s），并保留 collapse_tree 物化时的直接完整重算校核。",
+    "【solve_real_clusters 精确零浮点几何加速】初版全量 22 簇调用冻结 compile_pair.project_pair 耗时约 273s；引入零浮点精确同速共顶点恒等与精确有理三轴 AABB 分离平面剪枝后降至 135.2s，经原始冻结 TC_network/compile_network.py 逐项等价审计确认 0 漂移。",
+    "【防止跨目录导入向 M1 与冻结目录写入 __pycache__】为确保对 M1_real_to_exact_bridge 与历史冻结目录零字节修改，M2 全部脚本显式设置 sys.dont_write_bytecode = True，CLI 统一使用 -B 且子进程注入 PYTHONDONTWRITEBYTECODE=1，并经 audit_no_pycache_pollution 审计确认 0 残留。"
+  ],
+  "scope_creep_refused": [
+    "拒绝修改 M1_real_to_exact_bridge/、TC_network/、TB_feasible/、triangle_contact/、kernel_r3/、src/、data/ 下任何既有文件字节。",
+    "拒绝为消掉 jardim_c01 的 BUDGET_EXCEEDED 而静默放大 budget.cells 或截断细胞表。",
+    "拒绝在主动排序器与多步仿真策略中引入任何偷看隐藏连通标签的 oracle 信号，拒绝为凑赢基线调参或挑例。",
+    "拒绝将内存中传给冻结内核的合成 scope 投影写盘，所有落盘件永久保持 scope = REAL_DERIVED_CONDITIONED_FINITE_UNION。",
+    "拒绝执行全量 pytest、拒绝 git commit / git push、拒绝给空分母指标（field_error_rate / human_time / hydraulic）填 0 或估值。"
+  ]
+}

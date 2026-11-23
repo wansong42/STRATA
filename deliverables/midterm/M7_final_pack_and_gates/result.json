@@ -1,0 +1,267 @@
+{
+  "schema": "dispatch-result/v1",
+  "task_id": "M7",
+  "at_utc": "2026-11-21T14:10:09.197406+00:00",
+  "status": "PASS",
+  "scope": "M0–M6 全链规范四件与证据哈希终检、四道现役门禁实跑、STRATA 127.0.0.1:8866 断网冷启动 4 案例与绿色 M3 徽章、离线资产审计、3 类负控、答辩现场速查包；不重推 M0–M6 科学结论",
+  "enumeration": {
+    "units": 7,
+    "spec_files_present": 28,
+    "evidence_entries": 216,
+    "evidence_verified": 216,
+    "evidence_mismatch": 0,
+    "gates": 4,
+    "gate_runs": 5,
+    "gate_nonzero": 0,
+    "cold_start_cases": 4,
+    "cold_start_jardim": 2,
+    "cold_start_perozzo": 2,
+    "apply_check_ok": 3,
+    "step2_collapses_ok": 2,
+    "m3_badges_green": 4,
+    "external_requests_runtime": 0,
+    "negative_controls": 3,
+    "negative_correctly_rejected": 3
+  },
+  "commands": [
+    {
+      "cmd": "python build_manifest.py",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 216
+    },
+    {
+      "cmd": "python run_gates.py --only g1,g3,g4m6",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 13
+    },
+    {
+      "cmd": "python run_gates.py --only g2",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 40
+    },
+    {
+      "cmd": "python run_gates.py --only g4report",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 1
+    },
+    {
+      "cmd": "python cold_start_smoke.py",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 4
+    },
+    {
+      "cmd": "python offline_asset_audit.py",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 7
+    },
+    {
+      "cmd": "python negative_controls.py",
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 3
+    }
+  ],
+  "gates": {
+    "g1": "PASS 9/9 exit 0",
+    "g2": "PASS 40/40 exit 0",
+    "g3": "PASS mislabel=0 exempt=8 exit 0",
+    "g4": "CLEAN 4/4 exit 0/0"
+  },
+  "evidence": [
+    {
+      "file": "MIDTERM_MANIFEST.json",
+      "bytes": 14136,
+      "sha256": "0dbb783ede45a03eb18e22167b5e06e04f3c77cdf347d1921365472bb34e52f0"
+    },
+    {
+      "file": "cold_start_smoke.json",
+      "bytes": 11744,
+      "sha256": "bbbd843a3e75ca9e5761557a7ed66dc43582e7b10e46677c7825cbe6d5058064"
+    },
+    {
+      "file": "offline_asset_audit.json",
+      "bytes": 15896,
+      "sha256": "fdeb131249b10041f2b89f50b2a07a089c391a9686ce3e3c82b6412b5fb082b3"
+    },
+    {
+      "file": "negative_controls.json",
+      "bytes": 6244,
+      "sha256": "c9fcc49c92f08a53c9be6bd5b6059e1cce587081c9c6062e13a251c8cfbf6e67"
+    },
+    {
+      "file": "答辩现场清单_先读我.md",
+      "bytes": 6731,
+      "sha256": "345c613c315fafe69825ad111c0feb41792e7693220905951e110aded1aefe14"
+    },
+    {
+      "file": "report.md",
+      "bytes": 8231,
+      "sha256": "dfcfd8b92823f9cd4db923b9d12d16497c3725bb0550e7042a3fb45341ac5e43"
+    },
+    {
+      "file": "gates/g1.json",
+      "bytes": 1904,
+      "sha256": "37d7f80fbb999a7d2e72b824c798da593e347fac45b60b6997e0552add0c6895"
+    },
+    {
+      "file": "gates/g2.json",
+      "bytes": 10720,
+      "sha256": "6c7c382ab4c771843edcddfcd0d449b887e1e473d9c73fdc61b9a8d3ee013fa1"
+    },
+    {
+      "file": "gates/g3.json",
+      "bytes": 20558,
+      "sha256": "a353ae2f312ec410d73cc0059ec782aba0ce180a2d00fa488605a6cf7a04965c"
+    },
+    {
+      "file": "launch_strata_demo_copy.py",
+      "bytes": 8458,
+      "sha256": "73553950cc31fd1590e215490cffc1d524d43993d783843499101971f819e290"
+    },
+    {
+      "file": "build_manifest.py",
+      "bytes": 10282,
+      "sha256": "015c930c5373ee15d7c7d25c34ce81674dd97e9567e92d4a18804139a08dafcd"
+    },
+    {
+      "file": "run_gates.py",
+      "bytes": 5021,
+      "sha256": "c7e3ede03537bcec6a3cd229a9e9ffab12cde33ea1ec9e8059ea926a1cc83077"
+    },
+    {
+      "file": "cold_start_smoke.py",
+      "bytes": 21009,
+      "sha256": "fb93b92cb1ea532b7259ab0d6600212f18b17c791fbc642375fa9c76207e2af5"
+    },
+    {
+      "file": "offline_asset_audit.py",
+      "bytes": 7743,
+      "sha256": "b6ebeeaf14df25eaf77ea055f8ba46d38ea1235b9ae28624acadf5c2193bfbc5"
+    },
+    {
+      "file": "assess_readiness.py",
+      "bytes": 6935,
+      "sha256": "fe7c59d7d75e931ac70cb62ebd3c2bbac4d7e2f2e58b9e3cc826ec5ca33d2c44"
+    },
+    {
+      "file": "negative_controls.py",
+      "bytes": 6839,
+      "sha256": "80ba1b71642617d33977c2994adbc355011db53ada762109e0ae9b4496a40dcb"
+    },
+    {
+      "file": "browser_badge_probe.js",
+      "bytes": 3438,
+      "sha256": "792d0e1db581efe031db51c8da8331b42c0b184abae0af3ddc990f61c2fa9b70"
+    },
+    {
+      "file": "gates/exit_codes_g1.json",
+      "bytes": 576,
+      "sha256": "4c7f6a5b904c507061464694e9442f88d723060e58f9172a9b0b001478b41d87"
+    },
+    {
+      "file": "gates/exit_codes_g2.json",
+      "bytes": 587,
+      "sha256": "0b52d81d2aa9492b8e83ea51137b89e341a1ebe4be366a7d4bbb7ff0b93b20ce"
+    },
+    {
+      "file": "gates/exit_codes_g3.json",
+      "bytes": 616,
+      "sha256": "03dba3bf5bcf77c79186474505f28db750dce32906cc578fbde3f4cd4e9fc1cc"
+    },
+    {
+      "file": "gates/exit_codes_g4m6.json",
+      "bytes": 2391,
+      "sha256": "04367b89baee431ccba70661221f7272af445c8483be89a8bb563724c6a43b50"
+    },
+    {
+      "file": "gates/exit_codes_g4report.json",
+      "bytes": 769,
+      "sha256": "2f31c6496bd7f1c879b135777e891ce84c611cff58c11e8f0e2c8d1e499bf924"
+    },
+    {
+      "file": "gates/g4/m6_ppt_outline/draft_check.json",
+      "bytes": 2991,
+      "sha256": "3a554438c93e20bde9f09bb230eb3914c878a8027c889639e0e0765a9502373b"
+    },
+    {
+      "file": "gates/g4/m6_spoken_script/draft_check.json",
+      "bytes": 2877,
+      "sha256": "0a44a781093d3a8dec5afd01db86015e4291f131b9cc1f99d880caf7f58539a3"
+    },
+    {
+      "file": "gates/g4/m6_qa_20/draft_check.json",
+      "bytes": 2884,
+      "sha256": "484d6e868638d78673086ffac097e7edda32ca92fca5e9cf784e7620a6b6737f"
+    },
+    {
+      "file": "gates/g4/m7_report/draft_check.json",
+      "bytes": 5399,
+      "sha256": "6bcddd1e3533a86b129d7d3e5e4f46cf4ffeea3565ecda8eb8503ec5ae097ccd"
+    },
+    {
+      "file": "screenshots/m3_badge_jardim_c02.png",
+      "bytes": 261045,
+      "sha256": "a66559340ef7c0795d4d0d5422864e2df3092336c467b0507a04f92222540b76"
+    },
+    {
+      "file": "screenshots/m3_badge_jardim_c04.png",
+      "bytes": 266671,
+      "sha256": "9ff9cbf17f23832cf513a22fe1bf1ca606feb2ad35d6d98f7a71a6c57f005cc5"
+    },
+    {
+      "file": "screenshots/m3_badge_perozzo_c01.png",
+      "bytes": 242232,
+      "sha256": "37c38b9f5fdb7b9938c81eaed8ba6c44b129c12e04cd17701a27a0c4bc42aa4d"
+    },
+    {
+      "file": "screenshots/m3_badge_perozzo_c02.png",
+      "bytes": 268829,
+      "sha256": "609ec32cd3d121ad645968b88daf2b7a507b44e5deb17ce4e0eb28614515c421"
+    },
+    {
+      "file": "../_architect_audit_20261121/acceptance_M3_M6.json",
+      "bytes": 7236,
+      "sha256": "f3ce70c7fad5cdab6ddb398b6aff66dd9455cceb8002ca577db4205d26a521cd"
+    },
+    {
+      "file": "../_architect_audit_20261121/acceptance_spot_runs.json",
+      "bytes": 2244,
+      "sha256": "3616da62455503df75c21384eb9d8706cd3db07a0e5e4a1753878e8346740794"
+    },
+    {
+      "file": "../_architect_audit_20261121/accept_m3_m6.py",
+      "bytes": 9226,
+      "sha256": "5b836f972451852953924b98b96ebae0349e3e41bcb01e8e396ba5d21d1e16bf"
+    },
+    {
+      "file": "_pre_edit_archive/devlog_append_receipt.json",
+      "bytes": 739,
+      "sha256": "94eb31de928fa436327c6404b634ae26581957b85f1ba81d5fb9e347444d3010"
+    }
+  ],
+  "not_claimed": [
+    "非地下体内无条件贯通真值；field_error_rate/human_time/hydraulic 保持 null",
+    "哈希零不符不等于科学结论正确",
+    "22/22 AGREE 不等于证明代码无 bug",
+    "GET /api/identifiability/cases 实测 4.1 秒，不主张 <2 秒",
+    "M6 P12 所称 60 秒 B 级录屏在盘不存在，不主张 B 级预案可用",
+    "未逐簇人工上机 22 簇，只对 4 簇做 headless 实测",
+    "未做物理断网，用 Chrome 路由层全阻断替代"
+  ],
+  "field_error_rate": null,
+  "human_time": null,
+  "hydraulic": null
+}

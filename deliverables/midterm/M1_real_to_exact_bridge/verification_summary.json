@@ -1,0 +1,238 @@
+{
+  "all_checks_passed": true,
+  "at_utc": "2026-11-21T03:17:40.206991+00:00",
+  "clusters_built_at_utc": "2026-11-20T15:34:31.475564+00:00",
+  "frozen_dirs_zero_modification": true,
+  "jardim_count": 6,
+  "negative_controls_rejected_with_teeth": 12,
+  "negative_controls_total": 12,
+  "perozzo_count": 16,
+  "positive_checks": [
+    {
+      "cli_exit_code": 0,
+      "cluster_id": "jardim_c01",
+      "endpoint_attachment_exact": true,
+      "endpoint_note": "exact_zero_distance_attached_all_modes",
+      "non_orthogonality_ok": true,
+      "passed": true,
+      "site_id": "jardim_garcia_uh",
+      "tc_kernel_in_memory_admitted": true
+    },
+    {
+      "cli_exit_code": 0,
+      "cluster_id": "jardim_c02",
+      "endpoint_attachment_exact": true,
+      "endpoint_note": "exact_zero_distance_attached_all_modes",
+      "non_orthogonality_ok": true,
+      "passed": true,
+      "site_id": "jardim_garcia_uh",
+      "tc_kernel_in_memory_admitted": true
+    },
+    {
+      "cli_exit_code": 0,
+      "cluster_id": "jardim_c03",
+      "endpoint_attachment_exact": true,
+      "endpoint_note": "exact_zero_distance_attached_all_modes",
+      "non_orthogonality_ok": true,
+      "passed": true,
+      "site_id": "jardim_garcia_uh",
+      "tc_kernel_in_memory_admitted": true
+    },
+    {
+      "cli_exit_code": 0,
+      "cluster_id": "jardim_c04",
+      "endpoint_attachment_exact": true,
+      "endpoint_note": "exact_zero_distance_attached_all_modes",
+      "non_orthogonality_ok": true,
+      "passed": true,
+      "site_id": "jardim_garcia_uh",
+      "tc_kernel_in_memory_admitted": true
+    },
+    {
+      "cli_exit_code": 0,
+      "cluster_id": "jardim_c05",
+      "endpoint_attachment_exact": true,
+      "endpoint_note": "exact_zero_distance_attached_all_modes",
+      "non_orthogonality_ok": true,
+      "passed": true,
+      "site_id": "jardim_garcia_uh",
+      "tc_kernel_in_memory_admitted": true
+    },
+    {
+      "cli_exit_code": 0,
+      "cluster_id": "jardim_c06",
+      "endpoint_attachment_exact": true,
+      "endpoint_note": "exact_zero_distance_attached_all_modes",
+      "non_orthogonality_ok": true,
+      "passed": true,
+      "site_id": "jardim_garcia_uh",
+      "tc_kernel_in_memory_admitted": true
+    },
+    {
+      "cli_exit_code": 0,
+      "cluster_id": "perozzo_c01",
+      "endpoint_attachment_exact": true,
+      "endpoint_note": "exact_zero_distance_attached_all_modes",
+      "non_orthogonality_ok": true,
+      "passed": true,
+      "site_id": "perozzo_finale_ligure",
+      "tc_kernel_in_memory_admitted": true
+    },
+    {
+      "cli_exit_code": 0,
+      "cluster_id": "perozzo_c02",
+      "endpoint_attachment_exact": true,
+      "endpoint_note": "exact_zero_distance_attached_all_modes",
+      "non_orthogonality_ok": true,
+      "passed": true,
+      "site_id": "perozzo_finale_ligure",
+      "tc_kernel_in_memory_admitted": true
+    },
+    {
+      "cli_exit_code": 0,
+      "cluster_id": "perozzo_c03",
+      "endpoint_attachment_exact": true,
+      "endpoint_note": "exact_zero_distance_attached_all_modes",
+      "non_orthogonality_ok": true,
+      "passed": true,
+      "site_id": "perozzo_finale_ligure",
+      "tc_kernel_in_memory_admitted": true
+    },
+    {
+      "cli_exit_code": 0,
+      "cluster_id": "perozzo_c04",
+      "endpoint_attachment_exact": true,
+      "endpoint_note": "exact_zero_distance_attached_all_modes",
+      "non_orthogonality_ok": true,
+      "passed": true,
+      "site_id": "perozzo_finale_ligure",
+      "tc_kernel_in_memory_admitted": true
+    },
+    {
+      "cli_exit_code": 0,
+      "cluster_id": "perozzo_c05",
+      "endpoint_attachment_exact": true,
+      "endpoint_note": "exact_zero_distance_attached_all_modes",
+      "non_orthogonality_ok": true,
+      "passed": true,
+      "site_id": "perozzo_finale_ligure",
+      "tc_kernel_in_memory_admitted": true
+    },
+    {
+      "cli_exit_code": 0,
+      "cluster_id": "perozzo_c06",
+      "endpoint_attachment_exact": true,
+      "endpoint_note": "exact_zero_distance_attached_all_modes",
+      "non_orthogonality_ok": true,
+      "passed": true,
+      "site_id": "perozzo_finale_ligure",
+      "tc_kernel_in_memory_admitted": true
+    },
+    {
+      "cli_exit_code": 0,
+      "cluster_id": "perozzo_c07",
+      "endpoint_attachment_exact": true,
+      "endpoint_note": "exact_zero_distance_attached_all_modes",
+      "non_orthogonality_ok": true,
+      "passed": true,
+      "site_id": "perozzo_finale_ligure",
+      "tc_kernel_in_memory_admitted": true
+    },
+    {
+      "cli_exit_code": 0,
+      "cluster_id": "perozzo_c08",
+      "endpoint_attachment_exact": true,
+      "endpoint_note": "exact_zero_distance_attached_all_modes",
+      "non_orthogonality_ok": true,
+      "passed": true,
+      "site_id": "perozzo_finale_ligure",
+      "tc_kernel_in_memory_admitted": true
+    },
+    {
+      "cli_exit_code": 0,
+      "cluster_id": "perozzo_c09",
+      "endpoint_attachment_exact": true,
+      "endpoint_note": "exact_zero_distance_attached_all_modes",
+      "non_orthogonality_ok": true,
+      "passed": true,
+      "site_id": "perozzo_finale_ligure",
+      "tc_kernel_in_memory_admitted": true
+    },
+    {
+      "cli_exit_code": 0,
+      "cluster_id": "perozzo_c10",
+      "endpoint_attachment_exact": true,
+      "endpoint_note": "exact_zero_distance_attached_all_modes",
+      "non_orthogonality_ok": true,
+      "passed": true,
+      "site_id": "perozzo_finale_ligure",
+      "tc_kernel_in_memory_admitted": true
+    },
+    {
+      "cli_exit_code": 0,
+      "cluster_id": "perozzo_c11",
+      "endpoint_attachment_exact": true,
+      "endpoint_note": "exact_zero_distance_attached_all_modes",
+      "non_orthogonality_ok": true,
+      "passed": true,
+      "site_id": "perozzo_finale_ligure",
+      "tc_kernel_in_memory_admitted": true
+    },
+    {
+      "cli_exit_code": 0,
+      "cluster_id": "perozzo_c12",
+      "endpoint_attachment_exact": true,
+      "endpoint_note": "exact_zero_distance_attached_all_modes",
+      "non_orthogonality_ok": true,
+      "passed": true,
+      "site_id": "perozzo_finale_ligure",
+      "tc_kernel_in_memory_admitted": true
+    },
+    {
+      "cli_exit_code": 0,
+      "cluster_id": "perozzo_c13",
+      "endpoint_attachment_exact": true,
+      "endpoint_note": "exact_zero_distance_attached_all_modes",
+      "non_orthogonality_ok": true,
+      "passed": true,
+      "site_id": "perozzo_finale_ligure",
+      "tc_kernel_in_memory_admitted": true
+    },
+    {
+      "cli_exit_code": 0,
+      "cluster_id": "perozzo_c14",
+      "endpoint_attachment_exact": true,
+      "endpoint_note": "exact_zero_distance_attached_all_modes",
+      "non_orthogonality_ok": true,
+      "passed": true,
+      "site_id": "perozzo_finale_ligure",
+      "tc_kernel_in_memory_admitted": true
+    },
+    {
+      "cli_exit_code": 0,
+      "cluster_id": "perozzo_c15",
+      "endpoint_attachment_exact": true,
+      "endpoint_note": "exact_zero_distance_attached_all_modes",
+      "non_orthogonality_ok": true,
+      "passed": true,
+      "site_id": "perozzo_finale_ligure",
+      "tc_kernel_in_memory_admitted": true
+    },
+    {
+      "cli_exit_code": 0,
+      "cluster_id": "perozzo_c16",
+      "endpoint_attachment_exact": true,
+      "endpoint_note": "exact_zero_distance_attached_all_modes",
+      "non_orthogonality_ok": true,
+      "passed": true,
+      "site_id": "perozzo_finale_ligure",
+      "tc_kernel_in_memory_admitted": true
+    }
+  ],
+  "positive_passed": 22,
+  "positive_total": 22,
+  "prereg_frozen_at_utc": "2026-11-20T14:52:28.720200+00:00",
+  "prereg_frozen_before_build": true,
+  "schema": "m1-verification-summary/v1",
+  "task_id": "M1"
+}

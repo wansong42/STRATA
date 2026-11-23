@@ -1,0 +1,121 @@
+{
+ "verdict": "CLEAN",
+ "n_findings": 0,
+ "n_red": 0,
+ "n_exempt": 0,
+ "n_note": 0,
+ "by_rule": {},
+ "whitelist_layers": {
+  "W1_number_kit": {
+   "values": 124,
+   "forms": 759,
+   "src": "results/r296_writing_kit/number_kit.json"
+  },
+  "W2_digital_ledger": {
+   "values": 819,
+   "forms": 4087,
+   "src": "results/digital_ledger.json"
+  },
+  "W3_number_table": {
+   "values": 124,
+   "forms": 755,
+   "src": "results/r259_thesis_draft/number_table.json"
+  },
+  "W4_registered_sources": {
+   "values": 0,
+   "forms": 114552,
+   "files": 196,
+   "src": "在册件点名的 results/*.json"
+  },
+  "W5_draft_cited_jsons": {
+   "values": 0,
+   "forms": 11344,
+   "files": 7,
+   "src": "稿件行内点名的 results/*.json"
+  },
+  "W6_prose_carriers": {
+   "values": 0,
+   "forms": 490,
+   "files": 6,
+   "src": "PROSE_CARRIERS"
+  }
+ },
+ "doc_class": "paper",
+ "kind": "md",
+ "whitelist_missing_carriers": [],
+ "whitelist_unreadable_sources": [
+  {
+   "path": "results/r165_cvat/{cost_curve_run1.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r165_cvat/{cost_curve_run1_gtblack.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r184_module_a/t3_planefit.json + t2_triangulation.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r189_renderer_v1/t3_planefit.json + t2_triangulation.json + g1_regress.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r191_convention/g1_regress.json + engine_bench_r191.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r192_protocol_v2/variant_table.json + t2_prompts_run1.json + repro_check.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r193_lora_data_freeze/qc_report.json + manifest.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r194_3d_backbone_recon/t3_measured.json + t4_probe.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r196_lg_sam2_fusion/t2_box_sp_run1.json + t2_none_run1.json + t3_ablation.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r197_lora_m1/t3_gates_verdict.json + t3_variant_table.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r198_lora_loss_fix/t3_gates_verdict.json + t3_variant_table.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r263_gain_erratum/{manuscript_gates.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r275_em_weighting/{verdict,gates,default_path}.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/w40_omega_closeout/teeth_*.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/w45_omega_repricing/teeth_*.json",
+   "why": "missing"
+  }
+ ],
+ "r8_objects": {
+  "refs": [],
+  "defs": [],
+  "aliases": {}
+ },
+ "findings": [],
+ "generated_at": "2026-11-21T20:09:15+0800",
+ "draft": {
+  "path": "results/midterm_sprint_20261120/M6_midterm_defense_deck/口头讲稿_8分钟实战版.md",
+  "kind": "md",
+  "bytes": 21399,
+  "sha256": "12c8df76dbb77ad8e30e4c39c96569c61fc9ee12e6b85660142924ceafbcdb9c"
+ }
+}

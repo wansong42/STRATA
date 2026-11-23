@@ -1,0 +1,36 @@
+{
+  "cluster_id": "perozzo_c15",
+  "collapse_tree": {
+    "already_certified": true,
+    "cluster_id": "perozzo_c15",
+    "fractures": {},
+    "input_sha256": "368d1bc2736870fdae440845acef2cca2eac1baaa480ae28dbf1c16b45f274a2",
+    "root_status": "CERTIFIED_DISCONNECTED",
+    "schema": "m2-collapse-tree/v1",
+    "top_fracture_ids": [],
+    "top_k_included": 0
+  },
+  "field_error_rate": null,
+  "human_time": null,
+  "hydraulic": null,
+  "input_sha256": "368d1bc2736870fdae440845acef2cca2eac1baaa480ae28dbf1c16b45f274a2",
+  "local_recheck": {
+    "ok": true,
+    "status": "VERIFIED_ALREADY_CERTIFIED"
+  },
+  "not_claimed": [
+    "非地下体内无条件贯通真值 (not unconditional subsurface/in-rock ground truth)",
+    "非水力连通与非渗透率结论 (not hydraulic connectivity or permeability)",
+    "非人工实测耗时结论 (human_time = null)",
+    "条件几何模型结论不等同于合成域也不等同于现场开挖真值"
+  ],
+  "ranked_fractures": [],
+  "reason": "cluster is already CERTIFIED_DISCONNECTED; zero ambiguity remains, no active check required",
+  "root_certification_status": "CERTIFIED_DISCONNECTED",
+  "schema": "m2-active-identifiability/v1",
+  "scope": "REAL_DERIVED_CONDITIONED_FINITE_UNION",
+  "site_id": "perozzo_finale_ligure",
+  "status": "ALREADY_CERTIFIED",
+  "stratum": "MUTUAL_EXCL_ATTRIB_MULTISEG",
+  "top_recommendation": null
+}

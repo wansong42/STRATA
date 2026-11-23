@@ -1,0 +1,18 @@
+{
+ "jardim_c04": {
+  "checks": {
+   "canon_sha256": "507fb483a703025267a0556c50f09847c9704cb4459901985935cd75504bb4e4",
+   "cells_declared": 1755,
+   "cells_recomputed": 1755,
+   "collapse_tree_checked": 12,
+   "nominal_connected": true,
+   "rho_recomputed": "10196508254396718982234/6226785079907553991755",
+   "windows_declared": 6762,
+   "windows_recomputed": 1780
+  },
+  "cluster_id": "jardim_c04",
+  "first_disagreement": null,
+  "status_m2": "AMBIGUOUS_WITH_VERIFIED_WITNESSES",
+  "verdict": "AGREE"
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "perozzo_c02": {
+  "branches_recomputed": 13,
+  "cluster_id": "perozzo_c02",
+  "errors": [],
+  "geometry_reduction_by_fracture": {
+   "perozzo_row_0450": "1608301405044625/2493846512034834",
+   "perozzo_row_0451": "1608301405044625/2493846512034834",
+   "perozzo_row_0453": "342379812784078925082083/540498871838353819606742",
+   "perozzo_row_0461": "87650442191791967/300568014147084852",
+   "perozzo_row_0462": "2/3",
+   "perozzo_row_0474": "157252809203537/313061505820784",
+   "perozzo_row_0481": "0"
+  },
+  "hidden_label_isolation": "排序键与 informative 集全部由几何条件域重算推出；未引入地下真值标签",
+  "not_independently_recomputed": [
+   "expected_remaining_ambiguity_measure",
+   "expected_ambiguity_reduction_fraction",
+   "measure_split_best_action_id",
+   "measure_split_resolved_measure_fraction"
+  ],
+  "ranked_fracture_count": 7,
+  "top_fracture_ids": [
+   "perozzo_row_0462",
+   "perozzo_row_0450",
+   "perozzo_row_0451"
+  ],
+  "verdict": "AGREE",
+  "zero_gain_fractures": [
+   "perozzo_row_0481"
+  ]
+ }
+}

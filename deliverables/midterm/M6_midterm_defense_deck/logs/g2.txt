@@ -1,0 +1,65 @@
+[--quick] 跳过慢检查 (登记于报告 summary.skipped): S20 --with-tests: pytest 整合
+============================================================
+  fractureflow 一键自检报告
+============================================================
+
+【几何约定】
+  ✓ [PASS] dip_dipdir_to_normal 水平面: 水平面法向竖直
+  ✓ [PASS] dip_dipdir_to_normal 垂直面: 垂直面法向水平
+  ✓ [PASS] dip_dipdir_to_normal 45°: |nz|=cos45
+  ✓ [PASS] FORGE 16B 血统锚点: median |implied - raw| = 0.000000°
+  ✓ [PASS] Terzaghi 权重方向: 垂直面 w=2.000 > 水平面 w=0.100
+  ✓ [PASS] arccos 前 abs+clip: arccos 输入安全
+  ✓ [PASS] S33 几何约定 grep 门禁: 0 处违规
+  ✓ [PASS] S35 产状<->法向参数序台账与三分量往返硬闸: 产状<->法向硬闸: PASS (违规 0 / 生成器 10 / 逆向 11 / 往返偏差 5.727e-11, 余量 17.46x)
+
+【泄漏毒丸】
+  ✓ [PASS] 毒丸: 几何约定: 几何约定正确
+  ✓ [PASS] 毒丸: strict 默认值: strict 默认值 = True
+  ✓ [PASS] 毒丸: Terzaghi 方向: Terzaghi 方向正确
+  ✓ [PASS] S23 数据构造毒丸: nrm_full 污染不影响 set_dirs (T76): set_dirs max|diff| = 0.00e+00 — nrm_full 污染不影响 set_dirs, T76 泄漏已修复
+  ✓ [PASS] S24 Route B 无观测裂隙不产出零向量 (BUG-1): 29 隐伏点全部非零
+  ✓ [PASS] S25 站点索引跨进程稳定 (BUG-3): _site_index=['BS34:6', '16B:28'] (crc32 一致)
+
+【管道断裂探测】
+  ✓ [PASS] S26 L4 融合按条目索引解析 (BUG-5): 贡献源=['L0:wellA', 'L0:wellB', 'L1:outcrop'] — 同类型两井均被正确引用
+  ✓ [PASS] S27 local_frames 等变性: fixed 等变 / legacy 非等变 (BUG-2): fixed=0.05° (<5), legacy=32.92° (>5)
+  ✓ [PASS] S29 场景指标面-轴语义毒丸 (法向≠通道方向): 竖直井对⊥水平面→'对齐较差 (建议调整压裂方位)'; 巷道轴在水平连通面内→'高'; 垂直方向在陡立面内→'高'
+  ✓ [PASS] S30 geo_prior 批量一致性 [known-fail: H1]: known-fail (H1, 按档案维持): 位置依赖偏差 worst=41.2° <50° 包络; 计算冻结, 修复推迟至重训时代; 对外表述仅限 B=1
+  ✓ [PASS] S31 json.dump allow_nan 守卫扫描 (缺守卫/错位): S31v2 口径=字面 allow_nan=False 才算守卫 枚举=AST 逐 Call 取关键字值 接收者=json|import json as alias|属性链以 .json 结尾|__import__('json') 面=scripts+src 5412 .py 测量=2026-11-21T19:49:45.384471+08:00 豁免表=在盘(declared=3 active=3 errors=0) counts_json={"allow_nan_true": 3, "exempt": 3, "exempt_expired": 0, "exempt_unmatched": 0, "guarded_literal_false": 8096, "misplaced_candidates": 0, "missing": 0, "non_literal": 0, "parse_failures": 0, "scanned_py": 5412, "total_json_dump_calls": 8099, "unguarded_after_exemptions": 0}
+  ✓ [PASS] S32 产状↔法向往返一致 (全库变换点扫描): 全部产状↔法向变换点与权威口径一致
+  ✓ [PASS] S17 冲突检测: >40° 双源触发 conflict_matches: conflict_matches 数量 = 2, 最大角距 = 74.3° (>35°, conflict 正确触发)
+  ✓ [PASS] S18 聚类管道: spherical_kmeans 输出有效组系: centers.shape=(2, 3), assign 唯一组=[0 1], N=50
+  ✓ [PASS] S19 SetTable 生成: set_table_from_normals K=4: SetTable K=4, proportions=[0.25, 0.25, 0.25, 0.25]
+  ✓ [PASS] S21 数字台账: JSON 一致性 + 落单扫描: checked=57, mismatch=0, missing=0, unextractable=0, struct_errs=0, orphaned_files=111224, ORPHANNED_SAMPLE: ['results\\adaptive_k_fit.json', 'results\\advanced_modules.json', 'results\\aland_20m_eval.json', 'results\\aland_routeB.json', 'results\\aland_virgin_test.json']
+  ✓ [PASS] S34 静默半加载扫描 (named_parameters 过滤 + strict=False): 全库无过滤式半加载 idiom (统一走 trainer.load_ema_strict)
+
+【口径扫描】
+  ✓ [PASS] 废弃数字扫描: 未发现未标注的废弃数字
+  ✓ [PASS] 口径一致性抽查: l1_local MAE = 36.687°
+  ✓ [PASS] occ 掩码语义反向扫描: 未检测到 assign[~occ] 反向写法
+  ✓ [PASS] S28 图账同源: 论文图表脚本零手抄数字: 代码区浮点字面量 40 个全部在白名单内; 白名单未命中(仅提示): ['0.1', '0.16']
+
+【资产完整性】
+  ✓ [PASS] 关键 results 存在性: 全部存在 (6 个)
+  ✓ [PASS] 单测文件存在性: 全部存在
+
+【单元回归】
+  ✓ [PASS] 回归: B1 type_aware 双键区分: 双键区分已实施
+  ✓ [PASS] 回归: B5 空簇跳过: 空簇跳过已实施
+  ✓ [PASS] 回归: B7 贯通判定用 domain 边界 (功能): domain 边界判定生效 (稀疏分量不误判贯穿)
+  ✓ [PASS] S22 随机锚点 + 不变性 (数学真相锚): 随机锚点=57.303°; 恒等=0; 旋转不变; 置换不变
+
+【R185 方向统计】
+  ✓ [PASS] R185 配分函数对 Dawson 闭式: max rel err 1.03e-14 (<1e-10)
+  ✓ [PASS] R185 批量拟合 == 单条拟合: max |Δλ| = 2.56e-13
+  ✓ [PASS] R185 可微层梯度检验: max rel err 1.04e-07
+  ✓ [PASS] R185 terzaghi_summary 返回 dict: 返回完整 dict
+  ✓ [PASS] R185 R185 交付物存在且门全过: 门全过: {'t3_overall': True, 't0_normalizer': True, 't0_recovery': True, 't2_gradcheck': True, 't2_legacy_agree': True}
+
+============================================================
+  总计: 40 PASS, 0 FAIL
+============================================================
+
+报告已落盘: C:\Users\晚菘\Documents\Default Project\results\midterm_sprint_20261120\M6_midterm_defense_deck\gates\g2.json
+

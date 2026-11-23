@@ -1,0 +1,157 @@
+{
+ "verdict": "HIT",
+ "n_findings": 1,
+ "n_red": 1,
+ "n_exempt": 0,
+ "n_note": 0,
+ "by_rule": {
+  "R1b": {
+   "total": 1,
+   "red": 1,
+   "exempt": 0,
+   "note": 0
+  }
+ },
+ "whitelist_layers": {
+  "W1_number_kit": {
+   "values": 124,
+   "forms": 759,
+   "src": "results/r296_writing_kit/number_kit.json"
+  },
+  "W2_digital_ledger": {
+   "values": 819,
+   "forms": 4087,
+   "src": "results/digital_ledger.json"
+  },
+  "W3_number_table": {
+   "values": 124,
+   "forms": 755,
+   "src": "results/r259_thesis_draft/number_table.json"
+  },
+  "W4_registered_sources": {
+   "values": 0,
+   "forms": 114552,
+   "files": 196,
+   "src": "在册件点名的 results/*.json"
+  },
+  "W5_draft_cited_jsons": {
+   "values": 0,
+   "forms": 12275,
+   "files": 10,
+   "src": "稿件行内点名的 results/*.json"
+  },
+  "W6_prose_carriers": {
+   "values": 0,
+   "forms": 490,
+   "files": 6,
+   "src": "PROSE_CARRIERS"
+  }
+ },
+ "doc_class": "paper",
+ "kind": "md",
+ "whitelist_missing_carriers": [],
+ "whitelist_unreadable_sources": [
+  {
+   "path": "results/r165_cvat/{cost_curve_run1.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r165_cvat/{cost_curve_run1_gtblack.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r184_module_a/t3_planefit.json + t2_triangulation.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r189_renderer_v1/t3_planefit.json + t2_triangulation.json + g1_regress.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r191_convention/g1_regress.json + engine_bench_r191.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r192_protocol_v2/variant_table.json + t2_prompts_run1.json + repro_check.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r193_lora_data_freeze/qc_report.json + manifest.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r194_3d_backbone_recon/t3_measured.json + t4_probe.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r196_lg_sam2_fusion/t2_box_sp_run1.json + t2_none_run1.json + t3_ablation.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r197_lora_m1/t3_gates_verdict.json + t3_variant_table.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r198_lora_loss_fix/t3_gates_verdict.json + t3_variant_table.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r263_gain_erratum/{manuscript_gates.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r275_em_weighting/{verdict,gates,default_path}.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/w40_omega_closeout/teeth_*.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/w45_omega_repricing/teeth_*.json",
+   "why": "missing"
+  }
+ ],
+ "r8_objects": {
+  "refs": [
+   "图1",
+   "图2",
+   "图3",
+   "图4",
+   "图5"
+  ],
+  "defs": [
+   "图1",
+   "图2",
+   "图3",
+   "图4",
+   "图5"
+  ],
+  "aliases": {}
+ },
+ "findings": [
+  {
+   "rule": "R1b",
+   "line": 253,
+   "quote": "补充违规测试句：我们的方法在地下盲区额外提升了 73.49% 的预测准确率。",
+   "why": "疑似舍入/抄写偏差: 最近的在册值是 73.2688 (源 results/digital_ledger.json), 相对差 0.30%, 但本读数不等于任何在册值的合规舍入",
+   "pointer": "results/r296_writing_kit/number_kit.json (按 key 取行) + 白名单生长层见 prereg#whitelist",
+   "tokens": [
+    "73.49"
+   ],
+   "severity": "RED",
+   "exempt": false,
+   "exempt_class": null,
+   "exempt_mark": null,
+   "exempt_reason": null,
+   "section": "大创中期答辩四幕 PPT 大纲（15 页定稿版） > 附录 · 本大纲引用的 5 张核心附图标准题注（与正文引用双向严格对齐）"
+  }
+ ],
+ "generated_at": "2026-11-21T19:48:45+0800",
+ "draft": {
+  "path": "results/midterm_sprint_20261120/M6_midterm_defense_deck/_nc_scratch/run_20261121T114840_969911Z/nc_n2_untraced_pct.md",
+  "kind": "md",
+  "bytes": 44086,
+  "sha256": "c0da42b66f4656fce343266e642d4c3ebc4ccf9e3112c8474b2f977803c16f2f"
+ }
+}

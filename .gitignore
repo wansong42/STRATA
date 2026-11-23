@@ -2,8 +2,6 @@
 __pycache__/
 *.py[cod]
 *.egg-info/
-build/
-dist/
 .venv/
 venv/
 
@@ -26,5 +24,4 @@ Thumbs.db
 # ── 本地运行产物 ──
 .pytest_cache/
 .mypy_cache/
-*.log
 _scratch/

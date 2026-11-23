@@ -1,0 +1,71 @@
+{
+  "all_passed_with_teeth": true,
+  "at_utc": "2026-11-21T04:32:59.490710+00:00",
+  "controls": [
+    {
+      "actual_exit_code": 1,
+      "command": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M4_benchmark_figures\\verify_m4.py --audit-summary C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M4_benchmark_figures\\_nc_scratch\\nc_m4_n1a_synthetic_scope.json --skip-figures-check",
+      "expected_nonzero_exit": true,
+      "expected_reason_tokens": [
+        "CONTAMINATION_REJECTED"
+      ],
+      "first_counterexample": "\nCONTAMINATION_REJECTED (M4-N1): SYNTHETIC_DECLARED_TRIANGLE_UNION found in real_outcrop_benchmarks",
+      "id": "M4-N1a",
+      "rejected_with_teeth": true,
+      "scenario": "Inject SYNTHETIC_DECLARED_TRIANGLE_UNION into real_outcrop_benchmarks -> audit must exit non-zero"
+    },
+    {
+      "actual_exit_code": 1,
+      "command": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M4_benchmark_figures\\verify_m4.py --audit-summary C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M4_benchmark_figures\\_nc_scratch\\nc_m4_n1b_oracle_leak.json --skip-figures-check",
+      "expected_nonzero_exit": true,
+      "expected_reason_tokens": [
+        "CONTAMINATION_REJECTED"
+      ],
+      "first_counterexample": "\nCONTAMINATION_REJECTED (M4-N1): forbidden oracle numeric value 12.3705 (matches 12.3705) found in real_outcrop_benchmarks",
+      "id": "M4-N1b",
+      "rejected_with_teeth": true,
+      "scenario": "Inject oracle 12.3705 into real_outcrop_benchmarks -> audit must exit non-zero"
+    },
+    {
+      "actual_exit_code": 1,
+      "command": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M4_benchmark_figures\\verify_m4.py --audit-summary C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M4_benchmark_figures\\_nc_scratch\\nc_m4_n2_one_percent_tamper.json --recompute-check --skip-figures-check",
+      "expected_nonzero_exit": true,
+      "expected_reason_tokens": [
+        "RECOMPUTE_MISMATCH"
+      ],
+      "first_counterexample": "\nRECOMPUTE_MISMATCH (M4-N2): combined_real_conditioned.silent_flip_rate expected=0.285714 got=0.298571",
+      "id": "M4-N2",
+      "rejected_with_teeth": true,
+      "scenario": "Perturb benchmark_summary.json metric by >=1% -> --recompute-check must exit non-zero"
+    },
+    {
+      "actual_exit_code": 1,
+      "command": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M4_benchmark_figures\\verify_m4.py --audit-summary C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M4_benchmark_figures\\_nc_scratch\\nc_m4_n3_empty_denom_zero.json --skip-figures-check",
+      "expected_nonzero_exit": true,
+      "expected_reason_tokens": [
+        "EMPTY_DENOMINATOR_VIOLATION"
+      ],
+      "first_counterexample": "\nEMPTY_DENOMINATOR_VIOLATION (M4-N3): jardim_garcia_uh.disconnected_count=0 but phantom_fp_given_disconnected_rate=0.0 (must be null, never 0.0)",
+      "id": "M4-N3",
+      "rejected_with_teeth": true,
+      "scenario": "Fill 0.0 instead of null when disconnected_count=0 -> audit must exit non-zero"
+    },
+    {
+      "actual_exit_code": 1,
+      "command": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M4_benchmark_figures\\run_baselines.py --m2-run C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M4_benchmark_figures\\_nc_scratch\\tampered_m2_run --skip-dse --out-dir C:\\Users\\晚菘\\Documents\\Default Project\\results\\midterm_sprint_20261120\\M4_benchmark_figures\\_nc_scratch\\n4_out",
+      "expected_nonzero_exit": true,
+      "expected_reason_tokens": [
+        "M2_INPUT_SHA256_MISMATCH"
+      ],
+      "first_counterexample": "\nM2_INPUT_SHA256_MISMATCH (M4-N4): jardim_c01 M2 certification input_sha256='090bc0efbc0df3f481d99c9705022e1c7e053537ed6410ae42d5045e2dd60480' != M1 canonical sha256='190bc0efbc0df3f481d99c9705022e1c7e053537ed6410ae42d5045e2dd60480'",
+      "id": "M4-N4",
+      "rejected_with_teeth": true,
+      "scenario": "Tamper M2 jardim_c01/certification.json input_sha256 -> run_baselines.py must refuse non-zero"
+    }
+  ],
+  "distinct_control_classes": 4,
+  "rejected_with_teeth": 5,
+  "schema": "m4-negative-controls/v1",
+  "task_id": "M4",
+  "total_controls": 5
+}

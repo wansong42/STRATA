@@ -1,0 +1,90 @@
+{
+  "schema": "dispatch-run-receipt/v1",
+  "task_id": "M4",
+  "at_utc": "2026-11-21T04:44:20+00:00",
+  "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+  "cwd": "C:\\Users\\晚菘\\Documents\\Default Project",
+  "env_overrides": {
+    "KMP_DUPLICATE_LIB_OK": "TRUE",
+    "PYTHONPATH": "C:\\Users\\晚菘\\Documents\\Default Project\\src",
+    "PYTHONUTF8": "1",
+    "MPLBACKEND": "Agg"
+  },
+  "commands": [
+    {
+      "name": "phase1_scaffold_and_dse",
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 results/midterm_sprint_20261120/M4_benchmark_figures/run_baselines.py --allow-pending-m2 --skip-dse",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 22,
+      "note": "Phase-1 M1-only scaffold; Perozzo 202,371 auto DSE vs 1,405 manual parsed via stdlib zipfile+ElementTree into perozzo_dse_vs_manual_summary.json"
+    },
+    {
+      "name": "m4_full_3way_baselines",
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 results/midterm_sprint_20261120/M4_benchmark_figures/run_baselines.py --m2-run results/midterm_sprint_20261120/M2_active_identifiability/runs/run_20261120_exact_v1 --skip-dse",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 22,
+      "elapsed_s": 99.45,
+      "stdout_excerpt": "{\"status\": \"COMPLETE_WITH_M2\", \"clusters\": 22, \"elapsed_s\": 99.45}"
+    },
+    {
+      "name": "m4_render_5_figures",
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 results/midterm_sprint_20261120/M4_benchmark_figures/plot_figures.py --figures 1 2 3 4 5",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 10,
+      "note": "Rendered all 5 figures (300 DPI PNG + vector SVG = 10 files) on Agg backend with zero Matplotlib warnings; subsequently re-rendered fig3/4/5 after visual inspection polish"
+    },
+    {
+      "name": "m4_render_fig3_polished",
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 results/midterm_sprint_20261120/M4_benchmark_figures/plot_figures.py --figures 3",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 2
+    },
+    {
+      "name": "m4_verify_and_negative_controls",
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 results/midterm_sprint_20261120/M4_benchmark_figures/verify_m4.py",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 5,
+      "note": "Positive recompute-check across 22 CSV rows + 4 classes / 5 negative control subprocesses (M4-N1a, M4-N1b, M4-N2, M4-N3, M4-N4), 5/5 non-zero exit"
+    },
+    {
+      "name": "gate_g3",
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 scripts/r263_gain_mislabel_scan.py --scope delivery --fail-on-hit --out results/midterm_sprint_20261120/M4_benchmark_figures/gates/g3.json",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 9,
+      "stdout_excerpt": "scope=delivery in_scope=9 scanned=9 red=0 exempt=8 violations=0"
+    },
+    {
+      "name": "gate_g4",
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 scripts/r303_draft_check.py --draft results/midterm_sprint_20261120/M4_benchmark_figures/report.md --doc-class governance --json-only --out results/midterm_sprint_20261120/M4_benchmark_figures/gates/g4",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 1,
+      "stdout_excerpt": "verdict=CLEAN red=0 exempt=0 note=0 total=0 -> results/midterm_sprint_20261120/M4_benchmark_figures/gates/g4/draft_check.json (0.8s)"
+    },
+    {
+      "name": "gate_g1",
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 scripts/repro_certify.py --out results/midterm_sprint_20261120/M4_benchmark_figures/gates/g1.json",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 9,
+      "stdout_excerpt": "总计 9 项: PASS=9 FAIL=0 结论: 全部通过"
+    },
+    {
+      "name": "gate_g2_staggered_last",
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 -m fractureflow.selfcheck --quick --out results/midterm_sprint_20261120/M4_benchmark_figures/gates/g2.json",
+      "executed": true,
+      "exit_code": 0,
+      "enumerated": 40,
+      "stdout_excerpt": "总计: 40 PASS, 0 FAIL"
+    }
+  ],
+  "no_console_window": true,
+  "creationflags": 134217728,
+  "shell": false
+}

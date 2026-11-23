@@ -1,0 +1,56 @@
+===== CMD =====
+E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 C:\Users\晚菘\Documents\Default Project\results\midterm_sprint_20261120\M6_midterm_defense_deck\verify_m6.py --run-negative-controls
+===== EXIT =====
+0
+===== STDOUT =====
+{
+  "ok": true,
+  "traceability_entries_verified": 88,
+  "core_drafts_verified": 3,
+  "draft_results": [
+    {
+      "draft": "PPT大纲_大创中期_15页.md",
+      "bytes": 43982,
+      "sha256": "5dbf6296cd3e4bf2d4e59515ceba797e60085e76a9add43d945679aeb12eff90",
+      "extracted_token_checks": 268,
+      "distinct_tokens_checked": 111,
+      "r263_hits": 0,
+      "r303_paper_verdict": "CLEAN",
+      "r303_paper_n_red": 0,
+      "r303_paper_n_exempt": 0,
+      "r303_paper_n_note": 0
+    },
+    {
+      "draft": "口头讲稿_8分钟实战版.md",
+      "bytes": 21399,
+      "sha256": "12c8df76dbb77ad8e30e4c39c96569c61fc9ee12e6b85660142924ceafbcdb9c",
+      "extracted_token_checks": 151,
+      "distinct_tokens_checked": 96,
+      "r263_hits": 0,
+      "r303_paper_verdict": "CLEAN",
+      "r303_paper_n_red": 0,
+      "r303_paper_n_exempt": 0,
+      "r303_paper_n_note": 0
+    },
+    {
+      "draft": "评委最尖锐20问_标准应答卡.md",
+      "bytes": 41366,
+      "sha256": "79fff90d648cdc0c0d0b4bec6f0f27efdd658db196aa3a9f7618dccb006b018c",
+      "extracted_token_checks": 194,
+      "distinct_tokens_checked": 88,
+      "r263_hits": 0,
+      "r303_paper_verdict": "CLEAN",
+      "r303_paper_n_red": 0,
+      "r303_paper_n_exempt": 0,
+      "r303_paper_n_note": 0
+    }
+  ],
+  "negative_controls": {
+    "total_cases": 5,
+    "correctly_rejected": 5,
+    "all_passed": true
+  }
+}
+
+===== STDERR =====
+

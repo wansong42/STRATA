@@ -1,0 +1,145 @@
+{
+ "verdict": "HIT",
+ "n_findings": 1,
+ "n_red": 1,
+ "n_exempt": 0,
+ "n_note": 0,
+ "by_rule": {
+  "R5": {
+   "total": 1,
+   "red": 1,
+   "exempt": 0,
+   "note": 0
+  }
+ },
+ "whitelist_layers": {
+  "W1_number_kit": {
+   "values": 124,
+   "forms": 759,
+   "src": "results/r296_writing_kit/number_kit.json"
+  },
+  "W2_digital_ledger": {
+   "values": 819,
+   "forms": 4087,
+   "src": "results/digital_ledger.json"
+  },
+  "W3_number_table": {
+   "values": 124,
+   "forms": 755,
+   "src": "results/r259_thesis_draft/number_table.json"
+  },
+  "W4_registered_sources": {
+   "values": 0,
+   "forms": 114552,
+   "files": 196,
+   "src": "在册件点名的 results/*.json"
+  },
+  "W5_draft_cited_jsons": {
+   "values": 0,
+   "forms": 11344,
+   "files": 7,
+   "src": "稿件行内点名的 results/*.json"
+  },
+  "W6_prose_carriers": {
+   "values": 0,
+   "forms": 490,
+   "files": 6,
+   "src": "PROSE_CARRIERS"
+  }
+ },
+ "doc_class": "paper",
+ "kind": "md",
+ "whitelist_missing_carriers": [],
+ "whitelist_unreadable_sources": [
+  {
+   "path": "results/r165_cvat/{cost_curve_run1.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r165_cvat/{cost_curve_run1_gtblack.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r184_module_a/t3_planefit.json + t2_triangulation.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r189_renderer_v1/t3_planefit.json + t2_triangulation.json + g1_regress.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r191_convention/g1_regress.json + engine_bench_r191.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r192_protocol_v2/variant_table.json + t2_prompts_run1.json + repro_check.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r193_lora_data_freeze/qc_report.json + manifest.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r194_3d_backbone_recon/t3_measured.json + t4_probe.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r196_lg_sam2_fusion/t2_box_sp_run1.json + t2_none_run1.json + t3_ablation.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r197_lora_m1/t3_gates_verdict.json + t3_variant_table.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r198_lora_loss_fix/t3_gates_verdict.json + t3_variant_table.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r263_gain_erratum/{manuscript_gates.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/r275_em_weighting/{verdict,gates,default_path}.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/w40_omega_closeout/teeth_*.json",
+   "why": "missing"
+  },
+  {
+   "path": "results/w45_omega_repricing/teeth_*.json",
+   "why": "missing"
+  }
+ ],
+ "r8_objects": {
+  "refs": [],
+  "defs": [],
+  "aliases": {}
+ },
+ "findings": [
+  {
+   "rule": "R5",
+   "line": 125,
+   "quote": "补充违规测试句：我们在内部任务 W161 与台账 NNS-001 中测量了钻孔角度。",
+   "why": "内部代号「NNS-001」入稿 (裁定 94.2: 代号一律不入稿)",
+   "pointer": "docs/论文_墙_发现过程技术报告.md 第 3 章「内部代号与治理计数」行",
+   "tokens": [
+    "NNS-001"
+   ],
+   "severity": "RED",
+   "exempt": false,
+   "exempt_class": null,
+   "exempt_mark": null,
+   "exempt_reason": null,
+   "section": "大创中期答辩口头讲稿 · 8 分钟实战版（含分秒时间轴、手势切屏与 STRATA 实机点击提示） > 第四幕 · 诚实边界、阶段成果清单与下半程计划（`06:50`–`08:00` · 共 70 秒） > 【第 15 页 · 总结陈词与致谢 Q&A】（`07:40`–`08:00` · 20 秒）"
+  }
+ ],
+ "generated_at": "2026-11-21T19:39:20+0800",
+ "draft": {
+  "path": "results/midterm_sprint_20261120/M6_midterm_defense_deck/_nc_scratch/run_20261121T113919_804133Z/nc_n1a_internal_code.md",
+  "kind": "md",
+  "bytes": 21501,
+  "sha256": "004ba9d499a72fff0714bf562b46c4c60f1be50488aa73a02c007fb68e69b27d"
+ }
+}

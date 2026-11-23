@@ -1,0 +1,31 @@
+{
+  "schema": "own-defects/v1",
+  "task_id": "M5",
+  "at_utc": "2026-11-21T04:19:00+00:00",
+  "not_verified": [
+    "M3 异模型独立判卷成果 results/midterm_sprint_20261120/M3_independent_judge/verdict_batch.json 在本单收口时刻尚未落盘（m3_present=false, m3_verdict_count=0），因此仅实测验证了 PENDING_M3 显式状态展示，尚未在真实数据下实机触发 AGREE / DISAGREE 判卷徽章分支。",
+    "tests/surface_product/ 全量回归在 Windows 实测中存在 1 项环境跳过用例：tests/surface_product/test_w154_portable_project.py:447（symlinks are not permitted in this environment），全量结果为 290 passed, 1 skipped，未在允许创建符号链接的操作系统环境下实测该单测。",
+    "无头 Chrome 端到端交互冒烟实测覆盖结构面编辑台 ADD_FRAGMENT 提交、jardim_c02（名义/绿红双见证/Step1+Step2 两步坍缩至 CERTIFIED_DISCONNECTED/一键重置）、保洞簇 jardim_c04（单步坍缩至 CERTIFIED_CONNECTED）及 Perozzo 场地切换至 perozzo_c02；其余 19 簇的三维渲染与超预算拒收簇 jardim_c01 的浏览器点击交互未逐一逐个截图（仅通过后端 API 全 22 簇校验与 M5-N1..M5-N3 负控覆盖）。",
+    "当 M2 active_check.json 缺失时启用的实时精确引擎回退分支 LIVE_EXACT_SOLVER 仅经合成/单步模块调用测试，未在浏览器 E2E 中刻意移除真实 M2 包后端到端压测 22 簇实时重算延迟与超时保护阈值（默认联调走 PRECOMPUTED_VERIFIED_TREE）。",
+    "空分母三项（地下体内真值 field_error_rate、野外人工实测耗时 human_time、水力连通 hydraulic）均未进行实测，严格保持 null。"
+  ],
+  "absence_of_problem_is_not_proof": [
+    "290 passed in tests/surface_product + M5-N1..N5 实跑通过证明本次改动未破坏既有 T-D 契约及 8 类已定义负控均可被阻断，但不能等价证明未知畸形真实点云输入（如退化共线百万面片）下的全边界鲁棒性。",
+    "M2 collapse_tree 仅预计算至深度 2（next_step）；若某些复杂簇连续两步复核后仍处于 AMBIGUOUS_WITH_VERIFIED_WITNESSES（如 jardim_c05 部分次级分支），工作台按契约诚实展示仍歧义并停留在第 2 步回执与一键重置态，未在前端动态发起第 3 步在线扩展搜索。",
+    "STRATA 3D 视口基于离线零依赖 2D Canvas 透视投影与画家深度排序，视觉检查在 9 张 1440x900 截图中清晰可读，但密集重叠的非正交三角片在极端倾斜视角下可能出现多边形交叉排序瑕疵（未引入 WebGL Z-buffer）。",
+    "G3（r263_gain_mislabel_scan --scope delivery）与 G4（r303_draft_check --doc-class governance）退出码为 0 仅证明本单交付稿与登记交付面未命中已知禁词/混标规则，不能替代人工答辩评委的学术语义审查。"
+  ],
+  "found_while_working": [
+    "contracts.py#canonical_json 禁止载荷出现名为 reference 的键（HIDDEN_REFERENCE -> HTTP 400）；初版后端基线对照块曾使用该键名，发现后已统一重构为 nominal_reference 并在全部 22 簇 /case 与 /apply_check 响应上验证 canonical_json 全数通过。",
+    "T-M 遗留前端缺陷根因定位为 demos/workbench/index.html 中 #ed-action 确无 ADD_FRAGMENT 选项，且 demos/workbench/core_api.js#defaultPayload 未针对 synthetic_contract（无 _support_points，需 {surface_id, fragment}）与真实观察点云（需 {observation_id, indices}）提供双模态 JSON 骨架；已一并修复并实测 v1->v2 提交与缺 observation_id/indices 时的 400 拒收。",
+    "M2 实盘产出结构位于 M2_active_identifiability/runs/<run_id>/cases/<cid>/active_check.json，其 branches 字段为列表，且高歧义簇 jardim_c02 首推裂隙 frag_786de... 的 Step-1 分支仍保持 AMBIGUOUS 并挂载于 next_step.recommended_fracture_id；初版适配未解析 Step-2 next_step，现已补齐 _norm_next_step 与 step2_fracture_id/step2_branch_id 前后端交互及 M5-N2d 负控。",
+    "首轮浏览器截图发现 .vp-witness-bar 水平居中时会覆盖 .vp-caption 标题文字，且两步坍缩后的状态条因按钮重复导致折行；已重构 CSS 将见证切换条置于题注下方（top: 64px; left: 22px）、增加 plate.js 视口顶边距并精简状态栏，二轮 9 张截图均已逐张读图验证无遮挡与无折行。"
+  ],
+  "scope_creep_refused": [
+    "拒绝触碰或修改已被 T-D 锁定的 src/fractureflow/surface_product/{workbench_service.py, rule_solver.py, edit_engine.py}。",
+    "拒绝修改 M1（M1_real_to_exact_bridge）、M2（M2_active_identifiability）及任何历史冻结目录的文件字节。",
+    "M3（M3_independent_judge/verdict_batch.json）尚未落盘，拒绝越权代理生成或伪造 M3 独立判卷结果。",
+    "拒绝触碰已在运行的外部端口（如 8791 / 8801 / 8810），全程仅使用隔离端口 8855 及负控临时端口 8856..8858。",
+    "严格拒绝执行全量 pytest、git commit / git push 或任何可能弹出 cmd.exe/终端窗口的调用。"
+  ]
+}

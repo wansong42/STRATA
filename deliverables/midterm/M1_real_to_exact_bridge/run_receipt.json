@@ -1,0 +1,71 @@
+{
+  "at_utc": "2026-11-21T03:17:41.019460+00:00",
+  "commands": [
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 results/midterm_sprint_20261120/M1_real_to_exact_bridge/build_real_clusters.py",
+      "enumerated": 22,
+      "executed": true,
+      "exit_code": 0,
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "stderr_file": null,
+      "stdout_file": "cluster_register.json"
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 results/midterm_sprint_20261120/M1_real_to_exact_bridge/verify_m1.py",
+      "enumerated": 34,
+      "executed": true,
+      "exit_code": 0,
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "stderr_file": "logs/verify_m1_final.stderr.txt",
+      "stdout_file": "logs/verify_m1_final.stdout.txt"
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 scripts/repro_certify.py --out results/midterm_sprint_20261120/M1_real_to_exact_bridge/gates/g1.json",
+      "enumerated": 9,
+      "executed": true,
+      "exit_code": 0,
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "stderr_file": "logs/g1_repro_certify.stderr.txt",
+      "stdout_file": "logs/g1_repro_certify.stdout.txt"
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 -m fractureflow.selfcheck --quick --out results/midterm_sprint_20261120/M1_real_to_exact_bridge/gates/g2.json",
+      "enumerated": 40,
+      "executed": true,
+      "exit_code": 0,
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "stderr_file": null,
+      "stdout_file": "gates/g2.json"
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 scripts/r263_gain_mislabel_scan.py --scope delivery --fail-on-hit --out results/midterm_sprint_20261120/M1_real_to_exact_bridge/gates/g3.json",
+      "enumerated": 9,
+      "executed": true,
+      "exit_code": 0,
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "stderr_file": "logs/g3_r263_scan.stderr.txt",
+      "stdout_file": "logs/g3_r263_scan.stdout.txt"
+    },
+    {
+      "cmd": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe -B -X utf8 scripts/r303_draft_check.py --draft results/midterm_sprint_20261120/M1_real_to_exact_bridge/report.md --doc-class governance --json-only --out results/midterm_sprint_20261120/M1_real_to_exact_bridge/gates/g4",
+      "enumerated": 6,
+      "executed": true,
+      "exit_code": 0,
+      "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+      "stderr_file": "logs/g4_r303_draft_check.stderr.txt",
+      "stdout_file": "logs/g4_r303_draft_check.stdout.txt"
+    }
+  ],
+  "creationflags": 134217728,
+  "cwd": "C:\\Users\\晚菘\\Documents\\Default Project",
+  "env_overrides": {
+    "KMP_DUPLICATE_LIB_OK": "TRUE",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONIOENCODING": "utf-8",
+    "PYTHONPATH_PREPEND": "C:\\Users\\晚菘\\Documents\\Default Project\\src"
+  },
+  "interpreter": "E:/app2/anacoda/Anacoda/envs/pytorch_env/python.exe",
+  "no_console_window": true,
+  "schema": "dispatch-run-receipt/v1",
+  "task_id": "M1"
+}

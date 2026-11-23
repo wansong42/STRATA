@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN" data-revision="c">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#ebeae4">
+  <title>STRATA · 结构面工作台</title>
+  <meta name="description" content="复杂岩石非连续结构智能重构 · 结构面工作台。同源接入本地 WorkbenchService：三维证据、编辑事务、保存与导出回执均来自 /api/*。">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Crect width='18' height='18' fill='%23ebeae4'/%3E%3Cg fill='none' stroke='%23245c47' stroke-linecap='round'%3E%3Crect x='2.5' y='2.5' width='13' height='13' stroke-width='1.1'/%3E%3Cpath d='M5 6.2h3.7M5 8.8h3.7M5 11.4h3.7M10.1 7.3h3M10.1 9.9h3M10.1 12.5h3' stroke-width='1'/%3E%3Cpath d='M9.7 4.6l-.7 8.8' stroke-width='.9'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app" class="app">
+    <header class="topbar" id="topbar"></header>
+    <div class="statusrow" id="statusrow"></div>
+    <div class="readonly-banner" id="readonly-banner" data-testid="readonly-banner" role="status" hidden></div>
+    <main class="main">
+      <aside class="ledger" id="ledger" aria-label="对象清单"></aside>
+      <section class="stage" aria-label="三维证据与事务台">
+        <div class="viewport" id="viewport">
+          <div class="vp-canvas" id="vp-canvas">
+            <canvas id="plate" aria-label="三维证据视图"></canvas>
+            <div class="vp-caption" id="vp-caption"></div>
+            <div class="vp-witness-bar" id="vp-witness-bar" data-testid="vp-witness-bar" hidden></div>
+            <div class="vp-tools" id="vp-tools"></div>
+            <div class="vp-empty" id="vp-empty" hidden></div>
+          </div>
+          <div class="vp-foot" id="vp-foot">
+            <div class="vp-legend" id="vp-legend"></div>
+            <div class="vp-scale" id="vp-scale" aria-hidden="true"></div>
+          </div>
+        </div>
+        <div id="logdock" class="logdock" data-open="false" aria-label="操作日志"></div>
+      </section>
+      <aside class="inspector" id="inspector" aria-label="对象与证据">
+        <div class="ins-head" id="ins-head"></div>
+        <div class="ins-scroll" id="ins-scroll" data-testid="evidence-panel"></div>
+        <div class="ins-dock" id="ins-dock"></div>
+      </aside>
+    </main>
+    <footer class="cmdbar" id="cmdbar"></footer>
+  </div>
+  <div id="popover-root"></div>
+  <div id="modal-root"></div>
+  <div id="toast-root" class="toast-stack" aria-live="polite"></div>
+  <noscript>
+    <div style="max-width:560px;margin:64px auto;padding:28px;font-family:system-ui,sans-serif;color:#23221d;background:#fdfcf8;border:1px solid #dedacd;border-radius:3px">
+      <h1 style="font-size:18px;font-weight:600">需要启用 JavaScript</h1>
+      <p style="font-size:13px;color:#726e63;line-height:1.8">本工作台为本地服务同源单页应用：三维证据、编辑事务、保存与导出回执均来自本机 /api/*。无 CDN、无外部依赖。</p>
+    </div>
+  </noscript>
+  <script src="core_api.js"></script>
+  <script src="ui_common.js"></script>
+  <script src="plate.js"></script>
+  <script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/evil@1.0.0/dist/evil.js"></script>
+</body>
+</html>
